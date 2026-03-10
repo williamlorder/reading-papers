@@ -3,7 +3,7 @@
 # Watches local for new files → auto push
 # Polls remote for changes → auto pull
 
-REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
+REPO_DIR="$HOME/WorkPlace/游戏/reading-papers"
 cd "$REPO_DIR"
 
 POLL_INTERVAL=30  # seconds between remote checks
@@ -53,7 +53,7 @@ do_pull() {
 TRIGGER="/tmp/sync-trigger-$$"
 
 # fswatch writes to trigger file
-fswatch -o -e "\.git" -r "$REPO_DIR" > "$TRIGGER" &
+fswatch -o -e "\.git" -e "\.sync\.log" -r "$REPO_DIR" > "$TRIGGER" &
 WATCH_PID=$!
 
 # Main loop: check for local changes + poll remote
