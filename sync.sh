@@ -1,35 +1,29 @@
 #!/bin/bash
-# sync.sh - Real-time bidirectional sync for reading-papers
-# Watches local for new files → auto push
-# Polls remote for changes → auto pull
+# sync-papers.sh - Real-time bidirectional sync for reading-papers
 
 REPO_DIR="$HOME/WorkPlace/游戏/reading-papers"
-cd "$REPO_DIR"
+cd "$REPO_DIR" || exit 1
 
-POLL_INTERVAL=30  # seconds between remote checks
-LOG="$REPO_DIR/.sync.log"
+POLL_INTERVAL=30
 
 log() {
-    local msg="$(date '+%Y-%m-%d %H:%M:%S') $1"
-    echo "$msg" | tee -a "$LOG"
+    echo "$(date '+%H:%M:%S') $1"
 }
 
 echo "📚 Reading Papers Sync started"
 echo "   Local:  $REPO_DIR"
 echo "   Remote: https://williamlorder.github.io/reading-papers/"
-echo "   Log:    $LOG"
 echo "   Watching for changes... (Ctrl+C to stop)"
 echo ""
-log "Sync started"
 
-# Auto-push on local changes
 do_push() {
     cd "$REPO_DIR"
     git add -A
     if ! git diff --cached --quiet 2>/dev/null; then
-        local files=$(git diff --cached --name-only 2>/dev/null | head -5)
+        local files
+        files=$(git diff --cached --name-only 2>/dev/null | grep -v '\.sync\.log' | head -5)
         git commit -m "Auto-sync $(date '+%Y-%m-%d %H:%M:%S')" > /dev/null 2>&1
-        if git push origin main 2>/dev/null; then
+        if git push origin main 2>&1 | tail -1; then
             log "⬆ Pushed: $files"
         else
             log "⚠ Push failed, will retry"
@@ -37,7 +31,6 @@ do_push() {
     fi
 }
 
-# Auto-pull remote changes
 do_pull() {
     cd "$REPO_DIR"
     git fetch origin main --quiet 2>/dev/null
@@ -49,35 +42,31 @@ do_pull() {
     fi
 }
 
-# Use a temp file to signal changes (avoids pipe subshell buffering)
-TRIGGER="/tmp/sync-trigger-$$"
+# Cleanup on exit
+cleanup() {
+    [ -n "$WATCH_PID" ] && kill "$WATCH_PID" 2>/dev/null
+    echo ""
+    log "Sync stopped"
+    exit 0
+}
+trap cleanup INT TERM
 
-# fswatch writes to trigger file
-fswatch -o -e "\.git" -e "\.sync\.log" -r "$REPO_DIR" > "$TRIGGER" &
+# fswatch detects changes → write to pipe → trigger push
+fswatch --batch-marker=EOF -e "\.git" -e "\.sync" -r "$REPO_DIR" | while read line; do
+    if [ "$line" = "EOF" ]; then
+        sleep 2
+        do_push
+    fi
+done &
 WATCH_PID=$!
 
-# Main loop: check for local changes + poll remote
-trap "kill $WATCH_PID 2>/dev/null; rm -f '$TRIGGER'; log 'Sync stopped'; echo ''; echo 'Sync stopped.'; exit 0" INT TERM
+log "fswatch started (PID: $WATCH_PID)"
 
-LAST_SIZE=0
+# Initial push of any pending changes
+do_push
+
+# Poll remote periodically
 while true; do
-    # Check if fswatch detected changes
-    if [ -f "$TRIGGER" ]; then
-        CUR_SIZE=$(wc -c < "$TRIGGER" 2>/dev/null || echo 0)
-        if [ "$CUR_SIZE" != "$LAST_SIZE" ]; then
-            LAST_SIZE=$CUR_SIZE
-            sleep 2  # debounce
-            do_push
-        fi
-    fi
-
-    # Poll remote every POLL_INTERVAL cycles (each cycle ~3s)
-    COUNTER=${COUNTER:-0}
-    COUNTER=$((COUNTER + 1))
-    if [ $COUNTER -ge $((POLL_INTERVAL / 3)) ]; then
-        do_pull
-        COUNTER=0
-    fi
-
-    sleep 3
+    sleep "$POLL_INTERVAL"
+    do_pull
 done
