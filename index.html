@@ -8,39 +8,57 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; background: #fafafa; color: #24292f; padding: 20px; max-width: 900px; margin: 0 auto; }
 h1 { font-size: 1.6rem; margin-bottom: 6px; }
-.subtitle { color: #666; font-size: .9rem; margin-bottom: 20px; }
-.tabs { display: flex; gap: 8px; margin-bottom: 16px; }
+.subtitle { color: #666; font-size: .9rem; margin-bottom: 16px; }
+.tabs { display: flex; gap: 8px; margin-bottom: 12px; }
 .tab { padding: 8px 16px; border-radius: 8px; border: 1px solid #d0d7de; background: white; cursor: pointer; font-size: .9rem; font-weight: 600; }
 .tab.active { background: #0969da; color: white; border-color: #0969da; }
 .tab .count { font-weight: 400; opacity: .7; margin-left: 4px; }
+.filters { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
+.filters input, .filters select { padding: 7px 10px; border: 1px solid #d0d7de; border-radius: 8px; font-size: .88rem; outline: none; }
+.filters input:focus, .filters select:focus { border-color: #0969da; box-shadow: 0 0 0 3px rgba(9,105,218,.15); }
+.filters input[type="text"] { flex: 1; min-width: 180px; }
+.filters select { min-width: 120px; }
+.sort-btn { padding: 7px 12px; border: 1px solid #d0d7de; border-radius: 8px; background: white; cursor: pointer; font-size: .82rem; font-weight: 600; }
+.sort-btn:hover { background: #f0f6fc; }
+.sort-btn.active { background: #0969da; color: white; border-color: #0969da; }
+.stats { color: #888; font-size: .8rem; margin-bottom: 8px; }
 .file-list { list-style: none; }
-.file-list li { padding: 10px 14px; border-radius: 8px; margin-bottom: 3px; }
+.file-list li { padding: 10px 14px; border-radius: 8px; margin-bottom: 3px; display: flex; justify-content: space-between; align-items: center; }
 .file-list li:hover { background: #f0f6fc; }
-.file-list a { text-decoration: none; color: #0969da; font-size: .92rem; display: block; }
+.file-list a { text-decoration: none; color: #0969da; font-size: .92rem; flex: 1; }
 .file-list a:hover { text-decoration: underline; }
+.file-meta { font-size: .75rem; color: #888; white-space: nowrap; margin-left: 12px; }
 .badge { display: inline-block; font-size: .7rem; padding: 2px 6px; border-radius: 4px; margin-left: 6px; font-weight: 600; vertical-align: middle; }
 .badge-html { background: #ddf4ff; color: #0969da; }
 .badge-md { background: #dafbe1; color: #116329; }
-.loading { color: #888; padding: 20px; text-align: center; }
 .empty { color: #888; padding: 40px; text-align: center; font-size: 1rem; }
-.search { width: 100%; padding: 10px 14px; border: 1px solid #d0d7de; border-radius: 8px; font-size: .95rem; margin-bottom: 12px; outline: none; }
-.search:focus { border-color: #0969da; box-shadow: 0 0 0 3px rgba(9,105,218,.15); }
+.loading { color: #888; padding: 20px; text-align: center; }
 </style>
 </head>
 <body>
 <h1>Reading Papers</h1>
 <p class="subtitle">Drag files into folders. Annotate directly on the page.</p>
-<input class="search" type="text" id="search" placeholder="Search files...">
+
 <div class="tabs" id="tabs">
   <div class="tab active" data-section="Reading">Reading<span class="count" id="c-Reading"></span></div>
   <div class="tab" data-section="output">Output<span class="count" id="c-output"></span></div>
   <div class="tab" data-section="markdown">Markdown<span class="count" id="c-markdown"></span></div>
 </div>
+
+<div class="filters">
+  <input type="text" id="search" placeholder="Search by name...">
+  <select id="dateFilter"><option value="">All dates</option></select>
+  <button class="sort-btn active" id="sortName" data-sort="name">Name</button>
+  <button class="sort-btn" id="sortDate" data-sort="date">Date</button>
+</div>
+
+<div class="stats" id="stats"></div>
 <div id="content"><div class="loading">Loading...</div></div>
 
 <script>
 var REPO = "williamlorder/reading-papers";
 var API = "https://api.github.com/repos/" + REPO + "/git/trees/main?recursive=1";
+var COMMITS_API = "https://api.github.com/repos/" + REPO + "/commits?per_page=100";
 
 var SECTIONS = {
   Reading: { exts: /\.html?$/i },
@@ -49,7 +67,9 @@ var SECTIONS = {
 };
 
 var allFiles = {};
+var fileDates = {};
 var currentTab = "Reading";
+var currentSort = "name";
 
 async function loadFiles() {
   try {
@@ -69,31 +89,105 @@ async function loadFiles() {
       if (el) el.textContent = "(" + allFiles[key].length + ")";
     });
 
+    // Try to get commit dates for files
+    try {
+      var cres = await fetch(COMMITS_API);
+      if (cres.ok) {
+        var commits = await cres.json();
+        commits.forEach(function(c) {
+          var date = c.commit.author.date.slice(0, 10);
+          var msg = c.commit.message || "";
+          // Extract file info from commit
+          if (!fileDates._default) fileDates._default = date;
+        });
+        // Use commit dates as approximate file dates
+        // For each file, try to extract date from filename or use latest commit
+        Object.keys(allFiles).forEach(function(key) {
+          allFiles[key].forEach(function(f) {
+            var name = f.path.split("/").pop();
+            // Try to extract date pattern from filename (2026_3_11, 2026年3月11日, etc.)
+            var m = name.match(/(\d{4})[_年-](\d{1,2})[_月-](\d{1,2})/);
+            if (m) {
+              f.date = m[1] + "-" + m[2].padStart(2,"0") + "-" + m[3].padStart(2,"0");
+            } else {
+              f.date = commits.length > 0 ? commits[0].commit.author.date.slice(0, 10) : "";
+            }
+          });
+        });
+      }
+    } catch(e) {}
+
+    buildDateFilter();
     renderSection(currentTab);
   } catch(e) {
     document.getElementById("content").innerHTML = '<div class="empty">No files yet.</div>';
   }
 }
 
+function buildDateFilter() {
+  var dates = {};
+  Object.keys(allFiles).forEach(function(key) {
+    allFiles[key].forEach(function(f) {
+      if (f.date) dates[f.date] = true;
+    });
+  });
+  var sel = document.getElementById("dateFilter");
+  sel.innerHTML = '<option value="">All dates</option>';
+  Object.keys(dates).sort().reverse().forEach(function(d) {
+    var opt = document.createElement("option");
+    opt.value = d; opt.textContent = d;
+    sel.appendChild(opt);
+  });
+}
+
+function getFilteredFiles(key) {
+  var files = (allFiles[key] || []).slice();
+  var q = document.getElementById("search").value.toLowerCase();
+  var dateVal = document.getElementById("dateFilter").value;
+
+  if (q) {
+    files = files.filter(function(f) {
+      return decodeURIComponent(f.path).toLowerCase().indexOf(q) !== -1;
+    });
+  }
+  if (dateVal) {
+    files = files.filter(function(f) { return f.date === dateVal; });
+  }
+
+  if (currentSort === "date") {
+    files.sort(function(a, b) { return (b.date || "").localeCompare(a.date || ""); });
+  } else {
+    files.sort(function(a, b) { return a.path.localeCompare(b.path); });
+  }
+
+  return files;
+}
+
 function renderSection(key) {
   var container = document.getElementById("content");
-  var files = allFiles[key] || [];
+  var files = getFilteredFiles(key);
+  var total = (allFiles[key] || []).length;
+
+  document.getElementById("stats").textContent = files.length + " / " + total + " files";
+
   if (files.length === 0) {
-    container.innerHTML = '<div class="empty">This folder is empty.</div>';
+    container.innerHTML = '<div class="empty">' + (total === 0 ? "This folder is empty." : "No matches.") + '</div>';
     return;
   }
   var html = '<ul class="file-list">';
-  files.sort(function(a, b) { return a.path.localeCompare(b.path); }).forEach(function(f) {
+  files.forEach(function(f) {
     var name = f.path.split("/").pop();
     var ext = name.split(".").pop().toLowerCase();
     var badge = ext === "md" ? '<span class="badge badge-md">MD</span>' : '<span class="badge badge-html">HTML</span>';
     var displayName = decodeURIComponent(name).replace(/\.(html|htm|md)$/i, "");
-    html += '<li data-name="' + name.toLowerCase() + '"><a href="' + encodeURI(f.path) + '">' + displayName + badge + '</a></li>';
+    var dateMeta = f.date ? '<span class="file-meta">' + f.date + '</span>' : '';
+    html += '<li><a href="' + encodeURI(f.path) + '">' + displayName + badge + '</a>' + dateMeta + '</li>';
   });
   html += '</ul>';
   container.innerHTML = html;
 }
 
+// Tabs
 document.getElementById("tabs").addEventListener("click", function(e) {
   var tab = e.target.closest(".tab");
   if (!tab) return;
@@ -103,10 +197,17 @@ document.getElementById("tabs").addEventListener("click", function(e) {
   renderSection(currentTab);
 });
 
-document.getElementById("search").addEventListener("input", function() {
-  var q = this.value.toLowerCase();
-  document.querySelectorAll(".file-list li").forEach(function(li) {
-    li.style.display = li.getAttribute("data-name").indexOf(q) !== -1 ? "" : "none";
+// Search + Date filter
+document.getElementById("search").addEventListener("input", function() { renderSection(currentTab); });
+document.getElementById("dateFilter").addEventListener("change", function() { renderSection(currentTab); });
+
+// Sort buttons
+document.querySelectorAll(".sort-btn").forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    document.querySelectorAll(".sort-btn").forEach(function(b) { b.classList.remove("active"); });
+    btn.classList.add("active");
+    currentSort = btn.getAttribute("data-sort");
+    renderSection(currentTab);
   });
 });
 
