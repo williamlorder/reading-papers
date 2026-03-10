@@ -18,6 +18,8 @@ echo ""
 
 do_push() {
     cd "$REPO_DIR"
+    # Regenerate files manifest for website
+    bash "$REPO_DIR/gen-manifest.sh" 2>/dev/null
     git add -A
     if ! git diff --cached --quiet 2>/dev/null; then
         local files
