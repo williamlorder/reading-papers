@@ -7,23 +7,32 @@ REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$REPO_DIR"
 
 POLL_INTERVAL=30  # seconds between remote checks
+LOG="$REPO_DIR/.sync.log"
+
+log() {
+    local msg="$(date '+%Y-%m-%d %H:%M:%S') $1"
+    echo "$msg" | tee -a "$LOG"
+}
 
 echo "📚 Reading Papers Sync started"
 echo "   Local:  $REPO_DIR"
 echo "   Remote: https://williamlorder.github.io/reading-papers/"
+echo "   Log:    $LOG"
 echo "   Watching for changes... (Ctrl+C to stop)"
 echo ""
+log "Sync started"
 
 # Auto-push on local changes
 do_push() {
     cd "$REPO_DIR"
     git add -A
     if ! git diff --cached --quiet 2>/dev/null; then
+        local files=$(git diff --cached --name-only 2>/dev/null | head -5)
         git commit -m "Auto-sync $(date '+%Y-%m-%d %H:%M:%S')" > /dev/null 2>&1
         if git push origin main 2>/dev/null; then
-            echo "$(date '+%H:%M:%S') ⬆ Pushed local changes"
+            log "⬆ Pushed: $files"
         else
-            echo "$(date '+%H:%M:%S') ⚠ Push failed, will retry"
+            log "⚠ Push failed, will retry"
         fi
     fi
 }
@@ -36,26 +45,39 @@ do_pull() {
     REMOTE=$(git rev-parse origin/main 2>/dev/null)
     if [ "$LOCAL" != "$REMOTE" ]; then
         git pull --rebase origin main --quiet 2>/dev/null
-        echo "$(date '+%H:%M:%S') ⬇ Pulled remote changes"
+        log "⬇ Pulled remote changes"
     fi
 }
 
-# Start fswatch in background for local changes
-fswatch -o -e "\.git" -r "$REPO_DIR" | while read _; do
-    sleep 2  # debounce
-    do_push
-done &
+# Use a temp file to signal changes (avoids pipe subshell buffering)
+TRIGGER="/tmp/sync-trigger-$$"
+
+# fswatch writes to trigger file
+fswatch -o -e "\.git" -r "$REPO_DIR" > "$TRIGGER" &
 WATCH_PID=$!
 
-# Poll remote periodically
+# Main loop: check for local changes + poll remote
+trap "kill $WATCH_PID 2>/dev/null; rm -f '$TRIGGER'; log 'Sync stopped'; echo ''; echo 'Sync stopped.'; exit 0" INT TERM
+
+LAST_SIZE=0
 while true; do
-    do_pull
-    sleep $POLL_INTERVAL
-done &
-POLL_PID=$!
+    # Check if fswatch detected changes
+    if [ -f "$TRIGGER" ]; then
+        CUR_SIZE=$(wc -c < "$TRIGGER" 2>/dev/null || echo 0)
+        if [ "$CUR_SIZE" != "$LAST_SIZE" ]; then
+            LAST_SIZE=$CUR_SIZE
+            sleep 2  # debounce
+            do_push
+        fi
+    fi
 
-# Cleanup on exit
-trap "kill $WATCH_PID $POLL_PID 2>/dev/null; echo ''; echo 'Sync stopped.'; exit 0" INT TERM
+    # Poll remote every POLL_INTERVAL cycles (each cycle ~3s)
+    COUNTER=${COUNTER:-0}
+    COUNTER=$((COUNTER + 1))
+    if [ $COUNTER -ge $((POLL_INTERVAL / 3)) ]; then
+        do_pull
+        COUNTER=0
+    fi
 
-# Keep alive
-wait
+    sleep 3
+done
