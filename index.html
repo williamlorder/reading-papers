@@ -56,10 +56,6 @@ h1 { font-size: 1.6rem; margin-bottom: 6px; }
 <div id="content"><div class="loading">Loading...</div></div>
 
 <script>
-var REPO = "williamlorder/reading-papers";
-var API = "https://api.github.com/repos/" + REPO + "/git/trees/main?recursive=1";
-var COMMITS_API = "https://api.github.com/repos/" + REPO + "/commits?per_page=100";
-
 var SECTIONS = {
   Reading: { exts: /\.html?$/i },
   output: { exts: /\.html?$/i },
@@ -67,55 +63,23 @@ var SECTIONS = {
 };
 
 var allFiles = {};
-var fileDates = {};
 var currentTab = "Reading";
 var currentSort = "name";
 
 async function loadFiles() {
   try {
-    var res = await fetch(API);
+    var res = await fetch("files.json?t=" + Date.now());
     if (!res.ok) throw new Error(res.status);
-    var data = await res.json();
-    var tree = data.tree.filter(function(f) {
-      return f.type === "blob" && f.path !== "index.html" && f.path !== "push.sh" && f.path !== "sync.sh";
-    });
+    var files = await res.json();
 
     Object.keys(SECTIONS).forEach(function(key) {
       var sec = SECTIONS[key];
-      allFiles[key] = tree.filter(function(f) {
-        return f.path.startsWith(key + "/") && sec.exts.test(f.path);
+      allFiles[key] = files.filter(function(f) {
+        return f.section === key && sec.exts.test(f.path);
       });
       var el = document.getElementById("c-" + key);
       if (el) el.textContent = "(" + allFiles[key].length + ")";
     });
-
-    // Try to get commit dates for files
-    try {
-      var cres = await fetch(COMMITS_API);
-      if (cres.ok) {
-        var commits = await cres.json();
-        commits.forEach(function(c) {
-          var date = c.commit.author.date.slice(0, 10);
-          var msg = c.commit.message || "";
-          // Extract file info from commit
-          if (!fileDates._default) fileDates._default = date;
-        });
-        // Use commit dates as approximate file dates
-        // For each file, try to extract date from filename or use latest commit
-        Object.keys(allFiles).forEach(function(key) {
-          allFiles[key].forEach(function(f) {
-            var name = f.path.split("/").pop();
-            // Try to extract date pattern from filename (2026_3_11, 2026年3月11日, etc.)
-            var m = name.match(/(\d{4})[_年-](\d{1,2})[_月-](\d{1,2})/);
-            if (m) {
-              f.date = m[1] + "-" + m[2].padStart(2,"0") + "-" + m[3].padStart(2,"0");
-            } else {
-              f.date = commits.length > 0 ? commits[0].commit.author.date.slice(0, 10) : "";
-            }
-          });
-        });
-      }
-    } catch(e) {}
 
     buildDateFilter();
     renderSection(currentTab);
