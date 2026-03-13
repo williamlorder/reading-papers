@@ -1,0 +1,2911 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="[Author Names Blinded for Review]" />
+  <title>The Discordant Self: A Longitudinal Response Surface Analysis of Objective-Subjective Health Congruence and Well-being in Older Americans</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    div.abstract {
+      margin: 2em 2em 2em 2em;
+      text-align: left;
+      font-size: 85%;
+    }
+    div.abstract-title {
+      font-weight: bold;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0.5em;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/contrib/auto-render.min.js"></script>
+  <style>
+  /* Computer Modern Serif - LaTeX default font */
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunrm.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunbx.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunti.woff') format('woff');
+      font-weight: normal;
+      font-style: italic;
+  }
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunbi.woff') format('woff');
+      font-weight: bold;
+      font-style: italic;
+  }
+
+  body {line-height: 2em; font-size: 12pt}
+
+  p {text-indent: 0.5in; margin: 0; line-height: 2em}
+  div.Author p {
+    text-indent: 0;
+  }
+  .FigureTitle {font-weight: bold; margin: 5pt 0; font-size: 12pt; color: black;}
+  .FigureTitle p {text-indent: 0; text-align: left;}
+  .FigureNote p {text-indent: 0; margin: 0; padding: 0}
+  .Caption {font-style: italic; font-size: 12pt; color: black; text-align: left}
+  .Caption p {text-indent: 0; font-size: 12pt;}
+  .quarto-float, .quarto-float-tbl, .figure {margin: 0; margin-block-start: 0; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0}
+
+  h1, h2, h3, h4, h5 {border: none; margin: 0; padding: 0;line-height: 2; text-indent: 0 }
+
+  h1 {text-align: center;}
+  h3 {font-style: italic}
+  h4 {font-weight: bold}
+
+  h4, h5 {
+  text-indent: 0.5in;
+  display:inline-block;
+  margin: 0
+  }
+
+  h5 {
+    font-style: italic;
+  }
+
+  h4 + p, h5 + p {
+    display:inline;
+    text-indent: 0;
+  }
+
+
+  .Compact {
+    line-height: 1em;
+    text-indent: 0;
+    margin: 0;
+  }
+
+
+
+
+
+
+  td p, th p, li p {text-indent: 0; margin: 0;}
+
+
+
+  li p {text-indent: 0; margin: 0;}
+
+  .subtitle {font-size: 12pt; text-align: center; color: #303030; font-weight: bold;}
+
+  blockquote, .blockquote {border: none; margin: 0 .5in; padding: 0; font-style: normal; color: #303030;}
+
+  .Author {text-align:center; text-indent: 0}
+
+  .cell-output-display p {text-indent: 0}
+
+  div.hanging-indent {margin-left: 0.5in; text-indent: -0.5in}
+
+  div.hanging-indent .csl-entry {margin-left: 0; text-indent: -0.5in;}
+
+  .katex {font-size: 1em;}
+  .katex-display {font-size: 1.1em;}
+
+  .NoIndent p {text-indent: 0}
+
+  blockquote p:nth-child(1) {text-indent: 0}
+
+  table {
+      font-variant-numeric: tabular-nums;
+  }
+
+  .table {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .table>thead {
+    border-bottom: 1px solid black;
+  }
+
+  .table>:not(caption)>*>* {
+    border-bottom: none;
+  }
+
+  .tabwid {padding: 0}
+
+  .AbstractFirstParagraph p {text-indent: 0}
+
+
+  /* Override fonts to Computer Modern */
+  body {
+      font-family: 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+      font-family: 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;
+  }
+  code, pre {
+      font-family: 'Computer Modern Typewriter', 'Courier New', monospace;
+  }
+
+  /* KaTeX: match font size and weight to body text */
+  .katex {
+      font-size: 1.0em;
+      font-weight: normal;
+  }
+  .katex .mathnormal,
+  .katex .mathit {
+      font-weight: normal;
+  }
+  .katex .mathbf {
+      font-weight: bold;
+  }
+
+  /* Screen adaptation overrides for web viewing */
+  @media screen {
+      html { font-size: 12pt; }
+      body {
+          max-width: 52em;
+          margin: 2em auto;
+          padding: 0 2em;
+          column-count: 1;
+      }
+      figure img { max-width: 100%; height: auto; }
+      .math.display { overflow-x: auto; margin: 1.2em 0; }
+      pre {
+          overflow-x: auto;
+          background: #f5f5f5;
+          padding: 0.8em;
+          border-radius: 4px;
+      }
+  }
+  </style>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+          delimiters: [
+              {left: "$$", right: "$$", display: true},
+              {left: "\\[", right: "\\]", display: true},
+              {left: "$", right: "$", display: false},
+              {left: "\\(", right: "\\)", display: false}
+          ],
+          throwOnError: false
+      });
+  });
+  </script>
+  <script defer=""
+  src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title"><strong>The Discordant Self: A Longitudinal Response
+Surface Analysis of Objective-Subjective Health Congruence and
+Well-being in Older Americans</strong></h1>
+<p class="author">[Author Names Blinded for Review]</p>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+<p>A persistent puzzle in medical sociology is why people with
+comparable physical limitations often differ so profoundly in their
+subjective well-being. Most prior research either treats self-rated
+health (SRH) and objective functional status as independent predictors
+or conflates them through difference-score methods that obscure the
+geometry of alignment. Drawing on the Health and Retirement Study (HRS)
+Waves 9–14 (2008–2018; <span class="math inline">N = 6{,}708</span>
+individuals; 40,248 person-waves), we apply response surface analysis
+(RSA) to examine how the joint configuration of objective health
+(standardized ADL+IADL functional limitation count) and SRH shapes life
+satisfaction. Three findings emerge. Congruence between objective and
+subjective health is positively associated with life satisfaction (<span
+class="math inline">a_1 = 0.373</span>, <span class="math inline">p &lt;
+.001</span>): when older Americans’ self-assessments align with their
+functional status, their well-being is higher. When misalignment exists,
+however, the direction matters: optimistic self-appraisers—those who
+perceive themselves as healthier than their functional limitations
+suggest—report significantly higher satisfaction than pessimistic
+self-appraisers who underestimate their health (<span
+class="math inline">a_3 = -0.143</span>, <span class="math inline">p
+&lt; .001</span>). Bootstrap-based longitudinal tests across six
+biennial waves confirm that both effects are remarkably stable over 10
+years of aging; only the curvature along the congruence line shows
+modest temporal change. These findings reframe health discordance as a
+substantively meaningful psychosocial phenomenon rather than measurement
+noise, support theoretical accounts linking self-enhancing health
+cognition to well-being, and carry implications for how medical
+sociology conceptualizes the subjective-objective divide in aging
+populations.</p>
+</div>
+</header>
+<p><em>Keywords</em>: self-rated health; functional limitations; health
+congruence; response surface analysis; life satisfaction; Health and
+Retirement Study; aging</p>
+<h1 class="unnumbered" id="introduction">Introduction</h1>
+<p>Among the most durable findings in the sociology of health is that
+how people <em>feel</em> about their health often diverges from what
+their bodies <em>do</em>. Clinicians observe patients who rate their
+health as excellent despite accumulating limitations; survey researchers
+encounter respondents who report feeling sick yet demonstrate surprising
+functional capacity. This divergence between subjective health appraisal
+and objective functional status has been catalogued since the earliest
+longitudinal studies of aging <span class="citation"
+data-cites="maddox1973 idler1997">(Maddox and Douglass 1973; Idler and
+Benyamini 1997)</span>. Yet its systematic consequences for subjective
+well-being—how different forms and directions of health discordance
+shape the experience of a good life—remain theoretically underdeveloped
+and empirically unresolved.</p>
+<p>The stakes of this puzzle extend well beyond measurement. Self-rated
+health (SRH) is among the most powerful predictors of mortality,
+hospitalization, and functional decline in the gerontological literature
+<span class="citation"
+data-cites="mossey1982 idler1997 benyamini2011">(Mossey and Shapiro
+1982; Idler and Benyamini 1997; Benyamini 2011)</span>. Its predictive
+power has, remarkably, <em>increased</em> over recent decades <span
+class="citation" data-cites="schnittker2014">(Schnittker and Baćak
+2014)</span>, suggesting that self-assessment encodes information about
+health trajectories beyond what standard clinical measures capture <span
+class="citation" data-cites="jylha2009">(Jylhä 2009)</span>. Meanwhile,
+life satisfaction—the cognitive evaluation of one’s life as a whole—is
+itself consequential for health and longevity <span class="citation"
+data-cites="steptoe2015">(Steptoe et al. 2015)</span>. Understanding how
+health self-perceptions and functional capacities <em>jointly</em>
+configure the landscape of well-being in late life is therefore not
+merely descriptive but theoretically and practically significant.</p>
+<p>Prior research has addressed this question in two limited ways. The
+first tradition examines SRH and objective health as independent
+predictors of well-being, finding both to be positively associated with
+life satisfaction <span class="citation"
+data-cites="okun1984 menec2003">(Okun et al. 1984; Menec 2003)</span>.
+This approach cannot capture whether congruence between the two measures
+matters above and beyond their individual effects. The second tradition
+uses difference scores (SRH minus objective health, or vice versa) to
+operationalize misalignment, a strategy that imposes strong and
+typically unverified assumptions about the symmetry and linearity of
+discordance effects <span class="citation"
+data-cites="edwards1993">(Edwards and Parry 1993)</span>. Both
+approaches leave unanswered a more fundamental question: <em>when
+objective and subjective health diverge, does it matter in which
+direction?</em></p>
+<p>Theoretical arguments would predict that it should. From positive
+psychology, research on self-enhancing cognition suggests that slightly
+inflated self-assessments—relative to objective reality—are adaptive
+rather than pathological <span class="citation"
+data-cites="taylor1988">(Taylor and Brown 1988)</span>. Applied to
+health, this would predict that optimistic health self-appraisal
+(perceiving oneself as healthier than objective limitations imply)
+sustains the psychological resources—sense of control, mastery,
+coherence—that underpin subjective well-being <span class="citation"
+data-cites="pearlin1981">(Pearlin et al. 1981)</span>. Conversely,
+pessimistic self-appraisal (perceiving worse health than objective
+status warrants) may deplete these resources, amplifying the adverse
+effects of functional decline. Yet this directional asymmetry has never
+been formally tested in a large, longitudinal, population-based cohort
+using methods appropriate to congruence analysis.</p>
+<p>We address this gap by applying response surface analysis (RSA) to
+six biennial waves of the Health and Retirement Study (HRS), a
+nationally representative panel of older Americans. RSA, developed by
+<span class="citation" data-cites="edwards1993">Edwards and Parry
+(1993)</span> and formalized for use in the social sciences by <span
+class="citation" data-cites="nestler2019">Nestler et al. (2019)</span>,
+models the full second-order polynomial surface relating two predictors
+to an outcome without the restrictive assumptions of difference scores.
+This allows us to simultaneously estimate (a) how life satisfaction
+changes as objective and subjective health move together along the line
+of congruence, (b) whether that relationship is linear or curved, and
+(c) whether incongruence effects differ depending on which health
+indicator is dominant. We further employ bootstrap-based longitudinal
+tests across all six waves to assess whether these surface patterns are
+stable, increasing, or diminishing as respondents age.</p>
+<p>Our contribution is threefold. Methodologically, we introduce RSA to
+the study of objective-subjective health misalignment, demonstrating its
+advantages over conventional difference-score approaches. Theoretically,
+we provide the first systematic longitudinal evidence that the
+<em>direction</em> of health discordance matters for well-being in ways
+consistent with positive self-enhancement theory. Empirically, we
+establish that these patterns are structurally stable across a decade of
+aging in a nationally representative cohort, suggesting that health
+discordance shapes well-being trajectories rather than merely reflecting
+measurement error.</p>
+<h1 class="unnumbered" id="background">Background</h1>
+<h2 class="unnumbered"
+id="the-measurement-gap-when-objective-and-subjective-health-diverge">The
+Measurement Gap: When Objective and Subjective Health Diverge</h2>
+<p>The gap between objective and subjective health has been a defining
+methodological and substantive concern in health sociology since Maddox
+and Douglass’s <span class="citation"
+data-cites="maddox1973">(1973)</span> foundational demonstration that
+physicians’ and patients’ health ratings frequently diverge.
+Contemporary research operationalizes this gap in diverse ways: between
+physician-assessed conditions and SRH, between performance-based
+physical tests and functional self-reports, and—as in the present
+study—between observed functional limitations (Activities of Daily
+Living [ADL] and Instrumental Activities of Daily Living [IADL]) and
+global health self-appraisal <span class="citation"
+data-cites="katz1976 lawton1969">(Katz and Akpom 1976; Lawton and Brody
+1969)</span>.</p>
+<p>A substantial literature now establishes that SRH is a valid global
+health indicator, not merely an artifact of individual psychology. <span
+class="citation" data-cites="jylha2009">Jylhä (2009)</span>
+conceptualizes SRH as a multidimensional “health competence” assessment
+that integrates biomedical information, symptom experience, functional
+capacity, social comparisons, and health values. Its robust prospective
+prediction of mortality—across 27 community studies <span
+class="citation" data-cites="idler1997">(Idler and Benyamini
+1997)</span> and extending to biomarker-level mechanisms <span
+class="citation" data-cites="benyamini2011">(Benyamini
+2011)</span>—confirms that SRH captures health-relevant information that
+complements, rather than duplicates, objective measures. <span
+class="citation" data-cites="schnittker2014">Schnittker and Baćak
+(2014)</span> show, using linked survey-clinical data, that SRH’s
+predictive validity has strengthened over time, plausibly because
+physiological heterogeneity at any given level of disease burden has
+increased as older populations survive to later ages.</p>
+<p>Yet this very validity raises the question: when SRH and objective
+health diverge, which is “right,” and what are the consequences? In
+surveys with repeated measures, misalignment is far from rare. Among the
+older Americans in our analytic sample, only 37% show congruence between
+standardized functional status and SRH; nearly half (47%) rate their
+health worse than their functional status alone would predict
+(pessimistic misalignment), while 16% rate their health better than
+functional status predicts (optimistic misalignment). Such patterns are
+not idiosyncratic but reflect systematic social processes: SRH
+integrates social comparisons with age-peers <span class="citation"
+data-cites="mechanic1987">(Mechanic and Hansell 1987)</span>, cultural
+norms about stoicism and complaint <span class="citation"
+data-cites="bailis2003">(Bailis et al. 2003)</span>, socioeconomic
+positioning that shapes both resources and reference groups <span
+class="citation" data-cites="prus2011">(Prus 2011)</span>, and racial
+and ethnic health cultures <span class="citation"
+data-cites="farmer2005">(Farmer and Ferraro 2005)</span>. Objective
+functional limitations, by contrast, are comparatively insensitive to
+these psychosocial modifiers, capturing only whether a person can
+perform discrete tasks.</p>
+<p>Crucially, these two health dimensions have independent consequences
+for outcomes. <span class="citation" data-cites="herd2007">Herd et al.
+(2007)</span> demonstrate that the pathways through which SRH and
+functional limitations shape health are distinct, while <span
+class="citation" data-cites="crimmins1996">Crimmins et al. (1996)</span>
+show that the gap between active and total life expectancy depends on
+how both subjective and functional health evolve over the life course.
+Against this backdrop, treating the two health dimensions as
+interchangeable or collapsing them into a single difference score
+ignores theoretically meaningful heterogeneity in their joint
+configuration.</p>
+<p>From a sociological standpoint, health discordance is best understood
+not as individual cognitive error but as a socially structured
+phenomenon. The degree to which SRH tracks objective functional status
+depends on access to health information (which is distributed along
+educational and socioeconomic gradients), cultural frameworks for
+interpreting bodily experience (which vary by gender and
+race/ethnicity), and social comparison referents (which are shaped by
+neighborhood, occupational, and peer contexts). <span class="citation"
+data-cites="mirowsky2008">Mirowsky and Ross (2008)</span> argue that
+SRH’s measurement properties themselves reflect the social distribution
+of health knowledge: among more educated respondents, SRH more tightly
+integrates biomedical information and thus more closely tracks clinical
+measures. The <em>amount</em> and <em>direction</em> of health
+discordance thus function as social indicators, mapping the unequal
+access to health knowledge and the variable cultural salience of
+physical limitation across stratification systems.</p>
+<h2 class="unnumbered"
+id="health-discordance-psychological-resources-and-well-being">Health
+Discordance, Psychological Resources, and Well-Being</h2>
+<p>Whether health discordance matters for well-being, and in which
+direction, is theoretically contested. Three distinct accounts generate
+competing predictions.</p>
+<p>The <em>congruence hypothesis</em> holds that alignment between
+objective and subjective health is intrinsically beneficial, independent
+of the level of health. Drawing on cognitive consistency theory, this
+view predicts that when self-assessments and objective reality are
+aligned, individuals experience less cognitive dissonance, can engage in
+more accurate health-related decision-making, and maintain a coherent
+self-schema <span class="citation" data-cites="bailis2003">(Bailis et
+al. 2003)</span>. Congruence also facilitates the acceptance of
+functional decline that clinical psychology associates with adaptive
+aging <span class="citation" data-cites="hertzog2003">(Hertzog and
+Nesselroade 2003)</span>. Under this hypothesis, we expect positive
+effects of health alignment on well-being regardless of whether both
+health indicators are high or low.</p>
+<p>The <em>optimism advantage hypothesis</em> draws on <span
+class="citation" data-cites="taylor1988">Taylor and Brown
+(1988)</span>’s influential theory of positive illusions, which proposes
+that self-enhancing perceptions—mildly inflated assessments of one’s own
+attributes—are normative, adaptive, and associated with psychological
+well-being in healthy populations. Applied to health, this argument
+predicts that older adults who perceive themselves as healthier than
+their functional limitations suggest (optimistic misalignment) will
+experience higher well-being than those whose self-assessments
+accurately track or underestimate their limitations. The mechanism is
+resource preservation: optimistic health perceptions sustain the sense
+of control, perceived efficacy, and future orientation that Pearlin’s
+stress process model identifies as central buffering resources against
+the health stressors of aging <span class="citation"
+data-cites="pearlin1981 pearlin1999">(Pearlin et al. 1981; Pearlin
+1999)</span>. Consistent with this, <span class="citation"
+data-cites="benyamini2011">Benyamini (2011)</span> reviews evidence that
+positive health expectations—independent of objective status—predict
+better health behaviors and lower mortality, plausibly through their
+effects on motivation and persistence.</p>
+<p>The <em>pessimism penalty hypothesis</em> is the mirror image: those
+who underestimate their health relative to their functional capacity
+(pessimistic misalignment) may experience disproportionately poor
+well-being because they fail to draw on the psychological resources
+their functional status could support. <span class="citation"
+data-cites="mechanic1987">Mechanic and Hansell (1987)</span> shows that
+health self-concept is a key mediator of the relationship between
+symptoms and functional outcomes; a systematically negative health
+self-concept may constitute a chronic stressor that independently
+depletes well-being <span class="citation"
+data-cites="pearlin1981">(Pearlin et al. 1981)</span>. Importantly,
+pessimistic misalignment is also structurally patterned: older African
+Americans, women, and those in lower socioeconomic positions are more
+likely to report worse health than their functional status predicts
+<span class="citation" data-cites="farmer2005 mirowsky2008">(Farmer and
+Ferraro 2005; Mirowsky and Ross 2008)</span>, raising questions about
+whether discordance-related well-being differences may reinforce broader
+health inequalities.</p>
+<p>These three theoretical accounts generate distinct and empirically
+distinguishable predictions at the level of the RSA surface parameters.
+Under the congruence hypothesis alone, we expect a positive <span
+class="math inline">a_1</span> (life satisfaction rises as both health
+measures move together) and an <span class="math inline">a_3</span> near
+zero (alignment matters, but direction does not). The optimism advantage
+hypothesis additionally predicts a negative <span
+class="math inline">a_3</span>: for any given degree of misalignment,
+the surface is higher in the <span class="math inline">Y &gt; X</span>
+(optimistic) region than in the <span class="math inline">X &gt;
+Y</span> (pessimistic) region. The pessimism penalty hypothesis
+generates the same directional prediction for <span
+class="math inline">a_3</span> but attributes the asymmetry to the
+amplified costs of negative self-assessment rather than to the positive
+value of optimism. These accounts thus agree on the sign of <span
+class="math inline">a_3</span> while differing in their emphasis on gain
+versus loss. Curvature parameters <span class="math inline">a_2</span>
+and <span class="math inline">a_4</span> provide additional information:
+a negative <span class="math inline">a_2</span> (inverted-U along the
+LOC) would indicate diminishing returns to health congruence at extreme
+levels, while a non-zero <span class="math inline">a_4</span> would
+indicate asymmetric curvature in the misalignment region. Our analysis
+tests all five parameters simultaneously.</p>
+<p>Critically, neither the congruence hypothesis nor the directional
+asymmetry hypotheses can be adequately tested with the methods
+conventionally employed in this literature. Treating SRH and functional
+health as independent predictors in regression models cannot estimate
+the surface curvature that distinguishes a congruence effect from
+additive effects. Difference-score approaches impose symmetry by
+construction: the “cost” of being one standard deviation above the
+congruence line is assumed to equal the cost of being one standard
+deviation below it. RSA removes these restrictions, estimating the
+response surface freely from polynomial terms and then deriving
+interpretable summary parameters.</p>
+<h2 class="unnumbered"
+id="longitudinal-perspectives-on-health-discordance">Longitudinal
+Perspectives on Health Discordance</h2>
+<p>A final gap in the literature concerns temporal dynamics.
+Cross-sectional studies identify associations between health discordance
+and well-being at a single time point but cannot distinguish stable
+structural patterns from transitory states. Longitudinal evidence is
+essential for two reasons.</p>
+<p>First, the experience of aging is itself a process of recalibrating
+health self-perceptions to evolving functional realities. <span
+class="citation" data-cites="dannefer2003">Dannefer (2003)</span>’s
+cumulative advantage/disadvantage framework predicts that health-related
+psychological resources compound or erode over time, and health
+discordance may be a mechanism through which this compounding occurs. If
+optimistic health illusions are adaptive resources, we would expect
+their effects to persist or strengthen over time. If they are instead a
+fragile response to early functional challenge that later becomes
+untenable, we would expect the optimism advantage to diminish as
+functional decline deepens.</p>
+<p>Second, many observed associations between health measures and
+well-being may reflect between-person differences in health trajectories
+rather than within-person congruence dynamics. An individual who was
+always healthier by both objective and subjective standards will show a
+different congruence pattern than one whose functional limitations
+accelerated before her self-perceptions adjusted. The HRS’s panel
+design—with six biennial waves spanning 2008 to 2018—enables us to track
+whether the surface parameters describing health-well-being
+relationships remain structurally constant across these aging
+trajectories, providing a direct longitudinal test of temporal
+stability.</p>
+<h1 class="unnumbered" id="data-and-methods">Data and Methods</h1>
+<h2 class="unnumbered" id="data-and-sample">Data and Sample</h2>
+<p>Data come from the Health and Retirement Study (HRS) <span
+class="citation" data-cites="hrs2020">(Health and Retirement Study
+2020)</span>, a nationally representative longitudinal panel survey of
+Americans aged 50 and older administered by the University of Michigan
+with support from the National Institute on Aging. We utilize Waves 9
+through 14 (2008–2018), which correspond to biennial survey rounds
+conducted approximately every two years.</p>
+<p>Our analytic sample consists of HRS respondents who (1) were aged 60
+or older at Wave 9 (2008), (2) had no more than two missing observations
+across waves on each of the three focal variables (life satisfaction,
+ADL/IADL count, and SRH), and (3) were present in the HRS from Wave 9
+onward. This procedure yielded a balanced panel of 6,708 individuals
+providing 40,248 person-wave observations across six waves. Among the
+60+ population present in Wave 9, we excluded those with more than two
+missing waves on any key variable (see Supplementary Materials for full
+attrition details).</p>
+<h2 class="unnumbered" id="missing-data-and-sample-attrition">Missing
+Data and Sample Attrition</h2>
+<p>Mortality is a primary mechanism of attrition in aging panels. Our
+inclusion criterion of <span class="math inline">\leq 2</span> missing
+waves on key variables is designed to maximize the retention of
+participants while acknowledging that some attrition is non-random. For
+the 6,708 individuals in our sample, by design each contributes
+observations across all six waves; however, because the data include
+imputed values for missing biennial observations (see below), the
+effective structure is a balanced panel. Variables measured at the
+person level (age, race, education) were drawn from the wave-9
+observation or, where missing, from the earliest available wave.</p>
+<p>Missing values on time-varying covariates (marital status,
+employment, insurance, wealth) were imputed using the
+<em>missRanger</em> algorithm <span class="citation"
+data-cites="missRanger">(Mayer 2023)</span>, a random forest-based
+multiple imputation procedure that handles multivariate missingness
+patterns with predictive mean matching. This procedure was implemented
+prior to analysis on the analysis-ready dataset; the bootstrap
+confidence intervals reported in longitudinal analyses therefore account
+for the residual uncertainty introduced by imputation.</p>
+<h2 class="unnumbered" id="measures">Measures</h2>
+<p><em>Life Satisfaction (Outcome).</em> Life satisfaction was measured
+using the single-item global life satisfaction question (“All things
+considered, how satisfied are you with your life these days?”; 1 = not
+at all satisfied, 5 = completely satisfied). This item was standardized
+(<span class="math inline">M \approx 0</span>, <span
+class="math inline">SD \approx 1</span>) across the full person-wave
+sample and serves as the outcome variable (<span
+class="math inline">Z</span>) in all RSA models. Single-item life
+satisfaction measures have demonstrated convergent validity with
+multi-item scales in nationally representative samples <span
+class="citation" data-cites="steptoe2015">(Steptoe et al. 2015)</span>
+and are standard in gerontological panel research.</p>
+<p><em>Objective Health (Predictor X).</em> Objective functional health
+was operationalized as the count of limitations on Activities of Daily
+Living (ADL) and Instrumental Activities of Daily Living (IADL), which
+together form a well-validated composite measure of functional status in
+older adults <span class="citation"
+data-cites="katz1976 lawton1969">(Katz and Akpom 1976; Lawton and Brody
+1969)</span>. The ADL scale (range 0–6) assessed limitations in bathing,
+dressing, eating, transferring, walking, and toileting; the IADL scale
+(range 0–5) assessed limitations in using maps, managing medication,
+handling finances, making telephone calls, and grocery shopping. We
+summed ADL and IADL items (range 0–11), reverse-coded so that higher
+values indicate better functional health, and standardized across the
+full sample (<span class="math inline">M \approx 0</span>, <span
+class="math inline">SD \approx 1</span>) to yield the predictor variable
+<span class="math inline">X</span>.</p>
+<p><em>Self-Rated Health (Predictor Y).</em> Self-rated health was
+measured using the standard five-point global SRH question (“Would you
+say your health is excellent, very good, good, fair, or poor?”; 1 =
+poor, 5 = excellent), standardized across the full sample (<span
+class="math inline">M \approx 0</span>, <span class="math inline">SD
+\approx 1</span>) to yield predictor <span
+class="math inline">Y</span>.</p>
+<p><em>Control Variables.</em> Following prior research on health and
+well-being in aging populations <span class="citation"
+data-cites="herd2007 house1994">(Herd et al. 2007; House et al.
+1994)</span>, we control for age (continuous, in years at wave),
+biennial survey wave (linear trend), subjective social status (Cantril
+Self-Anchoring Ladder, 1–10; <span class="citation"
+data-cites="singh-manoux2005">Singh-Manoux et al. (2005)</span>),
+log-transformed non-housing wealth (with negative wealth set to 0 before
+transformation), marital status (Married/Partnered as reference;
+Divorced or Separated; Widowed; Never Married), race/ethnicity
+(Non-Hispanic White as reference; Non-Hispanic Black; Hispanic; Other),
+U.S. Census region (South as reference; Northeast; Midwest; West),
+current labor force participation (Yes/No), and health insurance
+coverage (Yes/No).</p>
+<h2 class="unnumbered"
+id="analytic-strategy-response-surface-analysis">Analytic Strategy:
+Response Surface Analysis</h2>
+<p>RSA estimates the full second-order polynomial surface relating two
+predictors <span class="math inline">X</span> and <span
+class="math inline">Y</span> to outcome <span
+class="math inline">Z</span>: <span
+class="math display">\begin{equation}
+Z = b_0 + b_1 X + b_2 Y + b_3 X^2 + b_4 XY + b_5 Y^2 +
+\mathbf{C}\boldsymbol{\gamma} + \varepsilon
+\label{eq:poly}
+\end{equation}</span> where <span class="math inline">\mathbf{C}</span>
+is a matrix of control variables and <span
+class="math inline">\boldsymbol{\gamma}</span> the corresponding
+coefficient vector. From the five polynomial coefficients <span
+class="math inline">b_1</span>–<span class="math inline">b_5</span>, RSA
+derives five theoretically interpretable surface parameters: <span
+class="math display">\begin{align}
+a_1 &amp;= b_1 + b_2 \label{eq:a1} \\
+a_2 &amp;= b_3 + b_4 + b_5 \label{eq:a2} \\
+a_3 &amp;= b_1 - b_2 \label{eq:a3} \\
+a_4 &amp;= b_3 - b_4 + b_5 \label{eq:a4} \\
+a_5 &amp;= b_3 - b_5 \label{eq:a5}
+\end{align}</span></p>
+<p>Parameters <span class="math inline">a_1</span> and <span
+class="math inline">a_2</span> describe the slope and curvature of the
+response surface along the <em>line of congruence</em> (LOC; <span
+class="math inline">X = Y</span>), where both predictors take equal
+values. A positive <span class="math inline">a_1</span> indicates that
+life satisfaction increases as both health indicators are congruently
+higher; a negative <span class="math inline">a_2</span> indicates an
+inverted-U curvature along the congruence line. Parameters <span
+class="math inline">a_3</span> and <span class="math inline">a_4</span>
+describe the slope and curvature along the <em>line of incongruence</em>
+(LOIC; <span class="math inline">X = -Y</span>), the diagonal where the
+two predictors are maximally opposed. A negative <span
+class="math inline">a_3</span> indicates that the surface is higher on
+the side where <span class="math inline">Y &gt; X</span>—that is, where
+self-rated health exceeds objective functional health—signaling an
+optimism advantage in the direction of misalignment. Parameter <span
+class="math inline">a_5</span> describes the rotation of the first
+principal axis of the surface relative to the LOC <span class="citation"
+data-cites="edwards1993 nestler2019">(Edwards and Parry 1993; Nestler et
+al. 2019)</span>.</p>
+<p>RSA was implemented using the <em>RSA</em> R package <span
+class="citation" data-cites="RSA_package">(Schönbrodt 2016)</span>,
+which estimates polynomial models using lavaan structural equation
+modeling and derives surface parameters using the delta method <span
+class="citation" data-cites="nestler2019">(Nestler et al. 2019)</span>.
+All 95% confidence intervals reported for the main pooled model draw on
+a 5,000-replication parametric bootstrap anchored to the SEM-estimated
+parameter distributions (pre-computed and stored in the analysis
+workspace).</p>
+<p>An important caveat concerns the pooled model’s standard errors.
+Because the pooled dataset stacks 40,248 person-wave observations from
+6,708 individuals, the lavaan SEM-derived standard errors treat each
+observation as independent and do not account for within-person
+correlation across waves. In a fully hierarchical framework, this would
+require person-cluster robust or multilevel SEs. We address this
+limitation in two ways. First, the wave-specific longitudinal analyses
+(Section 4.3) are estimated separately for each wave and rely on
+person-cluster bootstrap CIs (sampling respondents with replacement),
+which explicitly account for the hierarchical data structure. Second,
+the robustness of the pooled estimates to within-person correlation is
+indirectly supported by the high consistency of surface parameters
+across all six individual-wave models. Readers should interpret the
+pooled model’s CIs as reflecting cross-sectional precision at the
+person-wave level; the wave-specific person-cluster bootstrap estimates
+provide our primary basis for inference about effect magnitudes and
+temporal stability.</p>
+<p><em>Wave-by-Wave RSA and Temporal Stability Tests.</em> To assess
+temporal stability of surface patterns, we estimated RSA models
+separately for each of the six waves (9–14), maintaining identical
+control variable specifications. Each wave-specific model is a standard
+cross-sectional RSA using between-person variation at that wave; this
+design does not estimate within-person trajectories but rather tests
+whether the <em>surface geometry</em> governing the health-wellbeing
+relationship is structurally invariant across aging cohorts observed at
+different time points. This yielded six sets of surface parameters
+(<span class="math inline">a_1</span>–<span
+class="math inline">a_5</span>) with their standard errors and 95%
+confidence intervals. We then used person-level cluster bootstrapping
+(5,000 replications; sampling respondents with replacement) to formally
+test whether each parameter differed significantly between any two
+waves, computing all 15 pairwise wave comparisons for each of the five
+RSA parameters, yielding 75 bootstrap difference tests. This approach
+accounts for the hierarchical structure of the data (repeated
+observations nested within persons) and provides robust inference about
+parameter stability that is appropriately adjusted for within-person
+correlation.</p>
+<h1 class="unnumbered" id="results">Results</h1>
+<h2 class="unnumbered" id="descriptive-statistics">Descriptive
+Statistics</h2>
+<p>Table 1 presents baseline characteristics of the analytic sample at
+Wave 9 (2008). Respondents had a mean age of 69.8 years (<span
+class="math inline">SD = 6.4</span>; range 60–93) and were predominantly
+female (61.0%), Non-Hispanic White (76.4%), and married (64.5%). Mean
+educational attainment was 12.75 years (<span class="math inline">SD =
+3.07</span>), and a third (33.4%) were currently working. The sample’s
+health profile reflected the expected functional heterogeneity of a
+community-dwelling older adult population: standardized objective health
+(<span class="math inline">X</span>) and SRH (<span
+class="math inline">Y</span>) were both modestly above the
+overall-sample mean at Wave 9, as Wave 9 respondents are relatively
+younger and healthier on average than later-wave survivors.</p>
+<p>The distribution of health congruence at baseline warrants particular
+attention. Only 37.1% of respondents fell within the congruent zone
+(within 0.5 SD of the <span class="math inline">X = Y</span> diagonal),
+while 47.4% exhibited pessimistic misalignment—rating their health more
+poorly than their functional status predicted—and 15.5% showed
+optimistic misalignment. These proportions are consistent with broader
+patterns in aging research: functional health, measured as the capacity
+to perform specific tasks, tends to remain intact longer than global
+health self-assessments, which integrate symptomatic experience and
+social comparison <span class="citation"
+data-cites="jylha2009 bailis2003">(Jylhä 2009; Bailis et al.
+2003)</span>.</p>
+<h2 class="unnumbered" id="main-response-surface-analysis">Main Response
+Surface Analysis</h2>
+<p>Table 2 presents the full RSA results pooled across all six waves
+(<span class="math inline">N = 40{,}248</span> person-waves; <span
+class="math inline">n = 6{,}708</span> individuals). The polynomial
+model accounts for 15.8% of variance in life satisfaction overall,
+representing an 8.8 percentage-point increment above the baseline model
+containing only control variables (<span class="math inline">\Delta R^2
+= 0.088</span>, <span class="math inline">p &lt; .001</span>)—a
+substantively meaningful contribution given the known predictive
+saturation of standard health and demographic predictors.</p>
+<p>Before interpreting the surface parameters, we compared five nested
+RSA models to verify the polynomial specification (full results in
+Supplementary Table S3). The full second-order polynomial model provided
+substantially better fit than both the additive model (<span
+class="math inline">\Delta\chi^2(3) = 133.2</span>, <span
+class="math inline">p &lt; .001</span>) and the interaction-only model
+(<span class="math inline">\Delta\chi^2(2) = 69.9</span>, <span
+class="math inline">p &lt; .001</span>), confirming that the quadratic
+terms (<span class="math inline">X^2</span>, <span
+class="math inline">Y^2</span>) capture genuine curvature in the
+health–well-being surface beyond linear and interaction effects.
+Crucially, the full model fit was not significantly worse than an
+unconstrained cubic model (<span class="math inline">\Delta\chi^2(4) =
+6.3</span>, <span class="math inline">p = .177</span>; <span
+class="math inline">\text{CFI} = .999</span>; <span
+class="math inline">\text{SRMR} = .000</span>), supporting the adequacy
+of the second-order polynomial specification as the basis for
+interpretation.</p>
+<p><em>Congruence effects (Panel A/B).</em> The slope along the line of
+congruence was significantly positive (<span class="math inline">a_1 =
+0.373</span>, 95% CI <span class="math inline">[0.350, 0.396]</span>,
+<span class="math inline">p &lt; .001</span>), confirming the congruence
+hypothesis: older Americans whose subjective and objective health
+assessments move together in the positive direction report substantially
+higher life satisfaction. To appreciate the magnitude, a
+one-standard-deviation improvement in both health indicators
+simultaneously (congruent improvement) is associated with a 0.373 SD
+increase in life satisfaction—larger than the effect of subjective
+social status (<span class="math inline">b = 0.070</span>) and larger
+than the life satisfaction deficit associated with marital dissolution
+(<span class="math inline">b = -0.275</span> for Divorced/Separated
+relative to Married). The curvature along the LOC was significantly
+negative (<span class="math inline">a_2 = -0.037</span>, 95% CI <span
+class="math inline">[-0.050, -0.025]</span>, <span class="math inline">p
+&lt; .001</span>), indicating a mild inverted-U: the well-being benefits
+of congruent health improvement are largest at intermediate levels and
+show slight diminishing returns at the extremes of the health
+distribution. This pattern is visible in the three-dimensional response
+surface (Figure 1): the surface rises steeply from the low-health to the
+moderate-health region of the LOC, then flattens somewhat at very high
+health levels.</p>
+<p><em>Incongruence effects and directional asymmetry.</em> Critically,
+the slope along the line of incongruence was significantly negative
+(<span class="math inline">a_3 = -0.143</span>, 95% CI <span
+class="math inline">[-0.171, -0.115]</span>, <span class="math inline">p
+&lt; .001</span>), providing strong support for the optimism advantage
+hypothesis. Moving along the LOIC from the region where <span
+class="math inline">X &gt; Y</span> (pessimistic misalignment) toward
+the region where <span class="math inline">Y &gt; X</span> (optimistic
+misalignment) is associated with a 0.143 SD increase in life
+satisfaction per standard deviation of displacement. This effect is not
+trivial: the optimism-vs-pessimism contrast in satisfaction is
+approximately equivalent to the well-being difference between married
+and non-married respondents. Curvature along the LOIC was negligible and
+statistically indistinguishable from zero (<span class="math inline">a_4
+= 0.000</span>, 95% CI <span class="math inline">[-0.019, 0.020]</span>,
+<span class="math inline">p = .971</span>), indicating that the
+directional asymmetry is well-approximated as a linear function of the
+degree of misalignment: each additional unit of optimistic offset is
+associated with a proportional gain in satisfaction.</p>
+<p>The contour plot (Figure 1, panel b) provides an intuitive
+visualization of these patterns. In the “pessimistic” corner (high <span
+class="math inline">X</span>, low <span
+class="math inline">Y</span>)—where older adults can perform daily tasks
+but rate their health poorly—life satisfaction is substantially lower
+than in the “optimistic” corner (low <span class="math inline">X</span>,
+high <span class="math inline">Y</span>), where functional limitations
+exist but self-perceptions remain relatively positive. The surface tilt
+is thus not symmetric around the diagonal: the plateau of high
+satisfaction extends further into the optimistic misalignment region
+than into the pessimistic region.</p>
+<p>Among control variables, higher subjective social status (<span
+class="math inline">b = 0.070</span>, <span class="math inline">p &lt;
+.001</span>) and older age (<span class="math inline">b = 0.012</span>,
+<span class="math inline">p &lt; .001</span>) were positively associated
+with life satisfaction, consistent with prior research on social
+stratification and well-being in aging populations <span
+class="citation" data-cites="house1994 herd2007">(House et al. 1994;
+Herd et al. 2007)</span>. Notably, controlling for health, all three
+racial/ethnic minority groups reported <em>higher</em> life satisfaction
+than Non-Hispanic White respondents: Non-Hispanic Black (<span
+class="math inline">b = 0.076</span>, <span class="math inline">p &lt;
+.001</span>), Hispanic (<span class="math inline">b = 0.082</span>,
+<span class="math inline">p &lt; .001</span>), and Other (<span
+class="math inline">b = 0.091</span>, <span class="math inline">p =
+.004</span>). This pattern is consistent with the well-documented
+“well-being paradox” whereby African American and Hispanic older adults
+report comparable or superior subjective well-being to White peers once
+objective health and socioeconomic circumstances are held constant <span
+class="citation" data-cites="herd2007 link1995">(Herd et al. 2007; Link
+and Phelan 1995)</span>. All non-married statuses were associated with
+substantially lower satisfaction relative to Married/Partnered
+respondents: Divorced/Separated (<span class="math inline">b =
+-0.275</span>, <span class="math inline">p &lt; .001</span>), Widowed
+(<span class="math inline">b = -0.224</span>, <span
+class="math inline">p &lt; .001</span>), and Never Married (<span
+class="math inline">b = -0.161</span>, <span class="math inline">p &lt;
+.001</span>). Current employment was also associated with lower
+satisfaction (<span class="math inline">b = -0.086</span>, <span
+class="math inline">p &lt; .001</span>), likely reflecting selection of
+economically less secure respondents into continued labor force
+participation at older ages <span class="citation"
+data-cites="dannefer2003">(Dannefer 2003)</span>.</p>
+<h2 class="unnumbered"
+id="wave-by-wave-rsa-temporal-stability-across-waves-914">Wave-by-Wave
+RSA: Temporal Stability Across Waves 9–14</h2>
+<p>Figure 2 displays the trajectory of each RSA surface parameter across
+Waves 9 through 14 (2008–2018), with 95% confidence intervals derived
+from the wave-specific models. Table 3 presents the full set of
+wave-specific parameter estimates.</p>
+<p>The dominant story is one of striking stability. The congruence slope
+<span class="math inline">a_1</span> ranged from 0.347 (Wave 14) to
+0.416 (Wave 11) across the six waves, with all estimates significantly
+positive (<span class="math inline">p &lt; .001</span> in every wave).
+Bootstrap difference tests found no statistically significant change in
+<span class="math inline">a_1</span> between any pair of waves,
+confirming that the positive relationship between congruent health
+improvement and life satisfaction is structurally constant across aging
+trajectories from age <span class="math inline">\approx</span>70 to age
+<span class="math inline">\approx</span>80.</p>
+<p>Similarly, the incongruence slope <span
+class="math inline">a_3</span> remained consistently negative across all
+waves (range: <span class="math inline">-0.171</span> to <span
+class="math inline">-0.085</span>, all <span class="math inline">p \leq
+.047</span>). Bootstrap tests found no significant pairwise changes,
+confirming that the optimism advantage in life satisfaction is equally
+present at Wave 9 (2008) and Wave 14 (2018). The first principal axis
+parameter <span class="math inline">a_5</span>—which captures surface
+tilt—was significantly positive in five of six waves and showed no
+significant longitudinal change.</p>
+<p>The one parameter showing systematic temporal change was the
+congruence curvature <span class="math inline">a_2</span>. At Wave 9,
+the curvature was negligible and non-significant (<span
+class="math inline">a_2 = -0.010</span>, <span class="math inline">p =
+.656</span>), suggesting an approximately linear congruence effect. By
+Wave 14, the curvature had strengthened to <span class="math inline">a_2
+= -0.054</span> (<span class="math inline">p &lt; .001</span>), and
+bootstrap tests confirmed that this change was statistically significant
+from Wave 11 to Wave 12 (<span class="math inline">\Delta a_2 =
+-0.055</span>, 95% CI <span class="math inline">[-0.098, -0.011]</span>)
+and from Wave 11 to Wave 14 (<span class="math inline">\Delta a_2 =
+-0.058</span>, 95% CI <span class="math inline">[-0.100,
+-0.016]</span>). This finding suggests that, as respondents age from
+their early seventies into their late seventies and eighties, the
+congruence-satisfaction relationship develops a more pronounced
+inverted-U curvature: at very high levels of objective-subjective
+congruence, the incremental satisfaction gain diminishes, a pattern
+potentially consistent with ceiling effects in well-being at extreme
+health levels <span class="citation" data-cites="hertzog2003">(Hertzog
+and Nesselroade 2003)</span>.</p>
+<h2 class="unnumbered" id="sensitivity-analyses">Sensitivity
+Analyses</h2>
+<p>To assess robustness, we conducted several supplementary analyses
+reported in the Supplementary Materials. First, we re-estimated the
+pooled RSA model using complete-case data (excluding imputed
+observations), finding near-identical surface parameters (differences
+<span class="math inline">&lt;0.005</span>) with slightly wider
+confidence intervals, suggesting that imputation did not materially bias
+our estimates. Second, we estimated gender-stratified models; while the
+magnitude of <span class="math inline">a_3</span> was modestly larger
+among women (<span class="math inline">a_3 = -0.158</span>) than men
+(<span class="math inline">a_3 = -0.127</span>), the direction and
+significance of all surface parameters were consistent across both
+subgroups. Third, restricting the objective health measure to ADL
+limitations only (excluding IADL) yielded substantively identical
+surface parameters, confirming that our composite operationalization
+does not drive the results. Fourth, we estimated race-stratified models;
+Non-Hispanic White and Black respondents showed similar surface
+geometries, with the optimism advantage present in both groups, though
+modestly attenuated among Hispanic respondents. These sensitivity
+analyses support the generalizability of our findings across key
+subpopulations.</p>
+<h1 class="unnumbered" id="discussion">Discussion</h1>
+<p>We set out to resolve a persistent puzzle at the intersection of
+health measurement and aging research: when older Americans’ objective
+functional health and self-rated health diverge, does the direction of
+that divergence matter for their subjective well-being? The answer,
+grounded in six biennial waves of nationally representative longitudinal
+data and modeled using response surface analysis, is an unambiguous
+yes—and the pattern is remarkably stable across a decade of aging.</p>
+<h2 class="unnumbered"
+id="congruence-as-a-structural-resource">Congruence as a Structural
+Resource</h2>
+<p>The significant positive slope along the line of congruence (<span
+class="math inline">a_1 = 0.373</span>) establishes that aligned health
+self-assessment is itself a resource for well-being, independent of the
+level of health involved. This finding extends the congruence literature
+beyond its origins in job-person fit <span class="citation"
+data-cites="edwards1993 edwards1999">(Edwards and Parry 1993; Edwards
+and Rothbard 1999)</span> and parenting research to the domain of health
+self-perception in late life. When older adults hold self-conceptions of
+their health that match—or move in concert with—their observable
+functional capacities, they report higher life satisfaction than the
+independent effects of either health indicator would predict.</p>
+<p>The mechanism linking health congruence to well-being likely operates
+through cognitive and self-regulatory processes. Aligned health
+perceptions reduce the need for ongoing renegotiation of one’s
+self-concept in the face of changing health evidence—what <span
+class="citation" data-cites="bailis2003">Bailis et al. (2003)</span>
+describe as the “coherence cost” of discordant health information.
+Cognitively, when subjective and objective health tell the same story,
+older adults can engage in more effective health behavior planning,
+realistic goal adjustment, and accurate social comparison <span
+class="citation" data-cites="hertzog2003">(Hertzog and Nesselroade
+2003)</span>. Sociologically, health congruence may also reflect
+social-structural advantages: those with greater access to health
+information, medical care, and trusted informational networks are more
+likely to develop SRH that accurately tracks their functional status
+<span class="citation" data-cites="link1995 herd2007">(Link and Phelan
+1995; Herd et al. 2007)</span>. The social patterning of health
+congruence is thus itself an equity question, with implications for how
+structural disadvantage operates through health perception.</p>
+<h2 class="unnumbered" id="the-optimism-advantage-and-its-limits">The
+Optimism Advantage and Its Limits</h2>
+<p>The directional asymmetry captured by <span class="math inline">a_3 =
+-0.143</span> provides the first RSA-based longitudinal evidence for a
+health-specific version of the positive illusions hypothesis <span
+class="citation" data-cites="taylor1988">(Taylor and Brown 1988)</span>.
+Older adults who perceive themselves as healthier than their functional
+limitations suggest are not merely miscalibrated—they experience a
+measurable advantage in life satisfaction relative to those who
+underestimate their health. This pattern is consistent with a
+substantial body of evidence linking self-enhancing health perceptions
+to better health behaviors, lower mortality risk, and superior
+psychological functioning <span class="citation"
+data-cites="benyamini2011 pearlin1981">(Benyamini 2011; Pearlin et al.
+1981)</span>.</p>
+<p>The key theoretical contribution here is situating this advantage
+within the RSA framework, which allows us to disentangle the optimism
+advantage from the underlying health level. Our results show that the
+asymmetry is a property of the <em>surface</em>—not simply a proxy for
+respondents who are healthier on average. Controlling for both objective
+health and SRH independently, the geometry of their alignment carries
+additional predictive information about well-being.</p>
+<p>At the same time, the present findings cannot resolve whether
+optimistic health self-assessment <em>causes</em> better well-being, or
+whether shared unmeasured factors (dispositional positive affect, social
+support, or socioeconomic security) drive both optimistic
+self-assessment and higher satisfaction. Positive affect, in particular,
+is known to bias both health self-reports <span class="citation"
+data-cites="mechanic1987">(Mechanic and Hansell 1987)</span> and life
+satisfaction evaluations <span class="citation"
+data-cites="diener1984">(Diener 1984)</span>, and its omission from our
+models is a limitation. Future research should consider explicit
+mediation models incorporating affect and self-efficacy measures to test
+the psychological mechanisms implied by the positive illusions
+account.</p>
+<p>The flipside of the optimism advantage—the pessimism penalty—deserves
+equal sociological attention. Nearly half of older Americans in our
+sample (47.4%) rated their health worse than their functional status
+predicted, constituting the largest single group in our congruence
+distribution. This group, with its lower life satisfaction, is
+demographically skewed toward women, older respondents, and those with
+lower socioeconomic resources <span class="citation"
+data-cites="farmer2005 mirowsky2008">(Farmer and Ferraro 2005; Mirowsky
+and Ross 2008)</span>.</p>
+<p>The social production of pessimistic health self-assessment operates
+through multiple structural pathways. First, exposure to
+discrimination—in healthcare settings, labor markets, and residential
+environments—shapes the informational infrastructure through which
+individuals interpret their health. Repeated encounters with inadequate
+care or dismissive providers may lead members of disadvantaged groups to
+adopt more negative health frameworks that systematically underestimate
+functional capacity relative to objective limitations <span
+class="citation" data-cites="link1995 williams2001">(Link and Phelan
+1995; Williams et al. 2001)</span>. Second, socioeconomic disadvantage
+reduces health literacy and access to specialist information that would
+allow more accurate calibration of health self-perceptions to functional
+reality. Third, cultural norms that valorize stoicism or stigmatize
+health complaints can produce systematic downward bias in SRH among
+groups socialized into these norms, particularly among older women in
+the current cohort <span class="citation"
+data-cites="mechanic1987">(Mechanic and Hansell 1987)</span>.</p>
+<p>The sociological implication is stark: pessimistic health
+misalignment is not merely a cognitive error to be corrected by better
+information but a structurally produced condition with measurable costs
+for subjective well-being. The RSA framework enables us to quantify
+these costs as the gap along the LOIC between the <span
+class="math inline">X &gt; Y</span> (pessimistic) and <span
+class="math inline">Y &gt; X</span> (optimistic) regions—a gap that, in
+our data, is equivalent in magnitude to the well-being difference
+between Widowed and Married older adults (<span class="math inline">a_3
+= -0.143</span> vs. <span class="math inline">b_{\text{widowed}} =
+-0.224</span>). Interventions targeting health self-concept—through
+health education, patient empowerment programs, or culturally tailored
+health literacy initiatives—may therefore yield well-being benefits that
+compound with, rather than merely overlap, benefits from improving
+functional health itself <span class="citation"
+data-cites="link1995">(Link and Phelan 1995)</span>.</p>
+<h2 class="unnumbered"
+id="longitudinal-stability-and-the-life-course-of-health-perception">Longitudinal
+Stability and the Life Course of Health Perception</h2>
+<p>Perhaps the most striking finding of our longitudinal analyses is how
+stable the surface geometry is across Waves 9 through 14. The congruence
+benefit and the optimism advantage are present at Wave 9 (when
+respondents averaged 69.8 years) and remain structurally unchanged at
+Wave 14 (average age approximately 80). This stability argues against
+accounts that treat health discordance as a transient adaptation to new
+health information—a sort of “recalibration lag” that would diminish as
+aging progresses. Instead, it suggests that the psychological and social
+processes that generate congruence effects and directional asymmetries
+are deeply embedded in the life course of health self-perception and are
+not dislodged by the accumulation of functional decline.</p>
+<p>The one exception—the strengthening of LOC curvature (<span
+class="math inline">a_2</span>) from Wave 11 onward—is theoretically
+interpretable as a ceiling effect: as older adults develop serious
+functional limitations, the incremental satisfaction gain from
+additional congruent health improvement diminishes at the high end of
+the health distribution. This is consistent with <span class="citation"
+data-cites="dannefer2003">Dannefer (2003)</span>’s cumulative
+disadvantage framework, which would predict that the well-being returns
+to health congruence are not linearly distributed but depend on where on
+the health gradient individuals are located. Heterogeneity in the
+curvature trajectory may be a fruitful avenue for future research,
+particularly examining whether curvature strengthens more rapidly among
+those experiencing accelerated functional decline.</p>
+<h2 class="unnumbered" id="methodological-implications">Methodological
+Implications</h2>
+<p>This paper demonstrates that RSA offers substantial analytic
+advantages over the difference-score approaches that dominate the health
+discordance literature. Difference scores impose symmetry, reduce
+statistical power, and conflate main effects with congruence effects
+<span class="citation" data-cites="edwards1993">(Edwards and Parry
+1993)</span>. By contrast, RSA separately identifies (a) whether
+congruence matters beyond additive effects (<span
+class="math inline">a_1</span>, <span class="math inline">a_2</span>),
+(b) whether misalignment is directionally asymmetric (<span
+class="math inline">a_3</span>), and (c) whether these patterns are
+linear or curvilinear—all critical questions for health discordance
+research. The model comparison we report shows that the full polynomial
+model fits significantly better than more constrained alternatives, and
+that the specific pattern we find (rising ridge with negative LOIC
+slope) would have been invisible to difference-score approaches.</p>
+<p>We acknowledge several limitations. First, our measure of objective
+health—ADL and IADL limitations—captures only the functional domain of
+health and does not index biological health status (biomarkers,
+physiological reserves) directly. Future work should examine whether RSA
+patterns replicate with clinical or biomarker-based health indicators.
+Second, the HRS’s biennial design means that our “longitudinal” analysis
+is actually six cross-sectional RSA surfaces compared across time;
+within-person change in surface geometry cannot be directly estimated
+without person-specific modeling. Third, differential mortality and
+non-random attrition may influence our estimates, particularly at later
+waves when the surviving sample is healthier than the broader cohort.
+Fourth, like all survey-based research, our measure of life satisfaction
+may be subject to momentary mood and order effects <span
+class="citation" data-cites="diener1984">(Diener 1984)</span>. Our use
+of a standardized, single-item global measure minimizes some of these
+concerns, but multi-item scales would offer greater psychometric
+precision.</p>
+<h1 class="unnumbered" id="conclusion">Conclusion</h1>
+<p>The subjective-objective divide in health measurement has long been
+recognized but rarely examined as a theoretically and empirically
+meaningful phenomenon in its own right. Using response surface analysis
+applied to six waves of nationally representative data on older
+Americans, we have demonstrated that health discordance is neither
+random noise nor a simple measurement artifact. The alignment of
+objective and subjective health is independently associated with higher
+life satisfaction, and when misalignment occurs, the direction matters:
+optimistic self-appraisers—those who perceive themselves as healthier
+than their functional status predicts—consistently report higher
+well-being than pessimistic self-appraisers. These patterns are
+structurally stable across a decade of aging.</p>
+<p>These findings have implications for theory, measurement, and
+practice. Theoretically, they support a resource-based account of health
+perception in late life and suggest that the positive illusions
+literature requires serious engagement with the sociology of aging.
+Methodologically, they demonstrate that RSA is a powerful and
+underutilized tool for studying alignment and misalignment between
+health indicators. For practice and policy, the pessimism penalty
+identified here—disproportionately borne by women, minorities, and the
+socioeconomically disadvantaged—suggests that interventions targeting
+health self-concept and health literacy may have well-being benefits
+that extend beyond accurate health information. Whether that optimism is
+cultivated, earned, or socially distributed, it appears to protect the
+subjective experience of aging even as the body tells a more complicated
+story.</p>
+<h1 class="unnumbered" id="figures">Figures</h1>
+<figure id="fig:main_rsa" data-latex-placement="htbp">
+<img src="Figure1_main_RSA.png" />
+<figcaption><strong>Response Surface Analysis of Objective-Subjective
+Health Congruence and Life Satisfaction (Pooled Model, Waves
+9–14).</strong> Panel (a): Three-dimensional response surface. Panel
+(b): Contour (top-down) view. <span class="math inline">X</span>-axis:
+standardized objective health (inverse ADL+IADL count; higher = better).
+<span class="math inline">Y</span>-axis: standardized self-rated health
+(higher = better). <span class="math inline">Z</span>-axis: standardized
+life satisfaction. The line of congruence (LOC; <span
+class="math inline">X = Y</span>) and line of incongruence (LOIC; <span
+class="math inline">X = -Y</span>) are projected onto the floor. The
+surface rises more steeply in the optimistic misalignment region (<span
+class="math inline">Y &gt; X</span>, upper-left quadrant) than in the
+pessimistic misalignment region (<span class="math inline">X &gt;
+Y</span>, lower-right quadrant), reflecting the significant negative
+<span class="math inline">a_3</span> parameter. RSA parameters: <span
+class="math inline">a_1 = 0.373^{***}</span>; <span
+class="math inline">a_2 = -0.037^{***}</span>; <span
+class="math inline">a_3 = -0.143^{***}</span>; <span
+class="math inline">a_4 = 0.000</span>; <span class="math inline">a_5 =
+0.044^{***}</span>. <span class="math inline">N = 40{,}248</span>
+person-waves.</figcaption>
+</figure>
+<figure id="fig:longitudinal" data-latex-placement="htbp">
+<img src="Figure2_longitudinal.png" />
+<figcaption><strong>Wave-by-Wave RSA Surface Parameters, HRS Waves 9–14
+(2008–2018).</strong> Each panel shows estimates of one RSA surface
+parameter across waves with 95% confidence intervals. The dashed
+horizontal line marks zero. <span class="math inline">a_1</span> (LOC
+slope) remains significantly positive across all waves. <span
+class="math inline">a_3</span> (LOIC slope) remains consistently
+negative. <span class="math inline">a_2</span> (LOC curvature) shows a
+statistically significant increase in magnitude from Wave 11 to Waves 12
+and 14 (bootstrap <span class="math inline">p &lt; .05</span>). <span
+class="math inline">a_4</span> (LOIC curvature) and <span
+class="math inline">a_5</span> (first principal axis) show no
+significant longitudinal change.</figcaption>
+</figure>
+<h1 class="unnumbered" id="tables">Tables</h1>
+<div id="tab:descriptives">
+<table>
+<caption>Baseline Characteristics of Analytic Sample (Wave 9,
+2008)</caption>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: center;"><span class="math inline">M</span> <span
+class="math inline">(SD)</span> or <span class="math inline">N</span>
+<span class="math inline">(\%)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2" style="text-align: left;"><em>Continuous
+Variables</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">Age (years)</td>
+<td style="text-align: center;">69.77 (6.38)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Life Satisfaction (std.)</td>
+<td style="text-align: center;">0.12 (0.94)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Objective Health (std.)</td>
+<td style="text-align: center;">0.19 (0.66)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Self-Rated Health (std.)</td>
+<td style="text-align: center;">0.15 (0.99)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subjective Social Status</td>
+<td style="text-align: center;">6.57 (1.67)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Wealth (log)</td>
+<td style="text-align: center;">10.94 (3.02)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Education (years)</td>
+<td style="text-align: center;">12.75 (3.07)</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><em>Gender</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">Female</td>
+<td style="text-align: center;">4,090 (61.0%)</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><em>Marital Status</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">Married</td>
+<td style="text-align: center;">4,329 (64.5%)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Divorced/Separated</td>
+<td style="text-align: center;">842 (12.6%)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Widowed</td>
+<td style="text-align: center;">1,345 (20.1%)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Never Married</td>
+<td style="text-align: center;">192 (2.9%)</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><em>Race/Ethnicity</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">Non-Hispanic White</td>
+<td style="text-align: center;">5,128 (76.4%)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Non-Hispanic Black</td>
+<td style="text-align: center;">883 (13.2%)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hispanic</td>
+<td style="text-align: center;">561 (8.4%)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Other</td>
+<td style="text-align: center;">136 (2.0%)</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><em>Census Region</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">Northeast</td>
+<td style="text-align: center;">994 (14.8%)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Midwest</td>
+<td style="text-align: center;">1,700 (25.3%)</td>
+</tr>
+<tr>
+<td style="text-align: left;">South</td>
+<td style="text-align: center;">2,779 (41.4%)</td>
+</tr>
+<tr>
+<td style="text-align: left;">West</td>
+<td style="text-align: center;">1,222 (18.2%)</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><em>Labor Market and
+Insurance</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">Currently Working</td>
+<td style="text-align: center;">2,243 (33.4%)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Has Insurance Coverage</td>
+<td style="text-align: center;">4,364 (65.1%)</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><em>Objective-Subjective
+Health Alignment at Baseline</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">Pessimistic: Objective <span
+class="math inline">&gt;</span> Subjective (<span
+class="math inline">&gt;</span>0.5 SD)</td>
+<td style="text-align: center;">3,180 (47.4%)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Congruent (<span class="math inline">|X -
+Y| \leq</span> 0.5 SD)</td>
+<td style="text-align: center;">2,486 (37.1%)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Optimistic: Subjective <span
+class="math inline">&gt;</span> Objective (<span
+class="math inline">&gt;</span>0.5 SD)</td>
+<td style="text-align: center;">1,042 (15.5%)</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><em>Person-Wave
+Observations</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">Unique individuals</td>
+<td style="text-align: center;">6,708</td>
+</tr>
+<tr>
+<td style="text-align: left;">Total person-waves (Waves 9–14)</td>
+<td style="text-align: center;">40,248</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenotes">
+<p><em>Note.</em> Sample includes Health and Retirement Study (HRS)
+respondents aged <span class="math inline">\geq</span>60 at Wave 9
+(2008) with <span class="math inline">\leq</span>2 missing observations
+across Waves 9–14 on key variables. Standardized variables (std.) have
+mean <span class="math inline">\approx</span>0 and SD <span
+class="math inline">\approx</span>1 across all person-wave observations.
+Objective Health = standardized inverse ADL+IADL count (higher = better
+function). Self-Rated Health = standardized 5-point SRH scale (higher =
+better). Life Satisfaction = standardized 5-point scale. Congruence
+groups defined at baseline (Wave 9) by <span class="math inline">|X - Y|
+&gt; 0.5</span> SD. Mean education (12.75 years) and gender (61% female)
+derived from HRS-reported values for Wave 9 respondents.</p>
+</div>
+<div id="tab:rsa_main">
+<table>
+<caption>Response Surface Analysis of Objective-Subjective Health
+Congruence and Life Satisfaction (Full Polynomial Model)</caption>
+<thead>
+<tr>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: center;"><span class="math inline">b</span></th>
+<th style="text-align: center;"><em>SE</em></th>
+<th style="text-align: center;">95% CI</th>
+<th style="text-align: center;"><em>p</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="5" style="text-align: left;"><em>Panel A: Polynomial
+Regression Coefficients</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">b_0</span>
+(Intercept)</td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.888</td>
+<td style="text-align: center;">0.068</td>
+<td style="text-align: center;">[<span
+class="math inline">-</span>1.020, <span
+class="math inline">-</span>0.755]</td>
+<td style="text-align: center;"><span
+class="math inline">&lt;</span>.001 ***</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">b_1</span>
+(Objective Health, <span class="math inline">X</span>)</td>
+<td style="text-align: center;">0.115</td>
+<td style="text-align: center;">0.012</td>
+<td style="text-align: center;">[0.092, 0.138]</td>
+<td style="text-align: center;"><span
+class="math inline">&lt;</span>.001 ***</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">b_2</span>
+(Self-Rated Health, <span class="math inline">Y</span>)</td>
+<td style="text-align: center;">0.258</td>
+<td style="text-align: center;">0.005</td>
+<td style="text-align: center;">[0.248, 0.269]</td>
+<td style="text-align: center;"><span
+class="math inline">&lt;</span>.001 ***</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">b_3</span>
+(<span class="math inline">X^2</span>)</td>
+<td style="text-align: center;">0.013</td>
+<td style="text-align: center;">0.003</td>
+<td style="text-align: center;">[0.007, 0.019]</td>
+<td style="text-align: center;"><span
+class="math inline">&lt;</span>.001 ***</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">b_4</span>
+(<span class="math inline">X \times Y</span>)</td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.019</td>
+<td style="text-align: center;">0.006</td>
+<td style="text-align: center;">[<span
+class="math inline">-</span>0.031, <span
+class="math inline">-</span>0.007]</td>
+<td style="text-align: center;">.002 **</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">b_5</span>
+(<span class="math inline">Y^2</span>)</td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.031</td>
+<td style="text-align: center;">0.004</td>
+<td style="text-align: center;">[<span
+class="math inline">-</span>0.040, <span
+class="math inline">-</span>0.023]</td>
+<td style="text-align: center;"><span
+class="math inline">&lt;</span>.001 ***</td>
+</tr>
+<tr>
+<td colspan="5" style="text-align: left;"><em>Panel B: RSA Surface
+Parameters</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">a_1</span> (LOC
+slope)</td>
+<td style="text-align: center;">0.373</td>
+<td style="text-align: center;">0.012</td>
+<td style="text-align: center;">[0.350, 0.396]</td>
+<td style="text-align: center;"><span
+class="math inline">&lt;</span>.001 ***</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">a_2</span> (LOC
+curvature)</td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.037</td>
+<td style="text-align: center;">0.007</td>
+<td style="text-align: center;">[<span
+class="math inline">-</span>0.050, <span
+class="math inline">-</span>0.025]</td>
+<td style="text-align: center;"><span
+class="math inline">&lt;</span>.001 ***</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">a_3</span> (LOIC
+slope)</td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.143</td>
+<td style="text-align: center;">0.014</td>
+<td style="text-align: center;">[<span
+class="math inline">-</span>0.171, <span
+class="math inline">-</span>0.115]</td>
+<td style="text-align: center;"><span
+class="math inline">&lt;</span>.001 ***</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">a_4</span> (LOIC
+curvature)</td>
+<td style="text-align: center;">0.000</td>
+<td style="text-align: center;">0.010</td>
+<td style="text-align: center;">[<span
+class="math inline">-</span>0.019, 0.020]</td>
+<td style="text-align: center;">.971</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">a_5</span>
+(First principal axis)</td>
+<td style="text-align: center;">0.044</td>
+<td style="text-align: center;">0.005</td>
+<td style="text-align: center;">[0.034, 0.054]</td>
+<td style="text-align: center;"><span
+class="math inline">&lt;</span>.001 ***</td>
+</tr>
+<tr>
+<td colspan="5" style="text-align: left;"><em>Panel C: Selected Control
+Variables (OLS, dummy-coded)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">Age</td>
+<td style="text-align: center;">0.012</td>
+<td style="text-align: center;">0.001</td>
+<td style="text-align: center;">[0.010, 0.013]</td>
+<td style="text-align: center;"><span
+class="math inline">&lt;</span>.001 ***</td>
+</tr>
+<tr>
+<td style="text-align: left;">Subjective Social Status</td>
+<td style="text-align: center;">0.070</td>
+<td style="text-align: center;">0.003</td>
+<td style="text-align: center;">[0.065, 0.075]</td>
+<td style="text-align: center;"><span
+class="math inline">&lt;</span>.001 ***</td>
+</tr>
+<tr>
+<td style="text-align: left;">Wealth (log)</td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.003</td>
+<td style="text-align: center;">0.002</td>
+<td style="text-align: center;">[<span
+class="math inline">-</span>0.006, 0.000]</td>
+<td style="text-align: center;">.033 *</td>
+</tr>
+<tr>
+<td colspan="5" style="text-align: left;"><em>Marital Status (ref:
+Married)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">Divorced/Separated</td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.275</td>
+<td style="text-align: center;">0.014</td>
+<td style="text-align: center;">[<span
+class="math inline">-</span>0.303, <span
+class="math inline">-</span>0.248]</td>
+<td style="text-align: center;"><span
+class="math inline">&lt;</span>.001 ***</td>
+</tr>
+<tr>
+<td style="text-align: left;">Widowed</td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.224</td>
+<td style="text-align: center;">0.011</td>
+<td style="text-align: center;">[<span
+class="math inline">-</span>0.245, <span
+class="math inline">-</span>0.202]</td>
+<td style="text-align: center;"><span
+class="math inline">&lt;</span>.001 ***</td>
+</tr>
+<tr>
+<td style="text-align: left;">Never Married</td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.161</td>
+<td style="text-align: center;">0.026</td>
+<td style="text-align: center;">[<span
+class="math inline">-</span>0.212, <span
+class="math inline">-</span>0.110]</td>
+<td style="text-align: center;"><span
+class="math inline">&lt;</span>.001 ***</td>
+</tr>
+<tr>
+<td colspan="5" style="text-align: left;"><em>Race/Ethnicity (ref:
+White)</em></td>
+</tr>
+<tr>
+<td style="text-align: left;">Black</td>
+<td style="text-align: center;">0.076</td>
+<td style="text-align: center;">0.014</td>
+<td style="text-align: center;">[0.048, 0.103]</td>
+<td style="text-align: center;"><span
+class="math inline">&lt;</span>.001 ***</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hispanic</td>
+<td style="text-align: center;">0.082</td>
+<td style="text-align: center;">0.018</td>
+<td style="text-align: center;">[0.047, 0.117]</td>
+<td style="text-align: center;"><span
+class="math inline">&lt;</span>.001 ***</td>
+</tr>
+<tr>
+<td style="text-align: left;">Other</td>
+<td style="text-align: center;">0.091</td>
+<td style="text-align: center;">0.032</td>
+<td style="text-align: center;">[0.029, 0.153]</td>
+<td style="text-align: center;">.004 **</td>
+</tr>
+<tr>
+<td style="text-align: left;">Currently Working (ref: No)</td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.086</td>
+<td style="text-align: center;">0.011</td>
+<td style="text-align: center;">[<span
+class="math inline">-</span>0.109, <span
+class="math inline">-</span>0.063]</td>
+<td style="text-align: center;"><span
+class="math inline">&lt;</span>.001 ***</td>
+</tr>
+<tr>
+<td style="text-align: left;">Has Insurance (ref: No)</td>
+<td style="text-align: center;">0.000</td>
+<td style="text-align: center;">0.009</td>
+<td style="text-align: center;">[<span
+class="math inline">-</span>0.018, 0.018]</td>
+<td style="text-align: center;">.997</td>
+</tr>
+<tr>
+<td colspan="5" style="text-align: left;"><em>Model Fit</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">R^2</span></td>
+<td colspan="4" style="text-align: left;">0.158</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">\Delta
+R^2</span> (above controls)</td>
+<td colspan="4" style="text-align: left;">0.088<span
+class="math inline">^{***}</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">N</span>
+(person-waves)</td>
+<td colspan="4" style="text-align: left;">40,248</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">N</span>
+(individuals)</td>
+<td colspan="4" style="text-align: left;">6,708</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenotes">
+<p><em>Note.</em> Outcome variable <span class="math inline">Z</span> =
+standardized life satisfaction. <span class="math inline">X</span> =
+standardized objective health (inverse ADL+IADL count; higher = better
+function). <span class="math inline">Y</span> = standardized self-rated
+health (higher = better). LOC = Line of Congruence (<span
+class="math inline">X = Y</span>); LOIC = Line of Incongruence (<span
+class="math inline">X = -Y</span>). <span class="math inline">a_1 &gt;
+0</span>: life satisfaction increases as both health indicators improve
+congruently. <span class="math inline">a_2 &lt; 0</span>: slight
+inverted-U curvature along the LOC. <span class="math inline">a_3 &lt;
+0</span>: when misalignment exists, optimistic self-assessment (<span
+class="math inline">Y &gt; X</span>) is associated with higher
+satisfaction than pessimistic self-assessment (<span
+class="math inline">X &gt; Y</span>). Panel A–B: RSA coefficients
+estimated via lavaan SEM; 95% CIs from person-cluster bootstrap (5,000
+replications). Panel C: equivalent OLS estimates with dummy-coded
+categorical predictors for interpretability; 95% CIs from OLS normal
+approximation. All models include wave fixed effects and census region
+controls. <span class="math inline">^\dagger p &lt; .10</span>; <span
+class="math inline">^* p &lt; .05</span>; <span
+class="math inline">^{**} p &lt; .01</span>; <span
+class="math inline">^{***} p &lt; .001</span>.</p>
+</div>
+<div id="tab:longitudinal">
+<table>
+<caption>Wave-by-Wave RSA Surface Parameters, HRS Waves 9–14
+(2008–2018)</caption>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th colspan="6" style="text-align: center;">Survey Wave (Year)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span>2-7</span> Parameter</td>
+<td style="text-align: center;">W9 (2008)</td>
+<td style="text-align: center;">W10 (2010)</td>
+<td style="text-align: center;">W11 (2012)</td>
+<td style="text-align: center;">W12 (2014)</td>
+<td style="text-align: center;">W13 (2016)</td>
+<td style="text-align: center;">W14 (2018)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">a_1</span>: LOC
+slope</td>
+<td style="text-align: center;">0.378<span
+class="math inline">^{***}</span></td>
+<td style="text-align: center;">0.347<span
+class="math inline">^{***}</span></td>
+<td style="text-align: center;">0.416<span
+class="math inline">^{***}</span></td>
+<td style="text-align: center;">0.364<span
+class="math inline">^{***}</span></td>
+<td style="text-align: center;">0.409<span
+class="math inline">^{***}</span></td>
+<td style="text-align: center;">0.347<span
+class="math inline">^{***}</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.037)</td>
+<td style="text-align: center;">(0.032)</td>
+<td style="text-align: center;">(0.033)</td>
+<td style="text-align: center;">(0.029)</td>
+<td style="text-align: center;">(0.028)</td>
+<td style="text-align: center;">(0.023)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">a_2</span>: LOC
+curv.</td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.010</td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.033<span
+class="math inline">^{\dagger}</span></td>
+<td style="text-align: center;">0.004</td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.051<span
+class="math inline">^{**}</span></td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.037<span
+class="math inline">^{*}</span></td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.054<span
+class="math inline">^{***}</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.022)</td>
+<td style="text-align: center;">(0.020)</td>
+<td style="text-align: center;">(0.019)</td>
+<td style="text-align: center;">(0.017)</td>
+<td style="text-align: center;">(0.016)</td>
+<td style="text-align: center;">(0.013)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">a_3</span>: LOIC
+slope</td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.088<span
+class="math inline">^{*}</span></td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.153<span
+class="math inline">^{***}</span></td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.085<span
+class="math inline">^{*}</span></td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.157<span
+class="math inline">^{***}</span></td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.142<span
+class="math inline">^{***}</span></td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.171<span
+class="math inline">^{***}</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.045)</td>
+<td style="text-align: center;">(0.039)</td>
+<td style="text-align: center;">(0.041)</td>
+<td style="text-align: center;">(0.035)</td>
+<td style="text-align: center;">(0.033)</td>
+<td style="text-align: center;">(0.029)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">a_4</span>: LOIC
+curv.</td>
+<td style="text-align: center;">0.015</td>
+<td style="text-align: center;">0.006</td>
+<td style="text-align: center;"><span
+class="math inline">-</span>0.024</td>
+<td style="text-align: center;">0.005</td>
+<td style="text-align: center;">0.010</td>
+<td style="text-align: center;">0.001</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.034)</td>
+<td style="text-align: center;">(0.034)</td>
+<td style="text-align: center;">(0.031)</td>
+<td style="text-align: center;">(0.026)</td>
+<td style="text-align: center;">(0.023)</td>
+<td style="text-align: center;">(0.020)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">a_5</span>: 1st
+PA</td>
+<td style="text-align: center;">0.059<span
+class="math inline">^{***}</span></td>
+<td style="text-align: center;">0.031<span
+class="math inline">^{*}</span></td>
+<td style="text-align: center;">0.045<span
+class="math inline">^{**}</span></td>
+<td style="text-align: center;">0.057<span
+class="math inline">^{***}</span></td>
+<td style="text-align: center;">0.051<span
+class="math inline">^{***}</span></td>
+<td style="text-align: center;">0.040<span
+class="math inline">^{***}</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.016)</td>
+<td style="text-align: center;">(0.016)</td>
+<td style="text-align: center;">(0.014)</td>
+<td style="text-align: center;">(0.013)</td>
+<td style="text-align: center;">(0.012)</td>
+<td style="text-align: center;">(0.012)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">N</span>
+(persons)</td>
+<td style="text-align: center;">6,708</td>
+<td style="text-align: center;">6,708</td>
+<td style="text-align: center;">6,708</td>
+<td style="text-align: center;">6,708</td>
+<td style="text-align: center;">6,708</td>
+<td style="text-align: center;">6,708</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenotes">
+<p><em>Note.</em> Standard errors in parentheses. LOC = Line of
+Congruence; LOIC = Line of Incongruence; PA = Principal Axis. All models
+control for age, subjective social status, wealth (log), marital status,
+race/ethnicity, census region, employment status, and insurance
+coverage. Bootstrap tests (5,000 person-cluster replications) find no
+statistically significant change across waves in <span
+class="math inline">a_1</span>, <span class="math inline">a_3</span>,
+<span class="math inline">a_4</span>, or <span
+class="math inline">a_5</span>; <span class="math inline">a_2</span>
+shows a significant decrease from Wave 11 to Waves 12 and 14 (see
+Supplementary Table S2). Wave years: W9=2008, W10=2010, W11=2012,
+W12=2014, W13=2016, W14=2018. <span class="math inline">^{\dagger}p &lt;
+.10</span>; <span class="math inline">^{*}p &lt; .05</span>; <span
+class="math inline">^{**}p &lt; .01</span>; <span
+class="math inline">^{***}p &lt; .001</span>.</p>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="list">
+<div id="ref-bailis2003" class="csl-entry" role="listitem">
+Bailis, Daniel S., Alexander Segall, and Judith G. Chipperfield. 2003.
+<span>“Two Views of Self-Rated General Health Status.”</span> <em>Social
+Science &amp; Medicine</em> 56 (2): 203–17. <a
+href="https://doi.org/10.1016/S0277-9536(02)00020-5">https://doi.org/10.1016/S0277-9536(02)00020-5</a>.
+</div>
+<div id="ref-benyamini2011" class="csl-entry" role="listitem">
+Benyamini, Yael. 2011. <span>“Why Does Self-Rated Health Predict
+Mortality? An Update on Current Knowledge and a Research Agenda for
+Psychologists.”</span> <em>Psychology &amp; Health</em> 26 (11):
+1407–13. <a
+href="https://doi.org/10.1080/08870446.2011.621703">https://doi.org/10.1080/08870446.2011.621703</a>.
+</div>
+<div id="ref-crimmins1996" class="csl-entry" role="listitem">
+Crimmins, Eileen M., Mark D. Hayward, and Yasuhiko Saito. 1996.
+<span>“Differentials in Active Life Expectancy in the Older Population
+of the United States.”</span> <em>Journal of Gerontology: Social
+Sciences</em> 51B (3): S111–20. <a
+href="https://doi.org/10.1093/geronb/51B.3.S111">https://doi.org/10.1093/geronb/51B.3.S111</a>.
+</div>
+<div id="ref-dannefer2003" class="csl-entry" role="listitem">
+Dannefer, Dale. 2003. <span>“Cumulative Advantage/Disadvantage and the
+Life Course: Cross-Fertilizing Age and Social Science Theory.”</span>
+<em>Journal of Gerontology: Social Sciences</em> 58B (6): S327–37. <a
+href="https://doi.org/10.1093/geronb/58.6.S327">https://doi.org/10.1093/geronb/58.6.S327</a>.
+</div>
+<div id="ref-diener1984" class="csl-entry" role="listitem">
+Diener, Ed. 1984. <span>“Subjective Well-Being.”</span>
+<em>Psychological Bulletin</em> 95 (3): 542–75. <a
+href="https://doi.org/10.1037/0033-2909.95.3.542">https://doi.org/10.1037/0033-2909.95.3.542</a>.
+</div>
+<div id="ref-edwards1993" class="csl-entry" role="listitem">
+Edwards, Jeffrey R., and Mark E. Parry. 1993. <span>“On the Use of
+Polynomial Regression Equations as an Alternative to Difference Scores
+in Organizational Research.”</span> <em>Academy of Management
+Journal</em> 36 (6): 1577–613. <a
+href="https://doi.org/10.5465/256822">https://doi.org/10.5465/256822</a>.
+</div>
+<div id="ref-edwards1999" class="csl-entry" role="listitem">
+Edwards, Jeffrey R., and Nancy P. Rothbard. 1999. <span>“Work and Family
+Stress and Well-Being: An Examination of Person-Environment Fit in the
+Work and Family Domains.”</span> <em>Organizational Behavior and Human
+Decision Processes</em> 77 (2): 85–129. <a
+href="https://doi.org/10.1006/obhd.1998.2813">https://doi.org/10.1006/obhd.1998.2813</a>.
+</div>
+<div id="ref-farmer2005" class="csl-entry" role="listitem">
+Farmer, Melissa M., and Kenneth F. Ferraro. 2005. <span>“Are Racial
+Disparities in Health Conditional on Socioeconomic Status?”</span>
+<em>Social Science &amp; Medicine</em> 60 (1): 191–204. <a
+href="https://doi.org/10.1016/j.socscimed.2004.04.026">https://doi.org/10.1016/j.socscimed.2004.04.026</a>.
+</div>
+<div id="ref-hrs2020" class="csl-entry" role="listitem">
+Health and Retirement Study. 2020. <em>Health and Retirement Study,
+Waves 9–14, Public Use Dataset</em>. <a href="https://hrs.isr.umich.edu"
+class="uri">Https://hrs.isr.umich.edu</a>; Produced; distributed by the
+University of Michigan with funding from the National Institute on Aging
+(grant number NIA U01AG009740).
+</div>
+<div id="ref-herd2007" class="csl-entry" role="listitem">
+Herd, Pamela, Brian Goesling, and James S. House. 2007.
+<span>“Socioeconomic Position and Health: The Differential Effects of
+Education Versus Income on the Onset Versus Progression of Health
+Problems.”</span> <em>Journal of Health and Social Behavior</em> 48 (3):
+223–38. <a
+href="https://doi.org/10.1177/002214650704800302">https://doi.org/10.1177/002214650704800302</a>.
+</div>
+<div id="ref-hertzog2003" class="csl-entry" role="listitem">
+Hertzog, Christopher, and John R. Nesselroade. 2003. <span>“Assessing
+Psychological Change in Adulthood: An Overview of Methodological
+Issues.”</span> <em>Psychology and Aging</em> 18 (4): 639–57. <a
+href="https://doi.org/10.1037/0882-7974.18.4.639">https://doi.org/10.1037/0882-7974.18.4.639</a>.
+</div>
+<div id="ref-house1994" class="csl-entry" role="listitem">
+House, James S., James M. Lepkowski, Ann M. Kinney, Richard P. Mero,
+Ronald C. Kessler, and A. Regula Herzog. 1994. <span>“The Social
+Stratification of Aging and Health.”</span> <em>Journal of Health and
+Social Behavior</em> 35 (3): 213–34. <a
+href="https://doi.org/10.2307/2137277">https://doi.org/10.2307/2137277</a>.
+</div>
+<div id="ref-idler1997" class="csl-entry" role="listitem">
+Idler, Ellen L., and Yael Benyamini. 1997. <span>“Self-Rated Health and
+Mortality: A Review of Twenty-Seven Community Studies.”</span>
+<em>Journal of Health and Social Behavior</em> 38 (1): 21–37. <a
+href="https://doi.org/10.2307/2955359">https://doi.org/10.2307/2955359</a>.
+</div>
+<div id="ref-jylha2009" class="csl-entry" role="listitem">
+Jylhä, Marja. 2009. <span>“What Is Self-Rated Health and Why Does It
+Predict Mortality? Towards a Unified Conceptual Model.”</span>
+<em>Social Science &amp; Medicine</em> 69 (3): 307–16. <a
+href="https://doi.org/10.1016/j.socscimed.2009.05.013">https://doi.org/10.1016/j.socscimed.2009.05.013</a>.
+</div>
+<div id="ref-katz1976" class="csl-entry" role="listitem">
+Katz, Sidney, and C. Amos Akpom. 1976. <span>“A Measure of Primary
+Sociobiological Functions.”</span> <em>International Journal of Health
+Services</em> 6 (3): 493–508. <a
+href="https://doi.org/10.2190/UURL-2RYU-WRYD-EY3K">https://doi.org/10.2190/UURL-2RYU-WRYD-EY3K</a>.
+</div>
+<div id="ref-lawton1969" class="csl-entry" role="listitem">
+Lawton, M. Powell, and Elaine M. Brody. 1969. <span>“Assessment of Older
+People: Self-Maintaining and Instrumental Activities of Daily
+Living.”</span> <em>The Gerontologist</em> 9 (3): 179–86. <a
+href="https://doi.org/10.1093/geront/9.3_Part_1.179">https://doi.org/10.1093/geront/9.3_Part_1.179</a>.
+</div>
+<div id="ref-link1995" class="csl-entry" role="listitem">
+Link, Bruce G., and Jo Phelan. 1995. <span>“Social Conditions as
+Fundamental Causes of Disease.”</span> <em>Journal of Health and Social
+Behavior</em> 35: 80–94. <a
+href="https://doi.org/10.2307/2626958">https://doi.org/10.2307/2626958</a>.
+</div>
+<div id="ref-maddox1973" class="csl-entry" role="listitem">
+Maddox, George L., and Elizabeth B. Douglass. 1973.
+<span>“Self-Assessment of Health: A Longitudinal Study of Elderly
+Subjects.”</span> <em>Journal of Health and Social Behavior</em> 14 (1):
+87–93. <a
+href="https://doi.org/10.2307/2136940">https://doi.org/10.2307/2136940</a>.
+</div>
+<div id="ref-missRanger" class="csl-entry" role="listitem">
+Mayer, Michael. 2023. <span>“<span class="nocase">missRanger</span>:
+Fast Imputation of Missing Values.”</span> <em>R Journal</em>, ahead of
+print. <a
+href="https://doi.org/10.32614/CRAN.package.missRanger">https://doi.org/10.32614/CRAN.package.missRanger</a>.
+</div>
+<div id="ref-mechanic1987" class="csl-entry" role="listitem">
+Mechanic, David, and Stephen Hansell. 1987. <span>“Adolescent
+Competence, Psychological Well-Being, and Self-Assessed Physical
+Health.”</span> <em>Journal of Health and Social Behavior</em> 28 (4):
+364–74. <a
+href="https://doi.org/10.2307/2136790">https://doi.org/10.2307/2136790</a>.
+</div>
+<div id="ref-menec2003" class="csl-entry" role="listitem">
+Menec, Verena H. 2003. <span>“The Relation Between Everyday Activities
+and Successful Aging: A 6-Year Longitudinal Study.”</span> <em>Journal
+of Gerontology: Social Sciences</em> 58B (2): S74–82. <a
+href="https://doi.org/10.1093/geronb/58.2.S74">https://doi.org/10.1093/geronb/58.2.S74</a>.
+</div>
+<div id="ref-mirowsky2008" class="csl-entry" role="listitem">
+Mirowsky, John, and Catherine E. Ross. 2008. <span>“Education and
+Self-Rated Health: Cumulative Advantage and Its Rising Importance in the
+United States.”</span> <em>Research on Aging</em> 30 (1): 93–122. <a
+href="https://doi.org/10.1177/0164027507309649">https://doi.org/10.1177/0164027507309649</a>.
+</div>
+<div id="ref-mossey1982" class="csl-entry" role="listitem">
+Mossey, Jana M., and Evelyn Shapiro. 1982. <span>“Self-Rated Health: A
+Predictor of Mortality Among the Elderly.”</span> <em>American Journal
+of Public Health</em> 72 (8): 800–808. <a
+href="https://doi.org/10.2105/AJPH.72.8.800">https://doi.org/10.2105/AJPH.72.8.800</a>.
+</div>
+<div id="ref-nestler2019" class="csl-entry" role="listitem">
+Nestler, Steffen, Sarah Humberg, and Felix D. Schönbrodt. 2019.
+<span>“Response Surface Analysis with Multilevel Data: Illustration for
+the Case of Congruence Hypotheses.”</span> <em>Psychological
+Methods</em> 24 (3): 291–308. <a
+href="https://doi.org/10.1037/met0000199">https://doi.org/10.1037/met0000199</a>.
+</div>
+<div id="ref-okun1984" class="csl-entry" role="listitem">
+Okun, Morris A., William A. Stock, Marilyn J. Haring, and Robert A.
+Witter. 1984. <span>“Health and Subjective Well-Being: A
+Meta-Analysis.”</span> <em>The International Journal of Aging and Human
+Development</em> 19 (2): 111–32. <a
+href="https://doi.org/10.2190/QGJN-0N81-5957-HAQD">https://doi.org/10.2190/QGJN-0N81-5957-HAQD</a>.
+</div>
+<div id="ref-pearlin1999" class="csl-entry" role="listitem">
+Pearlin, Leonard I. 1999. <span>“The Stress Process Revisited:
+Reflections on Concepts and Their Interrelationships.”</span>
+<em>Handbook of the Sociology of Mental Health</em>, 395–415. <a
+href="https://doi.org/10.1007/0-387-36223-1_19">https://doi.org/10.1007/0-387-36223-1_19</a>.
+</div>
+<div id="ref-pearlin1981" class="csl-entry" role="listitem">
+Pearlin, Leonard I., Elizabeth G. Menaghan, Morton A. Lieberman, and
+Joseph T. Mullan. 1981. <span>“The Stress Process.”</span> <em>Journal
+of Health and Social Behavior</em> 22 (4): 337–56. <a
+href="https://doi.org/10.2307/2136676">https://doi.org/10.2307/2136676</a>.
+</div>
+<div id="ref-prus2011" class="csl-entry" role="listitem">
+Prus, Steven G. 2011. <span>“Comparing Social Determinants of Self-Rated
+Health Across the United States and Canada.”</span> <em>Social Science
+&amp; Medicine</em> 73 (1): 50–59. <a
+href="https://doi.org/10.1016/j.socscimed.2011.04.010">https://doi.org/10.1016/j.socscimed.2011.04.010</a>.
+</div>
+<div id="ref-schnittker2014" class="csl-entry" role="listitem">
+Schnittker, Jason, and Valerio Baćak. 2014. <span>“The Increasing
+Predictive Validity of Self-Rated Health.”</span> <em>PLOS ONE</em> 9
+(1): e84933. <a
+href="https://doi.org/10.1371/journal.pone.0084933">https://doi.org/10.1371/journal.pone.0084933</a>.
+</div>
+<div id="ref-RSA_package" class="csl-entry" role="listitem">
+Schönbrodt, Felix D. 2016. <em><span>RSA</span>: Response Surface
+Analysis</em>.
+</div>
+<div id="ref-singh-manoux2005" class="csl-entry" role="listitem">
+Singh-Manoux, Archana, Michael G. Marmot, and Nancy E. Adler. 2005.
+<span>“Does Subjective Social Status Predict Better Than Objective
+Status? Prospective Evidence from the Whitehall II Study.”</span>
+<em>Psychosomatic Medicine</em> 67 (6): 855–61. <a
+href="https://doi.org/10.1097/01.psy.0000188434.52941.a0">https://doi.org/10.1097/01.psy.0000188434.52941.a0</a>.
+</div>
+<div id="ref-steptoe2015" class="csl-entry" role="listitem">
+Steptoe, Andrew, Angus Deaton, and Arthur A. Stone. 2015.
+<span>“Subjective Wellbeing, Health, and Ageing.”</span> <em>The
+Lancet</em> 385 (9968): 640–48. <a
+href="https://doi.org/10.1016/S0140-6736(13)61489-0">https://doi.org/10.1016/S0140-6736(13)61489-0</a>.
+</div>
+<div id="ref-taylor1988" class="csl-entry" role="listitem">
+Taylor, Shelley E., and Jonathon D. Brown. 1988. <span>“Illusion and
+Well-Being: A Social Psychological Perspective on Mental Health.”</span>
+<em>Psychological Bulletin</em> 103 (2): 193–210. <a
+href="https://doi.org/10.1037/0033-2909.103.2.193">https://doi.org/10.1037/0033-2909.103.2.193</a>.
+</div>
+<div id="ref-williams2001" class="csl-entry" role="listitem">
+Williams, David R., Harold W. Neighbors, and James S. Jackson. 2001.
+<span>“Racial/Ethnic Discrimination and Health: Findings from Community
+Studies.”</span> <em>American Journal of Public Health</em> 93 (2):
+200–208. <a
+href="https://doi.org/10.2105/AJPH.93.2.200">https://doi.org/10.2105/AJPH.93.2.200</a>.
+</div>
+</div>
+<!-- Markup Reader: inline annotation toolkit -->
+<style id="markup-reader-panel-style">
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap");
+
+/* ── Annotation marks ─────────────────────────────────── */
+[data-annotation="true"] { border-radius: 2px; cursor: pointer; }
+[data-annotation="true"].annot-highlight { background: var(--annot-highlight-color, #fff2a8); box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+[data-annotation="true"].annot-underline { border-bottom: 3px solid var(--annot-underline-color, #cc4f1b); padding-bottom: 1px; }
+[data-annotation="true"].annot-note { background: var(--annot-highlight-color, #fff2a8); border-bottom: 2px dashed var(--annot-underline-color, #cc4f1b); cursor: help; position: relative; }
+[data-annotation="true"].annot-note::after { content: "\270E"; font-size: .75em; font-weight: 700; color: var(--annot-underline-color, #cc4f1b); margin-left: 1px; vertical-align: super; }
+[data-annotation="true"].annot-note[data-note]:hover::before {
+  content: attr(data-note);
+  position: absolute; bottom: calc(100% + 4px); left: 0;
+  max-width: 300px; padding: 6px 10px;
+  background: #1e3a27; color: #fff; font-size: 12px; font-weight: 400;
+  border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,.3);
+  white-space: pre-wrap; word-break: break-word;
+  z-index: 999998; pointer-events: none;
+  animation: mr-fadeIn .12s ease;
+}
+
+/* ── Selection tooltip ────────────────────────────────── */
+#mr-tooltip {
+  position: absolute; z-index: 999999;
+  display: none; align-items: center; gap: 4px;
+  padding: 5px 6px;
+  background: #1e3a27; color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.28);
+  font-family: "Manrope", "Segoe UI", sans-serif; font-size: 13px; font-weight: 600;
+  white-space: nowrap;
+  animation: mr-fadeIn .15s ease;
+}
+#mr-tooltip button {
+  border: none; background: rgba(255,255,255,.15);
+  color: #fff; border-radius: 7px;
+  padding: 5px 10px; font-size: 12px; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  transition: background .12s ease;
+}
+#mr-tooltip button:hover { background: rgba(255,255,255,.3); }
+#mr-tooltip .tt-sep { width: 1px; height: 18px; background: rgba(255,255,255,.22); }
+
+/* ── Note input box ───────────────────────────────────── */
+#mr-note-input {
+  position: absolute; z-index: 1000000;
+  display: none; flex-direction: column; gap: 6px;
+  width: 280px; padding: 10px 12px; box-sizing: border-box;
+  background: #1e3a27; color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 36px rgba(0,0,0,.35);
+  font-family: "Manrope", "Segoe UI", sans-serif; font-size: 13px;
+  animation: mr-fadeIn .15s ease;
+}
+#mr-note-input .ni-label { font-weight: 700; font-size: 12px; opacity: .85; }
+#mr-note-input textarea {
+  width: 100%; min-height: 60px; max-height: 140px;
+  padding: 8px 10px; border: 1px solid rgba(255,255,255,.25);
+  border-radius: 8px; background: rgba(255,255,255,.1);
+  color: #fff; font-family: inherit; font-size: 13px;
+  resize: vertical; outline: none; box-sizing: border-box;
+}
+#mr-note-input textarea:focus { border-color: rgba(255,255,255,.5); }
+#mr-note-input .ni-actions { display: flex; justify-content: flex-end; gap: 6px; }
+#mr-note-input .ni-actions button {
+  border: none; border-radius: 8px; padding: 6px 14px;
+  font-size: 12px; font-weight: 700; cursor: pointer; font-family: inherit;
+}
+#mr-note-input .ni-cancel { background: rgba(255,255,255,.15); color: #fff; }
+#mr-note-input .ni-cancel:hover { background: rgba(255,255,255,.25); }
+#mr-note-input .ni-confirm { background: #4caf6a; color: #fff; }
+#mr-note-input .ni-confirm:hover { background: #3d9e5a; }
+
+/* ── Floating toggle button ───────────────────────────── */
+#mr-toggle-btn {
+  position: fixed; bottom: 20px; right: 20px; z-index: 999990;
+  width: 48px; height: 48px; border-radius: 50%;
+  background: linear-gradient(135deg, #2f8a45, #1f6933); color: #fff;
+  border: none; font-size: 22px; cursor: pointer;
+  box-shadow: 0 6px 20px rgba(28,77,42,.35);
+  transition: transform .15s ease, box-shadow .2s ease;
+  font-family: "Manrope", sans-serif;
+}
+#mr-toggle-btn:hover { transform: scale(1.08); box-shadow: 0 8px 24px rgba(28,77,42,.45); }
+
+/* ── Side panel ───────────────────────────────────────── */
+#mr-panel {
+  position: fixed; top: 0; right: -340px; z-index: 999991;
+  width: 320px; height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #f9fbf3, #f5efe3);
+  border-left: 1px solid rgba(54,84,58,.18);
+  box-shadow: -4px 0 24px rgba(0,0,0,.12);
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  color: #24322a;
+  transition: right .3s ease;
+  overflow: hidden;
+  padding: 16px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+#mr-panel.open { right: 0; }
+#mr-panel h3 {
+  margin: 0 0 8px; font-size: .88rem; letter-spacing: .03em;
+  text-transform: uppercase; color: #214730;
+}
+#mr-panel .mr-section {
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(73,106,67,.14); border-radius: 14px;
+  padding: 12px;
+}
+#mr-panel .mr-pen-group { margin-bottom: 4px; }
+#mr-panel .mr-pen-label { font-size: .78rem; color: #5f6f62; margin-bottom: 6px; font-weight: 600; }
+#mr-panel .mr-pens { display: flex; gap: 8px; flex-wrap: wrap; }
+#mr-panel .mr-pen {
+  width: 28px; height: 28px; border-radius: 50%; border: 2px solid transparent;
+  cursor: pointer; transition: transform .12s ease, border-color .12s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15); position: relative;
+}
+#mr-panel .mr-pen:hover { transform: scale(1.15); }
+#mr-panel .mr-pen.active {
+  border-color: #1e3a27; box-shadow: 0 0 0 2px #1e3a27, 0 2px 8px rgba(0,0,0,.2);
+  transform: scale(1.1);
+}
+#mr-panel .mr-pen.active::after {
+  content: "\2713"; position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%); font-size: 13px; font-weight: 900;
+  color: rgba(0,0,0,.5); text-shadow: 0 0 2px rgba(255,255,255,.8);
+}
+#mr-panel .mr-annot-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; overflow-y: auto; }
+#mr-panel .mr-annot-item {
+  font-size: .82rem; line-height: 1.4; padding: 8px 10px;
+  background: rgba(255,255,255,.8); border: 1px solid rgba(60,90,60,.12);
+  border-radius: 10px; cursor: pointer; transition: background .15s ease;
+  word-break: break-word;
+}
+#mr-panel .mr-annot-item:hover { background: #edf5e4; }
+#mr-panel .mr-annot-type {
+  display: inline-block; font-size: .68rem; font-weight: 700; text-transform: uppercase;
+  padding: 2px 6px; border-radius: 6px; margin-right: 4px; vertical-align: middle;
+}
+#mr-panel .mr-annot-type.highlight { background: #fff2a8; color: #6b5a00; }
+#mr-panel .mr-annot-type.underline { background: #fce0cf; color: #7a3006; }
+#mr-panel .mr-annot-type.note { background: #d4f0dd; color: #1a5e2c; }
+#mr-panel .mr-annot-note { display: block; margin-top: 3px; font-style: italic; color: #5f6f62; font-size: .78rem; }
+#mr-panel .mr-annot-actions { margin-top: 5px; display: flex; gap: 5px; }
+#mr-panel .mr-annot-actions button {
+  font-size: .72rem; padding: 4px 8px; border: none; border-radius: 6px;
+  font-weight: 700; cursor: pointer; font-family: inherit;
+}
+#mr-panel .mr-btn-del { background: linear-gradient(135deg,#d9713f,#bc4b12); color: white; }
+#mr-panel .mr-btn-note { background: #f0f4e8; color: #24462f; border: 1px solid rgba(45,82,53,.18); }
+#mr-panel .mr-save-btn {
+  display: block; width: 100%; padding: 10px;
+  background: linear-gradient(135deg,#2f8a45,#1f6933); color: #fff;
+  border: none; border-radius: 10px; font-size: .88rem; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  box-shadow: 0 8px 18px rgba(28,77,42,.2);
+  flex-shrink: 0;
+}
+#mr-panel .mr-save-btn:hover { transform: translateY(-1px); }
+#mr-panel .mr-export-md {
+  display: block; width: 100%; padding: 10px;
+  background: linear-gradient(135deg,#3a6b8a,#1f4f6e); color: #fff;
+  border: none; border-radius: 10px; font-size: .88rem; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  box-shadow: 0 8px 18px rgba(28,60,90,.2);
+  flex-shrink: 0;
+}
+#mr-panel .mr-export-md:hover { transform: translateY(-1px); }
+#mr-panel .mr-empty { color: #5f6f62; font-size: .82rem; text-align: center; padding: 12px 0; }
+#mr-panel .mr-close {
+  position: absolute; top: 12px; right: 12px;
+  background: rgba(0,0,0,.06); border: none; border-radius: 8px;
+  width: 28px; height: 28px; font-size: 16px; cursor: pointer;
+  color: #24322a; font-family: inherit;
+}
+
+@keyframes mr-fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ── Mobile responsive ────────────────────────────────── */
+@media (max-width: 600px) {
+  #mr-panel { width: 100vw; right: -100vw; border-left: none; padding: 14px 16px; }
+  #mr-panel.open { right: 0; }
+  #mr-panel .mr-pen { width: 32px; height: 32px; }
+  #mr-panel .mr-save-btn { padding: 14px; font-size: .92rem; }
+  #mr-toggle-btn { width: 44px; height: 44px; font-size: 20px; bottom: 16px; right: 16px; }
+  #mr-tooltip { padding: 7px 8px; }
+  #mr-tooltip button { padding: 8px 12px; font-size: 13px; }
+  #mr-note-input { width: calc(100vw - 24px); max-width: none; left: 12px !important; padding: 12px 14px; font-size: 15px; }
+  #mr-note-input textarea { min-height: 72px; font-size: 15px; padding: 10px 12px; }
+  #mr-note-input .ni-actions button { padding: 10px 18px; font-size: 14px; }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  #mr-tooltip button { padding: 8px 14px; font-size: 14px; }
+}
+
+@media print {
+  #mr-toggle-btn, #mr-panel, #mr-tooltip, #mr-note-input { display: none !important; }
+}
+</style>
+
+<script>
+(function() {
+"use strict";
+
+/* ── Config ───────────────────────────────────────────── */
+let highlightColor = "#fff2a8";
+let underlineColor = "#cc4f1b";
+
+/* ── Annotation helpers ───────────────────────────────── */
+function genId() { return "ann-" + Date.now() + "-" + Math.random().toString(36).slice(2,8); }
+
+function wrapRange(range, type, noteText) {
+  const span = document.createElement("span");
+  span.setAttribute("data-annotation", "true");
+  span.setAttribute("data-type", type);
+  span.setAttribute("data-id", genId());
+  if (type === "highlight") {
+    span.className = "annot-highlight";
+    span.style.setProperty("--annot-highlight-color", highlightColor);
+  } else if (type === "underline") {
+    span.className = "annot-underline";
+    span.style.setProperty("--annot-underline-color", underlineColor);
+  } else if (type === "note") {
+    span.className = "annot-note";
+    span.setAttribute("data-note", noteText);
+    span.title = noteText;
+    span.style.setProperty("--annot-highlight-color", highlightColor);
+    span.style.setProperty("--annot-underline-color", underlineColor);
+  }
+  const frag = range.extractContents();
+  if (!frag.textContent || !frag.textContent.trim()) { range.insertNode(frag); return null; }
+  span.appendChild(frag);
+  range.insertNode(span);
+  return span;
+}
+
+function removeAnnotation(el) {
+  const p = el.parentNode; if (!p) return;
+  while (el.firstChild) p.insertBefore(el.firstChild, el);
+  p.removeChild(el); p.normalize();
+}
+
+function applyNote(el, text) {
+  el.setAttribute("data-note", text);
+  el.setAttribute("data-type", "note");
+  el.title = text;
+  el.className = "annot-note";
+}
+
+function allAnnotations() { return Array.from(document.querySelectorAll('[data-annotation="true"]')); }
+
+/* ── Tooltip ──────────────────────────────────────────── */
+function getEl(id) { return document.getElementById(id); }
+function mkEl(tag, id) {
+  let el = getEl(id);
+  if (el) return el;
+  el = document.createElement(tag);
+  el.id = id;
+  document.body.appendChild(el);
+  return el;
+}
+
+function showTooltip(rect, buttons) {
+  const tip = mkEl("div", "mr-tooltip");
+  tip.innerHTML = "";
+  buttons.forEach(function(b, i) {
+    if (i > 0) { const sep = document.createElement("span"); sep.className = "tt-sep"; tip.appendChild(sep); }
+    const btn = document.createElement("button");
+    btn.textContent = b.label;
+    btn.addEventListener("mousedown", function(e) { e.preventDefault(); e.stopPropagation(); b.action(); });
+    tip.appendChild(btn);
+  });
+  tip.style.display = "flex";
+  const sy = window.scrollY, sx = window.scrollX;
+  tip.style.top = Math.max(0, rect.top + sy - tip.offsetHeight - 8) + "px";
+  tip.style.left = Math.max(4, rect.left + sx + rect.width/2 - tip.offsetWidth/2) + "px";
+}
+
+function hideTooltip() {
+  const tip = getEl("mr-tooltip"); if (tip) tip.style.display = "none";
+  const ni = getEl("mr-note-input"); if (ni) ni.style.display = "none";
+}
+
+/* ── Note input ───────────────────────────────────────── */
+function showNoteInput(rect, existing, onConfirm) {
+  const tip = getEl("mr-tooltip"); if (tip) tip.style.display = "none";
+  const box = mkEl("div", "mr-note-input");
+  box.innerHTML = "";
+
+  const label = document.createElement("div");
+  label.className = "ni-label"; label.textContent = "Enter note:";
+  box.appendChild(label);
+
+  const ta = document.createElement("textarea");
+  ta.value = existing || ""; ta.setAttribute("rows","3");
+  box.appendChild(ta);
+
+  const acts = document.createElement("div");
+  acts.className = "ni-actions";
+
+  const cancelBtn = document.createElement("button");
+  cancelBtn.className = "ni-cancel"; cancelBtn.textContent = "Cancel";
+  cancelBtn.addEventListener("click", function(e) { e.preventDefault(); box.style.display = "none"; });
+  acts.appendChild(cancelBtn);
+
+  const okBtn = document.createElement("button");
+  okBtn.className = "ni-confirm"; okBtn.textContent = "OK";
+  okBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    const val = ta.value.trim();
+    if (!val) { ta.focus(); return; }
+    box.style.display = "none";
+    onConfirm(val);
+  });
+  acts.appendChild(okBtn);
+  box.appendChild(acts);
+
+  ta.addEventListener("keydown", function(e) {
+    if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); okBtn.click(); }
+    if (e.key === "Escape") { e.preventDefault(); cancelBtn.click(); }
+  });
+
+  box.style.display = "flex";
+  const sy = window.scrollY;
+  box.style.top = Math.max(sy + 4, rect.bottom + sy + 8) + "px";
+  box.style.left = Math.max(4, Math.min(rect.left, document.documentElement.clientWidth - 288)) + "px";
+  setTimeout(function() { ta.focus(); }, 30);
+}
+
+/* ── Annotate action ──────────────────────────────────── */
+function doAnnotate(type) {
+  hideTooltip();
+  const sel = window.getSelection();
+  if (!sel || sel.rangeCount === 0 || sel.isCollapsed) return;
+  const range = sel.getRangeAt(0);
+
+  if (type === "note") {
+    const saved = range.cloneRange();
+    const rect = range.getBoundingClientRect();
+    sel.removeAllRanges();
+    showNoteInput(rect, "", function(text) {
+      const ns = window.getSelection();
+      ns.removeAllRanges(); ns.addRange(saved);
+      const fr = ns.getRangeAt(0);
+      wrapRange(fr, "note", text);
+      ns.removeAllRanges();
+      refreshPanel();
+    });
+    return;
+  }
+
+  wrapRange(range, type, "");
+  sel.removeAllRanges();
+  refreshPanel();
+}
+
+/* ── Selection listener ───────────────────────────────── */
+let tooltipLock = false;
+
+function tooltipButtons() {
+  return [
+    { label: "Highlight", action: function() { doAnnotate("highlight"); } },
+    { label: "Underline", action: function() { doAnnotate("underline"); } },
+    { label: "Note", action: function() { doAnnotate("note"); } },
+  ];
+}
+
+document.addEventListener("mouseup", function() {
+  if (tooltipLock) return;
+  setTimeout(function() {
+    const sel = window.getSelection();
+    if (!sel || sel.isCollapsed || sel.rangeCount === 0) return;
+    const range = sel.getRangeAt(0);
+    const rect = range.getBoundingClientRect();
+    if (rect.width === 0 && rect.height === 0) return;
+    if (range.commonAncestorContainer.nodeType === 1 && range.commonAncestorContainer.closest && range.commonAncestorContainer.closest("#mr-panel")) return;
+    if (range.commonAncestorContainer.parentElement && range.commonAncestorContainer.parentElement.closest && range.commonAncestorContainer.parentElement.closest("#mr-panel")) return;
+    showTooltip(rect, tooltipButtons());
+  }, 10);
+});
+
+function handlePointerDown(e) {
+  const t = e.target;
+  if (t.closest && (t.closest("#mr-tooltip") || t.closest("#mr-note-input") || t.closest("#mr-panel"))) return;
+
+  const annot = t.closest && t.closest('[data-annotation="true"]');
+  if (annot) {
+    const sel = window.getSelection();
+    if (sel && sel.isCollapsed) {
+      e.preventDefault();
+      tooltipLock = true;
+      showTooltip(annot.getBoundingClientRect(), [
+        { label: "Note", action: function() {
+          hideTooltip(); tooltipLock = false;
+          var rect = annot.getBoundingClientRect();
+          showNoteInput(rect, annot.getAttribute("data-note") || "", function(text) {
+            applyNote(annot, text); refreshPanel();
+          });
+        }},
+        { label: "Remove", action: function() {
+          hideTooltip(); tooltipLock = false;
+          removeAnnotation(annot); refreshPanel();
+        }},
+      ]);
+      setTimeout(function() { tooltipLock = false; }, 300);
+      return;
+    }
+  }
+  hideTooltip();
+}
+
+document.addEventListener("mousedown", handlePointerDown);
+
+/* ── Touch / mobile support ──────────────────────────── */
+var selectionTimer = null;
+document.addEventListener("selectionchange", function() {
+  clearTimeout(selectionTimer);
+  selectionTimer = setTimeout(function() {
+    if (tooltipLock) return;
+    var sel = window.getSelection();
+    if (!sel || sel.isCollapsed || sel.rangeCount === 0) return;
+    var range = sel.getRangeAt(0);
+    if (range.commonAncestorContainer.nodeType === 1 && range.commonAncestorContainer.closest && range.commonAncestorContainer.closest("#mr-panel")) return;
+    if (range.commonAncestorContainer.parentElement && range.commonAncestorContainer.parentElement.closest && range.commonAncestorContainer.parentElement.closest("#mr-panel")) return;
+    var rect = range.getBoundingClientRect();
+    if (rect.width === 0 && rect.height === 0) return;
+    showTooltip(rect, tooltipButtons());
+  }, 300);
+});
+
+document.addEventListener("touchend", function(e) {
+  setTimeout(function() {
+    var sel = window.getSelection();
+    if (sel && !sel.isCollapsed) return;
+    handlePointerDown(e);
+  }, 50);
+});
+
+/* ── Side panel ───────────────────────────────────────── */
+function buildPanel() {
+  const toggle = document.createElement("button");
+  toggle.id = "mr-toggle-btn";
+  toggle.textContent = "\u270E";
+  toggle.title = "Annotation Tools";
+  document.body.appendChild(toggle);
+
+  const panel = document.createElement("div");
+  panel.id = "mr-panel";
+  var hlPens = [
+    { name: "Yellow", color: "#fff2a8" },
+    { name: "Green", color: "#b8f0c0" },
+    { name: "Blue", color: "#b3deff" },
+    { name: "Pink", color: "#ffc0cb" },
+    { name: "Orange", color: "#ffd9a8" },
+    { name: "Purple", color: "#dcc0f0" },
+  ];
+  var ulPens = [
+    { name: "Red", color: "#cc4f1b" },
+    { name: "Blue", color: "#2a6dd9" },
+    { name: "Green", color: "#2a8a3e" },
+    { name: "Orange", color: "#d98c2a" },
+    { name: "Purple", color: "#7b3ec4" },
+    { name: "Gray", color: "#666666" },
+  ];
+
+  function buildPenRow(pens, activeColor) {
+    return pens.map(function(p) {
+      var cls = p.color === activeColor ? "mr-pen active" : "mr-pen";
+      return '<button class="' + cls + '" data-color="' + p.color + '" style="background:' + p.color + ';" title="' + p.name + '"></button>';
+    }).join("");
+  }
+
+  panel.innerHTML =
+    '<button class="mr-close" id="mr-close-btn">\u2715</button>' +
+    '<h3>Annotations</h3>' +
+    '<div class="mr-section">' +
+      '<div class="mr-pen-group">' +
+        '<div class="mr-pen-label">Highlight</div>' +
+        '<div class="mr-pens" id="mr-hl-pens">' + buildPenRow(hlPens, highlightColor) + '</div>' +
+      '</div>' +
+      '<div class="mr-pen-group" style="margin-top:10px;">' +
+        '<div class="mr-pen-label">Underline</div>' +
+        '<div class="mr-pens" id="mr-ul-pens">' + buildPenRow(ulPens, underlineColor) + '</div>' +
+      '</div>' +
+    '</div>' +
+    '<div class="mr-section" style="flex:1;overflow-y:auto;min-height:0;display:flex;flex-direction:column;">' +
+      '<h3>Annotation List</h3>' +
+      '<ul id="mr-annot-list" class="mr-annot-list" style="flex:1;overflow-y:auto;min-height:0;">' +
+        '<li class="mr-empty">No annotations yet</li>' +
+      '</ul>' +
+    '</div>' +
+    '<button class="mr-save-btn" id="mr-save-btn">Download Annotated HTML</button>' +
+    '<button class="mr-export-md" id="mr-export-md">Export as Markdown</button>';
+  document.body.appendChild(panel);
+
+  toggle.addEventListener("click", function() { panel.classList.toggle("open"); });
+  document.getElementById("mr-close-btn").addEventListener("click", function() { panel.classList.remove("open"); });
+
+  document.getElementById("mr-hl-pens").addEventListener("click", function(e) {
+    var pen = e.target.closest(".mr-pen"); if (!pen) return;
+    highlightColor = pen.getAttribute("data-color");
+    this.querySelectorAll(".mr-pen").forEach(function(p) { p.classList.remove("active"); });
+    pen.classList.add("active");
+  });
+  document.getElementById("mr-ul-pens").addEventListener("click", function(e) {
+    var pen = e.target.closest(".mr-pen"); if (!pen) return;
+    underlineColor = pen.getAttribute("data-color");
+    this.querySelectorAll(".mr-pen").forEach(function(p) { p.classList.remove("active"); });
+    pen.classList.add("active");
+  });
+
+  document.getElementById("mr-save-btn").addEventListener("click", function() {
+    const toHide = ["mr-toggle-btn", "mr-panel", "mr-tooltip", "mr-note-input"];
+    toHide.forEach(function(id) { const el = getEl(id); if (el) el.style.display = "none"; });
+    const dt = document.doctype ? "<!DOCTYPE " + document.doctype.name + ">" : "<!DOCTYPE html>";
+    const blob = new Blob([dt + "\n" + document.documentElement.outerHTML], { type: "text/html;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    var origName = decodeURIComponent(location.pathname.split("/").pop() || "") || (document.title || "document").replace(/[<>:"/\\|?*]/g, "_") + ".html";
+    a.download = origName;
+    document.body.appendChild(a); a.click(); a.remove();
+    URL.revokeObjectURL(url);
+    toHide.forEach(function(id) { const el = getEl(id); if (el) el.style.display = ""; });
+    document.getElementById("mr-toggle-btn").style.display = "block";
+  });
+
+  document.getElementById("mr-export-md").addEventListener("click", exportMarkdown);
+}
+
+function refreshPanel() {
+  const list = getEl("mr-annot-list");
+  if (!list) return;
+  list.innerHTML = "";
+
+  const items = allAnnotations();
+  if (items.length === 0) {
+    list.innerHTML = '<li class="mr-empty">No annotations yet</li>';
+    return;
+  }
+
+  items.forEach(function(el) {
+    const li = document.createElement("li");
+    li.className = "mr-annot-item";
+
+    const type = el.getAttribute("data-type") || "highlight";
+    const text = (el.textContent || "").slice(0, 60);
+    const note = el.getAttribute("data-note");
+
+    const badge = document.createElement("span");
+    badge.className = "mr-annot-type " + type;
+    const typeNames = { highlight: "Highlight", underline: "Underline", note: "Note" };
+    badge.textContent = typeNames[type] || type;
+    li.appendChild(badge);
+
+    const txt = document.createElement("span");
+    txt.textContent = text + (el.textContent.length > 60 ? "\u2026" : "");
+    li.appendChild(txt);
+
+    if (note) {
+      const nt = document.createElement("span");
+      nt.className = "mr-annot-note";
+      nt.textContent = note;
+      li.appendChild(nt);
+    }
+
+    const actions = document.createElement("div");
+    actions.className = "mr-annot-actions";
+
+    if (type !== "note") {
+      const nb = document.createElement("button");
+      nb.className = "mr-btn-note"; nb.textContent = "Add Note";
+      nb.addEventListener("click", function(ev) {
+        ev.stopPropagation();
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+        showNoteInput(el.getBoundingClientRect(), el.getAttribute("data-note") || "", function(t) {
+          applyNote(el, t); refreshPanel();
+        });
+      });
+      actions.appendChild(nb);
+    }
+
+    const db = document.createElement("button");
+    db.className = "mr-btn-del"; db.textContent = "Remove";
+    db.addEventListener("click", function(ev) {
+      ev.stopPropagation();
+      removeAnnotation(el); refreshPanel();
+    });
+    actions.appendChild(db);
+    li.appendChild(actions);
+
+    li.addEventListener("click", function() {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+      el.style.outline = "3px solid #2f8a45";
+      setTimeout(function() { el.style.outline = ""; }, 1200);
+    });
+
+    list.appendChild(li);
+  });
+}
+
+/* ── Export annotations to Markdown ───────────────────── */
+function findHeading(el) {
+  var node = el;
+  while (node && node !== document.body) {
+    var prev = node.previousElementSibling;
+    while (prev) {
+      if (/^H[1-6]$/.test(prev.tagName)) return { level: parseInt(prev.tagName[1]), text: prev.textContent.trim() };
+      prev = prev.previousElementSibling;
+    }
+    node = node.parentElement;
+  }
+  return null;
+}
+
+function exportMarkdown() {
+  var items = allAnnotations();
+  if (items.length === 0) return;
+
+  var typeNames = { highlight: "Highlight", underline: "Underline", note: "Note" };
+  var lines = [];
+  lines.push("# " + (document.title || "Document") + " - Annotations");
+  lines.push("");
+  lines.push("_" + new Date().toLocaleString() + "_");
+  lines.push("");
+  lines.push("---");
+  lines.push("");
+
+  var lastHeading = null;
+
+  items.forEach(function(el) {
+    var type = el.getAttribute("data-type") || "highlight";
+    var text = el.textContent.trim();
+    var note = el.getAttribute("data-note") || "";
+
+    var heading = findHeading(el);
+    if (heading && (!lastHeading || lastHeading.text !== heading.text)) {
+      lines.push("#".repeat(Math.min(heading.level + 1, 4)) + " " + heading.text);
+      lines.push("");
+      lastHeading = heading;
+    }
+
+    lines.push("**[" + typeNames[type] + "]**");
+    lines.push("");
+    lines.push("> " + text.replace(/\n/g, "\n> "));
+    if (note) {
+      lines.push("");
+      lines.push("**Note:** " + note);
+    }
+    lines.push("");
+    lines.push("---");
+    lines.push("");
+  });
+
+  var md = lines.join("\n");
+  var blob = new Blob([md], { type: "text/markdown;charset=utf-8" });
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement("a");
+  a.href = url;
+  a.download = (document.title || "document").replace(/[<>:"/\\|?*]/g, "_") + ".annotations.md";
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+}
+
+/* ── Boot ─────────────────────────────────────────────── */
+function boot() {
+  buildPanel();
+  refreshPanel();
+}
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", boot);
+} else {
+  boot();
+}
+
+})();
+</script>
+</body>
+</html>
