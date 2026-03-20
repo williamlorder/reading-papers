@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="[Blinded for Review]" />
+  <title>Online Supplementary Materials: When Convergence Produces Divergence</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/contrib/auto-render.min.js"></script>
+  <style>
+  /* Computer Modern Serif - LaTeX default font */
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunrm.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunbx.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunti.woff') format('woff');
+      font-weight: normal;
+      font-style: italic;
+  }
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunbi.woff') format('woff');
+      font-weight: bold;
+      font-style: italic;
+  }
+
+  body {line-height: 2em; font-size: 12pt}
+
+  p {text-indent: 0.5in; margin: 0; line-height: 2em}
+  div.Author p {
+    text-indent: 0;
+  }
+  .FigureTitle {font-weight: bold; margin: 5pt 0; font-size: 12pt; color: black;}
+  .FigureTitle p {text-indent: 0; text-align: left;}
+  .FigureNote p {text-indent: 0; margin: 0; padding: 0}
+  .Caption {font-style: italic; font-size: 12pt; color: black; text-align: left}
+  .Caption p {text-indent: 0; font-size: 12pt;}
+  .quarto-float, .quarto-float-tbl, .figure {margin: 0; margin-block-start: 0; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0}
+
+  h1, h2, h3, h4, h5 {border: none; margin: 0; padding: 0;line-height: 2; text-indent: 0 }
+
+  h1 {text-align: center;}
+  h3 {font-style: italic}
+  h4 {font-weight: bold}
+
+  h4, h5 {
+  text-indent: 0.5in;
+  display:inline-block;
+  margin: 0
+  }
+
+  h5 {
+    font-style: italic;
+  }
+
+  h4 + p, h5 + p {
+    display:inline;
+    text-indent: 0;
+  }
+
+
+  .Compact {
+    line-height: 1em;
+    text-indent: 0;
+    margin: 0;
+  }
+
+
+
+
+
+
+  td p, th p, li p {text-indent: 0; margin: 0;}
+
+
+
+  li p {text-indent: 0; margin: 0;}
+
+  .subtitle {font-size: 12pt; text-align: center; color: #303030; font-weight: bold;}
+
+  blockquote, .blockquote {border: none; margin: 0 .5in; padding: 0; font-style: normal; color: #303030;}
+
+  .Author {text-align:center; text-indent: 0}
+
+  .cell-output-display p {text-indent: 0}
+
+  div.hanging-indent {margin-left: 0.5in; text-indent: -0.5in}
+
+  div.hanging-indent .csl-entry {margin-left: 0; text-indent: -0.5in;}
+
+  .katex {font-size: 1em;}
+  .katex-display {font-size: 1.1em;}
+
+  .NoIndent p {text-indent: 0}
+
+  blockquote p:nth-child(1) {text-indent: 0}
+
+  table {
+      font-variant-numeric: tabular-nums;
+  }
+
+  .table {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .table>thead {
+    border-bottom: 1px solid black;
+  }
+
+  .table>:not(caption)>*>* {
+    border-bottom: none;
+  }
+
+  .tabwid {padding: 0}
+
+  .AbstractFirstParagraph p {text-indent: 0}
+
+
+  /* Override fonts to Computer Modern */
+  body {
+      font-family: 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+      font-family: 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;
+  }
+  code, pre {
+      font-family: 'Computer Modern Typewriter', 'Courier New', monospace;
+  }
+
+  /* KaTeX: match font size and weight to body text */
+  .katex {
+      font-size: 1.0em;
+      font-weight: normal;
+  }
+  .katex .mathnormal,
+  .katex .mathit {
+      font-weight: normal;
+  }
+  .katex .mathbf {
+      font-weight: bold;
+  }
+
+  /* Screen adaptation overrides for web viewing */
+  @media screen {
+      html { font-size: 12pt; }
+      body {
+          max-width: 52em;
+          margin: 2em auto;
+          padding: 0 2em;
+          column-count: 1;
+      }
+      figure img { max-width: 100%; height: auto; }
+      .math.display { overflow-x: auto; margin: 1.2em 0; }
+      pre {
+          overflow-x: auto;
+          background: #f5f5f5;
+          padding: 0.8em;
+          border-radius: 4px;
+      }
+  }
+  </style>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+          delimiters: [
+              {left: "$$", right: "$$", display: true},
+              {left: "\\[", right: "\\]", display: true},
+              {left: "$", right: "$", display: false},
+              {left: "\\(", right: "\\)", display: false}
+          ],
+          throwOnError: false
+      });
+  });
+  </script>
+  <script defer=""
+  src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Online Supplementary Materials:<br />
+When Convergence Produces Divergence</h1>
+<p class="author">[Blinded for Review]</p>
+</header>
+<h1 id="instrumental-variable-identification-strategy">Instrumental
+Variable Identification Strategy</h1>
+<p>This appendix develops the full identification strategy for the
+instrumental variable (IV) estimates reported in the main manuscript. We
+formalize the three assumptions required for valid 2SLS inference,
+present the theoretical and empirical case for each instrument, and
+report overidentification and diagnostic test results.</p>
+<h2 id="identification-assumptions">Identification Assumptions</h2>
+<p>Two-stage least squares estimation requires three assumptions for the
+instruments to produce consistent estimates. Figure <a
+href="#fig:iv_concept" data-reference-type="ref"
+data-reference="fig:iv_concept">1</a> illustrates the general logic of
+instrumental variable identification: an instrument <span
+class="math inline">Z</span> affects the outcome <span
+class="math inline">Y</span> only through its effect on the endogenous
+variable <span class="math inline">X</span>, bypassing the confounding
+path created by unobserved variables <span class="math inline">U</span>.
+Figure <a href="#fig:dag" data-reference-type="ref"
+data-reference="fig:dag">2</a> then applies this logic to our specific
+identification strategy. We state each assumption formally below.</p>
+<figure id="fig:iv_concept" data-latex-placement="H">
+
+<figcaption> <strong>The Logic of Instrumental Variable
+Identification.</strong> The instrument <span
+class="math inline">Z</span> predicts the endogenous variable <span
+class="math inline">X</span> (relevance) but does not directly affect
+the outcome <span class="math inline">Y</span> (exclusion restriction,
+shown as the dashed red path). Unobserved confounders <span
+class="math inline">U</span> create a spurious correlation between <span
+class="math inline">X</span> and <span class="math inline">Y</span> that
+biases OLS estimates. The IV strategy isolates variation in <span
+class="math inline">X</span> driven only by <span
+class="math inline">Z</span>, removing the confounding influence of
+<span class="math inline">U</span>.</figcaption>
+</figure>
+<h4 id="assumption-1-relevance.">Assumption 1: Relevance.</h4>
+<p>The instruments <span class="math inline">Z</span> must predict the
+endogenous regressor <span class="math inline">X</span> (individual
+internet use frequency): <span class="math display">\begin{equation}
+\text{Cov}(Z, X) \neq 0
+\end{equation}</span> This is directly testable through first-stage
+<span class="math inline">F</span>-statistics. Using 1984 provincial
+telephone density interacted with survey year (Tel84) as the sole
+instrument yields a first-stage <span class="math inline">F</span> of
+177.63. Using the province-year NBS internet penetration rate (Inet)
+alone yields <span class="math inline">F = 599.91</span>. In the
+overidentified specification with both instruments, the minimum
+eigenvalue statistic is 360.27. All three values far exceed the <span
+class="citation" data-cites="stock2005testing">Stock and Yogo
+(2005)</span> critical value of 16.38 for 10% maximal IV size with two
+endogenous regressors and two instruments, ruling out weak-instrument
+bias. The instruments are not marginal predictors; they are among the
+strongest supply-side predictors available for internet use in the
+Chinese context.</p>
+<p>The strength of the first stage reflects a well-documented empirical
+regularity: internet infrastructure in China follows path-dependent
+patterns rooted in pre-digital telecommunications networks <span
+class="citation" data-cites="czernich2011broadband">(Czernich et al.
+2011)</span>. Provinces with denser historical telephone networks built
+broadband infrastructure faster, and provinces targeted by the Broadband
+China policy expanded penetration more rapidly. Both processes generate
+strong, policy-driven variation in individual internet access that is
+captured by the first-stage regression.</p>
+<h4 id="assumption-2-exclusion-restriction.">Assumption 2: Exclusion
+restriction.</h4>
+<p>The instruments must affect the outcome (gender ideology) only
+through their effect on the endogenous regressor: <span
+class="math display">\begin{equation}
+\text{Cov}(Z, \varepsilon) = 0
+\end{equation}</span> where <span class="math inline">\varepsilon</span>
+is the structural error in the second-stage equation. This assumption
+cannot be directly tested in a just-identified model, where the number
+of instruments equals the number of endogenous regressors. In the
+overidentified specification with both Tel84 and Inet as instruments,
+the Sargan <span class="math inline">J</span>-test provides a joint test
+of instrument validity. The test yields <span class="math inline">p =
+0.111</span>, failing to reject the null that both instruments satisfy
+the exclusion restriction at conventional significance levels. While the
+Sargan test has limited power against certain alternatives (particularly
+when both instruments are invalid in the same direction), the failure to
+reject is consistent with, though not proof of, instrument validity.</p>
+<p>The substantive case for the exclusion restriction rests on distinct
+arguments for each instrument, developed in Sections <a
+href="#sec:tel84" data-reference-type="ref"
+data-reference="sec:tel84">1.2</a> and <a href="#sec:inet"
+data-reference-type="ref" data-reference="sec:inet">1.3</a>. The common
+thread is that both instruments capture supply-side variation in
+internet infrastructure that is determined by policy decisions and
+historical contingency rather than by individual demand for
+gender-related content. All IV models control for province-year GDP per
+capita, urbanization rate, and female labor force participation rate to
+absorb confounding channels through which provincial infrastructure
+might affect attitudes independently of internet use.</p>
+<h4 id="assumption-3-monotonicity.">Assumption 3: Monotonicity.</h4>
+<p>For the LATE interpretation, each instrument must shift internet use
+weakly in the same direction for all individuals: <span
+class="math display">\begin{equation}
+X_i(Z = z&#39;) \geq X_i(Z = z) \quad \text{for all } i \text{ whenever
+} z&#39; &gt; z
+\end{equation}</span> No individual who would use the internet in a
+province with low infrastructure density would cease using it in a
+province with higher density. This assumption is inherently plausible
+for supply-side instruments. Greater provincial telephone density in
+1984 facilitates subsequent broadband buildout; higher provincial
+internet penetration reflects greater infrastructure availability. Both
+instruments expand the opportunity set for internet access without
+constraining it. Some individuals are unaffected (always-takers who use
+the internet regardless of infrastructure, or never-takers who do not),
+but the assumption requires only that no individual’s internet use is
+<em>reduced</em> by higher instrument values. Because neither instrument
+operates through individual-level demand factors, preference
+heterogeneity, or price incentives that might induce some individuals to
+substitute away from internet use, the monotonicity condition is
+difficult to violate in this setting.</p>
+<figure id="fig:dag" data-latex-placement="t">
+
+<figcaption> <strong>Identification Strategy for the Gendered Internet
+Effect.</strong> Blue nodes: instrumental variables. Orange nodes:
+endogenous regressors. Green node: outcome. Solid arrows: hypothesized
+causal paths. Dashed red arrows: paths assumed to equal zero under the
+exclusion restriction (<span class="math inline">Z \not\to Y</span>).
+Controls (age, education, income, hukou, marital status, party
+membership) and province/year fixed effects included in all models but
+omitted for clarity.</figcaption>
+</figure>
+<h2 id="sec:tel84">Instrument 1: 1984 Provincial Telephone Density</h2>
+<p>The first instrument is the number of fixed telephone lines per 100
+persons in each province in 1984, interacted with a linear survey-year
+trend to create Bartik-style variation across both provinces and time.
+This instrument exploits path dependence in telecommunications
+infrastructure: provinces with denser pre-digital telephone networks
+later developed broadband and mobile internet infrastructure more
+rapidly.</p>
+<h4 id="historical-context.">Historical context.</h4>
+<p>China’s telecommunications system in 1984 was a product of the
+planned economy. Infrastructure allocation followed administrative
+hierarchy, military priorities, and industrial policy rather than
+consumer demand. Provincial capitals and heavy-industry centers received
+denser telephone networks; agricultural and frontier provinces received
+minimal investment. These decisions were made under a fundamentally
+different economic system, by planners whose objectives (industrial
+coordination, military communication, administrative control) bore no
+relation to gender attitudes or cultural values. The resulting
+cross-provincial variation in telephone density was large: in 1984, the
+most connected provinces had roughly ten times the telephone density of
+the least connected.</p>
+<h4 id="path-dependence-mechanism.">Path dependence mechanism.</h4>
+<p>When China modernized its telecommunications in the 1990s and 2000s,
+new infrastructure followed existing routes. Fiber optic cables were
+laid along copper-wire telephone trunk lines because the rights of way,
+conduit infrastructure, and switching station locations were already
+established. Central offices built for voice switching were upgraded to
+handle data. The Broadband China strategy (2013) and subsequent 4G/5G
+rollouts reinforced this pattern: network upgrades proceeded fastest
+where existing infrastructure was densest <span class="citation"
+data-cites="qu2025broadband">(Qu et al. 2025)</span>. The correlation
+between pre-digital telephone density and contemporary broadband quality
+is well documented in the comparative telecommunications literature
+<span class="citation" data-cites="czernich2011broadband">(Czernich et
+al. 2011)</span>.</p>
+<h4 id="bartik-interaction.">Bartik interaction.</h4>
+<p>Because 1984 telephone density is time-invariant, it cannot serve as
+an instrument in models with province fixed effects without additional
+structure. We interact it with the survey year (<span
+class="math inline">\text{TelDensity}_{1984,p} \times
+\text{Year}_t</span>) to generate within-province variation over time.
+The identifying assumption is that provinces with denser historical
+infrastructure experienced faster internet adoption growth during
+2012–2023. The year trend captures the national trajectory of internet
+expansion; the cross-sectional telephone density captures which
+provinces were positioned to expand more quickly.</p>
+<h4 id="exclusion-argument.">Exclusion argument.</h4>
+<p>For 1984 telephone density to violate the exclusion restriction, it
+would need to affect 2012–2023 gender attitudes through a channel other
+than internet infrastructure, conditional on province fixed effects and
+individual-level controls. Province fixed effects absorb all
+time-invariant provincial characteristics, including the direct effect
+of historical infrastructure levels. The Bartik interaction identifies
+effects from <em>differential growth rates</em>, not levels. A violation
+would require that the rate of change in gender attitudes correlates
+with 1984 telephone density through some non-internet channel. Given
+that the 1984 allocation reflected planned-economy priorities three to
+four decades before the survey period, such a channel is difficult to
+construct. The logic follows <span class="citation"
+data-cites="czernich2011broadband">Czernich et al. (2011)</span>, who
+used historical telephone infrastructure as an instrument for broadband
+in OECD countries, and <span class="citation"
+data-cites="campante2018politics">Campante et al. (2018)</span>, who
+applied similar instruments in cross-national studies of internet and
+political attitudes.</p>
+<h2 id="sec:inet">Instrument 2: NBS Internet Penetration Rate</h2>
+<p>The second instrument is the provincial internet penetration rate
+(internet users as a share of provincial population) published in
+National Bureau of Statistics yearbooks. Unlike the telephone density
+instrument, this variable varies across both provinces and years,
+providing time-varying cross-sectional variation without requiring a
+Bartik interaction.</p>
+<h4 id="source-and-coverage.">Source and coverage.</h4>
+<p>The NBS penetration rate is compiled from China Internet Network
+Information Center (CNNIC) surveys and provincial statistical yearbooks.
+It captures the aggregate share of each province’s population that uses
+the internet, measured at the province-year level. Data are available
+from 2000 through 2021. Because 2023 falls outside this range, all IV
+specifications using this instrument exclude the 2023 CGSS wave,
+reducing the sample to approximately 34,000 respondents. The telephone
+density instrument, which is available for all waves, provides a check
+on whether the exclusion of 2023 affects the results.</p>
+<h4 id="supply-side-variation.">Supply-side variation.</h4>
+<p>Provincial internet penetration is driven by government
+infrastructure investment, regulatory decisions, and the timing of
+broadband and mobile network deployment. The Broadband China strategy
+designated specific provinces as pilot zones for accelerated
+infrastructure rollout. The 4G expansion (2014–2016) and 5G deployment
+(2019 onward) followed patterns shaped by provincial government
+priorities, population density, and prior network capacity. These
+supply-side policy choices generate variation in internet availability
+that is independent of individual demand for internet access and of
+individual gender attitudes.</p>
+<h4 id="exclusion-argument.-1">Exclusion argument.</h4>
+<p>The exclusion restriction requires that provincial penetration
+affects individual gender attitudes only through its effect on
+individual internet use. The key concern is that penetration could proxy
+for provincial modernization: wealthier, more urbanized provinces have
+both higher penetration and potentially different gender attitude
+trajectories. We address this in three ways. Province fixed effects
+absorb all time-invariant provincial differences. Year fixed effects
+absorb national trends. Province-year controls for GDP per capita,
+urbanization rate, and female labor force participation absorb
+time-varying provincial modernization. The residual variation in
+penetration reflects infrastructure capacity and policy timing, not the
+content preferences or attitudinal predispositions of individual
+users.</p>
+<h2 id="overidentification-and-diagnostics">Overidentification and
+Diagnostics</h2>
+<p>Using both instruments simultaneously allows us to test the
+overidentifying restriction and compare the estimates produced by each
+instrument. Four sets of diagnostics inform our assessment.</p>
+<h4 id="sargan-j-test.">Sargan <span
+class="math inline">J</span>-test.</h4>
+<p>In the overidentified specification with both Tel84 and Inet, the
+Sargan <span class="math inline">J</span>-statistic yields <span
+class="math inline">p = 0.111</span>, failing to reject the null of
+joint instrument validity at the 5% level. The test evaluates whether
+the two instruments produce statistically distinguishable estimates of
+the treatment effect; failure to reject supports the hypothesis that
+both instruments satisfy the exclusion restriction. The <span
+class="math inline">p</span>-value of 0.111 provides moderate but not
+overwhelming support. The Sargan test is known to have limited power in
+large samples and cannot detect violations where both instruments are
+invalid in the same direction. The substantive exclusion arguments in
+Sections <a href="#sec:tel84" data-reference-type="ref"
+data-reference="sec:tel84">1.2</a> and <a href="#sec:inet"
+data-reference-type="ref" data-reference="sec:inet">1.3</a> remain the
+primary basis for credibility.</p>
+<h4 id="wu-hausman-test.">Wu-Hausman test.</h4>
+<p>All three IV specifications yield Wu-Hausman statistics with <span
+class="math inline">p &lt; .001</span>, rejecting the null that OLS is
+consistent. This confirms that internet use is endogenous in the gender
+ideology equation: unobserved factors simultaneously predict internet
+use and gender attitudes, biasing OLS estimates. The direction of the
+bias is informative. IV estimates of the Female <span
+class="math inline">\times</span> Internet interaction are uniformly
+larger than OLS (0.121–0.452 vs. 0.081), consistent with attenuation
+from classical measurement error in the ordinal internet use frequency
+variable. If positive selection bias (egalitarian individuals choosing
+to use the internet more) were dominant, OLS would overestimate the
+effect; the opposite pattern points to measurement error as the primary
+source of OLS inconsistency. The IV estimates, which isolate exogenous
+variation in internet access driven by infrastructure supply, recover
+the effect net of measurement noise.</p>
+<h4 id="late-interpretation.">LATE interpretation.</h4>
+<p>The two instruments yield different point estimates for the Female
+<span class="math inline">\times</span> Internet interaction: Tel84
+produces 0.452 and Inet produces 0.121. Under the LATE framework <span
+class="citation" data-cites="imbens1994identification">(Imbens and
+Angrist 1994)</span>, this difference does not signal invalidity but
+rather reflects distinct complier populations. The Tel84 instrument
+identifies the effect among individuals whose internet use is determined
+by legacy telecom infrastructure, a group concentrated in less-developed
+provinces where infrastructure constraints remain binding. The Inet
+instrument identifies the effect among individuals responding to recent
+policy-driven broadband expansion, a broader and more heterogeneous
+population.</p>
+<p>The larger Tel84 estimate is consistent with heterogeneous treatment
+effects: in provinces where internet access is most constrained by
+infrastructure, the marginal unit of internet exposure represents a
+sharper departure from pre-existing information environments. The
+gendered attitudinal effect of internet use may be strongest precisely
+where digital access is newest and most transformative. The Inet
+estimate, which captures a wider range of compliers including those in
+provinces with already-high penetration, reflects a smaller marginal
+effect in a population closer to saturation. The Sargan test’s failure
+to reject (<span class="math inline">p = 0.111</span>) confirms that
+these two estimates are not statistically incompatible despite their
+difference in magnitude.</p>
+<h4 id="summary-of-diagnostics.">Summary of diagnostics.</h4>
+<p>Table <a href="#tab:ivdiag" data-reference-type="ref"
+data-reference="tab:ivdiag">1</a> consolidates the key diagnostic
+statistics across specifications.</p>
+<div class="threeparttable">
+<div id="tab:ivdiag">
+<table>
+<caption>Instrumental Variable Diagnostic Statistics</caption>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: center;">Tel84 Only</th>
+<th style="text-align: center;">Inet Only</th>
+<th style="text-align: center;">Both</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">First-stage <span
+class="math inline">F</span></td>
+<td style="text-align: center;">177.63</td>
+<td style="text-align: center;">599.91</td>
+<td style="text-align: center;">360.27<sup>a</sup></td>
+</tr>
+<tr>
+<td style="text-align: left;">Female <span
+class="math inline">\times</span> Internet (<span
+class="math inline">\hat{\beta}</span>)</td>
+<td style="text-align: center;">0.452</td>
+<td style="text-align: center;">0.121</td>
+<td style="text-align: center;">0.121</td>
+</tr>
+<tr>
+<td style="text-align: left;">Wu-Hausman <span
+class="math inline">p</span></td>
+<td style="text-align: center;"><span
+class="math inline">&lt;.001</span></td>
+<td style="text-align: center;"><span
+class="math inline">&lt;.001</span></td>
+<td style="text-align: center;"><span
+class="math inline">&lt;.001</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Sargan <span class="math inline">J</span>
+<span class="math inline">p</span></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">0.111</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenotes">
+<p><em>Note.</em> Tel84 = 1984 provincial telephone density <span
+class="math inline">\times</span> survey year. Inet = province-year NBS
+internet penetration rate. All models include individual-level controls
+(age, age<span class="math inline">^2</span>, education, income, hukou,
+marital status, party membership) and province-year controls (GDP per
+capita, urbanization rate, female labor force participation rate).
+Province and year fixed effects included in all specifications.</p>
+<p><sup>a</sup> Minimum eigenvalue statistic (Cragg-Donald).</p>
+</div>
+</div>
+<h1 id="robustness-analyses">Robustness Analyses</h1>
+<p>This section presents robustness checks for the Female <span
+class="math inline">\times</span> Internet interaction reported in the
+main manuscript. All models include controls for age, education, log
+income, urban hukou, marital status, party membership, and year fixed
+effects, with standard errors clustered by province.</p>
+<h2 id="alternative-dependent-variable-specifications">Alternative
+Dependent Variable Specifications</h2>
+<p>The main manuscript uses a composite gender ideology index averaging
+four attitude items. To assess whether the gendered internet effect
+depends on this aggregation, we re-estimate the Female <span
+class="math inline">\times</span> Internet interaction using each item
+as a separate dependent variable. The interaction is statistically
+significant for all four items (<span class="math inline">p &lt;
+.001</span> in each case) but varies in magnitude. The “men should focus
+on career, women on family” item (separate-spheres beliefs) shows the
+largest effect (<span class="math inline">\hat{\beta}</span> = 0.108, SE
+= 0.006), followed by “men are inherently more capable than women”
+(gender essentialism; <span class="math inline">\hat{\beta}</span> =
+0.092, SE = 0.006) and “it is better to marry well than to work well”
+(marriage pragmatism; <span class="math inline">\hat{\beta}</span> =
+0.082, SE = 0.006). The “women should be laid off first” item (labor
+market fairness) shows the smallest interaction (<span
+class="math inline">\hat{\beta}</span> = 0.044, SE = 0.004). The
+gradient across items is consistent with the selective exposure
+mechanism proposed in the main text: internet-mediated feminist
+discourse engages most directly with separate-spheres ideology and least
+directly with abstract labor market fairness norms.</p>
+<h2 id="alternative-predictor-and-model-specifications">Alternative
+Predictor and Model Specifications</h2>
+<p>Two specifications test the sensitivity of the interaction to how
+internet use and the outcome are operationalized. Recoding internet use
+as a binary variable (any use vs. never) yields a Female <span
+class="math inline">\times</span> Internet interaction of 0.251 (<span
+class="math inline">p &lt; .001</span>), confirming that the gendered
+effect is not an artifact of the ordinal coding. An ordered logit model
+treating the rounded ideology index as an ordinal outcome produces a
+log-odds interaction of 0.187 (<span class="math inline">p &lt;
+.001</span>), indicating that the result is robust to relaxing the
+linearity assumption imposed by OLS.</p>
+<h2 id="alternative-sample-specifications">Alternative Sample
+Specifications</h2>
+<p>The main analyses use multiple imputation via missRanger with
+predictive mean matching (<span class="math inline">k</span> = 5). To
+verify that imputation does not drive the results, we re-estimate the
+main model using complete cases with listwise deletion. The listwise
+sample retains 72,160 of 79,014 respondents (91.3%). The Female <span
+class="math inline">\times</span> Internet interaction is 0.082 (<span
+class="math inline">p &lt; .001</span>, SE = 0.004), substantively
+identical to the imputed-data estimate of 0.081. The consistency between
+imputed and listwise results indicates that the gendered internet effect
+is not sensitive to missing data treatment.</p>
+<div class="tablenotes">
+<p><em>Note.</em> Dependent variable is the gender ideology index (1–5)
+except for <em>Item 1–4</em> models (individual attitude items as DV)
+and <em>Ordered logit</em> (log-odds). All models include controls for
+age, education, log income, urban hukou, marital status, party
+membership, and year fixed effects. Standard errors clustered by
+province in parentheses. <span class="math inline">^{*}p&lt;.05</span>,
+<span class="math inline">^{**}p&lt;.01</span>, <span
+class="math inline">^{***}p&lt;.001</span>.</p>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="list">
+<div id="ref-campante2018politics" class="csl-entry" role="listitem">
+Campante, Filipe, Ruben Durante, and Francesco Sobbrio. 2018.
+<span>“<span class="nocase">Politics 2.0: The Multifaceted Effect of
+Broadband Internet on Political Participation</span>.”</span>
+<em>Journal of the European Economic Association</em> 16 (4): 1094–136.
+<a
+href="https://doi.org/10.1093/jeea/jvx044">https://doi.org/10.1093/jeea/jvx044</a>.
+</div>
+<div id="ref-czernich2011broadband" class="csl-entry" role="listitem">
+Czernich, Nina, Oliver Falck, Tobias Kretschmer, and Ludger Woessmann.
+2011. <span>“<span class="nocase">Broadband Infrastructure and Economic
+Growth</span>.”</span> <em>The Economic Journal</em> 121 (552): 505–32.
+<a
+href="https://doi.org/10.1111/j.1468-0297.2011.02420.x">https://doi.org/10.1111/j.1468-0297.2011.02420.x</a>.
+</div>
+<div id="ref-imbens1994identification" class="csl-entry"
+role="listitem">
+Imbens, Guido W., and Joshua D. Angrist. 1994. <span>“<span
+class="nocase">Identification and Estimation of Local Average Treatment
+Effects</span>.”</span> <em>Econometrica</em> 62 (2): 467–75. <a
+href="https://doi.org/10.2307/2951620">https://doi.org/10.2307/2951620</a>.
+</div>
+<div id="ref-qu2025broadband" class="csl-entry" role="listitem">
+Qu, Xiaorui, Qinan Lu, Minghao Li, and Wendong Zhang. 2025. <span>“<span
+class="nocase">Broadband internet speed upgrades and the farmland
+market: A shift‐share instrumental variable approach</span>.”</span>
+<em>American Journal of Agricultural Economics</em> 108 (2): 566–98. <a
+href="https://doi.org/10.1111/ajae.12559">https://doi.org/10.1111/ajae.12559</a>.
+</div>
+<div id="ref-stock2005testing" class="csl-entry" role="listitem">
+Stock, James H., and Motohiro Yogo. 2005. <span>“<span
+class="nocase">Testing for Weak Instruments in Linear IV
+Regression</span>.”</span> <em>Identification and Inference for
+Econometric Models: Essays in Honor of Thomas Rothenberg</em>, 80–108.
+<a
+href="https://doi.org/10.1017/CBO9780511614491.006">https://doi.org/10.1017/CBO9780511614491.006</a>.
+</div>
+</div>
+<!-- Markup Reader: inline annotation toolkit -->
+<style id="markup-reader-panel-style">
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap");
+
+/* ── Annotation marks ─────────────────────────────────── */
+[data-annotation="true"] { border-radius: 2px; cursor: pointer; }
+[data-annotation="true"].annot-highlight { background: var(--annot-highlight-color, #fff2a8); box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+[data-annotation="true"].annot-underline { border-bottom: 3px solid var(--annot-underline-color, #cc4f1b); padding-bottom: 1px; }
+[data-annotation="true"].annot-note { background: var(--annot-highlight-color, #fff2a8); border-bottom: 2px dashed var(--annot-underline-color, #cc4f1b); cursor: help; position: relative; }
+[data-annotation="true"].annot-note::after { content: "\270E"; font-size: .75em; font-weight: 700; color: var(--annot-underline-color, #cc4f1b); margin-left: 1px; vertical-align: super; }
+[data-annotation="true"].annot-note[data-note]:hover::before {
+  content: attr(data-note);
+  position: absolute; bottom: calc(100% + 4px); left: 0;
+  max-width: 300px; padding: 6px 10px;
+  background: #1e3a27; color: #fff; font-size: 12px; font-weight: 400;
+  border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,.3);
+  white-space: pre-wrap; word-break: break-word;
+  z-index: 999998; pointer-events: none;
+  animation: mr-fadeIn .12s ease;
+}
+
+/* ── Selection tooltip ────────────────────────────────── */
+#mr-tooltip {
+  position: absolute; z-index: 999999;
+  display: none; align-items: center; gap: 4px;
+  padding: 5px 6px;
+  background: #1e3a27; color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.28);
+  font-family: "Manrope", "Segoe UI", sans-serif; font-size: 13px; font-weight: 600;
+  white-space: nowrap;
+  animation: mr-fadeIn .15s ease;
+}
+#mr-tooltip button {
+  border: none; background: rgba(255,255,255,.15);
+  color: #fff; border-radius: 7px;
+  padding: 5px 10px; font-size: 12px; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  transition: background .12s ease;
+}
+#mr-tooltip button:hover { background: rgba(255,255,255,.3); }
+#mr-tooltip .tt-sep { width: 1px; height: 18px; background: rgba(255,255,255,.22); }
+
+/* ── Note input box ───────────────────────────────────── */
+#mr-note-input {
+  position: absolute; z-index: 1000000;
+  display: none; flex-direction: column; gap: 6px;
+  width: 280px; padding: 10px 12px; box-sizing: border-box;
+  background: #1e3a27; color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 36px rgba(0,0,0,.35);
+  font-family: "Manrope", "Segoe UI", sans-serif; font-size: 13px;
+  animation: mr-fadeIn .15s ease;
+}
+#mr-note-input .ni-label { font-weight: 700; font-size: 12px; opacity: .85; }
+#mr-note-input textarea {
+  width: 100%; min-height: 60px; max-height: 140px;
+  padding: 8px 10px; border: 1px solid rgba(255,255,255,.25);
+  border-radius: 8px; background: rgba(255,255,255,.1);
+  color: #fff; font-family: inherit; font-size: 13px;
+  resize: vertical; outline: none; box-sizing: border-box;
+}
+#mr-note-input textarea:focus { border-color: rgba(255,255,255,.5); }
+#mr-note-input .ni-actions { display: flex; justify-content: flex-end; gap: 6px; }
+#mr-note-input .ni-actions button {
+  border: none; border-radius: 8px; padding: 6px 14px;
+  font-size: 12px; font-weight: 700; cursor: pointer; font-family: inherit;
+}
+#mr-note-input .ni-cancel { background: rgba(255,255,255,.15); color: #fff; }
+#mr-note-input .ni-cancel:hover { background: rgba(255,255,255,.25); }
+#mr-note-input .ni-confirm { background: #4caf6a; color: #fff; }
+#mr-note-input .ni-confirm:hover { background: #3d9e5a; }
+
+/* ── Floating toggle button ───────────────────────────── */
+#mr-toggle-btn {
+  position: fixed; bottom: 20px; right: 20px; z-index: 999990;
+  width: 48px; height: 48px; border-radius: 50%;
+  background: linear-gradient(135deg, #2f8a45, #1f6933); color: #fff;
+  border: none; font-size: 22px; cursor: pointer;
+  box-shadow: 0 6px 20px rgba(28,77,42,.35);
+  transition: transform .15s ease, box-shadow .2s ease;
+  font-family: "Manrope", sans-serif;
+}
+#mr-toggle-btn:hover { transform: scale(1.08); box-shadow: 0 8px 24px rgba(28,77,42,.45); }
+
+/* ── Side panel ───────────────────────────────────────── */
+#mr-panel {
+  position: fixed; top: 0; right: -340px; z-index: 999991;
+  width: 320px; height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #f9fbf3, #f5efe3);
+  border-left: 1px solid rgba(54,84,58,.18);
+  box-shadow: -4px 0 24px rgba(0,0,0,.12);
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  color: #24322a;
+  transition: right .3s ease;
+  overflow: hidden;
+  padding: 16px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+#mr-panel.open { right: 0; }
+#mr-panel h3 {
+  margin: 0 0 8px; font-size: .88rem; letter-spacing: .03em;
+  text-transform: uppercase; color: #214730;
+}
+#mr-panel .mr-section {
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(73,106,67,.14); border-radius: 14px;
+  padding: 12px;
+}
+#mr-panel .mr-pen-group { margin-bottom: 4px; }
+#mr-panel .mr-pen-label { font-size: .78rem; color: #5f6f62; margin-bottom: 6px; font-weight: 600; }
+#mr-panel .mr-pens { display: flex; gap: 8px; flex-wrap: wrap; }
+#mr-panel .mr-pen {
+  width: 28px; height: 28px; border-radius: 50%; border: 2px solid transparent;
+  cursor: pointer; transition: transform .12s ease, border-color .12s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15); position: relative;
+}
+#mr-panel .mr-pen:hover { transform: scale(1.15); }
+#mr-panel .mr-pen.active {
+  border-color: #1e3a27; box-shadow: 0 0 0 2px #1e3a27, 0 2px 8px rgba(0,0,0,.2);
+  transform: scale(1.1);
+}
+#mr-panel .mr-pen.active::after {
+  content: "\2713"; position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%); font-size: 13px; font-weight: 900;
+  color: rgba(0,0,0,.5); text-shadow: 0 0 2px rgba(255,255,255,.8);
+}
+#mr-panel .mr-annot-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; overflow-y: auto; }
+#mr-panel .mr-annot-item {
+  font-size: .82rem; line-height: 1.4; padding: 8px 10px;
+  background: rgba(255,255,255,.8); border: 1px solid rgba(60,90,60,.12);
+  border-radius: 10px; cursor: pointer; transition: background .15s ease;
+  word-break: break-word;
+}
+#mr-panel .mr-annot-item:hover { background: #edf5e4; }
+#mr-panel .mr-annot-type {
+  display: inline-block; font-size: .68rem; font-weight: 700; text-transform: uppercase;
+  padding: 2px 6px; border-radius: 6px; margin-right: 4px; vertical-align: middle;
+}
+#mr-panel .mr-annot-type.highlight { background: #fff2a8; color: #6b5a00; }
+#mr-panel .mr-annot-type.underline { background: #fce0cf; color: #7a3006; }
+#mr-panel .mr-annot-type.note { background: #d4f0dd; color: #1a5e2c; }
+#mr-panel .mr-annot-note { display: block; margin-top: 3px; font-style: italic; color: #5f6f62; font-size: .78rem; }
+#mr-panel .mr-annot-actions { margin-top: 5px; display: flex; gap: 5px; }
+#mr-panel .mr-annot-actions button {
+  font-size: .72rem; padding: 4px 8px; border: none; border-radius: 6px;
+  font-weight: 700; cursor: pointer; font-family: inherit;
+}
+#mr-panel .mr-btn-del { background: linear-gradient(135deg,#d9713f,#bc4b12); color: white; }
+#mr-panel .mr-btn-note { background: #f0f4e8; color: #24462f; border: 1px solid rgba(45,82,53,.18); }
+#mr-panel .mr-save-btn {
+  display: block; width: 100%; padding: 10px;
+  background: linear-gradient(135deg,#2f8a45,#1f6933); color: #fff;
+  border: none; border-radius: 10px; font-size: .88rem; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  box-shadow: 0 8px 18px rgba(28,77,42,.2);
+  flex-shrink: 0;
+}
+#mr-panel .mr-save-btn:hover { transform: translateY(-1px); }
+#mr-panel .mr-export-md {
+  display: block; width: 100%; padding: 10px;
+  background: linear-gradient(135deg,#3a6b8a,#1f4f6e); color: #fff;
+  border: none; border-radius: 10px; font-size: .88rem; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  box-shadow: 0 8px 18px rgba(28,60,90,.2);
+  flex-shrink: 0;
+}
+#mr-panel .mr-export-md:hover { transform: translateY(-1px); }
+#mr-panel .mr-empty { color: #5f6f62; font-size: .82rem; text-align: center; padding: 12px 0; }
+#mr-panel .mr-close {
+  position: absolute; top: 12px; right: 12px;
+  background: rgba(0,0,0,.06); border: none; border-radius: 8px;
+  width: 28px; height: 28px; font-size: 16px; cursor: pointer;
+  color: #24322a; font-family: inherit;
+}
+
+@keyframes mr-fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ── Mobile responsive ────────────────────────────────── */
+@media (max-width: 600px) {
+  #mr-panel { width: 100vw; right: -100vw; border-left: none; padding: 14px 16px; }
+  #mr-panel.open { right: 0; }
+  #mr-panel .mr-pen { width: 32px; height: 32px; }
+  #mr-panel .mr-save-btn { padding: 14px; font-size: .92rem; }
+  #mr-toggle-btn { width: 44px; height: 44px; font-size: 20px; bottom: 16px; right: 16px; }
+  #mr-tooltip { padding: 7px 8px; }
+  #mr-tooltip button { padding: 8px 12px; font-size: 13px; }
+  #mr-note-input { width: calc(100vw - 24px); max-width: none; left: 12px !important; padding: 12px 14px; font-size: 15px; }
+  #mr-note-input textarea { min-height: 72px; font-size: 15px; padding: 10px 12px; }
+  #mr-note-input .ni-actions button { padding: 10px 18px; font-size: 14px; }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  #mr-tooltip button { padding: 8px 14px; font-size: 14px; }
+}
+
+@media print {
+  #mr-toggle-btn, #mr-panel, #mr-tooltip, #mr-note-input { display: none !important; }
+}
+</style>
+
+<script>
+(function() {
+"use strict";
+
+/* ── Config ───────────────────────────────────────────── */
+let highlightColor = "#fff2a8";
+let underlineColor = "#cc4f1b";
+
+/* ── Annotation helpers ───────────────────────────────── */
+function genId() { return "ann-" + Date.now() + "-" + Math.random().toString(36).slice(2,8); }
+
+function wrapRange(range, type, noteText) {
+  const span = document.createElement("span");
+  span.setAttribute("data-annotation", "true");
+  span.setAttribute("data-type", type);
+  span.setAttribute("data-id", genId());
+  if (type === "highlight") {
+    span.className = "annot-highlight";
+    span.style.setProperty("--annot-highlight-color", highlightColor);
+  } else if (type === "underline") {
+    span.className = "annot-underline";
+    span.style.setProperty("--annot-underline-color", underlineColor);
+  } else if (type === "note") {
+    span.className = "annot-note";
+    span.setAttribute("data-note", noteText);
+    span.title = noteText;
+    span.style.setProperty("--annot-highlight-color", highlightColor);
+    span.style.setProperty("--annot-underline-color", underlineColor);
+  }
+  const frag = range.extractContents();
+  if (!frag.textContent || !frag.textContent.trim()) { range.insertNode(frag); return null; }
+  span.appendChild(frag);
+  range.insertNode(span);
+  return span;
+}
+
+function removeAnnotation(el) {
+  const p = el.parentNode; if (!p) return;
+  while (el.firstChild) p.insertBefore(el.firstChild, el);
+  p.removeChild(el); p.normalize();
+}
+
+function applyNote(el, text) {
+  el.setAttribute("data-note", text);
+  el.setAttribute("data-type", "note");
+  el.title = text;
+  el.className = "annot-note";
+}
+
+function allAnnotations() { return Array.from(document.querySelectorAll('[data-annotation="true"]')); }
+
+/* ── Tooltip ──────────────────────────────────────────── */
+function getEl(id) { return document.getElementById(id); }
+function mkEl(tag, id) {
+  let el = getEl(id);
+  if (el) return el;
+  el = document.createElement(tag);
+  el.id = id;
+  document.body.appendChild(el);
+  return el;
+}
+
+function showTooltip(rect, buttons) {
+  const tip = mkEl("div", "mr-tooltip");
+  tip.innerHTML = "";
+  buttons.forEach(function(b, i) {
+    if (i > 0) { const sep = document.createElement("span"); sep.className = "tt-sep"; tip.appendChild(sep); }
+    const btn = document.createElement("button");
+    btn.textContent = b.label;
+    btn.addEventListener("mousedown", function(e) { e.preventDefault(); e.stopPropagation(); b.action(); });
+    tip.appendChild(btn);
+  });
+  tip.style.display = "flex";
+  const sy = window.scrollY, sx = window.scrollX;
+  tip.style.top = Math.max(0, rect.top + sy - tip.offsetHeight - 8) + "px";
+  tip.style.left = Math.max(4, rect.left + sx + rect.width/2 - tip.offsetWidth/2) + "px";
+}
+
+function hideTooltip() {
+  const tip = getEl("mr-tooltip"); if (tip) tip.style.display = "none";
+  const ni = getEl("mr-note-input"); if (ni) ni.style.display = "none";
+}
+
+/* ── Note input ───────────────────────────────────────── */
+function showNoteInput(rect, existing, onConfirm) {
+  const tip = getEl("mr-tooltip"); if (tip) tip.style.display = "none";
+  const box = mkEl("div", "mr-note-input");
+  box.innerHTML = "";
+
+  const label = document.createElement("div");
+  label.className = "ni-label"; label.textContent = "Enter note:";
+  box.appendChild(label);
+
+  const ta = document.createElement("textarea");
+  ta.value = existing || ""; ta.setAttribute("rows","3");
+  box.appendChild(ta);
+
+  const acts = document.createElement("div");
+  acts.className = "ni-actions";
+
+  const cancelBtn = document.createElement("button");
+  cancelBtn.className = "ni-cancel"; cancelBtn.textContent = "Cancel";
+  cancelBtn.addEventListener("click", function(e) { e.preventDefault(); box.style.display = "none"; });
+  acts.appendChild(cancelBtn);
+
+  const okBtn = document.createElement("button");
+  okBtn.className = "ni-confirm"; okBtn.textContent = "OK";
+  okBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    const val = ta.value.trim();
+    if (!val) { ta.focus(); return; }
+    box.style.display = "none";
+    onConfirm(val);
+  });
+  acts.appendChild(okBtn);
+  box.appendChild(acts);
+
+  ta.addEventListener("keydown", function(e) {
+    if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); okBtn.click(); }
+    if (e.key === "Escape") { e.preventDefault(); cancelBtn.click(); }
+  });
+
+  box.style.display = "flex";
+  const sy = window.scrollY;
+  box.style.top = Math.max(sy + 4, rect.bottom + sy + 8) + "px";
+  box.style.left = Math.max(4, Math.min(rect.left, document.documentElement.clientWidth - 288)) + "px";
+  setTimeout(function() { ta.focus(); }, 30);
+}
+
+/* ── Annotate action ──────────────────────────────────── */
+function doAnnotate(type) {
+  hideTooltip();
+  const sel = window.getSelection();
+  if (!sel || sel.rangeCount === 0 || sel.isCollapsed) return;
+  const range = sel.getRangeAt(0);
+
+  if (type === "note") {
+    const saved = range.cloneRange();
+    const rect = range.getBoundingClientRect();
+    sel.removeAllRanges();
+    showNoteInput(rect, "", function(text) {
+      const ns = window.getSelection();
+      ns.removeAllRanges(); ns.addRange(saved);
+      const fr = ns.getRangeAt(0);
+      wrapRange(fr, "note", text);
+      ns.removeAllRanges();
+      refreshPanel();
+    });
+    return;
+  }
+
+  wrapRange(range, type, "");
+  sel.removeAllRanges();
+  refreshPanel();
+}
+
+/* ── Selection listener ───────────────────────────────── */
+let tooltipLock = false;
+
+function tooltipButtons() {
+  return [
+    { label: "Highlight", action: function() { doAnnotate("highlight"); } },
+    { label: "Underline", action: function() { doAnnotate("underline"); } },
+    { label: "Note", action: function() { doAnnotate("note"); } },
+  ];
+}
+
+document.addEventListener("mouseup", function() {
+  if (tooltipLock) return;
+  setTimeout(function() {
+    const sel = window.getSelection();
+    if (!sel || sel.isCollapsed || sel.rangeCount === 0) return;
+    const range = sel.getRangeAt(0);
+    const rect = range.getBoundingClientRect();
+    if (rect.width === 0 && rect.height === 0) return;
+    if (range.commonAncestorContainer.nodeType === 1 && range.commonAncestorContainer.closest && range.commonAncestorContainer.closest("#mr-panel")) return;
+    if (range.commonAncestorContainer.parentElement && range.commonAncestorContainer.parentElement.closest && range.commonAncestorContainer.parentElement.closest("#mr-panel")) return;
+    showTooltip(rect, tooltipButtons());
+  }, 10);
+});
+
+function handlePointerDown(e) {
+  const t = e.target;
+  if (t.closest && (t.closest("#mr-tooltip") || t.closest("#mr-note-input") || t.closest("#mr-panel"))) return;
+
+  const annot = t.closest && t.closest('[data-annotation="true"]');
+  if (annot) {
+    const sel = window.getSelection();
+    if (sel && sel.isCollapsed) {
+      e.preventDefault();
+      tooltipLock = true;
+      showTooltip(annot.getBoundingClientRect(), [
+        { label: "Note", action: function() {
+          hideTooltip(); tooltipLock = false;
+          var rect = annot.getBoundingClientRect();
+          showNoteInput(rect, annot.getAttribute("data-note") || "", function(text) {
+            applyNote(annot, text); refreshPanel();
+          });
+        }},
+        { label: "Remove", action: function() {
+          hideTooltip(); tooltipLock = false;
+          removeAnnotation(annot); refreshPanel();
+        }},
+      ]);
+      setTimeout(function() { tooltipLock = false; }, 300);
+      return;
+    }
+  }
+  hideTooltip();
+}
+
+document.addEventListener("mousedown", handlePointerDown);
+
+/* ── Touch / mobile support ──────────────────────────── */
+var selectionTimer = null;
+document.addEventListener("selectionchange", function() {
+  clearTimeout(selectionTimer);
+  selectionTimer = setTimeout(function() {
+    if (tooltipLock) return;
+    var sel = window.getSelection();
+    if (!sel || sel.isCollapsed || sel.rangeCount === 0) return;
+    var range = sel.getRangeAt(0);
+    if (range.commonAncestorContainer.nodeType === 1 && range.commonAncestorContainer.closest && range.commonAncestorContainer.closest("#mr-panel")) return;
+    if (range.commonAncestorContainer.parentElement && range.commonAncestorContainer.parentElement.closest && range.commonAncestorContainer.parentElement.closest("#mr-panel")) return;
+    var rect = range.getBoundingClientRect();
+    if (rect.width === 0 && rect.height === 0) return;
+    showTooltip(rect, tooltipButtons());
+  }, 300);
+});
+
+document.addEventListener("touchend", function(e) {
+  setTimeout(function() {
+    var sel = window.getSelection();
+    if (sel && !sel.isCollapsed) return;
+    handlePointerDown(e);
+  }, 50);
+});
+
+/* ── Side panel ───────────────────────────────────────── */
+function buildPanel() {
+  const toggle = document.createElement("button");
+  toggle.id = "mr-toggle-btn";
+  toggle.textContent = "\u270E";
+  toggle.title = "Annotation Tools";
+  document.body.appendChild(toggle);
+
+  const panel = document.createElement("div");
+  panel.id = "mr-panel";
+  var hlPens = [
+    { name: "Yellow", color: "#fff2a8" },
+    { name: "Green", color: "#b8f0c0" },
+    { name: "Blue", color: "#b3deff" },
+    { name: "Pink", color: "#ffc0cb" },
+    { name: "Orange", color: "#ffd9a8" },
+    { name: "Purple", color: "#dcc0f0" },
+  ];
+  var ulPens = [
+    { name: "Red", color: "#cc4f1b" },
+    { name: "Blue", color: "#2a6dd9" },
+    { name: "Green", color: "#2a8a3e" },
+    { name: "Orange", color: "#d98c2a" },
+    { name: "Purple", color: "#7b3ec4" },
+    { name: "Gray", color: "#666666" },
+  ];
+
+  function buildPenRow(pens, activeColor) {
+    return pens.map(function(p) {
+      var cls = p.color === activeColor ? "mr-pen active" : "mr-pen";
+      return '<button class="' + cls + '" data-color="' + p.color + '" style="background:' + p.color + ';" title="' + p.name + '"></button>';
+    }).join("");
+  }
+
+  panel.innerHTML =
+    '<button class="mr-close" id="mr-close-btn">\u2715</button>' +
+    '<h3>Annotations</h3>' +
+    '<div class="mr-section">' +
+      '<div class="mr-pen-group">' +
+        '<div class="mr-pen-label">Highlight</div>' +
+        '<div class="mr-pens" id="mr-hl-pens">' + buildPenRow(hlPens, highlightColor) + '</div>' +
+      '</div>' +
+      '<div class="mr-pen-group" style="margin-top:10px;">' +
+        '<div class="mr-pen-label">Underline</div>' +
+        '<div class="mr-pens" id="mr-ul-pens">' + buildPenRow(ulPens, underlineColor) + '</div>' +
+      '</div>' +
+    '</div>' +
+    '<div class="mr-section" style="flex:1;overflow-y:auto;min-height:0;display:flex;flex-direction:column;">' +
+      '<h3>Annotation List</h3>' +
+      '<ul id="mr-annot-list" class="mr-annot-list" style="flex:1;overflow-y:auto;min-height:0;">' +
+        '<li class="mr-empty">No annotations yet</li>' +
+      '</ul>' +
+    '</div>' +
+    '<button class="mr-save-btn" id="mr-save-btn">Download Annotated HTML</button>' +
+    '<button class="mr-export-md" id="mr-export-md">Export as Markdown</button>';
+  document.body.appendChild(panel);
+
+  toggle.addEventListener("click", function() { panel.classList.toggle("open"); });
+  document.getElementById("mr-close-btn").addEventListener("click", function() { panel.classList.remove("open"); });
+
+  document.getElementById("mr-hl-pens").addEventListener("click", function(e) {
+    var pen = e.target.closest(".mr-pen"); if (!pen) return;
+    highlightColor = pen.getAttribute("data-color");
+    this.querySelectorAll(".mr-pen").forEach(function(p) { p.classList.remove("active"); });
+    pen.classList.add("active");
+  });
+  document.getElementById("mr-ul-pens").addEventListener("click", function(e) {
+    var pen = e.target.closest(".mr-pen"); if (!pen) return;
+    underlineColor = pen.getAttribute("data-color");
+    this.querySelectorAll(".mr-pen").forEach(function(p) { p.classList.remove("active"); });
+    pen.classList.add("active");
+  });
+
+  document.getElementById("mr-save-btn").addEventListener("click", function() {
+    const toHide = ["mr-toggle-btn", "mr-panel", "mr-tooltip", "mr-note-input"];
+    toHide.forEach(function(id) { const el = getEl(id); if (el) el.style.display = "none"; });
+    const dt = document.doctype ? "<!DOCTYPE " + document.doctype.name + ">" : "<!DOCTYPE html>";
+    const blob = new Blob([dt + "\n" + document.documentElement.outerHTML], { type: "text/html;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    var origName = decodeURIComponent(location.pathname.split("/").pop() || "") || (document.title || "document").replace(/[<>:"/\\|?*]/g, "_") + ".html";
+    a.download = origName;
+    document.body.appendChild(a); a.click(); a.remove();
+    URL.revokeObjectURL(url);
+    toHide.forEach(function(id) { const el = getEl(id); if (el) el.style.display = ""; });
+    document.getElementById("mr-toggle-btn").style.display = "block";
+  });
+
+  document.getElementById("mr-export-md").addEventListener("click", exportMarkdown);
+}
+
+function refreshPanel() {
+  const list = getEl("mr-annot-list");
+  if (!list) return;
+  list.innerHTML = "";
+
+  const items = allAnnotations();
+  if (items.length === 0) {
+    list.innerHTML = '<li class="mr-empty">No annotations yet</li>';
+    return;
+  }
+
+  items.forEach(function(el) {
+    const li = document.createElement("li");
+    li.className = "mr-annot-item";
+
+    const type = el.getAttribute("data-type") || "highlight";
+    const text = (el.textContent || "").slice(0, 60);
+    const note = el.getAttribute("data-note");
+
+    const badge = document.createElement("span");
+    badge.className = "mr-annot-type " + type;
+    const typeNames = { highlight: "Highlight", underline: "Underline", note: "Note" };
+    badge.textContent = typeNames[type] || type;
+    li.appendChild(badge);
+
+    const txt = document.createElement("span");
+    txt.textContent = text + (el.textContent.length > 60 ? "\u2026" : "");
+    li.appendChild(txt);
+
+    if (note) {
+      const nt = document.createElement("span");
+      nt.className = "mr-annot-note";
+      nt.textContent = note;
+      li.appendChild(nt);
+    }
+
+    const actions = document.createElement("div");
+    actions.className = "mr-annot-actions";
+
+    if (type !== "note") {
+      const nb = document.createElement("button");
+      nb.className = "mr-btn-note"; nb.textContent = "Add Note";
+      nb.addEventListener("click", function(ev) {
+        ev.stopPropagation();
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+        showNoteInput(el.getBoundingClientRect(), el.getAttribute("data-note") || "", function(t) {
+          applyNote(el, t); refreshPanel();
+        });
+      });
+      actions.appendChild(nb);
+    }
+
+    const db = document.createElement("button");
+    db.className = "mr-btn-del"; db.textContent = "Remove";
+    db.addEventListener("click", function(ev) {
+      ev.stopPropagation();
+      removeAnnotation(el); refreshPanel();
+    });
+    actions.appendChild(db);
+    li.appendChild(actions);
+
+    li.addEventListener("click", function() {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+      el.style.outline = "3px solid #2f8a45";
+      setTimeout(function() { el.style.outline = ""; }, 1200);
+    });
+
+    list.appendChild(li);
+  });
+}
+
+/* ── Export annotations to Markdown ───────────────────── */
+function findHeading(el) {
+  var node = el;
+  while (node && node !== document.body) {
+    var prev = node.previousElementSibling;
+    while (prev) {
+      if (/^H[1-6]$/.test(prev.tagName)) return { level: parseInt(prev.tagName[1]), text: prev.textContent.trim() };
+      prev = prev.previousElementSibling;
+    }
+    node = node.parentElement;
+  }
+  return null;
+}
+
+function exportMarkdown() {
+  var items = allAnnotations();
+  if (items.length === 0) return;
+
+  var typeNames = { highlight: "Highlight", underline: "Underline", note: "Note" };
+  var lines = [];
+  lines.push("# " + (document.title || "Document") + " - Annotations");
+  lines.push("");
+  lines.push("_" + new Date().toLocaleString() + "_");
+  lines.push("");
+  lines.push("---");
+  lines.push("");
+
+  var lastHeading = null;
+
+  items.forEach(function(el) {
+    var type = el.getAttribute("data-type") || "highlight";
+    var text = el.textContent.trim();
+    var note = el.getAttribute("data-note") || "";
+
+    var heading = findHeading(el);
+    if (heading && (!lastHeading || lastHeading.text !== heading.text)) {
+      lines.push("#".repeat(Math.min(heading.level + 1, 4)) + " " + heading.text);
+      lines.push("");
+      lastHeading = heading;
+    }
+
+    lines.push("**[" + typeNames[type] + "]**");
+    lines.push("");
+    lines.push("> " + text.replace(/\n/g, "\n> "));
+    if (note) {
+      lines.push("");
+      lines.push("**Note:** " + note);
+    }
+    lines.push("");
+    lines.push("---");
+    lines.push("");
+  });
+
+  var md = lines.join("\n");
+  var blob = new Blob([md], { type: "text/markdown;charset=utf-8" });
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement("a");
+  a.href = url;
+  a.download = (document.title || "document").replace(/[<>:"/\\|?*]/g, "_") + ".annotations.md";
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+}
+
+/* ── Boot ─────────────────────────────────────────────── */
+function makeTranslatable() {
+  // Unwrap <header id="title-block-header"> entirely — move children to body
+  var header = document.getElementById('title-block-header');
+  if (header) {
+    var parent = header.parentNode;
+    var next = header.nextSibling;
+    while (header.firstChild) {
+      parent.insertBefore(header.firstChild, next);
+    }
+    parent.removeChild(header);
+  }
+  // Convert all headings to <p> with inline style
+  var sizes = { H1: '2em', H2: '1.5em', H3: '1.25em', H4: '1.1em', H5: '1em', H6: '0.9em' };
+  document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(function(h) {
+    var p = document.createElement('p');
+    p.innerHTML = h.innerHTML;
+    if (h.id) p.id = h.id;
+    if (h.className) p.className = h.className;
+    var sz = sizes[h.tagName] || '1.5em';
+    p.style.cssText = 'font-size:' + sz + ';font-weight:bold;margin-top:1.2em;margin-bottom:0.5em;';
+    if (h.classList.contains('title')) {
+      p.style.cssText = 'font-size:2.5em;font-weight:bold;text-align:center;line-height:1.2;margin-bottom:0.5em;';
+    }
+    h.parentNode.replaceChild(p, h);
+  });
+  // Unwrap <div class="abstract"> — flatten to plain <p> tags
+  var abDiv = document.querySelector('.abstract');
+  if (abDiv) {
+    var parent = abDiv.parentNode;
+    var next = abDiv.nextSibling;
+    while (abDiv.firstChild) {
+      parent.insertBefore(abDiv.firstChild, next);
+    }
+    parent.removeChild(abDiv);
+  }
+  // Convert abstract-title div to <p>
+  var abTitle = document.querySelector('.abstract-title');
+  if (abTitle && abTitle.tagName !== 'P') {
+    var p = document.createElement('p');
+    p.innerHTML = abTitle.innerHTML;
+    p.style.cssText = 'font-weight:bold;text-align:center;';
+    abTitle.parentNode.replaceChild(p, abTitle);
+  }
+}
+
+function boot() {
+  makeTranslatable();
+  buildPanel();
+  refreshPanel();
+}
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", boot);
+} else {
+  boot();
+}
+
+})();
+</script>
+</body>
+</html>
