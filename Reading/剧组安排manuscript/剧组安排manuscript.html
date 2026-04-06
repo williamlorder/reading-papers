@@ -1,0 +1,3182 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="[Blinded for Review]" />
+  <title>Living Arrangements and Health Among Older US Adults: Evidence from Fixed Effects with Individual Slopes Models</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    div.abstract {
+      margin: 2em 2em 2em 2em;
+      text-align: left;
+      font-size: 85%;
+    }
+    div.abstract-title {
+      font-weight: bold;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0.5em;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/contrib/auto-render.min.js"></script>
+  <style>
+  /* Computer Modern Serif - LaTeX default font */
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunrm.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunbx.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunti.woff') format('woff');
+      font-weight: normal;
+      font-style: italic;
+  }
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunbi.woff') format('woff');
+      font-weight: bold;
+      font-style: italic;
+  }
+
+  body {line-height: 2em; font-size: 12pt}
+
+  p {text-indent: 0.5in; margin: 0; line-height: 2em}
+  div.Author p {
+    text-indent: 0;
+  }
+  .FigureTitle {font-weight: bold; margin: 5pt 0; font-size: 12pt; color: black;}
+  .FigureTitle p {text-indent: 0; text-align: left;}
+  .FigureNote p {text-indent: 0; margin: 0; padding: 0}
+  .Caption {font-style: italic; font-size: 12pt; color: black; text-align: left}
+  .Caption p {text-indent: 0; font-size: 12pt;}
+  .quarto-float, .quarto-float-tbl, .figure {margin: 0; margin-block-start: 0; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0}
+
+  h1, h2, h3, h4, h5 {border: none; margin: 0; padding: 0;line-height: 2; text-indent: 0 }
+
+  h1 {text-align: center;}
+  h3 {font-style: italic}
+  h4 {font-weight: bold}
+
+  h4, h5 {
+  text-indent: 0.5in;
+  display:inline-block;
+  margin: 0
+  }
+
+  h5 {
+    font-style: italic;
+  }
+
+  h4 + p, h5 + p {
+    display:inline;
+    text-indent: 0;
+  }
+
+
+  .Compact {
+    line-height: 1em;
+    text-indent: 0;
+    margin: 0;
+  }
+
+
+
+
+
+
+  td p, th p, li p {text-indent: 0; margin: 0;}
+
+
+
+  li p {text-indent: 0; margin: 0;}
+
+  .subtitle {font-size: 12pt; text-align: center; color: #303030; font-weight: bold;}
+
+  blockquote, .blockquote {border: none; margin: 0 .5in; padding: 0; font-style: normal; color: #303030;}
+
+  .Author {text-align:center; text-indent: 0}
+
+  .cell-output-display p {text-indent: 0}
+
+  div.hanging-indent {margin-left: 0.5in; text-indent: -0.5in}
+
+  div.hanging-indent .csl-entry {margin-left: 0; text-indent: -0.5in;}
+
+  .katex {font-size: 1em;}
+  .katex-display {font-size: 1.1em;}
+
+  .NoIndent p {text-indent: 0}
+
+  blockquote p:nth-child(1) {text-indent: 0}
+
+  table {
+      font-variant-numeric: tabular-nums;
+  }
+
+  .table {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .table>thead {
+    border-bottom: 1px solid black;
+  }
+
+  .table>:not(caption)>*>* {
+    border-bottom: none;
+  }
+
+  .tabwid {padding: 0}
+
+  .AbstractFirstParagraph p {text-indent: 0}
+
+
+  /* Override fonts to Computer Modern */
+  body {
+      font-family: 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+      font-family: 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;
+  }
+  code, pre {
+      font-family: 'Computer Modern Typewriter', 'Courier New', monospace;
+  }
+
+  /* KaTeX: match font size and weight to body text */
+  .katex {
+      font-size: 1.0em;
+      font-weight: normal;
+  }
+  .katex .mathnormal,
+  .katex .mathit {
+      font-weight: normal;
+  }
+  .katex .mathbf {
+      font-weight: bold;
+  }
+
+  /* Screen adaptation overrides for web viewing */
+  @media screen {
+      html { font-size: 12pt; }
+      body {
+          max-width: 52em;
+          margin: 2em auto;
+          padding: 0 2em;
+          column-count: 1;
+      }
+      figure img { max-width: 100%; height: auto; }
+      .math.display { overflow-x: auto; margin: 1.2em 0; }
+      pre {
+          overflow-x: auto;
+          background: #f5f5f5;
+          padding: 0.8em;
+          border-radius: 4px;
+      }
+  }
+  </style>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+          delimiters: [
+              {left: "$$", right: "$$", display: true},
+              {left: "\\[", right: "\\]", display: true},
+              {left: "$", right: "$", display: false},
+              {left: "\\(", right: "\\)", display: false}
+          ],
+          throwOnError: false
+      });
+  });
+  </script>
+  <script defer=""
+  src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Living Arrangements and Health Among Older US Adults:
+Evidence from Fixed Effects with Individual Slopes Models</h1>
+<p class="author">[Blinded for Review]</p>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+<p><strong>Background and Objectives:</strong> Living arrangements are
+associated with health among older adults, but observed associations may
+reflect health selection — the process by which declining health drives
+transitions into co-residence or institutional care — rather than causal
+effects of household composition.</p>
+<p><strong>Research Design and Methods:</strong> We applied Fixed
+Effects with Individual Slopes (FE-IS) models to 11 waves of the Health
+and Retirement Study (2000–2020; <span class="math inline">N</span> =
+27,024 individuals; 177,588 person-wave observations). FE-IS removes
+individual-specific age-health trajectories that confound standard fixed
+effects (FE) estimates. Outcomes included ADL limitations (0–6), IADL
+limitations (0–5), CES-D depressive symptoms (0–8), and chronic
+conditions (0–8). Living arrangements were classified as living alone
+(reference), spouse only, children/others, spouse plus others, and
+institutionalized. Heterogeneity analyses stratified by gender, age
+group, and race/ethnicity.</p>
+<p><strong>Results:</strong> Under standard FE, non-institutional
+co-residence was associated with worse physical health but fewer
+depressive symptoms relative to living alone. FE-IS eliminated all
+physical health associations — ADL, IADL, and chronic condition effects
+became statistically non-significant — exposing them as health selection
+artifacts. Depression effects persisted: spousal co-residence reduced
+CES-D by 0.140 points (<span class="math inline">p &lt; .001</span>),
+with minimal attenuation from the FE estimate. Institutionalization
+effects were attenuated 58–65% for physical health and disappeared
+entirely for depression. Men benefited from all co-residence forms for
+depression (spouse: <span class="math inline">b</span> = <span
+class="math inline">-</span>0.175; children: <span
+class="math inline">b</span> = <span class="math inline">-</span>0.167;
+spouse plus others: <span class="math inline">b</span> = <span
+class="math inline">-</span>0.187; all <span class="math inline">p &lt;
+.01</span>), while women benefited only from spousal co-residence (<span
+class="math inline">b</span> = <span class="math inline">-</span>0.141,
+<span class="math inline">p &lt; .001</span>). The spousal protection
+effect weakened with age, from <span class="math inline">b</span> =
+<span class="math inline">-</span>0.208 (<span class="math inline">p
+&lt; .001</span>) at ages 50–64 to non-significance at 75+. All findings
+were robust to inverse probability weighting, complete-case analysis,
+alternative living arrangement coding, and slope specification
+changes.</p>
+<p><strong>Discussion and Implications:</strong> Co-residence genuinely
+reduces depression through social-psychological mechanisms, but
+associations with physical health are driven by health selection.
+Interventions targeting depression among older adults should prioritize
+men living alone and younger-old adults transitioning out of spousal
+households.</p>
+</div>
+</header>
+<h1 id="introduction">Introduction</h1>
+<p>Does living with a spouse protect against depression in old age, or
+do healthier people simply remain in spousal households longer? This
+question captures a challenge that pervades the literature on living
+arrangements and health: the difficulty of separating genuine causal
+effects from health selection, the process by which declining health
+drives changes in household composition rather than the reverse.</p>
+<p>The question matters for both science and policy. In the United
+States, more than 14 million adults aged 65 and older live alone, a
+figure projected to rise as the population ages and divorce rates remain
+elevated <span class="citation"
+data-cites="livarr_lamidi2022educational">(Lamidi 2022)</span>. Public
+health agencies and aging-services organizations increasingly view
+household-level interventions — shared housing programs, co-residence
+support, alternatives to institutional placement — as tools for
+promoting healthy aging. Yet the evidence base for these interventions
+rests on observational associations that may reflect the health
+conditions preceding a move rather than the consequences of the living
+arrangement itself <span class="citation"
+data-cites="livarr_hughes2002health livarr_zimmer2005health">(Hughes and
+Waite 2002; Zimmer 2005)</span>.</p>
+<p>Two decades of longitudinal research have established that living
+arrangements are associated with health outcomes among older adults,
+including functional limitations, depressive symptoms, and chronic
+disease burden <span class="citation"
+data-cites="livarr_hughes2002health livarr_lee2023living">(Hughes and
+Waite 2002; Lee and Lim 2023)</span>. Standard fixed effects (FE) models
+have been the primary tool for addressing confounding, removing stable
+individual characteristics that jointly predict both living arrangements
+and health. Yet standard FE cannot remove dynamic health selection: the
+process by which individuals whose health is declining at a faster rate
+are precisely those who transition into co-residential or institutional
+care. This form of confounding biases FE estimates in a predictable
+direction, inflating apparent effects of living arrangements on physical
+health.</p>
+<p>We address this gap by applying Fixed Effects with Individual Slopes
+(FE-IS) models <span class="citation"
+data-cites="livarr_bruderl2015fixed livarr_rttenauer2019fixed">(Brüderl
+and Ludwig 2015; Rüttenauer and Ludwig 2019)</span> to 20 years of
+nationally representative panel data from the Health and Retirement
+Study (HRS; 2000–2020). FE-IS extends standard FE by allowing each
+individual to follow their own linear and quadratic age-health
+trajectory, absorbing the person-specific health slopes that standard FE
+leaves in the error term. By comparing FE and FE-IS estimates, we
+directly quantify the magnitude of health selection bias for each living
+arrangement–health association.</p>
+<p>Our results reveal a sharp divergence across health domains. For
+physical health outcomes — ADL limitations, IADL limitations, and
+chronic conditions — all associations between non-institutional
+co-residence and health that appear significant under standard FE become
+statistically indistinguishable from zero under FE-IS. These
+associations are entirely health selection artifacts. For depression, by
+contrast, co-residence effects persist after removing individual
+trajectories: spousal co-residence reduces CES-D scores by 0.140 points
+(<span class="math inline">p &lt; .001</span>), an effect that is barely
+attenuated from the standard FE estimate of 0.148. The apparent harmful
+effect of institutionalization on depression disappears completely under
+FE-IS, exposed as pure health selection. These effects vary by gender —
+men benefit from all forms of co-residence, while women benefit only
+from spousal co-residence — and by age, with the protective effect
+weakening after age 75.</p>
+<p>This study makes three contributions. First, we provide the most
+rigorous causal test to date of living arrangement effects on health
+among older adults, demonstrating that FE-IS substantially revises
+conclusions drawn from standard FE. Second, we resolve an apparent
+paradox in the literature: the finding that co-residence is
+simultaneously associated with worse physical health and better mental
+health. Under FE-IS, the physical health associations vanish, revealing
+a domain-specific pattern in which co-residence genuinely affects
+depression through social-psychological mechanisms while leaving
+physical health trajectories unchanged. Third, we document gendered and
+age-graded heterogeneity in co-residence effects, showing that the
+protective function of household composition for mental health is
+concentrated among men and younger-old adults — a finding with direct
+implications for targeting prevention efforts.</p>
+<h1 id="background-and-theoretical-framework">Background and Theoretical
+Framework</h1>
+<h2 id="living-arrangements-and-health-in-later-life">Living
+Arrangements and Health in Later Life</h2>
+<p>The household is a primary site of social interaction and resource
+exchange for older adults. Who one lives with shapes daily routines,
+access to assistance, emotional companionship, and exposure to
+health-promoting or health-damaging behaviors. In the United States, the
+proportion of adults aged 65 and older living alone has grown steadily
+over recent decades, driven by increases in life expectancy, divorce,
+and the preference for independent living <span class="citation"
+data-cites="livarr_lamidi2022educational livarr_waite2022diversity">(Lamidi
+2022; Waite and Karraker 2022)</span>. At the same time,
+multigenerational households, spousal co-residence, and institutional
+care remain common configurations, each embedding older adults in
+distinct social environments with different implications for
+well-being.</p>
+<p>This study distinguishes five living arrangements — living alone,
+living with a spouse only, living with children or other non-spouse
+members, living with a spouse and others, and residing in an institution
+— that represent qualitatively different configurations of social
+resources <span class="citation"
+data-cites="livarr_hughes2002health livarr_waite2022diversity">(Hughes
+and Waite 2002; Waite and Karraker 2022)</span>. Prior research has
+documented associations between household composition and a range of
+health outcomes, including functional limitations, chronic disease
+burden, and depressive symptoms <span class="citation"
+data-cites="livarr_hughes2002health livarr_cabrerocastro2025living livarr_lee2023living">(Hughes
+and Waite 2002; Cabrero-Castro et al. 2025; Lee and Lim 2023)</span>.
+Living alone has been linked to elevated depression risk through social
+isolation <span class="citation"
+data-cites="livarr_lee2024social livarr_pomeroy2023association">(Lee and
+Kim 2024; <span class="nocase">Pomeroy et al.</span> 2023)</span>, while
+co-residence with a spouse has been associated with better physical and
+mental health across multiple populations <span class="citation"
+data-cites="livarr_takagi2024gender livarr_liu2024racial">(Takagi et al.
+2024; Liu 2024)</span>. Institutional residence is consistently
+associated with the worst health profiles, though this pattern likely
+reflects the health conditions that precipitate admission rather than
+harmful effects of institutional environments themselves <span
+class="citation" data-cites="livarr_gaugler2007predicting">(Gaugler et
+al. 2007)</span>.</p>
+<p>A persistent challenge in this literature is that observed
+associations between living arrangements and health may reflect health
+selection rather than causal effects of household composition. Older
+adults whose health is declining are more likely to move in with family
+members or enter institutional care <span class="citation"
+data-cites="livarr_zimmer2005health livarr_verspeek2024expecting">(Zimmer
+2005; Verspeek et al. 2024)</span>. Disentangling the direction of
+causality requires methods that go beyond standard longitudinal
+designs.</p>
+<h2 id="social-convoy-model-and-stress-buffering">Social Convoy Model
+and Stress-Buffering</h2>
+<p>The social convoy model, introduced by <span class="citation"
+data-cites="livarr_kahn1980convoys">Kahn and Antonucci (1980)</span> and
+elaborated in subsequent work <span class="citation"
+data-cites="livarr_antonucci2019convoys livarr_sherman2015social">(Antonucci
+et al. 2019; Sherman et al. 2015)</span>, provides a theoretical
+framework for understanding how household composition affects health.
+The model conceptualizes each individual as moving through life
+surrounded by a dynamic, layered network of social ties. The innermost
+ring of this convoy consists of the most intimate relationships —
+typically a spouse, close family members, or long-term companions — who
+provide the most sustained forms of support. Household co-residents
+occupy this innermost position and are uniquely situated to deliver
+daily assistance with functional tasks, monitor health status, and offer
+emotional companionship <span class="citation"
+data-cites="livarr_fuller2020convoy">(Fuller et al. 2020)</span>.</p>
+<p>The convoy framework distinguishes two functions of social support
+that are relevant to the living arrangement–health link. First,
+instrumental support encompasses tangible aid: help with activities of
+daily living, medication management, meal preparation, and
+transportation to medical appointments. Second, emotional support
+encompasses companionship, affection, shared daily routines, and a sense
+of belonging that regulates negative affect <span class="citation"
+data-cites="livarr_sherman2015social livarr_fuller2020convoy">(Sherman
+et al. 2015; Fuller et al. 2020)</span>. These two functions may operate
+through distinct causal pathways. Instrumental support addresses the
+practical consequences of health decline but does not necessarily alter
+the underlying physiological trajectory; a co-resident who assists with
+bathing does not slow joint degeneration. Emotional support, by
+contrast, operates through psychosocial mechanisms — reducing
+loneliness, providing a sense of purpose, buffering against depressive
+responses to stressful events — that directly influence mental health
+<span class="citation"
+data-cites="livarr_antonucci2019convoys">(Antonucci et al.
+2019)</span>.</p>
+<p>The stress-buffering hypothesis, articulated by <span
+class="citation" data-cites="livarr_cohen1985stress">Cohen and Wills
+(1985)</span>, offers a complementary mechanism. This framework
+distinguishes a main-effects model, in which social support improves
+well-being regardless of stress exposure, from a buffering model, in
+which support specifically protects individuals from the adverse
+consequences of stressful events. <span class="citation"
+data-cites="livarr_cohen1985stress">Cohen and Wills (1985)</span>
+concluded that functional social support — the availability of
+instrumental aid and emotional reassurance — is the active ingredient in
+buffering, not the mere structural presence of social ties. Applied to
+living arrangements, the buffering model predicts that co-residents are
+most health-protective when stressful events occur: a health shock, a
+bereavement, or the accumulation of age-related losses. <span
+class="citation" data-cites="livarr_house1988social">House et al.
+(1988)</span> established that social isolation constitutes a major risk
+factor for mortality across prospective studies, comparable in magnitude
+to smoking, providing foundational evidence that the quantity and
+quality of social relationships causally affect health. Together, these
+theoretical perspectives predict that co-residence should protect
+against depression through emotional support and stress-buffering, while
+the relationship between co-residence and physical health may be more
+ambiguous — confounded by the very health decline that triggers changes
+in household composition.</p>
+<h2 id="health-selection-and-the-endogeneity-problem">Health Selection
+and the Endogeneity Problem</h2>
+<p>The health selection hypothesis posits that health decline causes
+living arrangement transitions rather than the reverse. Older adults
+experiencing functional deterioration are more likely to move in with
+adult children or a spouse; those with severe disability or cognitive
+impairment are more likely to enter institutional care <span
+class="citation"
+data-cites="livarr_zimmer2005health livarr_gaugler2007predicting">(Zimmer
+2005; Gaugler et al. 2007)</span>. <span class="citation"
+data-cites="livarr_gaugler2007predicting">Gaugler et al. (2007)</span>,
+in a meta-analysis of predictors of nursing home admission, identified
+three or more ADL dependencies, cognitive impairment, and prior nursing
+home use as the strongest predictors of institutional placement. <span
+class="citation" data-cites="livarr_zimmer2005health">Zimmer
+(2005)</span>, analyzing longitudinal data on Chinese oldest-old,
+documented that families respond altruistically to health deterioration
+by increasing co-residence — confirming that selection into living
+arrangements is health-driven. <span class="citation"
+data-cites="livarr_verspeek2024expecting">Verspeek et al. (2024)</span>
+showed that even expectations of future nursing home relocation are
+longitudinally linked with functional decline, suggesting both
+anticipatory and reactive pathways connecting health trajectories and
+living arrangement transitions.</p>
+<p>Standard fixed effects (FE) panel models address one source of
+confounding by removing all time-invariant individual characteristics —
+genetic endowment, childhood conditions, stable personality traits —
+that might jointly predict both living arrangements and health. Yet
+standard FE relies on a parallel-trends assumption: conditional on
+covariates, all individuals are assumed to follow the same baseline
+health trajectory regardless of whether they change living arrangements
+<span class="citation" data-cites="livarr_bell2014explaining">(Bell and
+Jones 2014)</span>. This assumption is violated when health selection is
+dynamic — that is, when individuals whose health is deteriorating at a
+faster rate are precisely those who transition into co-residential or
+institutional care.</p>
+<p>The Fixed Effects with Individual Slopes (FE-IS) estimator, developed
+by <span class="citation" data-cites="livarr_bruderl2015fixed">Brüderl
+and Ludwig (2015)</span> and formalized by <span class="citation"
+data-cites="livarr_rttenauer2019fixed">Rüttenauer and Ludwig
+(2019)</span>, addresses this limitation. FE-IS augments standard FE by
+allowing each individual to have their own linear and quadratic age
+trajectory, thereby absorbing person-specific health slopes that may
+correlate with living arrangement transitions. <span class="citation"
+data-cites="livarr_rttenauer2019fixed">Rüttenauer and Ludwig
+(2019)</span> demonstrated through both analytical derivation and Monte
+Carlo simulation that standard FE returns biased estimates when
+selection into treatment is based on individual growth of the outcome —
+the exact scenario that characterizes health-driven living arrangement
+changes. The difference between FE and FE-IS estimates quantifies the
+magnitude of health selection bias: if associations between living
+arrangements and physical health are driven by health selection, FE-IS
+coefficients should be substantially attenuated relative to standard FE;
+if associations reflect genuine causal effects, FE-IS coefficients
+should remain stable.</p>
+<h2 id="heterogeneity-gender-age-and-raceethnicity">Heterogeneity:
+Gender, Age, and Race/Ethnicity</h2>
+<p>The protective function of co-residence is unlikely to operate
+uniformly across the older adult population. Three dimensions of
+heterogeneity are theoretically motivated.</p>
+<p><em>Gender.</em> Men and women differ in the structure and function
+of their social convoys <span class="citation"
+data-cites="livarr_manalel2022development">(Manalel et al. 2022)</span>.
+Men tend to rely more heavily on household members — and on spouses in
+particular — as their primary source of emotional support, whereas women
+cultivate broader, more diversified networks that extend beyond the
+household <span class="citation"
+data-cites="livarr_berkman1979social livarr_antonucci2019convoys">(Berkman
+and Syme 1979; Antonucci et al. 2019)</span>. <span class="citation"
+data-cites="livarr_takagi2024gender">Takagi et al. (2024)</span>
+documented gender differences in the association between living
+arrangement type and well-being, with spousal and non-spousal
+co-residence producing different effects for men and women. If men
+depend more on household-based emotional support, then co-residence
+should yield larger depression reductions for men than for women.</p>
+<p><em>Age.</em> The convoy model predicts that convoy composition
+shifts across the life course as individuals experience widowhood, the
+departure of adult children, and the contraction of friendship networks
+<span class="citation"
+data-cites="livarr_sherman2015social livarr_antonucci2019convoys">(Sherman
+et al. 2015; Antonucci et al. 2019)</span>. At younger-old ages (50–64),
+household members represent a larger share of the total support network;
+at advanced ages (75+), the cumulative burden of biological decline and
+social losses may overwhelm the protective capacity of any single
+relationship. The protective effect of co-residence on depression may
+therefore weaken with age.</p>
+<p><em>Race and ethnicity.</em> Living arrangement patterns and their
+health implications vary across racial and ethnic groups. <span
+class="citation" data-cites="livarr_liu2024racial">Liu (2024)</span>
+showed that for White older adults, living alone without nearby family
+carries the strongest depression penalty, while for Black and Hispanic
+older adults, extended family and community networks partially
+compensate for the absence of household co-residents. These patterns
+suggest that the mental health returns to co-residence may operate
+across racial lines, even as the availability of substitute support
+networks differs by group.</p>
+<h2 id="hypotheses">Hypotheses</h2>
+<p>Drawing on the theoretical framework above, we derive four testable
+hypotheses:</p>
+<dl>
+<dt>H1 (Depression protection):</dt>
+<dd>
+<p>Co-residential living arrangements reduce depressive symptoms
+relative to living alone, net of individual-specific health trajectories
+(FE-IS specification). The social convoy model and stress-buffering
+theory predict that emotional support from household co-residents
+operates through psychosocial mechanisms that directly reduce
+depression.</p>
+</dd>
+<dt>H2 (Physical health selection):</dt>
+<dd>
+<p>Observed associations between co-residential living arrangements and
+physical health outcomes (ADL limitations, IADL limitations, chronic
+conditions) in standard FE models are substantially attenuated — toward
+zero — in FE-IS models. This pattern would indicate that the apparent
+physical health “effects” of living arrangements are driven by health
+selection rather than by a genuine causal pathway.</p>
+</dd>
+<dt>H3 (Gender moderation):</dt>
+<dd>
+<p>The protective effect of co-residence on depression is stronger for
+men than for women. Men’s greater reliance on household-based emotional
+support predicts that they benefit more from co-residence of all forms,
+while women’s broader extra-household networks attenuate their
+dependence on household composition for mental health.</p>
+</dd>
+<dt>H4 (Age attenuation):</dt>
+<dd>
+<p>The protective effect of spousal co-residence on depression weakens
+with age. As individuals age and the convoy contracts, the marginal
+contribution of household-level support diminishes relative to the
+cumulative burden of health decline and social loss.</p>
+</dd>
+</dl>
+<p>Each hypothesis maps directly to a specific statistical test: H1 and
+H2 are tested by comparing FE and FE-IS main-effect estimates across
+depression and physical health outcomes; H3 is tested by
+gender-stratified FE-IS models; and H4 is tested by age-group-stratified
+FE-IS models.</p>
+<h1 id="data-and-methods">Data and Methods</h1>
+<h2 id="data">Data</h2>
+<p>We use data from the Health and Retirement Study (HRS), a biennial,
+nationally representative longitudinal survey of US adults aged 50 and
+older <span class="citation"
+data-cites="livarr_sonnega2014cohort">(Sonnega et al. 2014)</span>. The
+HRS has followed respondents since 1992, collecting detailed information
+on health, economic resources, household composition, and demographic
+characteristics. We draw on waves 5 through 15, covering the period from
+2000 to 2020 (11 waves). The analytic sample includes 27,024 individuals
+contributing 177,588 person-wave observations. We restrict the sample to
+respondents aged 50 or older at each observation, exclude proxy
+interviews to ensure consistent self-reported health measurement, and
+require at least three valid waves per person to support estimation of
+individual-specific age trajectories.</p>
+<h2 id="measures">Measures</h2>
+<h3 id="outcome-variables">Outcome Variables</h3>
+<p>We examine four health outcomes that capture distinct dimensions of
+physical and mental well-being.</p>
+<p><em>Activities of daily living (ADL) difficulties</em> is a count
+(0–6) of self-reported difficulty with bathing, dressing, eating,
+toileting, transferring in and out of bed, and continence.
+<em>Instrumental activities of daily living (IADL) difficulties</em> is
+a count (0–5) of difficulty using the telephone, managing money, taking
+medications, shopping for groceries, and preparing meals. <em>Depressive
+symptoms</em> is measured by the 8-item modified Center for
+Epidemiologic Studies Depression (CES-D) scale (range 0–8), which asks
+respondents whether they experienced each of eight depressive symptoms
+much of the time during the past week. <em>Chronic conditions</em> is a
+count (0–8) of doctor-diagnosed conditions: hypertension, diabetes,
+cancer, lung disease, heart disease, stroke, psychiatric problems, and
+arthritis.</p>
+<h3 id="key-predictor-living-arrangement">Key Predictor: Living
+Arrangement</h3>
+<p>The key independent variable is a five-category measure of living
+arrangement: (1) living alone (reference category), (2) living with
+spouse only, (3) living with children or other non-spouse household
+members, (4) living with spouse plus others, and (5) institutionalized
+(nursing home or long-term care facility). These categories are
+constructed from HRS household composition and nursing home status
+variables. This coding scheme distinguishes the distinct social
+environments associated with each arrangement — spousal companionship,
+intergenerational co-residence, multigenerational households, and
+institutional care — which may affect health through different
+mechanisms <span class="citation"
+data-cites="livarr_hughes2002health livarr_waite2022diversity">(Hughes
+and Waite 2002; Waite and Karraker 2022)</span>.</p>
+<h3 id="covariates">Covariates</h3>
+<p>All models include the following time-varying covariates: age
+(centered at 65 years) and age squared to capture nonlinear aging
+effects; marital status; log-transformed household wealth (bottom-coded
+at $1 to handle zero and negative values); government health insurance
+coverage; household size; current smoking status; physical activity (any
+regular exercise); and body mass index (BMI, winsorized at 10 and 70 to
+reduce the influence of extreme values). Wave fixed effects are included
+as explicit predictors in the FE-IS specification to absorb period-level
+shocks common to all respondents.</p>
+<h2 id="analytical-strategy">Analytical Strategy</h2>
+<h3 id="standard-fixed-effects">Standard Fixed Effects</h3>
+<p>Our baseline specification is a two-way fixed effects (FE) model with
+individual and wave fixed effects, estimated using the
+<code>fixest</code> package in R. For individual <span
+class="math inline">i</span> observed at wave <span
+class="math inline">t</span>, the standard FE model is:</p>
+<p><span class="math display">\begin{equation}
+Y_{it} = \alpha_i + \lambda_t + \beta_1 \text{LivArr}_{it} +
+\boldsymbol{\gamma} \mathbf{X}_{it} + \epsilon_{it}
+\end{equation}</span></p>
+<p>where <span class="math inline">\alpha_i</span> is a person fixed
+effect, <span class="math inline">\lambda_t</span> is a wave fixed
+effect, <span class="math inline">\text{LivArr}_{it}</span> is a vector
+of living arrangement indicators (with living alone as the reference),
+and <span class="math inline">\mathbf{X}_{it}</span> includes age,
+age<span class="math inline">^2</span>, and all time-varying covariates.
+Standard errors are clustered at the person level.</p>
+<p>The standard FE estimator removes all time-invariant confounders
+(e.g., genetic endowment, childhood conditions, stable personality
+traits) but relies on a parallel-trends assumption: conditional on
+covariates, individuals who change living arrangements would have
+followed the same health trajectory as those who did not <span
+class="citation" data-cites="livarr_bell2014explaining">(Bell and Jones
+2014)</span>. This assumption fails when living arrangement transitions
+are triggered by individual-specific health decline — precisely the
+health selection mechanism of interest.</p>
+<h3 id="fixed-effects-with-individual-slopes-fe-is">Fixed Effects with
+Individual Slopes (FE-IS)</h3>
+<p>To address health selection, we estimate Fixed Effects with
+Individual Slopes (FE-IS) models <span class="citation"
+data-cites="livarr_bruderl2015fixed livarr_rttenauer2019fixed">(Brüderl
+and Ludwig 2015; Rüttenauer and Ludwig 2019)</span>. The FE-IS model
+augments standard FE by allowing each individual to have their own
+linear and quadratic age trajectory:</p>
+<p><span class="math display">\begin{equation}
+Y_{it} = \alpha_i + \beta_1 \text{LivArr}_{it} + \boldsymbol{\gamma}
+\mathbf{X}_{it} + \left(\delta_{0i} + \delta_{1i} \text{Age}_{it} +
+\delta_{2i} \text{Age}_{it}^2\right) + \epsilon_{it}
+\label{eq:feis}
+\end{equation}</span></p>
+<p>where <span class="math inline">\delta_{0i}</span>, <span
+class="math inline">\delta_{1i}</span>, and <span
+class="math inline">\delta_{2i}</span> are person-specific intercept,
+linear slope, and quadratic slope parameters. Because these individual
+trajectories are estimated from within-person variation, the model
+removes not only time-invariant unobservables (as standard FE does) but
+also person-specific health trajectories that may correlate with living
+arrangement transitions. Age terms are absorbed into the individual
+slopes and are therefore not included as separate predictors in the
+FE-IS specification. The model is implemented using the
+<code>feisr</code> package in R.</p>
+<p>The central logic is as follows: if living arrangement effects on
+physical health are driven by health selection — that is, individuals
+whose health deteriorates faster are more likely to transition into
+co-residential care — then the FE-IS estimates, which partial out these
+individual trajectories, should be substantially attenuated relative to
+standard FE. The difference between FE and FE-IS estimates quantifies
+the magnitude of health selection bias. We use Hausman-type tests to
+formally compare the two specifications, where rejection of the null
+indicates that individual-specific trends are related to living
+arrangement transitions and that FE-IS is preferred.</p>
+<h3 id="heterogeneity-analyses">Heterogeneity Analyses</h3>
+<p>We estimate stratified FE-IS models to examine whether living
+arrangement effects on health vary across population subgroups: by
+gender (female, male), age group (50–64, 65–74, 75+), race/ethnicity
+(White, Black, Other), and urban versus rural residence.</p>
+<h3 id="sensitivity-analyses">Sensitivity Analyses</h3>
+<p>We conduct five robustness checks: (1) inverse probability weighting
+(IPW) for panel attrition, (2) complete-case analysis excluding imputed
+observations, (3) exclusion of individuals institutionalized at
+baseline, (4) an alternative three-category living arrangement coding
+(alone, with others, institutionalized), and (5) a linear-only
+individual slope specification (omitting the quadratic age term). Full
+results are reported in Supplementary Table S2.</p>
+<h3 id="missing-data">Missing Data</h3>
+<p>Missing values on time-varying covariates are handled via
+<code>missRanger</code>, a random-forest-based imputation method with
+predictive mean matching (<span class="math inline">k = 5</span>).
+Before imputation, the panel data are pivoted to wide format (one row
+per person, with wave-specific columns) to preserve within-person
+correlation across waves. This approach avoids treating repeated
+observations from the same individual as independent during
+imputation.</p>
+<h1 id="results">Results</h1>
+<h2 id="descriptive-statistics">Descriptive Statistics</h2>
+<p>Table <a href="#tab:descriptives" data-reference-type="ref"
+data-reference="tab:descriptives">1</a> presents sample characteristics
+by living arrangement. The five groups differ markedly in demographic
+composition and health status. Institutionalized respondents are the
+oldest on average (76.7 years), report the highest levels of ADL
+difficulty (1.53), depressive symptoms (2.32), and chronic conditions
+(3.17), and have the lowest rates of physical activity (43.5%).
+Respondents living alone are the second oldest (70.7 years),
+predominantly female (70.0%), and report elevated depressive symptoms
+(1.80) despite relatively modest physical health burdens (ADL = 0.39).
+Those living with spouse only are the healthiest on most indicators:
+lowest depressive symptoms (1.13), highest wealth (ln = 11.98), and
+highest educational attainment (13.1 years). Respondents living with
+children or other non-spouse members are predominantly female (77.1%),
+report the highest depressive symptoms among non-institutionalized
+groups (1.94), and have the lowest wealth (ln = 9.07).
+Spouse-plus-others households are the youngest on average (63.0 years)
+and show intermediate values on most health measures.</p>
+<h2 id="main-results-fe-versus-fe-is">Main Results: FE versus FE-IS</h2>
+<p>Table <a href="#tab:main_results" data-reference-type="ref"
+data-reference="tab:main_results">2</a> reports the central comparison
+of standard FE and FE-IS estimates for all four health outcomes. The
+pattern of attenuation from FE to FE-IS reveals a sharp distinction
+between physical health and depression.</p>
+<h3 id="physical-health-selection-artifacts">Physical Health: Selection
+Artifacts</h3>
+<p>For ADL difficulties, the standard FE model shows that all
+non-institutional living arrangements are associated with significantly
+worse physical function relative to living alone: spouse only (<span
+class="math inline">b = 0.048</span>, <span class="math inline">p &lt;
+.001</span>), children/others (<span class="math inline">b =
+0.050</span>, <span class="math inline">p &lt; .01</span>), and spouse
+plus others (<span class="math inline">b = 0.049</span>, <span
+class="math inline">p &lt; .001</span>). These coefficients suggest that
+co-residence is linked to greater functional limitation. The FE-IS
+estimates, which account for person-specific health trajectories, reduce
+all three coefficients to non-significance: spouse only (<span
+class="math inline">b = 0.016</span>, <span class="math inline">p &gt;
+.05</span>), children/others (<span class="math inline">b =
+0.018</span>, <span class="math inline">p &gt; .05</span>), and spouse
+plus others (<span class="math inline">b = 0.014</span>, <span
+class="math inline">p &gt; .05</span>). The same pattern holds for IADL
+difficulties, where FE estimates of 0.059 (spouse only, <span
+class="math inline">p &lt; .001</span>), 0.075 (children/others, <span
+class="math inline">p &lt; .001</span>), and 0.061 (spouse plus others,
+<span class="math inline">p &lt; .001</span>) all fall to near zero and
+non-significance under FE-IS (0.008, 0.010, and 0.001, respectively).
+For chronic conditions, the FE estimates are already small and mostly
+non-significant; FE-IS estimates confirm no association (all <span
+class="math inline">|b| &lt; 0.01</span>).</p>
+<p>These results indicate that the apparent associations between
+co-residential living arrangements and worse physical health are driven
+entirely by health selection. Individuals with steeper health decline
+trajectories are more likely to transition into co-residential
+arrangements, and standard FE conflates these pre-existing trajectories
+with causal effects of living arrangements.</p>
+<h3 id="depression-genuine-effects">Depression: Genuine Effects</h3>
+<p>The pattern for depressive symptoms is strikingly different. Standard
+FE shows that all co-residential arrangements are associated with fewer
+depressive symptoms relative to living alone: spouse only (<span
+class="math inline">b = -0.148</span>, <span class="math inline">p &lt;
+.001</span>), children/others (<span class="math inline">b =
+-0.073</span>, <span class="math inline">p &lt; .05</span>), and spouse
+plus others (<span class="math inline">b = -0.113</span>, <span
+class="math inline">p &lt; .001</span>). Under FE-IS, the spousal
+co-residence effect barely attenuates (<span class="math inline">b =
+-0.140</span>, <span class="math inline">p &lt; .001</span>; 5%
+reduction), the children/others effect remains significant (<span
+class="math inline">b = -0.068</span>, <span class="math inline">p &lt;
+.05</span>; 7% reduction), and the spouse-plus-others effect shows
+moderate attenuation but retains significance (<span
+class="math inline">b = -0.077</span>, <span class="math inline">p &lt;
+.01</span>; 32% reduction). These persistent effects, net of
+individual-specific health trajectories, support a causal
+interpretation: co-residential living arrangements reduce depressive
+symptoms through mechanisms that operate independently of pre-existing
+health decline.</p>
+<h3
+id="institutionalization-massive-selection-bias">Institutionalization:
+Massive Selection Bias</h3>
+<p>The institutionalization coefficients reveal the largest selection
+bias. For ADL difficulties, the FE estimate of 0.525 (<span
+class="math inline">p &lt; .001</span>) drops to 0.181 (<span
+class="math inline">p &lt; .001</span>) under FE-IS — a 65% attenuation.
+IADL difficulties show a parallel pattern: the FE estimate of 0.388
+(<span class="math inline">p &lt; .001</span>) falls to 0.164 (<span
+class="math inline">p &lt; .001</span>), a 58% reduction. The chronic
+conditions effect is attenuated by 65% (FE: 0.140, <span
+class="math inline">p &lt; .001</span>; FE-IS: 0.049, <span
+class="math inline">p &gt; .05</span>), becoming non-significant. Most
+remarkably, the depression effect disappears entirely: the FE estimate
+of 0.073 (<span class="math inline">p &lt; .05</span>) becomes <span
+class="math inline">-0.009</span> (<span class="math inline">p &gt;
+.05</span>) under FE-IS. The residual ADL and IADL effects likely
+reflect the acute health events (e.g., hip fractures, strokes) that
+precipitate institutional placement and cannot be captured by smooth age
+trajectories, rather than a harmful effect of institutional care
+itself.</p>
+<h2 id="heterogeneity">Heterogeneity</h2>
+<p>Table <a href="#tab:heterogeneity" data-reference-type="ref"
+data-reference="tab:heterogeneity">3</a> reports stratified FE-IS models
+for depression and ADL difficulties across population subgroups.</p>
+<h3 id="gender">Gender</h3>
+<p>The gender-stratified results reveal a qualitative difference in how
+men and women benefit from co-residential arrangements. For depressive
+symptoms, men show significant reductions under all forms of
+co-residence: spouse only (<span class="math inline">b = -0.175</span>,
+<span class="math inline">p &lt; .001</span>), children/others (<span
+class="math inline">b = -0.167</span>, <span class="math inline">p &lt;
+.01</span>), and spouse plus others (<span class="math inline">b =
+-0.187</span>, <span class="math inline">p &lt; .001</span>). Women, by
+contrast, benefit only from spousal co-residence (<span
+class="math inline">b = -0.141</span>, <span class="math inline">p &lt;
+.001</span>); the effects of living with children/others (<span
+class="math inline">b = -0.032</span>, <span class="math inline">p =
+.326</span>) and spouse plus others (<span class="math inline">b =
+-0.026</span>, <span class="math inline">p = .430</span>) are small and
+non-significant. For ADL difficulties, neither men nor women show
+significant co-residence effects under FE-IS, confirming that physical
+health associations are selection artifacts in both groups. This gender
+disparity in depression effects aligns with research showing that men
+rely more heavily on household members for emotional support, while
+women draw on broader extra-household networks <span class="citation"
+data-cites="livarr_takagi2024gender">(Takagi et al. 2024)</span>.</p>
+<h3 id="age">Age</h3>
+<p>The protective effect of spousal co-residence on depression follows a
+monotonic age gradient. Among adults aged 50–64, living with a spouse is
+associated with a significant reduction in CES-D scores (<span
+class="math inline">b = -0.208</span>, <span class="math inline">p &lt;
+.001</span>). This effect narrows to <span
+class="math inline">-0.188</span> (<span class="math inline">p &lt;
+.01</span>) among those aged 65–74 and becomes non-significant (<span
+class="math inline">b = -0.082</span>, <span class="math inline">p =
+.114</span>) among those 75 and older. The youngest age group also shows
+significant depression reductions for children/others (<span
+class="math inline">b = -0.153</span>, <span class="math inline">p &lt;
+.01</span>) and spouse plus others (<span class="math inline">b =
+-0.144</span>, <span class="math inline">p &lt; .01</span>), suggesting
+that co-residence of any form carries stronger mental health benefits
+earlier in the aging process.</p>
+<h3 id="race-and-ethnicity">Race and Ethnicity</h3>
+<p>The spousal co-residence effect on depression is significant and
+similar in magnitude for White (<span class="math inline">b =
+-0.131</span>, <span class="math inline">p &lt; .001</span>) and Black
+(<span class="math inline">b = -0.135</span>, <span
+class="math inline">p &lt; .01</span>) respondents. The estimate for
+respondents of other racial/ethnic backgrounds is comparable in
+direction but not statistically significant (<span class="math inline">b
+= -0.103</span>, <span class="math inline">p = .249</span>), likely
+reflecting limited statistical power given smaller sample sizes in this
+group. These results suggest that the mental health benefits of spousal
+co-residence operate across racial and ethnic lines, consistent with
+findings that living arrangement effects on depression are broadly
+shared, even as the prevalence of specific arrangements varies across
+groups <span class="citation" data-cites="livarr_liu2024racial">(Liu
+2024)</span>.</p>
+<h2 id="sensitivity-analyses-1">Sensitivity Analyses</h2>
+<p>Results are robust across all five alternative specifications
+(Supplementary Table <a href="#tab:sensitivity"
+data-reference-type="ref"
+data-reference="tab:sensitivity">[tab:sensitivity]</a>). The spousal
+co-residence effect on depression remains significant under
+complete-case analysis (<span class="math inline">b = -0.216</span>,
+<span class="math inline">p &lt; .001</span>), inverse probability
+weighting for attrition (<span class="math inline">b = -0.112</span>,
+<span class="math inline">p &lt; .001</span>), exclusion of baseline
+institutionalized respondents (<span class="math inline">b =
+-0.139</span>, <span class="math inline">p &lt; .001</span>),
+three-category living arrangement coding (<span class="math inline">b =
+-0.113</span>, <span class="math inline">p &lt; .001</span>), and a
+linear-only slope specification (<span class="math inline">b =
+-0.154</span>, <span class="math inline">p &lt; .001</span>). Physical
+health effects remain non-significant across all specifications. The
+institutionalization effect on ADL difficulties is consistent across
+robustness checks, ranging from 0.182 to 0.282. These results confirm
+that the core finding — genuine depression effects but spurious physical
+health associations — does not depend on specific modeling choices
+regarding imputation, sample definition, or functional form.</p>
+<h1 id="discussion">Discussion</h1>
+<p>This study applied Fixed Effects with Individual Slopes (FE-IS)
+models to 20 years of Health and Retirement Study data (2000–2020; <span
+class="math inline">N</span> = 27,024; 177,588 person-wave observations)
+to distinguish genuine causal effects of living arrangements on health
+from health selection bias. Three principal findings emerged. First, all
+associations between non-institutional co-residence and physical health
+(ADL limitations, IADL limitations, chronic conditions) disappeared once
+individual-specific health trajectories were absorbed, exposing these
+associations as artifacts of health selection. Second, co-residence
+effects on depression persisted in the FE-IS specification, with spousal
+co-residence producing the largest reduction (<span
+class="math inline">b</span> = <span class="math inline">-</span>0.140,
+<span class="math inline">p &lt; .001</span>). Third, these protective
+depression effects were strongly gendered and age-graded: men benefited
+from all forms of co-residence, whereas women benefited only from
+spousal co-residence; and the protective effect attenuated from ages
+50–64 to 75 and older.</p>
+<h2 id="disentangling-selection-from-causation">Disentangling Selection
+from Causation</h2>
+<p>The most consequential finding is that every non-institutional living
+arrangement coefficient for ADL limitations, IADL limitations, and
+chronic conditions became statistically nonsignificant when FE-IS models
+replaced standard fixed effects. This pattern held for spousal
+co-residence, co-residence with children or others, and co-residence
+with spouse and others. The standard FE models had estimated that
+spousal co-residence was associated with fewer chronic conditions and
+that co-residence with children was associated with greater ADL and IADL
+limitations relative to living alone. Under FE-IS, none of these
+coefficients remained distinguishable from zero.</p>
+<p>What the standard FE estimator captured was not a causal effect of
+household composition but rather the correlation between individual
+health trajectories and the propensity to change living arrangements.
+Older adults whose physical health is declining faster are more likely
+to move in with family members or to enter institutional care <span
+class="citation"
+data-cites="livarr_gaugler2007predicting livarr_verspeek2024expecting">(Gaugler
+et al. 2007; Verspeek et al. 2024)</span>. Standard FE models, which
+difference out time-invariant heterogeneity, cannot remove this source
+of confounding because the confound is dynamic: it is the <em>slope</em>
+of health change, not its <em>level</em>, that drives both the treatment
+(living arrangement transition) and the outcome <span class="citation"
+data-cites="livarr_rttenauer2019fixed livarr_bruderl2015fixed">(Rüttenauer
+and Ludwig 2019; Brüderl and Ludwig 2015)</span>. FE-IS models address
+this by estimating individual-specific linear and quadratic age slopes,
+absorbing person-level health trajectories that would otherwise bias the
+coefficients.</p>
+<p>The institutionalization results provide a particularly vivid
+illustration of this selection mechanism. Standard FE estimated that
+institutionalization was associated with substantially worse physical
+health: <span class="math inline">b</span> = 0.525 (<span
+class="math inline">p &lt; .001</span>) for ADL limitations, <span
+class="math inline">b</span> = 0.388 (<span class="math inline">p &lt;
+.001</span>) for IADL limitations, and <span
+class="math inline">b</span> = 0.140 (<span class="math inline">p &lt;
+.001</span>) for chronic conditions. FE-IS attenuated these coefficients
+by 58–65%. For chronic conditions, the association became nonsignificant
+entirely (<span class="math inline">b</span> = 0.049, n.s.). These
+attenuation magnitudes are consistent with evidence that three or more
+ADL dependencies, cognitive impairment, and prior institutional use rank
+among the strongest predictors of nursing home admission <span
+class="citation" data-cites="livarr_gaugler2007predicting">(Gaugler et
+al. 2007)</span>, and that expectations of future institutional
+relocation are themselves longitudinally linked with functional decline
+<span class="citation"
+data-cites="livarr_verspeek2024expecting">(Verspeek et al. 2024)</span>.
+In other words, the standard FE model was attributing to
+institutionalization what was, in large part, the continuation of
+pre-existing health decline that precipitated the institutional
+transition.</p>
+<p>These findings carry direct implications for the broader literature
+on living arrangements and health. Studies that reported significant
+associations between household composition and physical health using
+cross-sectional designs or standard FE models — including foundational
+work such as <span class="citation"
+data-cites="livarr_hughes2002health">Hughes and Waite (2002)</span> —
+likely overestimated causal effects by conflating them with health
+selection. This does not invalidate those studies as descriptions of
+population-level associations, but it does caution against interpreting
+such associations as evidence that changing household composition would
+alter physical health trajectories. The FE-IS framework provides a more
+rigorous test: it asks whether, net of the individual’s own health
+trajectory, a change in living arrangement produces additional health
+effects. For physical health, the answer is no.</p>
+<h2 id="depression-as-a-genuine-causal-pathway">Depression as a Genuine
+Causal Pathway</h2>
+<p>The depression results tell a qualitatively different story. Spousal
+co-residence (<span class="math inline">b</span> = <span
+class="math inline">-</span>0.140, <span class="math inline">p &lt;
+.001</span>), co-residence with children or others (<span
+class="math inline">b</span> = <span class="math inline">-</span>0.068,
+<span class="math inline">p &lt; .05</span>), and co-residence with
+spouse and others (<span class="math inline">b</span> = <span
+class="math inline">-</span>0.077, <span class="math inline">p &lt;
+.01</span>) all remained significant predictors of lower depressive
+symptoms in the FE-IS specification. These coefficients survived the
+same stringent test that eliminated every physical health association,
+indicating that the depression-reducing effects of co-residence are not
+driven by health selection.</p>
+<p>This divergence between physical and mental health aligns with
+theoretical predictions from the social convoy model <span
+class="citation"
+data-cites="livarr_kahn1980convoys livarr_antonucci2019convoys">(Kahn
+and Antonucci 1980; Antonucci et al. 2019)</span>. The convoy framework
+posits that household members occupy the innermost ring of an
+individual’s social network, providing both instrumental support
+(assistance with daily tasks) and emotional support (companionship,
+affection, shared routines) <span class="citation"
+data-cites="livarr_fuller2020convoy livarr_sherman2015social">(Fuller et
+al. 2020; Sherman et al. 2015)</span>. Our results suggest that these
+two support functions operate through distinct pathways with different
+causal statuses. Instrumental support — help with ADL tasks, medication
+management, meal preparation — addresses symptoms of physical decline
+but does not alter the underlying physiological trajectory. A
+co-resident who helps with bathing does not slow joint degeneration or
+cardiovascular disease; the recipient’s physical health trajectory
+continues on its course. Emotional support, by contrast, operates
+through psychosocial mechanisms — reducing loneliness, regulating
+negative affect, providing a sense of purpose and belonging — that
+directly influence depressive symptomatology <span class="citation"
+data-cites="livarr_cohen1985stress livarr_house1988social">(Cohen and
+Wills 1985; House et al. 1988)</span>.</p>
+<p>The stress-buffering model offers a complementary interpretation
+<span class="citation" data-cites="livarr_cohen1985stress">(Cohen and
+Wills 1985)</span>. Co-residents may buffer against depressive episodes
+triggered by health shocks, bereavement, or accumulating social losses.
+When a stressful event occurs, the presence of household members
+provides both tangible aid (navigating the healthcare system, managing
+household disruptions) and emotional reassurance that attenuates the
+depressive response. This buffering function is consistent with evidence
+that living arrangement transitions — from cohabitation to living alone
+due to widowhood or children’s departure — significantly increase
+depression risk <span class="citation"
+data-cites="livarr_zhang2025impact">(Zhang et al. 2025)</span>, and that
+co-residence with children mediates the relationship between widowhood
+and loneliness <span class="citation"
+data-cites="livarr_jiao2024residence">(Jiao et al. 2024)</span>.</p>
+<p>The institutionalization result for depression deserves special
+attention. Standard FE estimated a modest positive association between
+institutionalization and depressive symptoms (<span
+class="math inline">b</span> = 0.073, <span class="math inline">p &lt;
+.05</span>), consistent with popular narratives about the depressogenic
+nature of institutional environments. Under FE-IS, this coefficient was
+fully attenuated to near-zero (<span class="math inline">b</span> =
+<span class="math inline">-</span>0.009, n.s.) — a 100% reduction. The
+apparent depression effect of institutionalization was entirely an
+artifact of health selection: older adults who enter nursing homes are
+on steeper health decline trajectories that themselves produce greater
+depression <span class="citation"
+data-cites="livarr_li2026trajectories livarr_gaugler2007predicting">(Li
+and Qin 2026; Gaugler et al. 2007)</span>. Once individual trajectories
+are absorbed, the institutional environment per se does not increase
+depression above what the person’s health trajectory would predict. This
+finding challenges the assumption that institutional settings are
+inherently harmful for mental health and redirects attention to
+pre-admission health trajectories as the primary driver of elevated
+depression in institutional populations.</p>
+<h2
+id="gender-age-and-race-heterogeneity-in-the-depression-pathway">Gender,
+Age, and Race: Heterogeneity in the Depression Pathway</h2>
+<p>The gender pattern in depression effects was stark and theoretically
+informative. Men benefited from all forms of co-residence: spousal
+(<span class="math inline">b</span> = <span
+class="math inline">-</span>0.175, <span class="math inline">p &lt;
+.001</span>), children or others (<span class="math inline">b</span> =
+<span class="math inline">-</span>0.167, <span class="math inline">p
+&lt; .01</span>), and spouse with others (<span
+class="math inline">b</span> = <span class="math inline">-</span>0.187,
+<span class="math inline">p &lt; .001</span>). Women, by contrast,
+benefited only from spousal co-residence (<span
+class="math inline">b</span> = <span class="math inline">-</span>0.141,
+<span class="math inline">p &lt; .001</span>); co-residence with
+children or others (<span class="math inline">b</span> = <span
+class="math inline">-</span>0.032, n.s.) and with spouse and others
+(<span class="math inline">b</span> = <span
+class="math inline">-</span>0.026, n.s.) produced no significant
+depression reduction.</p>
+<p>This pattern is consistent with longstanding evidence that men rely
+more heavily on household members — and on spouses in particular — as
+their primary source of emotional support, whereas women cultivate
+broader, more diversified social networks beyond the household <span
+class="citation"
+data-cites="livarr_berkman1979social livarr_antonucci2019convoys">(Berkman
+and Syme 1979; Antonucci et al. 2019)</span>. For women, non-spousal
+co-residence may not provide net emotional benefit because it can entail
+role strain, loss of autonomy, or the assumption of caregiving
+responsibilities that offset any companionship gains. <span
+class="citation" data-cites="livarr_liu2024racial">Liu (2024)</span>
+showed that distant social networks (extended family, friends,
+neighborhood ties) moderate the relationship between living arrangements
+and depressive symptoms in older adults, a pattern more consistent with
+women’s broader network structure than men’s household-centered support.
+<span class="citation" data-cites="livarr_takagi2024gender">Takagi et
+al. (2024)</span> similarly reported gender differences in living
+arrangement-health associations, with spousal and child co-residence
+producing differential effects for men and women. The key distinction is
+not that women are less affected by social context, but that the
+relevant social context for women’s mental health extends beyond the
+household in ways that it does not for men.</p>
+<p>The age gradient in spousal co-residence effects was monotonically
+declining: <span class="math inline">b</span> = <span
+class="math inline">-</span>0.208 (<span class="math inline">p &lt;
+.001</span>) for ages 50–64, <span class="math inline">b</span> = <span
+class="math inline">-</span>0.188 (<span class="math inline">p &lt;
+.01</span>) for ages 65–74, and <span class="math inline">b</span> =
+<span class="math inline">-</span>0.082 (n.s.) for ages 75 and older.
+One interpretation draws on the convoy model’s prediction that social
+network structure contracts with age <span class="citation"
+data-cites="livarr_antonucci2019convoys livarr_sherman2015social">(Antonucci
+et al. 2019; Sherman et al. 2015)</span>: as individuals age and
+experience multiple losses (of friends, of mobility, of cognitive
+capacity), the marginal contribution of any single relationship —
+including the spousal relationship — may diminish relative to the
+cumulative burden of health decline. At advanced ages, biological and
+cognitive deterioration may overwhelm the protective capacity of
+emotional support, rendering household composition less consequential
+for mental health. Alternatively, the surviving population at 75+ is
+selected on resilience: individuals who have maintained stable mental
+health into advanced old age may be less sensitive to living arrangement
+influences because they possess other protective resources.</p>
+<p>The race/ethnicity results showed similar protective magnitudes of
+spousal co-residence for White (<span class="math inline">b</span> =
+<span class="math inline">-</span>0.131, <span class="math inline">p
+&lt; .001</span>) and Black (<span class="math inline">b</span> = <span
+class="math inline">-</span>0.135, <span class="math inline">p &lt;
+.01</span>) older adults. This convergence suggests that the emotional
+support mechanism of spousal co-residence operates across racial lines,
+even as structural factors (wealth, neighborhood composition, healthcare
+access) shape which living arrangements are feasible <span
+class="citation" data-cites="livarr_liu2024racial">(Liu 2024)</span>.
+The non-significant finding for the “Other” racial category likely
+reflects insufficient statistical power due to small sample size rather
+than a true null effect.</p>
+<h2 id="limitations">Limitations</h2>
+<p>Several limitations warrant consideration. First, the HRS does not
+capture within-household relationship quality. A co-resident spouse or
+child may provide warm companionship or may be a source of conflict; our
+models treat all co-residence within a category as equivalent. Studies
+that measure relationship satisfaction alongside living arrangement type
+would provide a more complete picture <span class="citation"
+data-cites="livarr_chen2025consistency livarr_srivastava2021feeling">(Chen
+et al. 2025; Srivastava et al. 2021)</span>. Second, the HRS does not
+distinguish voluntary from involuntary co-residence. An older adult who
+chooses to live with an adult child may experience different mental
+health effects than one who is compelled to do so by financial or health
+constraints. Third, institutionalization is heterogeneous: skilled
+nursing facilities, assisted living communities, and continuing care
+retirement communities differ in their social environments, yet our
+measure groups them together. Fourth, the FE-IS model assumes that
+individual health trajectories follow linear or quadratic functions of
+age. If trajectories are characterized by sudden discontinuities or
+higher-order nonlinearities, the model may not fully absorb selection
+bias. Fifth, the HRS is specific to the US context. In societies with
+stronger filial piety norms or different institutional care systems, the
+associations between living arrangements and health may differ
+substantially. Sixth, self-reported health measures, while validated
+<span class="citation" data-cites="livarr_idler1997self">(Idler and
+Benyamini 1997)</span>, are subject to reporting heterogeneity across
+demographic groups. Seventh, despite the FE-IS specification, we cannot
+rule out all time-varying confounding: major life events (job loss,
+divorce of an adult child, neighborhood disruption) that coincide with
+living arrangement transitions and independently affect health are not
+captured.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Using FE-IS models applied to two decades of nationally
+representative panel data, this study demonstrates that the widely
+reported associations between household composition and physical health
+among older adults are artifacts of health selection rather than causal
+effects, while co-residence genuinely reduces depressive symptoms
+through social-psychological mechanisms.</p>
+<p>This finding carries three implications. Methodologically, FE-IS
+models reveal that a substantial portion of the living
+arrangement–health literature is confounded by individual health
+trajectories that standard fixed effects cannot remove. The 58–65%
+attenuation of institutionalization effects and the complete elimination
+of non-institutional physical health effects illustrate how dramatically
+health selection can inflate estimated associations. Future studies of
+household composition and health should, at minimum, consider whether
+individual-specific trends explain their findings.</p>
+<p>Substantively, the persistence of depression effects in the FE-IS
+specification provides credible evidence that co-residence operates as a
+genuine causal determinant of mental health. The social convoy model’s
+prediction — that household members provide emotional support that
+protects against depression — is validated, while its prediction about
+instrumental support and physical health is revealed to be confounded by
+selection. This domain-specific pattern refines our theoretical
+understanding: the convoy’s protective function is real but limited to
+the psychosocial domain.</p>
+<p>For policy, these results identify specific populations for targeted
+intervention. Men living alone are a priority group: they lack the
+household-based emotional support that appears causally protective
+against depression and, unlike women, do not compensate through
+extra-household networks. Adults aged 50–64 show the largest spousal
+co-residence effects, suggesting that household-level interventions for
+depression may be most effective before age 75. Policies aimed at
+reducing depression among older adults — community mental health
+programs, social prescribing, housing placement decisions — should
+attend to household composition as a modifiable determinant, while
+recognizing that household composition is unlikely to alter physical
+health trajectories.</p>
+<p>Future research should incorporate measures of within-household
+relationship quality, distinguish voluntary from involuntary
+co-residence, and extend the FE-IS approach to non-US populations where
+cultural norms about intergenerational co-residence differ. Studies
+linking living arrangement transitions to biomarker data could further
+clarify whether co-residence affects physiological stress pathways or
+operates exclusively through self-reported psychological outcomes.</p>
+<h1 class="unnumbered" id="tables">Tables</h1>
+<div class="threeparttable">
+<div id="tab:descriptives">
+<table>
+<caption>Sample Characteristics by Living Arrangement</caption>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">Alone (ref.)</th>
+<th style="text-align: right;">Spouse only</th>
+<th style="text-align: right;">Children/others</th>
+<th style="text-align: right;">Spouse + others</th>
+<th style="text-align: right;">Institutionalized</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">N (person-waves)</td>
+<td style="text-align: right;">177,588</td>
+<td style="text-align: right;">40,985</td>
+<td style="text-align: right;">74,232</td>
+<td style="text-align: right;">11,833</td>
+<td style="text-align: right;">45,609</td>
+<td style="text-align: right;">4,929</td>
+</tr>
+<tr>
+<td style="text-align: left;">N (individuals)</td>
+<td style="text-align: right;">27,024</td>
+<td style="text-align: right;">10,867</td>
+<td style="text-align: right;">16,282</td>
+<td style="text-align: right;">5,080</td>
+<td style="text-align: right;">13,673</td>
+<td style="text-align: right;">3,537</td>
+</tr>
+<tr>
+<td style="text-align: left;">ADL difficulties (0-6)</td>
+<td style="text-align: right;">0.36 (0.98)</td>
+<td style="text-align: right;">0.39 (0.98)</td>
+<td style="text-align: right;">0.23 (0.75)</td>
+<td style="text-align: right;">0.49 (1.15)</td>
+<td style="text-align: right;">0.38 (1.00)</td>
+<td style="text-align: right;">1.53 (1.87)</td>
+</tr>
+<tr>
+<td style="text-align: left;">IADL difficulties (0-5)</td>
+<td style="text-align: right;">0.24 (0.72)</td>
+<td style="text-align: right;">0.25 (0.70)</td>
+<td style="text-align: right;">0.15 (0.55)</td>
+<td style="text-align: right;">0.38 (0.91)</td>
+<td style="text-align: right;">0.25 (0.75)</td>
+<td style="text-align: right;">1.06 (1.41)</td>
+</tr>
+<tr>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: right;">1.50 (1.99)</td>
+<td style="text-align: right;">1.80 (2.12)</td>
+<td style="text-align: right;">1.13 (1.71)</td>
+<td style="text-align: right;">1.94 (2.21)</td>
+<td style="text-align: right;">1.63 (2.08)</td>
+<td style="text-align: right;">2.32 (2.32)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Chronic conditions (0-8)</td>
+<td style="text-align: right;">2.06 (1.47)</td>
+<td style="text-align: right;">2.22 (1.45)</td>
+<td style="text-align: right;">1.95 (1.40)</td>
+<td style="text-align: right;">2.22 (1.55)</td>
+<td style="text-align: right;">1.93 (1.51)</td>
+<td style="text-align: right;">3.17 (1.56)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age (years)</td>
+<td style="text-align: right;">67.38 (10.25)</td>
+<td style="text-align: right;">70.74 (10.72)</td>
+<td style="text-align: right;">67.56 (9.21)</td>
+<td style="text-align: right;">67.44 (11.57)</td>
+<td style="text-align: right;">63.04 (9.08)</td>
+<td style="text-align: right;">76.73 (10.73)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Female (%)</td>
+<td style="text-align: right;">59.6</td>
+<td style="text-align: right;">70.0</td>
+<td style="text-align: right;">52.0</td>
+<td style="text-align: right;">77.1</td>
+<td style="text-align: right;">57.3</td>
+<td style="text-align: right;">66.6</td>
+</tr>
+<tr>
+<td style="text-align: left;">Education (years)</td>
+<td style="text-align: right;">12.66 (3.19)</td>
+<td style="text-align: right;">12.61 (2.99)</td>
+<td style="text-align: right;">13.11 (2.91)</td>
+<td style="text-align: right;">12.07 (3.47)</td>
+<td style="text-align: right;">12.17 (3.61)</td>
+<td style="text-align: right;">12.36 (2.98)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Married (%)</td>
+<td style="text-align: right;">57.3</td>
+<td style="text-align: right;">1.0</td>
+<td style="text-align: right;">91.2</td>
+<td style="text-align: right;">12.4</td>
+<td style="text-align: right;">67.1</td>
+<td style="text-align: right;">31.2</td>
+</tr>
+<tr>
+<td style="text-align: left;">ln(Wealth)</td>
+<td style="text-align: right;">10.74 (4.00)</td>
+<td style="text-align: right;">9.99 (4.28)</td>
+<td style="text-align: right;">11.98 (2.90)</td>
+<td style="text-align: right;">9.07 (4.72)</td>
+<td style="text-align: right;">9.96 (4.38)</td>
+<td style="text-align: right;">9.39 (4.77)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gov. insured (%)</td>
+<td style="text-align: right;">63.3</td>
+<td style="text-align: right;">75.5</td>
+<td style="text-align: right;">63.8</td>
+<td style="text-align: right;">63.1</td>
+<td style="text-align: right;">48.4</td>
+<td style="text-align: right;">92.2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Smoker (%)</td>
+<td style="text-align: right;">13.6</td>
+<td style="text-align: right;">15.4</td>
+<td style="text-align: right;">10.8</td>
+<td style="text-align: right;">16.1</td>
+<td style="text-align: right;">16.3</td>
+<td style="text-align: right;">9.6</td>
+</tr>
+<tr>
+<td style="text-align: left;">Physically active (%)</td>
+<td style="text-align: right;">69.9</td>
+<td style="text-align: right;">67.5</td>
+<td style="text-align: right;">74.8</td>
+<td style="text-align: right;">63.7</td>
+<td style="text-align: right;">69.1</td>
+<td style="text-align: right;">43.5</td>
+</tr>
+<tr>
+<td style="text-align: left;">BMI</td>
+<td style="text-align: right;">28.39 (6.02)</td>
+<td style="text-align: right;">27.80 (6.06)</td>
+<td style="text-align: right;">28.03 (5.49)</td>
+<td style="text-align: right;">28.88 (6.62)</td>
+<td style="text-align: right;">29.40 (6.34)</td>
+<td style="text-align: right;">28.11 (7.30)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rural (%)</td>
+<td style="text-align: right;">27.1</td>
+<td style="text-align: right;">28.3</td>
+<td style="text-align: right;">31.2</td>
+<td style="text-align: right;">21.8</td>
+<td style="text-align: right;">20.8</td>
+<td style="text-align: right;">25.3</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenotes">
+<p><em>Note:</em> Mean (SD) for continuous variables; % for binary
+variables.</p>
+<p>Data: Health and Retirement Study 2000–2020, waves 5–15.</p>
+<p>Reference category: Living alone (A_Alone).</p>
+</div>
+</div>
+<div class="threeparttable">
+<div id="tab:main_results">
+<table>
+<caption>Main Results: Living Arrangement Effects on Health
+Outcomes</caption>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th colspan="2" style="text-align: center;">ADL (0-6)</th>
+<th colspan="2" style="text-align: center;">IADL (0-5)</th>
+<th colspan="2" style="text-align: center;">CES-D (0-8)</th>
+<th colspan="2" style="text-align: center;">Chronic (0-8)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span>2-3</span> (lr)<span>4-5</span>
+(lr)<span>6-7</span> (lr)<span>8-9</span> Living arrangement</td>
+<td style="text-align: right;">FE</td>
+<td style="text-align: right;">FE-IS</td>
+<td style="text-align: right;">FE</td>
+<td style="text-align: right;">FE-IS</td>
+<td style="text-align: right;">FE</td>
+<td style="text-align: right;">FE-IS</td>
+<td style="text-align: right;">FE</td>
+<td style="text-align: right;">FE-IS</td>
+</tr>
+<tr>
+<td style="text-align: left;">Spouse only</td>
+<td style="text-align: right;">0.048***</td>
+<td style="text-align: right;">0.016</td>
+<td style="text-align: right;">0.059***</td>
+<td style="text-align: right;">0.008</td>
+<td style="text-align: right;"><span
+class="math inline">-0.148</span>***</td>
+<td style="text-align: right;"><span
+class="math inline">-0.140</span>***</td>
+<td style="text-align: right;">0.018</td>
+<td style="text-align: right;">0.004</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: right;">(0.012)</td>
+<td style="text-align: right;">(0.022)</td>
+<td style="text-align: right;">(0.010)</td>
+<td style="text-align: right;">(0.025)</td>
+<td style="text-align: right;">(0.024)</td>
+<td style="text-align: right;">(0.022)</td>
+<td style="text-align: right;">(0.010)</td>
+<td style="text-align: right;">(0.022)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Children/others</td>
+<td style="text-align: right;">0.050**</td>
+<td style="text-align: right;">0.018</td>
+<td style="text-align: right;">0.075***</td>
+<td style="text-align: right;">0.010</td>
+<td style="text-align: right;"><span
+class="math inline">-0.073</span>*</td>
+<td style="text-align: right;"><span
+class="math inline">-0.068</span>*</td>
+<td style="text-align: right;">0.026*</td>
+<td style="text-align: right;">0.000</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: right;">(0.016)</td>
+<td style="text-align: right;">(0.028)</td>
+<td style="text-align: right;">(0.014)</td>
+<td style="text-align: right;">(0.031)</td>
+<td style="text-align: right;">(0.030)</td>
+<td style="text-align: right;">(0.028)</td>
+<td style="text-align: right;">(0.012)</td>
+<td style="text-align: right;">(0.028)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Spouse + others</td>
+<td style="text-align: right;">0.049***</td>
+<td style="text-align: right;">0.014</td>
+<td style="text-align: right;">0.061***</td>
+<td style="text-align: right;">0.001</td>
+<td style="text-align: right;"><span
+class="math inline">-0.113</span>***</td>
+<td style="text-align: right;"><span
+class="math inline">-0.077</span>**</td>
+<td style="text-align: right;">0.006</td>
+<td style="text-align: right;"><span
+class="math inline">-0.007</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: right;">(0.015)</td>
+<td style="text-align: right;">(0.026)</td>
+<td style="text-align: right;">(0.013)</td>
+<td style="text-align: right;">(0.029)</td>
+<td style="text-align: right;">(0.028)</td>
+<td style="text-align: right;">(0.026)</td>
+<td style="text-align: right;">(0.012)</td>
+<td style="text-align: right;">(0.026)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Institutionalized</td>
+<td style="text-align: right;">0.525***</td>
+<td style="text-align: right;">0.181***</td>
+<td style="text-align: right;">0.388***</td>
+<td style="text-align: right;">0.164***</td>
+<td style="text-align: right;">0.073*</td>
+<td style="text-align: right;"><span
+class="math inline">-0.009</span></td>
+<td style="text-align: right;">0.140***</td>
+<td style="text-align: right;">0.049</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: right;">(0.025)</td>
+<td style="text-align: right;">(0.030)</td>
+<td style="text-align: right;">(0.020)</td>
+<td style="text-align: right;">(0.032)</td>
+<td style="text-align: right;">(0.033)</td>
+<td style="text-align: right;">(0.030)</td>
+<td style="text-align: right;">(0.013)</td>
+<td style="text-align: right;">(0.030)</td>
+</tr>
+<tr>
+<td style="text-align: left;">N (obs)</td>
+<td style="text-align: right;">129,694</td>
+<td style="text-align: right;">129,694</td>
+<td style="text-align: right;">117,375</td>
+<td style="text-align: right;">117,375</td>
+<td style="text-align: right;">129,694</td>
+<td style="text-align: right;">129,694</td>
+<td style="text-align: right;">129,694</td>
+<td style="text-align: right;">129,694</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hausman <span
+class="math inline">p</span></td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenotes">
+<p><span class="math inline">^{*}p&lt;0.05</span>, <span
+class="math inline">^{**}p&lt;0.01</span>, <span
+class="math inline">^{***}p&lt;0.001</span>. Standard errors (clustered
+by person) in parentheses.</p>
+<p>FE = two-way fixed effects (individual + wave). FE-IS = Fixed Effects
+Individual Slopes.</p>
+<p>Reference category: Living alone. Controls: age, age<span
+class="math inline">^2</span>, marital status, ln(wealth),</p>
+<p>   government insurance, household size, smoking, physical activity,
+BMI, wave dummies.</p>
+<p>Hausman <span class="math inline">p</span>: test of FE vs. FE-IS
+(rejection indicates heterogeneous trends).</p>
+</div>
+</div>
+<div class="threeparttable">
+<div id="tab:heterogeneity">
+<table>
+<caption>Selected Heterogeneity in Living Arrangement Effects
+(FE-IS)</caption>
+<thead>
+<tr>
+<th style="text-align: left;">Subgroup</th>
+<th style="text-align: left;">Group</th>
+<th style="text-align: left;">Outcome</th>
+<th style="text-align: left;">Term</th>
+<th style="text-align: right;">Estimate</th>
+<th style="text-align: right;">SE</th>
+<th style="text-align: right;">95% CI</th>
+<th style="text-align: right;"><span class="math inline">p</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Gender</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">ADL (0-6)</td>
+<td style="text-align: left;">Spouse only</td>
+<td style="text-align: right;">0.024</td>
+<td style="text-align: right;">0.028</td>
+<td style="text-align: right;">[-0.032, 0.079]</td>
+<td style="text-align: right;">0.409</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gender</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">ADL (0-6)</td>
+<td style="text-align: left;">Children/others</td>
+<td style="text-align: right;">0.034</td>
+<td style="text-align: right;">0.033</td>
+<td style="text-align: right;">[-0.031, 0.098]</td>
+<td style="text-align: right;">0.305</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gender</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">ADL (0-6)</td>
+<td style="text-align: left;">Spouse + others</td>
+<td style="text-align: right;">0.022</td>
+<td style="text-align: right;">0.033</td>
+<td style="text-align: right;">[-0.041, 0.086]</td>
+<td style="text-align: right;">0.492</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gender</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">ADL (0-6)</td>
+<td style="text-align: left;">Institutionalized</td>
+<td style="text-align: right;">0.192</td>
+<td style="text-align: right;">0.036</td>
+<td style="text-align: right;">[0.122, 0.262]</td>
+<td style="text-align: right;">0.000</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gender</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Spouse only</td>
+<td style="text-align: right;">-0.141</td>
+<td style="text-align: right;">0.028</td>
+<td style="text-align: right;">[-0.197, -0.085]</td>
+<td style="text-align: right;">0.000</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gender</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Children/others</td>
+<td style="text-align: right;">-0.032</td>
+<td style="text-align: right;">0.033</td>
+<td style="text-align: right;">[-0.097, 0.032]</td>
+<td style="text-align: right;">0.326</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gender</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Spouse + others</td>
+<td style="text-align: right;">-0.026</td>
+<td style="text-align: right;">0.033</td>
+<td style="text-align: right;">[-0.089, 0.038]</td>
+<td style="text-align: right;">0.430</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gender</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Institutionalized</td>
+<td style="text-align: right;">0.027</td>
+<td style="text-align: right;">0.036</td>
+<td style="text-align: right;">[-0.043, 0.097]</td>
+<td style="text-align: right;">0.450</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gender</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">ADL (0-6)</td>
+<td style="text-align: left;">Spouse only</td>
+<td style="text-align: right;">-0.007</td>
+<td style="text-align: right;">0.038</td>
+<td style="text-align: right;">[-0.081, 0.067]</td>
+<td style="text-align: right;">0.853</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gender</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">ADL (0-6)</td>
+<td style="text-align: left;">Children/others</td>
+<td style="text-align: right;">-0.027</td>
+<td style="text-align: right;">0.055</td>
+<td style="text-align: right;">[-0.134, 0.080]</td>
+<td style="text-align: right;">0.625</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gender</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">ADL (0-6)</td>
+<td style="text-align: left;">Spouse + others</td>
+<td style="text-align: right;">-0.010</td>
+<td style="text-align: right;">0.046</td>
+<td style="text-align: right;">[-0.100, 0.079]</td>
+<td style="text-align: right;">0.821</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gender</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">ADL (0-6)</td>
+<td style="text-align: left;">Institutionalized</td>
+<td style="text-align: right;">0.151</td>
+<td style="text-align: right;">0.053</td>
+<td style="text-align: right;">[0.048, 0.255]</td>
+<td style="text-align: right;">0.004</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gender</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Spouse only</td>
+<td style="text-align: right;">-0.175</td>
+<td style="text-align: right;">0.038</td>
+<td style="text-align: right;">[-0.249, -0.101]</td>
+<td style="text-align: right;">0.000</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gender</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Children/others</td>
+<td style="text-align: right;">-0.167</td>
+<td style="text-align: right;">0.055</td>
+<td style="text-align: right;">[-0.274, -0.060]</td>
+<td style="text-align: right;">0.002</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gender</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Spouse + others</td>
+<td style="text-align: right;">-0.187</td>
+<td style="text-align: right;">0.046</td>
+<td style="text-align: right;">[-0.277, -0.097]</td>
+<td style="text-align: right;">0.000</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gender</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Institutionalized</td>
+<td style="text-align: right;">-0.097</td>
+<td style="text-align: right;">0.053</td>
+<td style="text-align: right;">[-0.201, 0.007]</td>
+<td style="text-align: right;">0.067</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 50-64</td>
+<td style="text-align: left;">ADL (0-6)</td>
+<td style="text-align: left;">Spouse only</td>
+<td style="text-align: right;">-0.048</td>
+<td style="text-align: right;">0.045</td>
+<td style="text-align: right;">[-0.136, 0.040]</td>
+<td style="text-align: right;">0.288</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 50-64</td>
+<td style="text-align: left;">ADL (0-6)</td>
+<td style="text-align: left;">Children/others</td>
+<td style="text-align: right;">-0.011</td>
+<td style="text-align: right;">0.054</td>
+<td style="text-align: right;">[-0.116, 0.094]</td>
+<td style="text-align: right;">0.837</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 50-64</td>
+<td style="text-align: left;">ADL (0-6)</td>
+<td style="text-align: left;">Spouse + others</td>
+<td style="text-align: right;">-0.046</td>
+<td style="text-align: right;">0.049</td>
+<td style="text-align: right;">[-0.142, 0.050]</td>
+<td style="text-align: right;">0.347</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 50-64</td>
+<td style="text-align: left;">ADL (0-6)</td>
+<td style="text-align: left;">Institutionalized</td>
+<td style="text-align: right;">0.198</td>
+<td style="text-align: right;">0.086</td>
+<td style="text-align: right;">[0.030, 0.366]</td>
+<td style="text-align: right;">0.021</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 50-64</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Spouse only</td>
+<td style="text-align: right;">-0.208</td>
+<td style="text-align: right;">0.045</td>
+<td style="text-align: right;">[-0.296, -0.120]</td>
+<td style="text-align: right;">0.000</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 50-64</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Children/others</td>
+<td style="text-align: right;">-0.153</td>
+<td style="text-align: right;">0.054</td>
+<td style="text-align: right;">[-0.258, -0.049]</td>
+<td style="text-align: right;">0.004</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 50-64</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Spouse + others</td>
+<td style="text-align: right;">-0.144</td>
+<td style="text-align: right;">0.049</td>
+<td style="text-align: right;">[-0.240, -0.047]</td>
+<td style="text-align: right;">0.003</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 50-64</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Institutionalized</td>
+<td style="text-align: right;">-0.138</td>
+<td style="text-align: right;">0.086</td>
+<td style="text-align: right;">[-0.305, 0.030]</td>
+<td style="text-align: right;">0.109</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 65-74</td>
+<td style="text-align: left;">ADL (0-6)</td>
+<td style="text-align: left;">Spouse only</td>
+<td style="text-align: right;">0.000</td>
+<td style="text-align: right;">0.068</td>
+<td style="text-align: right;">[-0.133, 0.134]</td>
+<td style="text-align: right;">0.996</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 65-74</td>
+<td style="text-align: left;">ADL (0-6)</td>
+<td style="text-align: left;">Children/others</td>
+<td style="text-align: right;">-0.148</td>
+<td style="text-align: right;">0.089</td>
+<td style="text-align: right;">[-0.323, 0.027]</td>
+<td style="text-align: right;">0.097</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 65-74</td>
+<td style="text-align: left;">ADL (0-6)</td>
+<td style="text-align: left;">Spouse + others</td>
+<td style="text-align: right;">-0.072</td>
+<td style="text-align: right;">0.083</td>
+<td style="text-align: right;">[-0.236, 0.091]</td>
+<td style="text-align: right;">0.385</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 65-74</td>
+<td style="text-align: left;">ADL (0-6)</td>
+<td style="text-align: left;">Institutionalized</td>
+<td style="text-align: right;">0.051</td>
+<td style="text-align: right;">0.093</td>
+<td style="text-align: right;">[-0.132, 0.234]</td>
+<td style="text-align: right;">0.585</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 65-74</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Spouse only</td>
+<td style="text-align: right;">-0.188</td>
+<td style="text-align: right;">0.068</td>
+<td style="text-align: right;">[-0.322, -0.054]</td>
+<td style="text-align: right;">0.006</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 65-74</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Children/others</td>
+<td style="text-align: right;">0.167</td>
+<td style="text-align: right;">0.089</td>
+<td style="text-align: right;">[-0.008, 0.341]</td>
+<td style="text-align: right;">0.062</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 65-74</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Spouse + others</td>
+<td style="text-align: right;">-0.147</td>
+<td style="text-align: right;">0.083</td>
+<td style="text-align: right;">[-0.310, 0.017]</td>
+<td style="text-align: right;">0.079</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 65-74</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Institutionalized</td>
+<td style="text-align: right;">-0.026</td>
+<td style="text-align: right;">0.093</td>
+<td style="text-align: right;">[-0.209, 0.156]</td>
+<td style="text-align: right;">0.778</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 75+</td>
+<td style="text-align: left;">ADL (0-6)</td>
+<td style="text-align: left;">Spouse only</td>
+<td style="text-align: right;">0.095</td>
+<td style="text-align: right;">0.052</td>
+<td style="text-align: right;">[-0.008, 0.197]</td>
+<td style="text-align: right;">0.070</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 75+</td>
+<td style="text-align: left;">ADL (0-6)</td>
+<td style="text-align: left;">Children/others</td>
+<td style="text-align: right;">0.102</td>
+<td style="text-align: right;">0.065</td>
+<td style="text-align: right;">[-0.025, 0.230]</td>
+<td style="text-align: right;">0.115</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 75+</td>
+<td style="text-align: left;">ADL (0-6)</td>
+<td style="text-align: left;">Spouse + others</td>
+<td style="text-align: right;">0.142</td>
+<td style="text-align: right;">0.069</td>
+<td style="text-align: right;">[0.007, 0.278]</td>
+<td style="text-align: right;">0.039</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 75+</td>
+<td style="text-align: left;">ADL (0-6)</td>
+<td style="text-align: left;">Institutionalized</td>
+<td style="text-align: right;">0.241</td>
+<td style="text-align: right;">0.049</td>
+<td style="text-align: right;">[0.145, 0.337]</td>
+<td style="text-align: right;">0.000</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 75+</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Spouse only</td>
+<td style="text-align: right;">-0.082</td>
+<td style="text-align: right;">0.052</td>
+<td style="text-align: right;">[-0.185, 0.020]</td>
+<td style="text-align: right;">0.114</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 75+</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Children/others</td>
+<td style="text-align: right;">-0.161</td>
+<td style="text-align: right;">0.065</td>
+<td style="text-align: right;">[-0.288, -0.033]</td>
+<td style="text-align: right;">0.013</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 75+</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Spouse + others</td>
+<td style="text-align: right;">-0.069</td>
+<td style="text-align: right;">0.069</td>
+<td style="text-align: right;">[-0.204, 0.066]</td>
+<td style="text-align: right;">0.318</td>
+</tr>
+<tr>
+<td style="text-align: left;">Age Group</td>
+<td style="text-align: left;">Age 75+</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Institutionalized</td>
+<td style="text-align: right;">0.026</td>
+<td style="text-align: right;">0.049</td>
+<td style="text-align: right;">[-0.070, 0.122]</td>
+<td style="text-align: right;">0.592</td>
+</tr>
+<tr>
+<td style="text-align: left;">Race/Ethnicity</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Spouse only</td>
+<td style="text-align: right;">-0.131</td>
+<td style="text-align: right;">0.026</td>
+<td style="text-align: right;">[-0.182, -0.079]</td>
+<td style="text-align: right;">0.000</td>
+</tr>
+<tr>
+<td style="text-align: left;">Race/Ethnicity</td>
+<td style="text-align: left;">Black</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Spouse only</td>
+<td style="text-align: right;">-0.135</td>
+<td style="text-align: right;">0.053</td>
+<td style="text-align: right;">[-0.238, -0.032]</td>
+<td style="text-align: right;">0.010</td>
+</tr>
+<tr>
+<td style="text-align: left;">Race/Ethnicity</td>
+<td style="text-align: left;">Other Race</td>
+<td style="text-align: left;">CES-D (0-8)</td>
+<td style="text-align: left;">Spouse only</td>
+<td style="text-align: right;">-0.103</td>
+<td style="text-align: right;">0.089</td>
+<td style="text-align: right;">[-0.278, 0.072]</td>
+<td style="text-align: right;">0.249</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tablenotes">
+<p><span class="math inline">^{*}p&lt;0.05</span>, <span
+class="math inline">^{**}p&lt;0.01</span>, <span
+class="math inline">^{***}p&lt;0.001</span>.</p>
+<p>All models: FE-IS with individual age slopes (age, age<span
+class="math inline">^2</span>).</p>
+<p>Reference category: Living alone.</p>
+</div>
+</div>
+<h1 class="unnumbered" id="figures">Figures</h1>
+<figure id="fig:main_coefs" data-latex-placement="H">
+<img src="figures/figure1_main_coefs.png" style="width:85.0%" />
+<figcaption><strong>Figure 1.</strong> FE-IS Estimates of Living
+Arrangement Effects on Health Outcomes. Coefficients and 95% confidence
+intervals from FE-IS models. Reference category: living alone. Dashed
+vertical line at zero.</figcaption>
+</figure>
+<figure id="fig:fe_vs_feis" data-latex-placement="H">
+<img src="figures/figure2_fe_vs_feis.png" style="width:85.0%" />
+<figcaption><strong>Figure 2.</strong> Comparison of FE and FE-IS
+Estimates for Institutionalization Effects. Attenuation from FE to FE-IS
+reflects health selection bias absorbed by individual
+slopes.</figcaption>
+</figure>
+<figure id="fig:het_depression" data-latex-placement="H">
+<img src="figures/figure3_het_depression.png" style="width:85.0%" />
+<figcaption><strong>Figure 3.</strong> Heterogeneity in Living
+Arrangement Effects on Depression (CES-D) by Gender and Age Group. FE-IS
+estimates with 95% confidence intervals. Reference: living
+alone.</figcaption>
+</figure>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="list">
+<div id="ref-livarr_antonucci2019convoys" class="csl-entry"
+role="listitem">
+Antonucci, T., K. Ajrouch, and Noah J Webster. 2019. <span>“<span
+class="nocase">Convoys of social relations: Cohort similarities and
+differences over 25 years.</span>”</span> <em>Psychology and Aging</em>
+34 8: 1158–69. <a
+href="https://doi.org/10.1037/pag0000375">https://doi.org/10.1037/pag0000375</a>.
+</div>
+<div id="ref-livarr_bell2014explaining" class="csl-entry"
+role="listitem">
+Bell, Andrew, and Kelvyn Jones. 2014. <span>“<span
+class="nocase">Explaining Fixed Effects: Random Effects Modeling of
+Time-Series Cross-Sectional and Panel Data</span>.”</span> <em>Political
+Science Research and Methods</em> 3 (1): 133–53. <a
+href="https://doi.org/10.1017/psrm.2014.7">https://doi.org/10.1017/psrm.2014.7</a>.
+</div>
+<div id="ref-livarr_berkman1979social" class="csl-entry"
+role="listitem">
+Berkman, Lisa F., and S. Leonard Syme. 1979. <span>“Social Networks,
+Host Resistance, and Mortality: A Nine-Year Follow-up Study of Alameda
+County Residents.”</span> <em>American Journal of Epidemiology</em> 109
+(2): 186–204. <a
+href="https://doi.org/10.1093/oxfordjournals.aje.a112674">https://doi.org/10.1093/oxfordjournals.aje.a112674</a>.
+</div>
+<div id="ref-livarr_bruderl2015fixed" class="csl-entry" role="listitem">
+Brüderl, Josef, and Volker Ludwig. 2015. <span>“Fixed-Effects Panel
+Regression.”</span> <em>The SAGE Handbook of Regression Analysis and
+Causal Inference</em>, 327–57. <a
+href="https://doi.org/10.4135/9781446288146.n15">https://doi.org/10.4135/9781446288146.n15</a>.
+</div>
+<div id="ref-livarr_cabrerocastro2025living" class="csl-entry"
+role="listitem">
+Cabrero-Castro, José Eduardo, O. Bramajo, Mariana Calderón-Jaramillo,
+Philip Cantu, and Brian Downer. 2025. <span>“<span class="nocase">The
+role of living arrangements in disability assistance and survival in
+Mexican older adults</span>.”</span> <em>Innovation in Aging</em> 10
+(1). <a
+href="https://doi.org/10.1093/geroni/igaf147">https://doi.org/10.1093/geroni/igaf147</a>.
+</div>
+<div id="ref-livarr_chen2025consistency" class="csl-entry"
+role="listitem">
+Chen, Ting, Sicheng Li, Tianjiao Lan, Wenqiang Zhang, TianFu Gao, and
+Liyong Lu. 2025. <span>“<span class="nocase">Does consistency between
+actual living arrangements and expectations (ALIVE) matter? A
+population-based longitudinal study of older adults</span>.”</span>
+<em>BMC Public Health</em> 26 (1). <a
+href="https://doi.org/10.1186/s12889-025-26027-3">https://doi.org/10.1186/s12889-025-26027-3</a>.
+</div>
+<div id="ref-livarr_cohen1985stress" class="csl-entry" role="listitem">
+Cohen, Sheldon, and Thomas A. Wills. 1985. <span>“<span
+class="nocase">Stress, social support, and the buffering
+hypothesis.</span>”</span> <em>Psychological Bulletin</em> 98 (2):
+310–57. <a
+href="https://doi.org/10.1037/0033-2909.98.2.310">https://doi.org/10.1037/0033-2909.98.2.310</a>.
+</div>
+<div id="ref-livarr_fuller2020convoy" class="csl-entry" role="listitem">
+Fuller, Heather, Kristine J. Ajrouch, and Toni C. Antonucci. 2020.
+<span>“<span class="nocase">The Convoy Model and
+&lt;scp&gt;Later‐Life&lt;/scp&gt; Family Relationships</span>.”</span>
+<em>Journal of Family Theory &amp; Review</em> 12 (2): 126–46. <a
+href="https://doi.org/10.1111/jftr.12376">https://doi.org/10.1111/jftr.12376</a>.
+</div>
+<div id="ref-livarr_gaugler2007predicting" class="csl-entry"
+role="listitem">
+Gaugler, Joseph E., Sue Duval, Keith A. Anderson, and Robert L Kane.
+2007. <span>“<span class="nocase">Predicting nursing home admission in
+the U.S: a meta-analysis</span>.”</span> <em>BMC Geriatrics</em> 7 (1):
+13–13. <a
+href="https://doi.org/10.1186/1471-2318-7-13">https://doi.org/10.1186/1471-2318-7-13</a>.
+</div>
+<div id="ref-livarr_house1988social" class="csl-entry" role="listitem">
+House, James S., Karl R. Landis, and Debra Umberson. 1988. <span>“<span
+class="nocase">Social Relationships and Health</span>.”</span>
+<em>Science</em> 241 (4865): 540–45. <a
+href="https://doi.org/10.1126/science.3399889">https://doi.org/10.1126/science.3399889</a>.
+</div>
+<div id="ref-livarr_hughes2002health" class="csl-entry" role="listitem">
+Hughes, Mary Elizabeth, and Linda J. Waite. 2002. <span>“Health in
+Household Context: Living Arrangements and Health in Late Middle
+Age.”</span> <em>Journal of Health and Social Behavior</em> 43 (1):
+1–21. <a
+href="https://doi.org/10.2307/3090242">https://doi.org/10.2307/3090242</a>.
+</div>
+<div id="ref-livarr_idler1997self" class="csl-entry" role="listitem">
+Idler, Ellen L., and Yael Benyamini. 1997. <span>“Self-Rated Health and
+Mortality: A Review of Twenty-Seven Community Studies.”</span>
+<em>Journal of Health and Social Behavior</em> 38 (1): 21–37. <a
+href="https://doi.org/10.2307/2955359">https://doi.org/10.2307/2955359</a>.
+</div>
+<div id="ref-livarr_jiao2024residence" class="csl-entry"
+role="listitem">
+Jiao, Kaishan, Xiuyun Pang, and Wen Hu. 2024. <span>“<span
+class="nocase">Co-residence with children as a mediator between
+widowhood and loneliness in older adults</span>.”</span> <em>BMC
+Geriatrics</em> 24 (1). <a
+href="https://doi.org/10.1186/s12877-024-05363-w">https://doi.org/10.1186/s12877-024-05363-w</a>.
+</div>
+<div id="ref-livarr_kahn1980convoys" class="csl-entry" role="listitem">
+Kahn, Robert L., and Toni C. Antonucci. 1980. <span>“Convoys over the
+Life Course: Attachment, Roles, and Social Support.”</span> In
+<em>Life-Span Development and Behavior</em>, edited by Paul B. Baltes
+and Orville G. Brim, vol. 3. Academic Press.
+</div>
+<div id="ref-livarr_lamidi2022educational" class="csl-entry"
+role="listitem">
+Lamidi, Esther O. 2022. <span>“<span class="nocase">Educational
+Differences in Self-Rated Health Trends Among Middle-Aged and Older
+Adults Living Alone, 1972–2018</span>.”</span> <em>Journal of Aging and
+Health</em> 34: 626–39. <a
+href="https://doi.org/10.1177/08982643211052718">https://doi.org/10.1177/08982643211052718</a>.
+</div>
+<div id="ref-livarr_lee2024social" class="csl-entry" role="listitem">
+Lee, Geon, and Chulwoo Kim. 2024. <span>“<span class="nocase">Social
+isolation and mental well-being among Korean older adults: a focus on
+living arrangements</span>.”</span> <em>Frontiers in Public Health</em>
+12. <a
+href="https://doi.org/10.3389/fpubh.2024.1390459">https://doi.org/10.3389/fpubh.2024.1390459</a>.
+</div>
+<div id="ref-livarr_lee2023living" class="csl-entry" role="listitem">
+Lee, Haena, and Justin H Lim. 2023. <span>“<span class="nocase">Living
+Alone, Environmental Hazards, and Falls Among U.S. Older
+Adults</span>.”</span> <em>Innovation in Aging</em> 7 (6). <a
+href="https://doi.org/10.1093/geroni/igad055">https://doi.org/10.1093/geroni/igad055</a>.
+</div>
+<div id="ref-livarr_li2026trajectories" class="csl-entry"
+role="listitem">
+Li, Zhishuang, and Guoyou Qin. 2026. <span>“<span class="nocase">20-year
+trajectories of depressive symptoms and subsequent functional limitation
+among middle-aged and elderly population: an analysis of longitudinal
+cohort.</span>”</span> <em>Journal of Affective Disorders</em> 403:
+121492. <a
+href="https://doi.org/10.1016/j.jad.2026.121492">https://doi.org/10.1016/j.jad.2026.121492</a>.
+</div>
+<div id="ref-livarr_liu2024racial" class="csl-entry" role="listitem">
+Liu, Jingwen. 2024. <span>“<span class="nocase">Racial/ethnic
+differences in living arrangements, distant relations, and later‐life
+mental health</span>.”</span> <em>Journal of Marriage and Family</em> 86
+(2): 309–30. <a
+href="https://doi.org/10.1111/jomf.12963">https://doi.org/10.1111/jomf.12963</a>.
+</div>
+<div id="ref-livarr_manalel2022development" class="csl-entry"
+role="listitem">
+Manalel, J., Jennifer Cleary, and Toni C Antonucci. 2022.
+<span>“<span>DEVELOPMENT OF SOCIAL CONVOYS: TRAJECTORIES OF CONVOY
+STRUCTURE AND COMPOSITION FROM CHILDHOOD THROUGH
+ADULTHOOD</span>.”</span> <em>Innovation in Aging</em> 6 (Supplement_1):
+40–40. <a
+href="https://doi.org/10.1093/geroni/igac059.151">https://doi.org/10.1093/geroni/igac059.151</a>.
+</div>
+<div id="ref-livarr_pomeroy2023association" class="csl-entry"
+role="listitem">
+<span class="nocase">Pomeroy, M., T. Cudjoe, A. Cuellar, et al.</span>
+2023. <span>“<span class="nocase">Association of Social Isolation With
+Hospitalization and Nursing Home Entry Among Community-Dwelling Older
+Adults.</span>”</span> <em>JAMA Internal Medicine</em> 183 (9): 955. <a
+href="https://doi.org/10.1001/jamainternmed.2023.3064">https://doi.org/10.1001/jamainternmed.2023.3064</a>.
+</div>
+<div id="ref-livarr_rttenauer2019fixed" class="csl-entry"
+role="listitem">
+Rüttenauer, Tobias, and V. Ludwig. 2019. <span>“<span
+class="nocase">Fixed Effects Individual Slopes: Accounting and Testing
+for Heterogeneous Effects in Panel Data or Other Multilevel
+Models</span>.”</span> <em>Sociological Methods &amp; Research</em> 52
+(1): 43–84. <a
+href="https://doi.org/10.1177/0049124120926211">https://doi.org/10.1177/0049124120926211</a>.
+</div>
+<div id="ref-livarr_sherman2015social" class="csl-entry"
+role="listitem">
+Sherman, Carey Wexler, Wylie H. Wan, and Toni C. Antonucci. 2015.
+<span>“<span>Social Convoy Model</span>.”</span> <em>The Encyclopedia of
+Adulthood and Aging</em>, 1–5. <a
+href="https://doi.org/10.1002/9781118521373.wbeaa094">https://doi.org/10.1002/9781118521373.wbeaa094</a>.
+</div>
+<div id="ref-livarr_sonnega2014cohort" class="csl-entry"
+role="listitem">
+Sonnega, Amanda, Jessica D. Faul, Mary Beth Ofstedal, Kenneth M. Langa,
+John W. R. Phillips, and David R. Weir. 2014. <span>“Cohort Profile: The
+Health and Retirement Study (HRS).”</span> <em>International Journal of
+Epidemiology</em> 43 (2): 576–85. <a
+href="https://doi.org/10.1093/ije/dyu067">https://doi.org/10.1093/ije/dyu067</a>.
+</div>
+<div id="ref-livarr_srivastava2021feeling" class="csl-entry"
+role="listitem">
+Srivastava, S., Subhojit Shaw, H. Chaurasia, Naina Purkayastha, and T.
+Muhammad. 2021. <span>“<span class="nocase">Feeling about living
+arrangements and associated health outcomes among older adults in India:
+a cross-sectional study</span>.”</span> <em>BMC Public Health</em> 21
+(1). <a
+href="https://doi.org/10.1186/s12889-021-11342-2">https://doi.org/10.1186/s12889-021-11342-2</a>.
+</div>
+<div id="ref-livarr_takagi2024gender" class="csl-entry" role="listitem">
+Takagi, E., Yasuhiko Saito, and Nguen Cong Vu. 2024. <span>“<span>GENDER
+DIFFERENCES IN ASSOCIATIONS BETWEEN LIVING ARRANGEMENTS AND HEALTH OF
+OLDER ADULTS IN VIETNAM</span>.”</span> <em>Innovation in Aging</em> 8
+(Supplement_1): 843–43. <a
+href="https://doi.org/10.1093/geroni/igae098.2729">https://doi.org/10.1093/geroni/igae098.2729</a>.
+</div>
+<div id="ref-livarr_verspeek2024expecting" class="csl-entry"
+role="listitem">
+Verspeek, Emmie, Yvonne Brehmer, Joran Jongerling, Alexandra Hering, and
+Manon A. van Scheppingen. 2024. <span>“<span class="nocase">Expecting
+Relocation to a Nursing Home: Longitudinal Links with Functional
+Limitations, Self-Rated Health, and Life Satisfaction</span>.”</span>
+<em>Gerontology</em> 70: 1202–12. <a
+href="https://doi.org/10.1159/000541336">https://doi.org/10.1159/000541336</a>.
+</div>
+<div id="ref-livarr_waite2022diversity" class="csl-entry"
+role="listitem">
+Waite, Linda, and Amelia Karraker. 2022. <span>“<span>DIVERSITY OF
+EXPERIENCES OF AGING AMONG BIRTH COHORTS AND RACIAL/ETHNIC GROUPS IN
+NSHAP</span>.”</span> <em>Innovation in Aging</em> 6: 137–37. <a
+href="https://doi.org/10.1093/geroni/igac059.543">https://doi.org/10.1093/geroni/igac059.543</a>.
+</div>
+<div id="ref-livarr_zhang2025impact" class="csl-entry" role="listitem">
+Zhang, Yalu, Xintong Zhao, and Meijun Wan. 2025. <span>“<span
+class="nocase">The Impact of Living Arrangement Transitions on
+Depression Among Older Adults: How Transitions and Who Leaves
+Matter</span>.”</span> <em>Innovation in Aging</em> 9 (Supplement_2). <a
+href="https://doi.org/10.1093/geroni/igaf122.1448">https://doi.org/10.1093/geroni/igaf122.1448</a>.
+</div>
+<div id="ref-livarr_zimmer2005health" class="csl-entry" role="listitem">
+Zimmer, Zachary. 2005. <span>“<span class="nocase">Health and Living
+Arrangement Transitions Among China’s Oldest-Old</span>.”</span>
+<em>Research on Aging</em> 27 (5): 526–55. <a
+href="https://doi.org/10.1177/0164027505277848">https://doi.org/10.1177/0164027505277848</a>.
+</div>
+</div>
+<!-- Markup Reader: inline annotation toolkit -->
+<style id="markup-reader-panel-style">
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap");
+
+/* ── Annotation marks ─────────────────────────────────── */
+[data-annotation="true"] { border-radius: 2px; cursor: pointer; }
+[data-annotation="true"].annot-highlight { background: var(--annot-highlight-color, #fff2a8); box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+[data-annotation="true"].annot-underline { border-bottom: 3px solid var(--annot-underline-color, #cc4f1b); padding-bottom: 1px; }
+[data-annotation="true"].annot-note { background: var(--annot-highlight-color, #fff2a8); border-bottom: 2px dashed var(--annot-underline-color, #cc4f1b); cursor: help; position: relative; }
+[data-annotation="true"].annot-note::after { content: "\270E"; font-size: .75em; font-weight: 700; color: var(--annot-underline-color, #cc4f1b); margin-left: 1px; vertical-align: super; }
+[data-annotation="true"].annot-note[data-note]:hover::before {
+  content: attr(data-note);
+  position: absolute; bottom: calc(100% + 4px); left: 0;
+  max-width: 300px; padding: 6px 10px;
+  background: #1e3a27; color: #fff; font-size: 12px; font-weight: 400;
+  border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,.3);
+  white-space: pre-wrap; word-break: break-word;
+  z-index: 999998; pointer-events: none;
+  animation: mr-fadeIn .12s ease;
+}
+
+/* ── Selection tooltip ────────────────────────────────── */
+#mr-tooltip {
+  position: absolute; z-index: 999999;
+  display: none; align-items: center; gap: 4px;
+  padding: 5px 6px;
+  background: #1e3a27; color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.28);
+  font-family: "Manrope", "Segoe UI", sans-serif; font-size: 13px; font-weight: 600;
+  white-space: nowrap;
+  animation: mr-fadeIn .15s ease;
+}
+#mr-tooltip button {
+  border: none; background: rgba(255,255,255,.15);
+  color: #fff; border-radius: 7px;
+  padding: 5px 10px; font-size: 12px; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  transition: background .12s ease;
+}
+#mr-tooltip button:hover { background: rgba(255,255,255,.3); }
+#mr-tooltip .tt-sep { width: 1px; height: 18px; background: rgba(255,255,255,.22); }
+
+/* ── Note input box ───────────────────────────────────── */
+#mr-note-input {
+  position: absolute; z-index: 1000000;
+  display: none; flex-direction: column; gap: 6px;
+  width: 280px; padding: 10px 12px; box-sizing: border-box;
+  background: #1e3a27; color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 36px rgba(0,0,0,.35);
+  font-family: "Manrope", "Segoe UI", sans-serif; font-size: 13px;
+  animation: mr-fadeIn .15s ease;
+}
+#mr-note-input .ni-label { font-weight: 700; font-size: 12px; opacity: .85; }
+#mr-note-input textarea {
+  width: 100%; min-height: 60px; max-height: 140px;
+  padding: 8px 10px; border: 1px solid rgba(255,255,255,.25);
+  border-radius: 8px; background: rgba(255,255,255,.1);
+  color: #fff; font-family: inherit; font-size: 13px;
+  resize: vertical; outline: none; box-sizing: border-box;
+}
+#mr-note-input textarea:focus { border-color: rgba(255,255,255,.5); }
+#mr-note-input .ni-actions { display: flex; justify-content: flex-end; gap: 6px; }
+#mr-note-input .ni-actions button {
+  border: none; border-radius: 8px; padding: 6px 14px;
+  font-size: 12px; font-weight: 700; cursor: pointer; font-family: inherit;
+}
+#mr-note-input .ni-cancel { background: rgba(255,255,255,.15); color: #fff; }
+#mr-note-input .ni-cancel:hover { background: rgba(255,255,255,.25); }
+#mr-note-input .ni-confirm { background: #4caf6a; color: #fff; }
+#mr-note-input .ni-confirm:hover { background: #3d9e5a; }
+
+/* ── Floating toggle button ───────────────────────────── */
+#mr-toggle-btn {
+  position: fixed; bottom: 20px; right: 20px; z-index: 999990;
+  width: 48px; height: 48px; border-radius: 50%;
+  background: linear-gradient(135deg, #2f8a45, #1f6933); color: #fff;
+  border: none; font-size: 22px; cursor: pointer;
+  box-shadow: 0 6px 20px rgba(28,77,42,.35);
+  transition: transform .15s ease, box-shadow .2s ease;
+  font-family: "Manrope", sans-serif;
+}
+#mr-toggle-btn:hover { transform: scale(1.08); box-shadow: 0 8px 24px rgba(28,77,42,.45); }
+
+/* ── Side panel ───────────────────────────────────────── */
+#mr-panel {
+  position: fixed; top: 0; right: -340px; z-index: 999991;
+  width: 320px; height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #f9fbf3, #f5efe3);
+  border-left: 1px solid rgba(54,84,58,.18);
+  box-shadow: -4px 0 24px rgba(0,0,0,.12);
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  color: #24322a;
+  transition: right .3s ease;
+  overflow: hidden;
+  padding: 16px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+#mr-panel.open { right: 0; }
+#mr-panel h3 {
+  margin: 0 0 8px; font-size: .88rem; letter-spacing: .03em;
+  text-transform: uppercase; color: #214730;
+}
+#mr-panel .mr-section {
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(73,106,67,.14); border-radius: 14px;
+  padding: 12px;
+}
+#mr-panel .mr-pen-group { margin-bottom: 4px; }
+#mr-panel .mr-pen-label { font-size: .78rem; color: #5f6f62; margin-bottom: 6px; font-weight: 600; }
+#mr-panel .mr-pens { display: flex; gap: 8px; flex-wrap: wrap; }
+#mr-panel .mr-pen {
+  width: 28px; height: 28px; border-radius: 50%; border: 2px solid transparent;
+  cursor: pointer; transition: transform .12s ease, border-color .12s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15); position: relative;
+}
+#mr-panel .mr-pen:hover { transform: scale(1.15); }
+#mr-panel .mr-pen.active {
+  border-color: #1e3a27; box-shadow: 0 0 0 2px #1e3a27, 0 2px 8px rgba(0,0,0,.2);
+  transform: scale(1.1);
+}
+#mr-panel .mr-pen.active::after {
+  content: "\2713"; position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%); font-size: 13px; font-weight: 900;
+  color: rgba(0,0,0,.5); text-shadow: 0 0 2px rgba(255,255,255,.8);
+}
+#mr-panel .mr-annot-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; overflow-y: auto; }
+#mr-panel .mr-annot-item {
+  font-size: .82rem; line-height: 1.4; padding: 8px 10px;
+  background: rgba(255,255,255,.8); border: 1px solid rgba(60,90,60,.12);
+  border-radius: 10px; cursor: pointer; transition: background .15s ease;
+  word-break: break-word;
+}
+#mr-panel .mr-annot-item:hover { background: #edf5e4; }
+#mr-panel .mr-annot-type {
+  display: inline-block; font-size: .68rem; font-weight: 700; text-transform: uppercase;
+  padding: 2px 6px; border-radius: 6px; margin-right: 4px; vertical-align: middle;
+}
+#mr-panel .mr-annot-type.highlight { background: #fff2a8; color: #6b5a00; }
+#mr-panel .mr-annot-type.underline { background: #fce0cf; color: #7a3006; }
+#mr-panel .mr-annot-type.note { background: #d4f0dd; color: #1a5e2c; }
+#mr-panel .mr-annot-note { display: block; margin-top: 3px; font-style: italic; color: #5f6f62; font-size: .78rem; }
+#mr-panel .mr-annot-actions { margin-top: 5px; display: flex; gap: 5px; }
+#mr-panel .mr-annot-actions button {
+  font-size: .72rem; padding: 4px 8px; border: none; border-radius: 6px;
+  font-weight: 700; cursor: pointer; font-family: inherit;
+}
+#mr-panel .mr-btn-del { background: linear-gradient(135deg,#d9713f,#bc4b12); color: white; }
+#mr-panel .mr-btn-note { background: #f0f4e8; color: #24462f; border: 1px solid rgba(45,82,53,.18); }
+#mr-panel .mr-save-btn {
+  display: block; width: 100%; padding: 10px;
+  background: linear-gradient(135deg,#2f8a45,#1f6933); color: #fff;
+  border: none; border-radius: 10px; font-size: .88rem; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  box-shadow: 0 8px 18px rgba(28,77,42,.2);
+  flex-shrink: 0;
+}
+#mr-panel .mr-save-btn:hover { transform: translateY(-1px); }
+#mr-panel .mr-export-md {
+  display: block; width: 100%; padding: 10px;
+  background: linear-gradient(135deg,#3a6b8a,#1f4f6e); color: #fff;
+  border: none; border-radius: 10px; font-size: .88rem; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  box-shadow: 0 8px 18px rgba(28,60,90,.2);
+  flex-shrink: 0;
+}
+#mr-panel .mr-export-md:hover { transform: translateY(-1px); }
+#mr-panel .mr-empty { color: #5f6f62; font-size: .82rem; text-align: center; padding: 12px 0; }
+#mr-panel .mr-close {
+  position: absolute; top: 12px; right: 12px;
+  background: rgba(0,0,0,.06); border: none; border-radius: 8px;
+  width: 28px; height: 28px; font-size: 16px; cursor: pointer;
+  color: #24322a; font-family: inherit;
+}
+
+@keyframes mr-fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ── Mobile responsive ────────────────────────────────── */
+@media (max-width: 600px) {
+  #mr-panel { width: 100vw; right: -100vw; border-left: none; padding: 14px 16px; }
+  #mr-panel.open { right: 0; }
+  #mr-panel .mr-pen { width: 32px; height: 32px; }
+  #mr-panel .mr-save-btn { padding: 14px; font-size: .92rem; }
+  #mr-toggle-btn { width: 44px; height: 44px; font-size: 20px; bottom: 16px; right: 16px; }
+  #mr-tooltip { padding: 7px 8px; }
+  #mr-tooltip button { padding: 8px 12px; font-size: 13px; }
+  #mr-note-input { width: calc(100vw - 24px); max-width: none; left: 12px !important; padding: 12px 14px; font-size: 15px; }
+  #mr-note-input textarea { min-height: 72px; font-size: 15px; padding: 10px 12px; }
+  #mr-note-input .ni-actions button { padding: 10px 18px; font-size: 14px; }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  #mr-tooltip button { padding: 8px 14px; font-size: 14px; }
+}
+
+@media print {
+  #mr-toggle-btn, #mr-panel, #mr-tooltip, #mr-note-input { display: none !important; }
+}
+</style>
+
+<script>
+(function() {
+"use strict";
+
+/* ── Config ───────────────────────────────────────────── */
+let highlightColor = "#fff2a8";
+let underlineColor = "#cc4f1b";
+
+/* ── Annotation helpers ───────────────────────────────── */
+function genId() { return "ann-" + Date.now() + "-" + Math.random().toString(36).slice(2,8); }
+
+function wrapRange(range, type, noteText) {
+  const span = document.createElement("span");
+  span.setAttribute("data-annotation", "true");
+  span.setAttribute("data-type", type);
+  span.setAttribute("data-id", genId());
+  if (type === "highlight") {
+    span.className = "annot-highlight";
+    span.style.setProperty("--annot-highlight-color", highlightColor);
+  } else if (type === "underline") {
+    span.className = "annot-underline";
+    span.style.setProperty("--annot-underline-color", underlineColor);
+  } else if (type === "note") {
+    span.className = "annot-note";
+    span.setAttribute("data-note", noteText);
+    span.title = noteText;
+    span.style.setProperty("--annot-highlight-color", highlightColor);
+    span.style.setProperty("--annot-underline-color", underlineColor);
+  }
+  const frag = range.extractContents();
+  if (!frag.textContent || !frag.textContent.trim()) { range.insertNode(frag); return null; }
+  span.appendChild(frag);
+  range.insertNode(span);
+  return span;
+}
+
+function removeAnnotation(el) {
+  const p = el.parentNode; if (!p) return;
+  while (el.firstChild) p.insertBefore(el.firstChild, el);
+  p.removeChild(el); p.normalize();
+}
+
+function applyNote(el, text) {
+  el.setAttribute("data-note", text);
+  el.setAttribute("data-type", "note");
+  el.title = text;
+  el.className = "annot-note";
+}
+
+function allAnnotations() { return Array.from(document.querySelectorAll('[data-annotation="true"]')); }
+
+/* ── Tooltip ──────────────────────────────────────────── */
+function getEl(id) { return document.getElementById(id); }
+function mkEl(tag, id) {
+  let el = getEl(id);
+  if (el) return el;
+  el = document.createElement(tag);
+  el.id = id;
+  document.body.appendChild(el);
+  return el;
+}
+
+function showTooltip(rect, buttons) {
+  const tip = mkEl("div", "mr-tooltip");
+  tip.innerHTML = "";
+  buttons.forEach(function(b, i) {
+    if (i > 0) { const sep = document.createElement("span"); sep.className = "tt-sep"; tip.appendChild(sep); }
+    const btn = document.createElement("button");
+    btn.textContent = b.label;
+    btn.addEventListener("mousedown", function(e) { e.preventDefault(); e.stopPropagation(); b.action(); });
+    tip.appendChild(btn);
+  });
+  tip.style.display = "flex";
+  const sy = window.scrollY, sx = window.scrollX;
+  tip.style.top = Math.max(0, rect.top + sy - tip.offsetHeight - 8) + "px";
+  tip.style.left = Math.max(4, rect.left + sx + rect.width/2 - tip.offsetWidth/2) + "px";
+}
+
+function hideTooltip() {
+  const tip = getEl("mr-tooltip"); if (tip) tip.style.display = "none";
+  const ni = getEl("mr-note-input"); if (ni) ni.style.display = "none";
+}
+
+/* ── Note input ───────────────────────────────────────── */
+function showNoteInput(rect, existing, onConfirm) {
+  const tip = getEl("mr-tooltip"); if (tip) tip.style.display = "none";
+  const box = mkEl("div", "mr-note-input");
+  box.innerHTML = "";
+
+  const label = document.createElement("div");
+  label.className = "ni-label"; label.textContent = "Enter note:";
+  box.appendChild(label);
+
+  const ta = document.createElement("textarea");
+  ta.value = existing || ""; ta.setAttribute("rows","3");
+  box.appendChild(ta);
+
+  const acts = document.createElement("div");
+  acts.className = "ni-actions";
+
+  const cancelBtn = document.createElement("button");
+  cancelBtn.className = "ni-cancel"; cancelBtn.textContent = "Cancel";
+  cancelBtn.addEventListener("click", function(e) { e.preventDefault(); box.style.display = "none"; });
+  acts.appendChild(cancelBtn);
+
+  const okBtn = document.createElement("button");
+  okBtn.className = "ni-confirm"; okBtn.textContent = "OK";
+  okBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    const val = ta.value.trim();
+    if (!val) { ta.focus(); return; }
+    box.style.display = "none";
+    onConfirm(val);
+  });
+  acts.appendChild(okBtn);
+  box.appendChild(acts);
+
+  ta.addEventListener("keydown", function(e) {
+    if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); okBtn.click(); }
+    if (e.key === "Escape") { e.preventDefault(); cancelBtn.click(); }
+  });
+
+  box.style.display = "flex";
+  const sy = window.scrollY;
+  box.style.top = Math.max(sy + 4, rect.bottom + sy + 8) + "px";
+  box.style.left = Math.max(4, Math.min(rect.left, document.documentElement.clientWidth - 288)) + "px";
+  setTimeout(function() { ta.focus(); }, 30);
+}
+
+/* ── Annotate action ──────────────────────────────────── */
+function doAnnotate(type) {
+  hideTooltip();
+  const sel = window.getSelection();
+  if (!sel || sel.rangeCount === 0 || sel.isCollapsed) return;
+  const range = sel.getRangeAt(0);
+
+  if (type === "note") {
+    const saved = range.cloneRange();
+    const rect = range.getBoundingClientRect();
+    sel.removeAllRanges();
+    showNoteInput(rect, "", function(text) {
+      const ns = window.getSelection();
+      ns.removeAllRanges(); ns.addRange(saved);
+      const fr = ns.getRangeAt(0);
+      wrapRange(fr, "note", text);
+      ns.removeAllRanges();
+      refreshPanel();
+    });
+    return;
+  }
+
+  wrapRange(range, type, "");
+  sel.removeAllRanges();
+  refreshPanel();
+}
+
+/* ── Selection listener ───────────────────────────────── */
+let tooltipLock = false;
+
+function tooltipButtons() {
+  return [
+    { label: "Highlight", action: function() { doAnnotate("highlight"); } },
+    { label: "Underline", action: function() { doAnnotate("underline"); } },
+    { label: "Note", action: function() { doAnnotate("note"); } },
+  ];
+}
+
+document.addEventListener("mouseup", function() {
+  if (tooltipLock) return;
+  setTimeout(function() {
+    const sel = window.getSelection();
+    if (!sel || sel.isCollapsed || sel.rangeCount === 0) return;
+    const range = sel.getRangeAt(0);
+    const rect = range.getBoundingClientRect();
+    if (rect.width === 0 && rect.height === 0) return;
+    if (range.commonAncestorContainer.nodeType === 1 && range.commonAncestorContainer.closest && range.commonAncestorContainer.closest("#mr-panel")) return;
+    if (range.commonAncestorContainer.parentElement && range.commonAncestorContainer.parentElement.closest && range.commonAncestorContainer.parentElement.closest("#mr-panel")) return;
+    showTooltip(rect, tooltipButtons());
+  }, 10);
+});
+
+function handlePointerDown(e) {
+  const t = e.target;
+  if (t.closest && (t.closest("#mr-tooltip") || t.closest("#mr-note-input") || t.closest("#mr-panel"))) return;
+
+  const annot = t.closest && t.closest('[data-annotation="true"]');
+  if (annot) {
+    const sel = window.getSelection();
+    if (sel && sel.isCollapsed) {
+      e.preventDefault();
+      tooltipLock = true;
+      showTooltip(annot.getBoundingClientRect(), [
+        { label: "Note", action: function() {
+          hideTooltip(); tooltipLock = false;
+          var rect = annot.getBoundingClientRect();
+          showNoteInput(rect, annot.getAttribute("data-note") || "", function(text) {
+            applyNote(annot, text); refreshPanel();
+          });
+        }},
+        { label: "Remove", action: function() {
+          hideTooltip(); tooltipLock = false;
+          removeAnnotation(annot); refreshPanel();
+        }},
+      ]);
+      setTimeout(function() { tooltipLock = false; }, 300);
+      return;
+    }
+  }
+  hideTooltip();
+}
+
+document.addEventListener("mousedown", handlePointerDown);
+
+/* ── Touch / mobile support ──────────────────────────── */
+var selectionTimer = null;
+document.addEventListener("selectionchange", function() {
+  clearTimeout(selectionTimer);
+  selectionTimer = setTimeout(function() {
+    if (tooltipLock) return;
+    var sel = window.getSelection();
+    if (!sel || sel.isCollapsed || sel.rangeCount === 0) return;
+    var range = sel.getRangeAt(0);
+    if (range.commonAncestorContainer.nodeType === 1 && range.commonAncestorContainer.closest && range.commonAncestorContainer.closest("#mr-panel")) return;
+    if (range.commonAncestorContainer.parentElement && range.commonAncestorContainer.parentElement.closest && range.commonAncestorContainer.parentElement.closest("#mr-panel")) return;
+    var rect = range.getBoundingClientRect();
+    if (rect.width === 0 && rect.height === 0) return;
+    showTooltip(rect, tooltipButtons());
+  }, 300);
+});
+
+document.addEventListener("touchend", function(e) {
+  setTimeout(function() {
+    var sel = window.getSelection();
+    if (sel && !sel.isCollapsed) return;
+    handlePointerDown(e);
+  }, 50);
+});
+
+/* ── Side panel ───────────────────────────────────────── */
+function buildPanel() {
+  const toggle = document.createElement("button");
+  toggle.id = "mr-toggle-btn";
+  toggle.textContent = "\u270E";
+  toggle.title = "Annotation Tools";
+  document.body.appendChild(toggle);
+
+  const panel = document.createElement("div");
+  panel.id = "mr-panel";
+  var hlPens = [
+    { name: "Yellow", color: "#fff2a8" },
+    { name: "Green", color: "#b8f0c0" },
+    { name: "Blue", color: "#b3deff" },
+    { name: "Pink", color: "#ffc0cb" },
+    { name: "Orange", color: "#ffd9a8" },
+    { name: "Purple", color: "#dcc0f0" },
+  ];
+  var ulPens = [
+    { name: "Red", color: "#cc4f1b" },
+    { name: "Blue", color: "#2a6dd9" },
+    { name: "Green", color: "#2a8a3e" },
+    { name: "Orange", color: "#d98c2a" },
+    { name: "Purple", color: "#7b3ec4" },
+    { name: "Gray", color: "#666666" },
+  ];
+
+  function buildPenRow(pens, activeColor) {
+    return pens.map(function(p) {
+      var cls = p.color === activeColor ? "mr-pen active" : "mr-pen";
+      return '<button class="' + cls + '" data-color="' + p.color + '" style="background:' + p.color + ';" title="' + p.name + '"></button>';
+    }).join("");
+  }
+
+  panel.innerHTML =
+    '<button class="mr-close" id="mr-close-btn">\u2715</button>' +
+    '<h3>Annotations</h3>' +
+    '<div class="mr-section">' +
+      '<div class="mr-pen-group">' +
+        '<div class="mr-pen-label">Highlight</div>' +
+        '<div class="mr-pens" id="mr-hl-pens">' + buildPenRow(hlPens, highlightColor) + '</div>' +
+      '</div>' +
+      '<div class="mr-pen-group" style="margin-top:10px;">' +
+        '<div class="mr-pen-label">Underline</div>' +
+        '<div class="mr-pens" id="mr-ul-pens">' + buildPenRow(ulPens, underlineColor) + '</div>' +
+      '</div>' +
+    '</div>' +
+    '<div class="mr-section" style="flex:1;overflow-y:auto;min-height:0;display:flex;flex-direction:column;">' +
+      '<h3>Annotation List</h3>' +
+      '<ul id="mr-annot-list" class="mr-annot-list" style="flex:1;overflow-y:auto;min-height:0;">' +
+        '<li class="mr-empty">No annotations yet</li>' +
+      '</ul>' +
+    '</div>' +
+    '<button class="mr-save-btn" id="mr-save-btn">Download Annotated HTML</button>' +
+    '<button class="mr-export-md" id="mr-export-md">Export as Markdown</button>';
+  document.body.appendChild(panel);
+
+  toggle.addEventListener("click", function() { panel.classList.toggle("open"); });
+  document.getElementById("mr-close-btn").addEventListener("click", function() { panel.classList.remove("open"); });
+
+  document.getElementById("mr-hl-pens").addEventListener("click", function(e) {
+    var pen = e.target.closest(".mr-pen"); if (!pen) return;
+    highlightColor = pen.getAttribute("data-color");
+    this.querySelectorAll(".mr-pen").forEach(function(p) { p.classList.remove("active"); });
+    pen.classList.add("active");
+  });
+  document.getElementById("mr-ul-pens").addEventListener("click", function(e) {
+    var pen = e.target.closest(".mr-pen"); if (!pen) return;
+    underlineColor = pen.getAttribute("data-color");
+    this.querySelectorAll(".mr-pen").forEach(function(p) { p.classList.remove("active"); });
+    pen.classList.add("active");
+  });
+
+  document.getElementById("mr-save-btn").addEventListener("click", function() {
+    const toHide = ["mr-toggle-btn", "mr-panel", "mr-tooltip", "mr-note-input"];
+    toHide.forEach(function(id) { const el = getEl(id); if (el) el.style.display = "none"; });
+    const dt = document.doctype ? "<!DOCTYPE " + document.doctype.name + ">" : "<!DOCTYPE html>";
+    const blob = new Blob([dt + "\n" + document.documentElement.outerHTML], { type: "text/html;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    var origName = decodeURIComponent(location.pathname.split("/").pop() || "") || (document.title || "document").replace(/[<>:"/\\|?*]/g, "_") + ".html";
+    a.download = origName;
+    document.body.appendChild(a); a.click(); a.remove();
+    URL.revokeObjectURL(url);
+    toHide.forEach(function(id) { const el = getEl(id); if (el) el.style.display = ""; });
+    document.getElementById("mr-toggle-btn").style.display = "block";
+  });
+
+  document.getElementById("mr-export-md").addEventListener("click", exportMarkdown);
+}
+
+function refreshPanel() {
+  const list = getEl("mr-annot-list");
+  if (!list) return;
+  list.innerHTML = "";
+
+  const items = allAnnotations();
+  if (items.length === 0) {
+    list.innerHTML = '<li class="mr-empty">No annotations yet</li>';
+    return;
+  }
+
+  items.forEach(function(el) {
+    const li = document.createElement("li");
+    li.className = "mr-annot-item";
+
+    const type = el.getAttribute("data-type") || "highlight";
+    const text = (el.textContent || "").slice(0, 60);
+    const note = el.getAttribute("data-note");
+
+    const badge = document.createElement("span");
+    badge.className = "mr-annot-type " + type;
+    const typeNames = { highlight: "Highlight", underline: "Underline", note: "Note" };
+    badge.textContent = typeNames[type] || type;
+    li.appendChild(badge);
+
+    const txt = document.createElement("span");
+    txt.textContent = text + (el.textContent.length > 60 ? "\u2026" : "");
+    li.appendChild(txt);
+
+    if (note) {
+      const nt = document.createElement("span");
+      nt.className = "mr-annot-note";
+      nt.textContent = note;
+      li.appendChild(nt);
+    }
+
+    const actions = document.createElement("div");
+    actions.className = "mr-annot-actions";
+
+    if (type !== "note") {
+      const nb = document.createElement("button");
+      nb.className = "mr-btn-note"; nb.textContent = "Add Note";
+      nb.addEventListener("click", function(ev) {
+        ev.stopPropagation();
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+        showNoteInput(el.getBoundingClientRect(), el.getAttribute("data-note") || "", function(t) {
+          applyNote(el, t); refreshPanel();
+        });
+      });
+      actions.appendChild(nb);
+    }
+
+    const db = document.createElement("button");
+    db.className = "mr-btn-del"; db.textContent = "Remove";
+    db.addEventListener("click", function(ev) {
+      ev.stopPropagation();
+      removeAnnotation(el); refreshPanel();
+    });
+    actions.appendChild(db);
+    li.appendChild(actions);
+
+    li.addEventListener("click", function() {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+      el.style.outline = "3px solid #2f8a45";
+      setTimeout(function() { el.style.outline = ""; }, 1200);
+    });
+
+    list.appendChild(li);
+  });
+}
+
+/* ── Export annotations to Markdown ───────────────────── */
+function findHeading(el) {
+  var node = el;
+  while (node && node !== document.body) {
+    var prev = node.previousElementSibling;
+    while (prev) {
+      if (/^H[1-6]$/.test(prev.tagName)) return { level: parseInt(prev.tagName[1]), text: prev.textContent.trim() };
+      prev = prev.previousElementSibling;
+    }
+    node = node.parentElement;
+  }
+  return null;
+}
+
+function exportMarkdown() {
+  var items = allAnnotations();
+  if (items.length === 0) return;
+
+  var typeNames = { highlight: "Highlight", underline: "Underline", note: "Note" };
+  var lines = [];
+  lines.push("# " + (document.title || "Document") + " - Annotations");
+  lines.push("");
+  lines.push("_" + new Date().toLocaleString() + "_");
+  lines.push("");
+  lines.push("---");
+  lines.push("");
+
+  var lastHeading = null;
+
+  items.forEach(function(el) {
+    var type = el.getAttribute("data-type") || "highlight";
+    var text = el.textContent.trim();
+    var note = el.getAttribute("data-note") || "";
+
+    var heading = findHeading(el);
+    if (heading && (!lastHeading || lastHeading.text !== heading.text)) {
+      lines.push("#".repeat(Math.min(heading.level + 1, 4)) + " " + heading.text);
+      lines.push("");
+      lastHeading = heading;
+    }
+
+    lines.push("**[" + typeNames[type] + "]**");
+    lines.push("");
+    lines.push("> " + text.replace(/\n/g, "\n> "));
+    if (note) {
+      lines.push("");
+      lines.push("**Note:** " + note);
+    }
+    lines.push("");
+    lines.push("---");
+    lines.push("");
+  });
+
+  var md = lines.join("\n");
+  var blob = new Blob([md], { type: "text/markdown;charset=utf-8" });
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement("a");
+  a.href = url;
+  a.download = (document.title || "document").replace(/[<>:"/\\|?*]/g, "_") + ".annotations.md";
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+}
+
+/* ── Boot ─────────────────────────────────────────────── */
+function makeTranslatable() {
+  // Unwrap <header id="title-block-header"> entirely — move children to body
+  var header = document.getElementById('title-block-header');
+  if (header) {
+    var parent = header.parentNode;
+    var next = header.nextSibling;
+    while (header.firstChild) {
+      parent.insertBefore(header.firstChild, next);
+    }
+    parent.removeChild(header);
+  }
+  // Convert all headings to <p> with inline style
+  var sizes = { H1: '2em', H2: '1.5em', H3: '1.25em', H4: '1.1em', H5: '1em', H6: '0.9em' };
+  document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(function(h) {
+    var p = document.createElement('p');
+    p.innerHTML = h.innerHTML;
+    if (h.id) p.id = h.id;
+    if (h.className) p.className = h.className;
+    var sz = sizes[h.tagName] || '1.5em';
+    p.style.cssText = 'font-size:' + sz + ';font-weight:bold;margin-top:1.2em;margin-bottom:0.5em;';
+    if (h.classList.contains('title')) {
+      p.style.cssText = 'font-size:2.5em;font-weight:bold;text-align:center;line-height:1.2;margin-bottom:0.5em;';
+    }
+    h.parentNode.replaceChild(p, h);
+  });
+  // Unwrap <div class="abstract"> — flatten to plain <p> tags
+  var abDiv = document.querySelector('.abstract');
+  if (abDiv) {
+    var parent = abDiv.parentNode;
+    var next = abDiv.nextSibling;
+    while (abDiv.firstChild) {
+      parent.insertBefore(abDiv.firstChild, next);
+    }
+    parent.removeChild(abDiv);
+  }
+  // Convert abstract-title div to <p>
+  var abTitle = document.querySelector('.abstract-title');
+  if (abTitle && abTitle.tagName !== 'P') {
+    var p = document.createElement('p');
+    p.innerHTML = abTitle.innerHTML;
+    p.style.cssText = 'font-weight:bold;text-align:center;';
+    abTitle.parentNode.replaceChild(p, abTitle);
+  }
+}
+
+function boot() {
+  makeTranslatable();
+  buildPanel();
+  refreshPanel();
+}
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", boot);
+} else {
+  boot();
+}
+
+})();
+</script>
+</body>
+</html>
