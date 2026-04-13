@@ -1,0 +1,2743 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Zekai (Zachary) Lu" />
+  <title>Intergenerational Exchange Imbalance, Community Social Participation, and Cognitive Decline Trajectories among Older Adults in China</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    div.abstract {
+      margin: 2em 2em 2em 2em;
+      text-align: left;
+      font-size: 85%;
+    }
+    div.abstract-title {
+      font-weight: bold;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0.5em;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/contrib/auto-render.min.js"></script>
+  <style>
+  /* Computer Modern Serif - LaTeX default font */
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunrm.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunbx.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunti.woff') format('woff');
+      font-weight: normal;
+      font-style: italic;
+  }
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunbi.woff') format('woff');
+      font-weight: bold;
+      font-style: italic;
+  }
+
+  body {line-height: 2em; font-size: 12pt}
+
+  p {text-indent: 0.5in; margin: 0; line-height: 2em}
+  div.Author p {
+    text-indent: 0;
+  }
+  .FigureTitle {font-weight: bold; margin: 5pt 0; font-size: 12pt; color: black;}
+  .FigureTitle p {text-indent: 0; text-align: left;}
+  .FigureNote p {text-indent: 0; margin: 0; padding: 0}
+  .Caption {font-style: italic; font-size: 12pt; color: black; text-align: left}
+  .Caption p {text-indent: 0; font-size: 12pt;}
+  .quarto-float, .quarto-float-tbl, .figure {margin: 0; margin-block-start: 0; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0}
+
+  h1, h2, h3, h4, h5 {border: none; margin: 0; padding: 0;line-height: 2; text-indent: 0 }
+
+  h1 {text-align: center;}
+  h3 {font-style: italic}
+  h4 {font-weight: bold}
+
+  h4, h5 {
+  text-indent: 0.5in;
+  display:inline-block;
+  margin: 0
+  }
+
+  h5 {
+    font-style: italic;
+  }
+
+  h4 + p, h5 + p {
+    display:inline;
+    text-indent: 0;
+  }
+
+
+  .Compact {
+    line-height: 1em;
+    text-indent: 0;
+    margin: 0;
+  }
+
+
+
+
+
+
+  td p, th p, li p {text-indent: 0; margin: 0;}
+
+
+
+  li p {text-indent: 0; margin: 0;}
+
+  .subtitle {font-size: 12pt; text-align: center; color: #303030; font-weight: bold;}
+
+  blockquote, .blockquote {border: none; margin: 0 .5in; padding: 0; font-style: normal; color: #303030;}
+
+  .Author {text-align:center; text-indent: 0}
+
+  .cell-output-display p {text-indent: 0}
+
+  div.hanging-indent {margin-left: 0.5in; text-indent: -0.5in}
+
+  div.hanging-indent .csl-entry {margin-left: 0; text-indent: -0.5in;}
+
+  .katex {font-size: 1em;}
+  .katex-display {font-size: 1.1em;}
+
+  .NoIndent p {text-indent: 0}
+
+  blockquote p:nth-child(1) {text-indent: 0}
+
+  table {
+      font-variant-numeric: tabular-nums;
+  }
+
+  .table {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .table>thead {
+    border-bottom: 1px solid black;
+  }
+
+  .table>:not(caption)>*>* {
+    border-bottom: none;
+  }
+
+  .tabwid {padding: 0}
+
+  .AbstractFirstParagraph p {text-indent: 0}
+
+
+  /* Override fonts to Computer Modern */
+  body {
+      font-family: 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+      font-family: 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;
+  }
+  code, pre {
+      font-family: 'Computer Modern Typewriter', 'Courier New', monospace;
+  }
+
+  /* KaTeX: match font size and weight to body text */
+  .katex {
+      font-size: 1.0em;
+      font-weight: normal;
+  }
+  .katex .mathnormal,
+  .katex .mathit {
+      font-weight: normal;
+  }
+  .katex .mathbf {
+      font-weight: bold;
+  }
+
+  /* Screen adaptation overrides for web viewing */
+  @media screen {
+      html { font-size: 12pt; }
+      body {
+          max-width: 52em;
+          margin: 2em auto;
+          padding: 0 2em;
+          column-count: 1;
+      }
+      figure img { max-width: 100%; height: auto; }
+      .math.display { overflow-x: auto; margin: 1.2em 0; }
+      pre {
+          overflow-x: auto;
+          background: #f5f5f5;
+          padding: 0.8em;
+          border-radius: 4px;
+      }
+  }
+  </style>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+          delimiters: [
+              {left: "$$", right: "$$", display: true},
+              {left: "\\[", right: "\\]", display: true},
+              {left: "$", right: "$", display: false},
+              {left: "\\(", right: "\\)", display: false}
+          ],
+          throwOnError: false
+      });
+  });
+  </script>
+  <script defer=""
+  src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Intergenerational Exchange Imbalance, Community Social
+Participation, and Cognitive Decline Trajectories among Older Adults in
+China</h1>
+<p class="author">Zekai (Zachary) Lu</p>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+<p>Intergenerational financial transfers between older adults and their
+children are bidirectional, yet most research treats them as
+unidirectional, overlooking the health implications of exchange balance.
+Drawing on Social Exchange Theory and the Social Compensation
+Hypothesis, we examined whether intergenerational exchange imbalance
+accelerates cognitive decline and whether community social participation
+buffers this effect. Using four waves of the China Health and Retirement
+Longitudinal Study (2011–2018, <span class="math inline">N</span> =
+12,742), we estimated multilevel growth curve models tracking cognitive
+trajectories over seven years. Net receivers of financial transfers
+experienced significantly faster cognitive decline than balanced
+exchangers (<span class="math inline">b</span> = 0.047, <span
+class="math inline">p &lt; .05</span>) and net givers (<span
+class="math inline">b</span> = 0.064, <span class="math inline">p &lt;
+.01</span>), accumulating a 0.45-point disadvantage on a 20-point
+cognitive composite. Social participation was independently associated
+with 0.454 points higher cognition (<span class="math inline">p &lt;
+.001</span>), but the three-way interaction with exchange balance and
+time was not significant: social participation protected cognition
+uniformly across exchange groups rather than specifically buffering the
+net-receiver penalty. Urban-rural stratification showed that the
+exchange-balance effect was concentrated in urban areas. These findings
+suggest that the psychological costs of structural dependency in
+intergenerational relationships carry cognitive consequences that
+community-level social engagement cannot offset. Policy should focus on
+preserving reciprocity roles for older adults rather than simply
+increasing resource transfers.</p>
+</div>
+</header>
+<h1 id="introduction">Introduction</h1>
+<p>In 2018, nearly three-quarters of Chinese households with members
+aged 45 and older received financial transfers from their adult
+children. Conventional wisdom holds that such support should protect
+health. Yet our analysis of four waves of nationally representative data
+reveals the opposite pattern: older adults who are net receivers of
+intergenerational financial transfers experience the steepest cognitive
+decline over seven years. The explanation lies not in the amount
+transferred, but in the balance of exchange.</p>
+<p>China’s population aging has accelerated beyond most projections.
+Over 300 million citizens are now aged 60 or older, and family-based
+support remains the primary source of old-age security <span
+class="citation" data-cites="exchcog_zhao2023china">(Zhao 2023)</span>.
+Intergenerational financial transfers flow in both directions: adult
+children send money to aging parents, and older adults give to their
+children and grandchildren. The relative balance of these flows
+positions older adults as net givers, balanced exchangers, or net
+receivers. Social Exchange Theory predicts that this balance carries
+psychological consequences: net receivers, unable to reciprocate, occupy
+a position of structural dependence that generates chronic distress
+<span class="citation"
+data-cites="exchcog_davey1998patterns exchcog_fyrand2010reciprocity">(Davey
+and Eggebeen 1998; Fyrand 2010)</span>. Longitudinal evidence from
+CHARLS confirms that intergenerational financial transfers are
+associated with cognitive function levels and trajectories in rural
+older adults, with depressive symptoms serving as a key mediating
+pathway <span class="citation"
+data-cites="exchcog_peng2022cognitive">(Peng et al. 2022)</span>.
+Whether this distress translates into measurable cognitive decline
+across the full population has not been tested.</p>
+<p>Existing research has examined intergenerational transfers and health
+outcomes, but three gaps persist. First, most studies treat transfers as
+unidirectional, measuring either giving or receiving without
+constructing a balance index that captures the net exchange position
+<span class="citation"
+data-cites="exchcog_xu2019intergenerational exchcog_bai2025configurational">(Xu
+et al. 2019; <span class="nocase">Bai et al.</span> 2025)</span>. <span
+class="citation" data-cites="exchcog_wang2024influence">Wang and Tao
+(2024)</span>, using four waves of CHARLS data (<span
+class="math inline">N</span> = 8,207), showed that intergenerational
+support predicted cognitive functioning, but examined support receipt
+without accounting for the offsetting role of giving. Second, cognitive
+function has been neglected as an outcome variable; the vast majority of
+studies focus on depression or self-rated health <span class="citation"
+data-cites="exchcog_yang2021impact exchcog_liu2024reciprocity">(Yang et
+al. 2021; Liu et al. 2024)</span>. Third, no study has tested whether
+community social participation can buffer the health costs of exchange
+imbalance, a prediction derived from the Social Compensation Hypothesis
+<span class="citation" data-cites="exchcog_rook1987reciprocity">(Rook
+1987)</span>.</p>
+<p>We address these gaps using four waves of data from the China Health
+and Retirement Longitudinal Study (CHARLS, 2011–2018, <span
+class="math inline">N</span> = 12,742). We construct a net transfer
+balance index from bidirectional financial transfer data and estimate
+multilevel growth curve models that track cognitive decline trajectories
+over seven years. We test three hypotheses: that net receivers
+experience faster cognitive decline (H1), that community social
+participation moderates this decline (H2), and that the moderation
+effect is stronger in urban areas with richer community infrastructure
+(H3).</p>
+<p>Three findings stand out. Net receivers declined significantly faster
+than both balanced exchangers (<span class="math inline">b</span> =
++0.047, <span class="math inline">p &lt; .05</span>) and net givers
+(<span class="math inline">b</span> = +0.064, <span
+class="math inline">p &lt; .01</span>), accumulating a 0.45-point
+cognitive disadvantage over the study period. Social participation was
+independently associated with higher cognition (+0.454, <span
+class="math inline">p &lt; .001</span>) but did not buffer the
+exchange-imbalance penalty; the three-way interactions were not
+statistically significant. Urban-rural stratification revealed that the
+exchange-balance effect was concentrated in urban areas (<span
+class="math inline">b</span> = +0.073, <span class="math inline">p &lt;
+.05</span>), while the rural coefficient was small and
+nonsignificant.</p>
+<p>This study makes three contributions. First, we contribute to the
+intergenerational support literature by demonstrating that exchange
+balance, not transfer amount, predicts cognitive decline trajectories
+over seven years. Second, we extend Social Exchange Theory to the
+cognitive aging domain, showing that the psychological costs of
+structural dependency manifest as accelerated cognitive decline. Third,
+we test and reject the Social Compensation Hypothesis for cognitive
+outcomes, a theoretically informative null finding that clarifies the
+boundary conditions under which community participation protects
+health.</p>
+<h1 id="background-and-theoretical-framework">Background and Theoretical
+Framework</h1>
+<h2 id="intergenerational-exchange-in-aging-china">Intergenerational
+Exchange in Aging China</h2>
+<p>China is aging at a pace without historical precedent. By 2025, more
+than 300 million Chinese citizens had passed the age of 60, a
+demographic shift driven by decades of low fertility following the
+one-child policy, rising life expectancy, and sustained rural-to-urban
+migration <span class="citation"
+data-cites="exchcog_zhao2023china">(Zhao 2023)</span>. These trends have
+compressed into two generations a transformation that took a century in
+Western Europe: the erosion of the multigenerational household as the
+default arrangement for old-age support. Traditional filial piety norms,
+which assign children the moral obligation to provide financial,
+instrumental, and emotional care to aging parents, remain widely
+endorsed in public discourse <span class="citation"
+data-cites="exchcog_cheng2006filial exchcog_xiao2024filialc">(Cheng and
+Chan 2006; Xiao et al. 2024)</span>. Filial expectations shape not only
+the direction of support flows but also how older adults evaluate the
+adequacy of the support they receive; <span class="citation"
+data-cites="exchcog_tang2023expectations">Tang et al. (2023)</span>,
+using CHARLS data on 1,218 parents, showed that gender and birth order
+of children predict both the volume of downward transfers and parental
+expectations of reciprocal old-age care. In practice, however, the
+capacity of families to fulfill these obligations has narrowed.
+Shrinking sibship sizes mean that fewer adult children share the burden
+of elder support; mass labor migration has separated millions of rural
+parents from their working-age children, reducing both financial
+transfers and emotional contact <span class="citation"
+data-cites="exchcog_lu2023children">(Lu et al. 2023)</span>; and the
+spread of nuclear-family living arrangements has weakened the daily
+contact that once sustained reciprocal exchange <span class="citation"
+data-cites="exchcog_whyte2003china exchcog_zhao2023china">(Whyte 2003;
+Zhao 2023)</span>. <span class="citation"
+data-cites="exchcog_lee2021cohort">Lee and Yeung (2021)</span> found
+that among more recent birth cohorts, living in a multigenerational
+household was positively associated with depression and negatively
+linked with life satisfaction, suggesting that coresidence no longer
+carries the same psychological benefits it once did.</p>
+<p>Against this backdrop, financial transfers between generations flow
+in both directions. Data from the China Health and Retirement
+Longitudinal Study (CHARLS) show that approximately 73.5% of older
+households receive financial transfers from adult children, while 42.6%
+give financial transfers to children. <span class="citation"
+data-cites="exchcog_zhang2026reconfiguring">Zhang et al. (2026)</span>,
+using latent class analysis on 2022 China Family Panel Studies data,
+identified six distinct intergenerational support configurations, with
+“no exchange” (33.2%) and “bidirectional” (15.6%) as major types,
+revealing that the direction and balance of support flows vary
+considerably across families. Home-based care remains the dominant
+eldercare model in Chinese society, and the effect of intergenerational
+support on the mental health of older people depends on the specific
+dimension of support examined—financial, instrumental, or emotional
+<span class="citation" data-cites="exchcog_jiang2024influence">(Jiang et
+al. 2024)</span>. This bidirectionality is significant because it
+challenges the common assumption that older adults are passive
+recipients of downward resource flows. Many older Chinese parents give
+to their adult children to support housing, grandchild education, or
+business ventures, even as they simultaneously receive transfers that
+reflect filial obligations <span class="citation"
+data-cites="exchcog_silverstein2025intergenerational">(Silverstein et
+al. 2025)</span>. <span class="citation"
+data-cites="exchcog_hu2024intergenerational">Hu et al. (2024)</span>,
+using CHARLS longitudinal data, demonstrated that intergenerational
+connections protect against cognitive aging in both middle-aged and
+older Chinese adults, with urban-rural and sex differences in effect
+magnitude. The net balance between giving and receiving, rather than the
+volume of transfers in either direction, may therefore be the more
+consequential dimension for understanding how intergenerational exchange
+shapes late-life outcomes.</p>
+<h2 id="social-exchange-theory-and-the-costs-of-dependency">Social
+Exchange Theory and the Costs of Dependency</h2>
+<p>Social Exchange Theory (SET), as formulated by Blau (1964) and
+Emerson (1976), holds that social relationships are governed by norms of
+reciprocity: actors exchange resources, and the balance of exchange
+determines the power structure of the relationship. When one party
+consistently receives more than it gives, that party becomes
+structurally dependent on the other, losing bargaining power and
+autonomy within the relationship. The dependent actor experiences what
+Blau termed “power disadvantage,” a position that carries psychological
+costs distinct from, and often more consequential than, the material
+value of the resources exchanged.</p>
+<p>Applied to intergenerational relations in late life, SET predicts
+that the shift from net giver to net receiver status represents a
+structural transition with psychological consequences. <span
+class="citation" data-cites="exchcog_davey1998patterns">Davey and
+Eggebeen (1998)</span>, using two waves of the National Survey of
+Families and Households (<span class="math inline">N</span> = 2,237,
+adults aged 50+), demonstrated that contingent (reciprocal) exchange
+between parents and adult children promoted psychological well-being,
+while non-contingent giving had negative consequences around life
+transitions. <span class="citation"
+data-cites="exchcog_hmlinen2020short">Hämäläinen et al. (2020)</span>,
+using four waves of the German Family Panel (2009–2016), confirmed that
+short-term reciprocity operates within individuals over time: receiving
+support from children leads to a subsequent increase in support given
+back, and deviations from this reciprocal pattern carry measurable
+psychological costs. <span class="citation"
+data-cites="exchcog_fyrand2010reciprocity">Fyrand (2010)</span>, in a
+review of reciprocity and mental health among the elderly, found that a
+balanced or underbenefited reciprocal position predicted better mental
+health and life quality than an overbenefited position, where elders
+received more than they gave. <span class="citation"
+data-cites="exchcog_silverstein2002reciprocity">Silverstein et al.
+(2002)</span> documented that reciprocity in parent-child relations
+operates through multiple models (investment, insurance, and
+altruistic), and that the balance between giving and receiving carries
+distinct consequences depending on the exchange model in play.
+Cross-cultural evidence reinforces this pattern: <span class="citation"
+data-cites="exchcog_choi2020gender">Choi et al. (2020)</span>, using a
+nationally representative Korean sample (<span
+class="math inline">N</span> = 7,531), found that lack of mutual
+financial support increased depression risk 3.83-fold for men and
+1.73-fold for women, and that men who received financial support without
+reciprocating had elevated depression risk.</p>
+<p>These findings suggest a specific mechanism linking exchange
+imbalance to cognitive decline. When older adults occupy a net-receiver
+position, they may experience chronic feelings of indebtedness,
+diminished self-efficacy, and erosion of parental authority. Such
+psychological states are known to activate sustained stress responses
+with documented effects on hippocampal function and memory
+consolidation. <span class="citation"
+data-cites="exchcog_xu2019intergenerational">Xu et al. (2019)</span>,
+using the Chinese Longitudinal Healthy Longevity Survey, found that
+specific intergenerational financial exchange patterns predicted
+cognitive impairment among older Chinese adults. <span class="citation"
+data-cites="exchcog_liu2024reciprocity">Liu et al. (2024)</span> showed
+that the reciprocity of intergenerational support was associated with
+self-rated health among Chinese older adults, with underbenefited older
+adults (net providers) reporting better health than overbenefited ones
+(net receivers), reinforcing the link between exchange balance and
+health outcomes. <span class="citation"
+data-cites="exchcog_cai2024association">Cai et al. (2024)</span>, using
+CHARLS 2018 data (<span class="math inline">N</span> = 3,937), found
+that intergenerational financial support reduced multidimensional health
+poverty across physical, mental, and social dimensions, but the health
+returns depended on the direction and balance of exchange. <span
+class="citation" data-cites="exchcog_peng2022cognitive">Peng et al.
+(2022)</span>, analyzing three CHARLS waves (<span
+class="math inline">N</span> = 5,135 rural older adults), demonstrated
+that intergenerational financial transfers were associated with higher
+cognitive function, with depressive symptoms mediating this link. <span
+class="citation"
+data-cites="exchcog_silverstein2020grandparents">Silverstein and Zuo
+(2020)</span>, using six waves of longitudinal data from rural Anhui
+Province (<span class="math inline">N</span> = 1,067 grandparents),
+showed that grandchild caregiving was harmful to cognition only when
+custodial and economically unsupported by adult children, illustrating
+how the balance between time given and money received shapes cognitive
+outcomes. What remains untested is whether the balance of exchange—net
+giving versus net receiving versus balanced—predicts the
+<em>trajectory</em> of cognitive decline over time, as distinct from
+cross-sectional cognitive status.</p>
+<h2
+id="community-social-participation-and-cognitive-protection">Community
+Social Participation and Cognitive Protection</h2>
+<p>A parallel literature has established that social participation
+protects cognitive function in later life. The mechanisms are well
+documented: social activities provide cognitive stimulation through
+novel information processing and problem-solving, physical activation
+through group exercise and outdoor mobility, and emotional regulation
+through social support and companionship <span class="citation"
+data-cites="exchcog_glei2005participating">(Glei et al. 2005)</span>.
+<span class="citation" data-cites="exchcog_pan2020power">Pan and Chee
+(2020)</span>, using CHARLS data on adults aged 60 and older (<span
+class="math inline">N</span> = 2,650), showed that participation in a
+greater number of social activities protected memory from declining by
+4% for every two years, with the protective effect operating through
+weak ties in diverse social networks. <span class="citation"
+data-cites="exchcog_wang2023relationship">Wang et al. (2023)</span>,
+using four waves of CHARLS data, found that distinct dimensions of
+social support—structural, functional, and subjective—had differential
+effects on 7-year cognitive decline trajectories, with social engagement
+showing the strongest independent association. <span class="citation"
+data-cites="exchcog_fu2018association">Fu et al. (2018)</span> found a
+cross-sectional association between social activities and cognitive
+function among Chinese elderly, while <span class="citation"
+data-cites="exchcog_guo2024relationship">Guo et al. (2024)</span>
+demonstrated that leisure activity participation protected against
+cognitive decline using CLHLS data, with gender and age differences in
+the strength of the association. <span class="citation"
+data-cites="exchcog_chen2024influence">Chen et al. (2024)</span>
+reported that social participation was associated with better cognitive
+function among middle-aged and older adults, with depressive symptoms
+partially mediating this relationship. <span class="citation"
+data-cites="exchcog_morrowhowell2003effects">Morrow‐Howell et al.
+(2003)</span> documented that volunteering benefits older adult
+well-being across diverse personal characteristics, suggesting that the
+cognitive returns to community engagement are broadly accessible rather
+than limited to particular subgroups.</p>
+<p>The types of activities available to Chinese older adults span a wide
+range: playing mahjong or chess (which combines strategic thinking with
+social interaction), gathering with friends, participating in exercise
+groups, and joining community organizations <span class="citation"
+data-cites="exchcog_ho2023social">(Ho et al. 2023)</span>. <span
+class="citation" data-cites="exchcog_zhou2020association"><span
+class="nocase">Zhou et al.</span> (2020)</span>, using a fixed-effects
+approach with CHARLS data, confirmed that both the diversity and
+frequency of social participation were associated with improved
+cognitive function, underscoring the value of varied engagement. <span
+class="citation" data-cites="exchcog_sheng2024effects">Sheng et al.
+(2024)</span>, using longitudinal CHARLS data, found that cognitive
+leisure activities were positively associated with frailty improvement,
+with the benefits strongest when older adults participated in multiple
+activity types. <span class="citation"
+data-cites="exchcog_zhu2025urban">Zhu et al. (2025)</span>, using
+10-year prospective CHARLS data, documented urban-rural differences in
+the bidirectional association between social participation and cognitive
+function, finding that urban older adults had more varied participation
+trajectories and stronger cognitive benefits than their rural
+counterparts. These urban-rural disparities likely reflect differences
+in community infrastructure: urban areas offer more organized activity
+venues, community centers, and public spaces that facilitate group
+participation, while rural areas, hollowed out by labor migration,
+provide fewer structured opportunities for social engagement.</p>
+<h2 id="the-social-compensation-hypothesis">The Social Compensation
+Hypothesis</h2>
+<p>The Social Compensation Hypothesis proposes that deficits in one
+domain of social relations can be offset by resources from another
+domain. Compensation theory, rooted in early work on social support
+adequacy <span class="citation"
+data-cites="exchcog_rook1987reciprocity">(Rook 1987)</span>, suggests
+that when primary social ties (typically family) fail to provide
+expected support, secondary ties (friends, community, formal
+organizations) can substitute for the missing resources and buffer the
+health consequences of the deficit. <span class="citation"
+data-cites="exchcog_zhao2026influence">Zhao and Zhu (2026)</span>, using
+nationally representative CFPS data, found that community environment
+moderated the association between intergenerational support and
+subjective well-being among older adults, consistent with the idea that
+community-level resources can compensate for family-level deficits.
+<span class="citation" data-cites="exchcog_li2025bidirectional">A. Li et
+al. (2025)</span>, using latent profile analysis of bidirectional
+intergenerational support among Chinese older adults, identified
+distinct support profiles and showed that social participation could
+partially substitute for limited family support in some profiles but not
+in others. <span class="citation"
+data-cites="exchcog_li2025cognitive"><span class="nocase">W. Li et
+al.</span> (2025)</span> examined the mediating and moderating roles of
+social participation and children’s intergenerational support in the
+relationship between daily functioning and cognitive function in Chinese
+elderly, finding that social participation buffered the cognitive costs
+of functional limitations—a pattern consistent with the compensation
+mechanism applied to a different stressor domain.</p>
+<p>Whether this compensation mechanism extends to the cognitive domain
+in the context of exchange imbalance has not been tested. If community
+social participation can buffer the cognitive costs of occupying a
+net-receiver position in the intergenerational exchange relationship,
+this would carry direct implications for community-based intervention
+design. If it cannot, this null finding would itself be theoretically
+informative, suggesting that family-level dependency distress and
+community-level social isolation operate through distinct psychological
+pathways.</p>
+<h2 id="the-present-study">The Present Study</h2>
+<p>No study to date has combined intergenerational exchange balance,
+community social participation, and cognitive decline trajectories in a
+single longitudinal framework. This gap is notable because the three
+constructs are each well-studied in isolation, but their interaction has
+not been examined. We address this gap using four waves of CHARLS data
+(2011–2018), estimating multilevel growth curve models that track
+cognitive trajectories over seven years. We test three hypotheses:</p>
+<dl>
+<dt>H1:</dt>
+<dd>
+<p>Net receivers of intergenerational financial transfers experience
+faster cognitive decline than balanced exchangers and net givers. This
+follows from SET: the psychological costs of structural dependency erode
+cognitive reserves over time.</p>
+</dd>
+<dt>H2:</dt>
+<dd>
+<p>Community social participation buffers the cognitive decline
+associated with net-receiver status. This follows from the Social
+Compensation Hypothesis: community-level social resources offset the
+deficit in family-level reciprocity.</p>
+</dd>
+<dt>H3:</dt>
+<dd>
+<p>The buffering effect of social participation is stronger in urban
+than in rural areas, reflecting urban advantages in community
+infrastructure and organized social activity.</p>
+</dd>
+</dl>
+<h1 id="data-and-methods">Data and Methods</h1>
+<h2 id="data">Data</h2>
+<p>This study drew on four waves (2011, 2013, 2015, 2018) of the China
+Health and Retirement Longitudinal Study (CHARLS), a nationally
+representative panel survey of Chinese adults aged 45 and older <span
+class="citation" data-cites="exchcog_zhao2023china">(Zhao 2023)</span>.
+CHARLS adopts a multistage probability sampling design covering 150
+counties and 450 communities across 28 provinces, collecting detailed
+information on demographics, health, economic resources, and family
+relationships. The survey has been used extensively in research on
+cognitive aging and intergenerational dynamics in the Chinese population
+<span class="citation"
+data-cites="exchcog_liu2025distinct exchcog_lu2025specific">(Liu et al.
+2025; Lu et al. 2025)</span>. We restricted the sample to respondents
+aged 45 or older at baseline with valid cognitive assessments and
+complete data on intergenerational financial transfers. After listwise
+deletion of cases with missing values on key variables, the analytic
+sample comprised 12,742 persons contributing 39,344 person-wave
+observations across the four waves.</p>
+<h2 id="measures">Measures</h2>
+<h3 id="dependent-variable-cognitive-function">Dependent Variable:
+Cognitive Function</h3>
+<p>Cognitive function was measured using a composite score combining
+three standardized tests administered at each wave. <em>Immediate word
+recall</em> asked respondents to recall as many words as possible from a
+list of 10 read aloud (range 0–10). <em>Delayed word recall</em> tested
+recall of the same list after a brief interval (range 0–10). <em>Serial
+7 subtraction</em> required respondents to subtract 7 from 100
+consecutively five times (range 0–5). The three component scores were
+summed and rescaled to form a composite score ranging from 0 to 20, with
+higher values indicating better cognitive function. This composite has
+been used extensively in CHARLS-based cognitive aging research <span
+class="citation"
+data-cites="exchcog_peng2022cognitive exchcog_pan2020power exchcog_hu2024intergenerational">(Peng
+et al. 2022; Pan and Chee 2020; Hu et al. 2024)</span> and has
+demonstrated adequate psychometric properties across multiple waves of
+the survey <span class="citation"
+data-cites="exchcog_lee2025trajectories exchcog_lim2023specific">(Lee
+and Tak 2025; Lim et al. 2023)</span>.</p>
+<h3
+id="independent-variable-intergenerational-exchange-balance">Independent
+Variable: Intergenerational Exchange Balance</h3>
+<p>The primary independent variable captured the balance of financial
+transfers between older parents and their adult children. At each wave,
+CHARLS recorded the total amount of financial transfers received from
+all children (h{w}fcamt) and the total amount given to all children
+(h{w}tcamt). We computed a net transfer index as: net transfer = amount
+given to children <span class="math inline">-</span> amount received
+from children. Respondents were then classified into three exchange
+balance groups: <em>net receivers</em> (net transfer <span
+class="math inline">&lt; 0</span>; received more than they gave),
+<em>balanced exchangers</em> (net transfer <span class="math inline">=
+0</span>; no net flow in either direction), and <em>net givers</em> (net
+transfer <span class="math inline">&gt; 0</span>; gave more than they
+received). This categorical approach was preferred over continuous
+measures because the distribution of net transfers was heavily
+right-skewed, and the theoretical interest centered on structural
+positions within the exchange relationship rather than marginal transfer
+amounts <span class="citation"
+data-cites="exchcog_xu2019intergenerational exchcog_davey1998patterns">(Xu
+et al. 2019; Davey and Eggebeen 1998)</span>. A similar categorical
+operationalization was used by <span class="citation"
+data-cites="exchcog_liu2024reciprocity">Liu et al. (2024)</span>, who
+classified older adults as under-benefited, balanced, or over-benefited
+based on net intergenerational support flows. Exchange balance was
+recalculated at each wave to capture transitions between groups over
+time.</p>
+<h3 id="moderator-community-social-participation">Moderator: Community
+Social Participation</h3>
+<p>Social participation was operationalized as a binary indicator equal
+to 1 if the respondent reported engaging in any community-based social
+activity in the past month, and 0 otherwise. CHARLS assesses
+participation across multiple activity types, including interacting with
+friends, playing mahjong or chess, attending community clubs,
+volunteering, and participating in educational or training courses. We
+collapsed these into a single binary measure to maximize statistical
+power and because preliminary analyses indicated that any participation
+(vs. none) was the dominant predictor of cognitive outcomes, consistent
+with prior work on social engagement and cognition in China <span
+class="citation"
+data-cites="exchcog_fu2018association exchcog_zhu2025urban">(Fu et al.
+2018; Zhu et al. 2025)</span>. <span class="citation"
+data-cites="exchcog_li2025cognitive"><span class="nocase">W. Li et
+al.</span> (2025)</span>, using CHARLS 2020 data, similarly
+operationalized social participation as a composite indicator and found
+it mediated the relationship between functional disability and cognitive
+function among Chinese older adults.</p>
+<h3 id="control-variables">Control Variables</h3>
+<p>Models adjusted for a set of demographic, socioeconomic, and health
+covariates measured at baseline. Demographic controls included age
+(centered at 60), sex (female = 1), marital status (married or partnered
+= 1), and education (ordinal, 1–5 scale). Socioeconomic controls
+included log-transformed household income, pension receipt (yes = 1),
+and number of living children. Health controls included count of
+activities of daily living (ADL) limitations, number of chronic
+conditions, and self-rated health (1–5, higher = worse). We also
+controlled for rural residence (vs. urban) and coresidence with adult
+children (yes = 1), given well-documented urban–rural disparities in
+both intergenerational support patterns and cognitive aging trajectories
+in China <span class="citation"
+data-cites="exchcog_zhao2023china exchcog_wang2024influence">(Zhao 2023;
+Wang and Tao 2024)</span>.</p>
+<h2 id="analytic-strategy">Analytic Strategy</h2>
+<p>We estimated a series of multilevel growth curve models to examine
+cognitive decline trajectories and the effects of intergenerational
+exchange balance and social participation. The models employed a
+two-level structure: Level 1 captured within-person change over time
+(repeated observations nested within individuals), and Level 2 captured
+between-person differences. Time was coded as years since baseline (0,
+2, 4, and 7, corresponding to survey waves 2011, 2013, 2015, and 2018),
+allowing the slope coefficient to be interpreted as the average annual
+rate of cognitive change. All models included both a random intercept
+(allowing individuals to vary in baseline cognition) and a random slope
+for time (allowing individuals to vary in their rate of decline).</p>
+<p>Four nested models were estimated. Model 0 (unconditional growth
+model) included only time as a fixed effect, establishing the average
+trajectory and variance decomposition. Model 1 added main effects of
+exchange balance, social participation, and all control variables. Model
+2 introduced two-way interactions between time and exchange balance and
+between time and social participation, testing whether cognitive decline
+rates differed across exchange groups (Hypothesis 1). Model 3 added the
+three-way interaction among time, exchange balance, and social
+participation, testing whether social participation moderated the
+association between exchange balance and cognitive decline trajectories
+(Hypothesis 2). All models were estimated using restricted maximum
+likelihood in R version 4.3, with the <code>lme4</code> package for
+model fitting and the <code>lmerTest</code> package for
+Satterthwaite-approximated <span
+class="math inline">p</span>-values.</p>
+<h2 id="robustness-checks">Robustness Checks</h2>
+<p>We conducted five sets of sensitivity analyses. First, we
+re-estimated Model 3 using alternative dependent variables: CES-D
+10-item depressive symptoms, ADL limitation count, and self-rated
+health. Second, we replaced the categorical exchange balance variable
+with a continuous signed-log net transfer measure to test whether
+results were sensitive to the categorization choice. Third, we estimated
+a lagged dependent variable model that included cognition at wave <span
+class="math inline">t-1</span> as a covariate, providing a more
+conservative test by adjusting for prior cognitive level. Fourth, we
+stratified models by urban and rural residence to test whether the
+exchange–cognition association and the potential moderating role of
+social participation differed across residential contexts (Hypothesis
+3). Fifth, we examined sample attrition by comparing baseline
+characteristics of respondents who completed all four waves with those
+who dropped out, and estimated a logistic regression predicting
+attrition status to assess potential selection bias (Table S1).</p>
+<h1 id="results">Results</h1>
+<h2 id="descriptive-statistics">Descriptive Statistics</h2>
+<p>Table <a href="#tab:descriptives" data-reference-type="ref"
+data-reference="tab:descriptives">[tab:descriptives]</a> presents
+baseline characteristics by exchange balance group. Among the 12,595
+respondents with complete baseline data, 3,757 (29.8%) were classified
+as net receivers, 7,395 (58.7%) as balanced exchangers, and 1,443
+(11.5%) as net givers. The three groups differed on nearly all
+characteristics. Net receivers were the oldest (mean age = 61.49, SD =
+8.24), compared with balanced exchangers (55.66, SD = 8.12) and net
+givers (57.63, SD = 8.05; <span class="math inline">p &lt; .001</span>).
+Net receivers had the lowest education levels (mean = 3.07, SD = 1.76
+vs. 3.86 and 3.84 for balanced and giver groups; <span
+class="math inline">p &lt; .001</span>) and the highest proportion
+living in rural areas (69.9% vs. 55.7% and 57.9%; <span
+class="math inline">p &lt; .001</span>). Net receivers also reported
+more ADL limitations (0.19 vs. 0.10 and 0.12; <span
+class="math inline">p &lt; .001</span>), more depressive symptoms
+(CES-D: 8.71 vs. 7.85 and 7.39; <span class="math inline">p &lt;
+.001</span>), and lower baseline cognitive scores (8.37 vs. 9.23 and
+9.35; <span class="math inline">p &lt; .001</span>). The mean net
+transfer was <span class="math inline">-</span>4,957 RMB for receivers,
+0 for balanced, and <span class="math inline">+</span>11,271 RMB for
+givers. Social participation rates were modestly higher among net givers
+(52.1%) than among balanced exchangers (47.8%) and net receivers (49.1%;
+<span class="math inline">p = .010</span>).</p>
+<h2 id="unconditional-growth-model">Unconditional Growth Model</h2>
+<p>Model 0 (Table <a href="#tab:main_models" data-reference-type="ref"
+data-reference="tab:main_models">[tab:main_models]</a>) established the
+baseline cognitive trajectory. The average cognitive score at baseline
+was 8.923 (<span class="math inline">p &lt; .001</span>), and cognition
+declined at an average rate of 0.089 points per year (<span
+class="math inline">b = -0.089</span>, SE <span class="math inline">=
+0.005</span>, <span class="math inline">p &lt; .001</span>). The random
+effects indicated substantial between-person variability in both initial
+cognitive level (variance = 4.825) and rate of change (variance =
+0.074), confirming that individuals varied meaningfully in their
+starting points and trajectories. The intraclass correlation coefficient
+(ICC) was 0.487, indicating that 48.7% of the total variation in
+cognitive scores was attributable to stable between-person differences.
+These results justified the multilevel specification and supported the
+inclusion of predictors at both levels.</p>
+<h2 id="main-effects">Main Effects</h2>
+<p>Model 1 introduced exchange balance, social participation, and
+control variables. Social participation was associated with 0.405 points
+higher cognitive scores (<span class="math inline">b = 0.405</span>, SE
+<span class="math inline">= 0.029</span>, <span class="math inline">p
+&lt; .001</span>). After adjusting for covariates, balanced exchangers
+scored 0.127 points lower than net receivers at baseline (<span
+class="math inline">b = -0.127</span>, SE <span class="math inline">=
+0.036</span>, <span class="math inline">p &lt; .001</span>), while net
+givers did not differ significantly from net receivers (<span
+class="math inline">b = 0.075</span>, SE <span class="math inline">=
+0.040</span>, <span class="math inline">p &gt; .05</span>). These
+baseline differences should be interpreted cautiously, as they reflect
+cross-sectional associations confounded with age and socioeconomic
+composition. Among control variables, older age (<span
+class="math inline">b = -0.070</span>, <span class="math inline">p &lt;
+.001</span>), rural residence (<span class="math inline">b =
+-0.277</span>, <span class="math inline">p &lt; .001</span>), and ADL
+limitations (<span class="math inline">b = -0.227</span>, <span
+class="math inline">p &lt; .001</span>) were associated with lower
+cognition, while higher education (<span class="math inline">b =
+0.633</span>, <span class="math inline">p &lt; .001</span>), being
+married (<span class="math inline">b = 0.317</span>, <span
+class="math inline">p &lt; .001</span>), and pension receipt (<span
+class="math inline">b = 0.577</span>, <span class="math inline">p &lt;
+.001</span>) were associated with higher cognition. The inclusion of
+covariates reduced the intercept variance from 4.825 to 3.011,
+indicating that observed characteristics explained a substantial share
+of between-person differences.</p>
+<h2
+id="exchange-balance-and-cognitive-decline-trajectories-hypothesis-1">Exchange
+Balance and Cognitive Decline Trajectories (Hypothesis 1)</h2>
+<p>Model 2 introduced two-way interactions between time and the
+predictor variables. The Time <span class="math inline">\times</span>
+Balanced interaction was positive and significant (<span
+class="math inline">b = 0.048</span>, SE <span class="math inline">=
+0.013</span>, <span class="math inline">p &lt; .001</span>), as was the
+Time <span class="math inline">\times</span> Net Giver interaction
+(<span class="math inline">b = 0.062</span>, SE <span
+class="math inline">= 0.016</span>, <span class="math inline">p &lt;
+.001</span>). Because net receivers served as the reference category,
+these coefficients indicate that both balanced exchangers and net givers
+experienced slower cognitive decline than net receivers. The Time <span
+class="math inline">\times</span> Social Participation interaction was
+not significant (<span class="math inline">b = -0.012</span>, SE <span
+class="math inline">= 0.011</span>, <span class="math inline">p &gt;
+.05</span>), suggesting that the protective effect of social
+participation operated primarily through level differences rather than
+rate differences.</p>
+<p>To illustrate the practical magnitude: net receivers declined at a
+rate of <span class="math inline">-</span>0.043 points per year (the
+main effect of time in Model 2). Balanced exchangers declined 0.048
+points per year more slowly, yielding a net decline rate of
+approximately <span class="math inline">-</span>0.043 <span
+class="math inline">+</span> 0.048 <span class="math inline">=
++</span>0.005 points per year (near zero). Net givers declined 0.062
+points per year more slowly, yielding a net rate of approximately <span
+class="math inline">+</span>0.019. Over the full 7-year observation
+period, net givers accumulated a cumulative advantage of <span
+class="math inline">0.062 \times 7 = 0.43</span> points relative to net
+receivers, and balanced exchangers accumulated an advantage of <span
+class="math inline">0.048 \times 7 = 0.34</span> points. Given that the
+standard deviation of the cognitive composite was approximately 3.17,
+these differences correspond to effect sizes of 0.14 SD and 0.11 SD,
+respectively. These effect sizes are comparable in magnitude to those
+reported by <span class="citation"
+data-cites="exchcog_lee2025trajectories">Lee and Tak (2025)</span> for
+social factors predicting cognitive trajectories in Korean older adults
+over eight years, and by <span class="citation"
+data-cites="exchcog_lim2023specific">Lim et al. (2023)</span> for
+lifestyle predictors of cognitive change in Korean longitudinal data,
+suggesting that exchange balance operates as a social determinant of
+cognitive aging on par with other established risk factors. These
+results supported Hypothesis 1: net receivers experienced the steepest
+cognitive decline trajectory.</p>
+<p>Model 2 improved model fit relative to Model 1, with AIC declining
+from 191,566.0 to 191,549.8 and BIC from 191,746.2 to 191,755.8 (lower
+AIC with modestly higher BIC reflecting the additional parameters).</p>
+<h2 id="social-participation-as-moderator-hypothesis-2">Social
+Participation as Moderator (Hypothesis 2)</h2>
+<p>Model 3 added the three-way interactions. The Time <span
+class="math inline">\times</span> Balanced <span
+class="math inline">\times</span> Social Participation interaction was
+not significant (<span class="math inline">b = 0.002</span>, SE <span
+class="math inline">= 0.027</span>, <span class="math inline">p &gt;
+.05</span>), nor was the Time <span class="math inline">\times</span>
+Net Giver <span class="math inline">\times</span> Social Participation
+interaction (<span class="math inline">b = -0.004</span>, SE <span
+class="math inline">= 0.032</span>, <span class="math inline">p &gt;
+.05</span>). The two-way interaction terms remained stable: Time <span
+class="math inline">\times</span> Balanced = 0.047 (<span
+class="math inline">p &lt; .05</span>) and Time <span
+class="math inline">\times</span> Net Giver = 0.064 (<span
+class="math inline">p &lt; .01</span>). The main effect of social
+participation increased slightly to 0.454 (<span class="math inline">p
+&lt; .001</span>) in the full model. These results indicated that social
+participation had a robust independent association with higher cognitive
+function but did not differentially buffer the cognitive decline
+experienced by net receivers. Hypothesis 2 was not supported: the
+compensation mechanism did not operate as theorized.</p>
+<h2 id="robustness-checks-1">Robustness Checks</h2>
+<p>Table <a href="#tab:robustness" data-reference-type="ref"
+data-reference="tab:robustness">[tab:robustness]</a> summarizes the
+results of sensitivity analyses, all estimated using the Model 3
+(three-way interaction) specification.</p>
+<p><em>Alternative dependent variables.</em> When CES-D depressive
+symptoms served as the outcome, the Time <span
+class="math inline">\times</span> Net Giver interaction was positive and
+significant (<span class="math inline">b = 0.090</span>, SE <span
+class="math inline">= 0.042</span>, <span class="math inline">p &lt;
+.05</span>), indicating that net givers also experienced slower
+increases in depressive symptoms. The parallel direction of effects
+across cognitive and affective outcomes strengthens confidence that the
+exchange–decline association operates through a common psychological
+mechanism. For ADL limitations and self-rated health, the Time <span
+class="math inline">\times</span> exchange balance interactions were in
+the expected direction but did not reach statistical significance,
+consistent with the theoretical expectation that cognitive and
+psychological outcomes are more proximally affected by exchange dynamics
+than physical health indicators.</p>
+<p><em>Continuous net transfer measure.</em> Replacing the categorical
+exchange balance variable with the continuous signed-log net transfer
+yielded a significant main effect of time (<span class="math inline">b =
+-0.037</span>, SE <span class="math inline">= 0.008</span>, <span
+class="math inline">p &lt; .001</span>) and a small positive Time <span
+class="math inline">\times</span> Net Transfer interaction (<span
+class="math inline">b = 0.001</span>, SE <span class="math inline">=
+0.000</span>), indicating that higher net giving was associated with
+slightly slower decline. The three-way interaction with social
+participation was not significant (<span class="math inline">b =
+-0.000</span>, SE <span class="math inline">= 0.001</span>), confirming
+the null moderation finding from the categorical specification.</p>
+<p><em>Lagged dependent variable.</em> Including cognition at wave <span
+class="math inline">t-1</span> as a covariate substantially attenuated
+all estimates, as expected given the autoregressive adjustment. The
+lagged cognition coefficient was strong (<span class="math inline">b =
+0.376</span>, SE <span class="math inline">= 0.006</span>, <span
+class="math inline">p &lt; .001</span>). The Time <span
+class="math inline">\times</span> Balanced (<span class="math inline">b
+= 0.051</span>, SE <span class="math inline">= 0.032</span>) and Time
+<span class="math inline">\times</span> Net Giver (<span
+class="math inline">b = 0.064</span>, SE <span class="math inline">=
+0.035</span>) interactions maintained their direction but fell below
+conventional significance thresholds. This pattern is consistent with
+the lagged DV model being overly conservative by absorbing both stable
+confounders and the treatment effect itself.</p>
+<p><em>Urban–rural stratification.</em> In the urban subsample (<span
+class="math inline">n = 5{,}092</span>), the Time <span
+class="math inline">\times</span> Balanced interaction was significant
+(<span class="math inline">b = 0.073</span>, SE <span
+class="math inline">= 0.029</span>, <span class="math inline">p &lt;
+.05</span>), while in the rural subsample (<span class="math inline">n =
+7{,}650</span>) it was small and nonsignificant (<span
+class="math inline">b = 0.017</span>, SE <span class="math inline">=
+0.024</span>). This pattern provides partial support for Hypothesis 3,
+suggesting that the protective effect of balanced exchange may be more
+pronounced in urban settings, where community infrastructure and
+alternative social roles are more available.</p>
+<p><em>Attrition analysis.</em> Table <a href="#tab:attrition"
+data-reference-type="ref"
+data-reference="tab:attrition">[tab:attrition]</a> shows that
+respondents who dropped out before wave 4 were older (59.85 vs. 56.42
+years, <span class="math inline">p &lt; .001</span>), less educated
+(2.96 vs. 4.00, <span class="math inline">p &lt; .001</span>), and had
+lower baseline cognition (8.08 vs. 9.52, <span class="math inline">p
+&lt; .001</span>). A logistic regression predicting attrition (Table <a
+href="#tab:attrition_logit" data-reference-type="ref"
+data-reference="tab:attrition_logit">[tab:attrition_logit]</a>)
+indicated that balanced exchangers were marginally more likely to attrit
+than net receivers (OR <span class="math inline">= 1.14</span>, <span
+class="math inline">p &lt; .05</span>), while net givers showed no
+differential attrition (OR <span class="math inline">= 0.94</span>,
+<span class="math inline">p &gt; .05</span>). Because attriters had
+lower cognitive function at baseline, the loss of these observations
+likely biases our estimates toward the conservative direction, meaning
+the true exchange balance effects on cognitive decline trajectories may
+be larger than those reported here.</p>
+<h1 id="discussion">Discussion</h1>
+<p>This study examined how intergenerational exchange balance shapes
+cognitive decline trajectories among older adults in China, and whether
+community social participation buffers the cognitive costs of exchange
+imbalance. Three findings stand out. First, net receivers of financial
+transfers experienced significantly faster cognitive decline than
+balanced exchangers and net givers over seven years. Second, social
+participation independently protected cognition but did not moderate the
+exchange-balance penalty. Third, the exchange-balance effect was
+stronger in urban than rural areas, though this pattern emerged only
+from stratified models.</p>
+<h2 id="exchange-balance-and-cognitive-decline">Exchange Balance and
+Cognitive Decline</h2>
+<p>The central finding of this study is that net receivers of
+intergenerational financial transfers declined cognitively 47–64% faster
+than their counterparts who maintained balanced or net-giving positions.
+Over the seven-year observation period, net givers accumulated a
+0.45-point cognitive advantage relative to net receivers, an effect size
+that is modest at any single time point but compounds meaningfully
+across late life. This result aligns with Social Exchange Theory, which
+posits that unreciprocated dependence generates psychological costs that
+extend beyond the material value of the resources exchanged <span
+class="citation" data-cites="exchcog_emerson1976social">(Alwin and
+Hauser 1975)</span>. When older adults occupy a structurally dependent
+position, receiving more than they give, the resulting sense of
+indebtedness, diminished autonomy, and eroded self-efficacy may exact a
+toll on cognitive health that material transfers cannot offset.</p>
+<p>This interpretation finds direct support in prior work on
+intergenerational exchange and cognitive outcomes. <span
+class="citation" data-cites="exchcog_xu2019intergenerational">Xu et al.
+(2019)</span>, using the Chinese Longitudinal Healthy Longevity Survey,
+demonstrated that older adults with reciprocal exchange patterns had
+lower odds of cognitive impairment compared to those in non-reciprocal
+arrangements. <span class="citation"
+data-cites="exchcog_fyrand2010reciprocity">Fyrand (2010)</span> reached
+a parallel conclusion in a review of reciprocity and mental health among
+the elderly: being in an “overbenefited” position (receiving more than
+one gives) predicted worse mental health than balanced or underbenefited
+positions. <span class="citation"
+data-cites="exchcog_davey1998patterns">Davey and Eggebeen (1998)</span>
+showed that contingent (reciprocal) exchanges between parents and adult
+children promoted psychological wellbeing, while non-contingent
+transfers had negative consequences. <span class="citation"
+data-cites="exchcog_liu2024reciprocity">Liu et al. (2024)</span>,
+drawing on the theory of esteem enhancement and using CHARLS
+cross-sectional data, found that under-benefited older adults (those who
+gave more than they received) reported better self-rated health than
+those in balanced exchanges, a result that complements our longitudinal
+finding by suggesting that the act of giving itself may carry
+health-protective properties beyond simply avoiding dependence. These
+converging findings suggest that the reciprocity mechanism operates
+across both cognitive and affective domains.</p>
+<p>The affective pathway linking exchange imbalance to cognitive decline
+receives empirical grounding from <span class="citation"
+data-cites="exchcog_appleton2024money">Appleton et al. (2024)</span>,
+who used three waves of CHARLS and instrumental variable estimation to
+show that financial transfers from adult children significantly
+attenuated depressive symptoms among elderly parents. Their finding
+might appear to contradict ours, but the two results are consistent once
+directionality is considered: Appleton and colleagues examined whether
+receiving transfers reduces depression relative to receiving nothing,
+while our analysis compares net receivers (who are structurally
+dependent) against balanced exchangers and net givers. The key
+distinction is not whether transfers arrive, but whether the older adult
+can reciprocate. <span class="citation"
+data-cites="exchcog_he2024association"><span class="nocase">He et
+al.</span> (2024)</span>, using CHARLS data on 3,666 adults aged 45 and
+older, documented that intergenerational contact affected cognitive
+function through two mediating pathways — functional disability and
+depressive symptoms — providing direct evidence that family relational
+dynamics reach cognition through affective channels. <span
+class="citation" data-cites="exchcog_ren2025impact">Ren et al.
+(2025)</span>, also analyzing CHARLS data, decomposed intergenerational
+support into three dimensions (financial, instrumental, and emotional)
+and found that the effects on positive and negative emotions differed
+across dimensions, reinforcing the view that it is the relational
+configuration, not the volume of any single support type, that shapes
+mental health outcomes.</p>
+<p>A noteworthy pattern in our results is that balanced exchangers,
+those with approximately zero net transfer, showed cognitive
+trajectories similar to net givers (Time <span
+class="math inline">\times</span> Balanced = +0.047, <span
+class="math inline">p &lt; .05</span>; Time <span
+class="math inline">\times</span> Net Giver = +0.064, <span
+class="math inline">p &lt; .01</span>). The distinction that matters is
+not whether older adults give more, but whether they avoid structural
+dependence. This pattern is consistent with <span class="citation"
+data-cites="exchcog_silverstein2002reciprocity">Silverstein et al.
+(2002)</span>, who documented that different models of reciprocity
+(investment, insurance, and altruistic) operate in parent-child
+relations, and that the balance between giving and receiving carries
+distinct consequences for wellbeing. <span class="citation"
+data-cites="exchcog_bai2025configurational"><span class="nocase">Bai et
+al.</span> (2025)</span>, using CHARLS data and qualitative comparative
+analysis, identified “bidirectional care deficiency” and “bidirectional
+economic deficiency” as configurational patterns associated with
+depression in older adults, reinforcing the view that exchange imbalance
+generates health costs through multiple interacting channels rather than
+through any single dimension of support. <span class="citation"
+data-cites="exchcog_zeng2025intergenerational">Zeng et al.
+(2025)</span>, drawing on CHARLS 2015 and 2018 waves, found that
+intergenerational support from adult children shaped the intrinsic
+capacity of older adults through pathways involving physical, cognitive,
+and psychological domains, which aligns with our finding that the
+exchange-balance mechanism is not confined to a single health
+outcome.</p>
+<p>The robustness analyses strengthen this interpretation. The parallel
+pattern in depressive symptoms (Time <span
+class="math inline">\times</span> Net Giver = +0.090, <span
+class="math inline">p &lt; .05</span>) suggests that the
+exchange-balance mechanism operates through affective pathways,
+consistent with <span class="citation"
+data-cites="exchcog_choi2020gender">Choi et al. (2020)</span>, who found
+that receiving financial support without reciprocation elevated
+depression risk in Korean older adults. <span class="citation"
+data-cites="exchcog_silverstein2020grandparents">Silverstein and Zuo
+(2020)</span>, using six waves of panel data from rural Anhui Province,
+reported that grandparents who provided care for grandchildren showed
+better emotional health than non-caregiving grandparents, and that the
+benefits depended partly on the financial transfers received from
+migrant children — a finding that underscores how giving roles
+(caregiving) and receiving roles (financial transfers) interact to shape
+health in the Chinese intergenerational exchange system. The lagged
+dependent variable model attenuated effect sizes but preserved the
+direction of associations, suggesting that while reverse causality
+cannot be fully excluded, as cognitive decline may itself reduce the
+capacity to give, the longitudinal design with baseline controls
+supports an exchange-to-cognition pathway. <span class="citation"
+data-cites="exchcog_silverstein2025intergenerational">Silverstein et al.
+(2025)</span> emphasized that intergenerational support dynamics carry
+health implications that extend well beyond the caregiving domain, a
+conclusion our findings reinforce by demonstrating cognitive decline as
+a downstream consequence of exchange imbalance.</p>
+<h2 id="the-null-compensation-finding">The Null Compensation
+Finding</h2>
+<p>The three-way interaction between time, exchange balance, and social
+participation was not statistically significant (coefficients of 0.002
+and <span class="math inline">-</span>0.004). Social participation was
+associated with 0.454 points higher cognition (<span
+class="math inline">p &lt; .001</span>), confirming its independent
+protective role. Yet this protection applied uniformly across
+exchange-balance groups rather than specifically buffering the penalty
+associated with net receiving. This null result is theoretically
+informative.</p>
+<p><span class="citation" data-cites="exchcog_rook1987reciprocity">Rook
+(1987)</span> demonstrated that the balance between giving and receiving
+in social relationships has direct implications for satisfaction and
+wellbeing. The Social Compensation Hypothesis extends this logic to
+suggest that deficits in one relational domain can be offset by
+resources from another <span class="citation"
+data-cites="exchcog_zhao2026influence">(Zhao and Zhu 2026)</span>. Our
+results challenge this hypothesis in the cognitive domain. The reason
+may lie in the specificity of the psychological mechanism at work. The
+distress generated by being unable to reciprocate with one’s own
+children, a relationship laden with moral obligation under filial piety
+norms, operates through a particular channel: chronic feelings of
+indebtedness, loss of parental authority, and diminished sense of
+purpose within the family. Community social participation, by contrast,
+provides cognitive stimulation through novel information processing,
+social interaction, and engagement in structured activities. These two
+mechanisms are psychologically distinct. Participating in mahjong groups
+or exercise classes addresses social isolation and cognitive underload,
+but it does not resolve the family-level power imbalance that exchange
+theory identifies as the source of dependency costs. <span
+class="citation" data-cites="exchcog_yu2020social">Yu et al.
+(2020)</span>, using two waves of CHARLS data, provided corroborating
+evidence for this distinction: social isolation, rather than loneliness,
+was associated with cognitive decline among Chinese older adults,
+suggesting that objective social network structure and subjective
+family-relational distress operate through separable pathways to affect
+cognition.</p>
+<p>This interpretation is supported by <span class="citation"
+data-cites="exchcog_li2025bidirectional">A. Li et al. (2025)</span>, who
+used latent profile analysis to identify distinct bidirectional support
+profiles among Chinese older adults. Their findings showed that social
+participation could substitute for limited family support in some
+profiles but could not fully compensate when the family exchange
+relationship itself was imbalanced. <span class="citation"
+data-cites="exchcog_li2025cognitive"><span class="nocase">W. Li et
+al.</span> (2025)</span>, analyzing CHARLS 2020 data, found that social
+participation mediated the relationship between ADL disability and
+cognitive function, while intergenerational support from children played
+a moderating role — a finding that highlights how social participation
+and family support operate through different mechanisms rather than as
+interchangeable resources. The compensation mechanism, in other words,
+has boundary conditions: it works for general social resource deficits
+but not for the specific relational injury of dependency within the
+parent-child bond. <span class="citation"
+data-cites="exchcog_ning2023social">Ning et al. (2023)</span>, using
+four waves of CHARLS, showed that social participation and depressive
+symptoms both mediated the path from cognitive frailty to functional
+disability, confirming social participation’s independent protective
+channel while underscoring that depressive pathways (linked to family
+dynamics) remain distinct.</p>
+<p>The urban-rural stratification offers a partial qualification. In
+urban areas, balanced exchangers declined significantly slower than net
+receivers (Time <span class="math inline">\times</span> Balanced =
++0.073, <span class="math inline">p &lt; .05</span>), while the
+corresponding rural coefficient was small and nonsignificant (+0.017).
+<span class="citation" data-cites="exchcog_zhu2025urban">Zhu et al.
+(2025)</span> documented that urban older adults had different
+trajectories of social participation and cognitive function than their
+rural counterparts, reflecting differences in community infrastructure,
+activity options, and institutional resources. <span class="citation"
+data-cites="exchcog_chen2025moderates">Chen and Ang (2025a)</span>
+provided a complementary finding: age moderated the association between
+social participation and mental health differently in urban and rural
+areas, with urban older adults continuing to gain mental health benefits
+from participation while rural adults experienced diminishing returns at
+older ages. Urban environments may provide richer opportunities for
+maintaining reciprocal social roles outside the family, which could
+partially attenuate exchange-balance effects. Yet even in urban areas,
+the three-way interaction remained nonsignificant, suggesting that the
+compensation mechanism is weak even where community resources are most
+abundant.</p>
+<h2 id="implications-and-limitations">Implications and Limitations</h2>
+<p>These findings carry three implications for policy and practice.
+First, support programs for older adults should go beyond increasing the
+volume of resource transfers and attend to the direction and balance of
+exchange. Policies that help older adults maintain giving roles, such as
+grandchild education support, community mentoring programs, or
+neighborhood mutual aid networks, may protect cognitive health by
+preserving reciprocity within intergenerational relationships. The goal
+is not to discourage financial transfers to older parents, but to create
+opportunities for older adults to contribute meaningfully in return,
+thereby avoiding the structural dependence that our results link to
+accelerated decline. <span class="citation"
+data-cites="exchcog_pan2021cognitive">Pan et al. (2021)</span>, in a
+cross-national comparison of noncustodial grandparents in China and the
+United States, found that grandparenting involvement was associated with
+better cognitive function among Chinese grandparents, illustrating how
+structured giving roles within the family can serve as a vehicle for
+cognitive maintenance.</p>
+<p>Second, community social participation programs protect cognition
+independently of exchange dynamics and deserve investment on their own
+terms. The 0.454-point association with higher cognition represents a
+meaningful effect that applies across all exchange-balance groups.
+Scalable community-based activities such as friend circles, mahjong
+groups, and exercise programs require modest infrastructure and can
+reach large populations <span class="citation"
+data-cites="exchcog_pan2020power">(Pan and Chee 2020)</span>. <span
+class="citation" data-cites="exchcog_lin2023association">Lin et al.
+(2023)</span>, using data from the Chinese Longitudinal Healthy
+Longevity Survey, found that home and community-based services were
+positively associated with cognitive function among older adults, with
+social participation mediating this relationship — providing direct
+evidence that community-level interventions can protect cognition
+through the social engagement channel. That these programs do not
+specifically buffer the exchange-imbalance penalty does not diminish
+their population-level value for cognitive health.</p>
+<p>Third, the urban-rural disparity in the exchange-balance effect
+highlights a structural inequality in community infrastructure. Rural
+areas, where labor out-migration has left aging parents with fewer
+family members nearby and fewer community alternatives, may face a
+compounded disadvantage, because older adults who are net receivers have
+both less access to reciprocal family exchanges and fewer community
+resources to compensate <span class="citation"
+data-cites="exchcog_chen2025social">(Chen and Ang 2025b)</span>. <span
+class="citation" data-cites="exchcog_yang2021impact">Yang et al.
+(2021)</span>, using Harmonised CHARLS data across three waves, found
+that rural residents were disadvantaged relative to urban residents in
+the health returns to intergenerational support, partly because rural
+living arrangements and support configurations offered fewer protective
+buffers. <span class="citation" data-cites="exchcog_gao2024empty"><span
+class="nocase">Gao et al.</span> (2024)</span> reported that empty nest
+status among rural older adults with chronic diseases was associated
+with worse cognitive function, underscoring how the absence of nearby
+family members compounds cognitive risk in resource-poor settings. <span
+class="citation" data-cites="exchcog_vatsyayan2025rural">Vatsyayan and
+Ferdows (2025)</span> documented parallel rural-urban differences in
+social isolation and dementia risk among older adults in India,
+suggesting that the structural disadvantage of rural aging extends
+beyond the Chinese context. Strengthening rural community programs is a
+policy priority that intersects with both cognitive health promotion and
+regional equity.</p>
+<p>Several limitations warrant consideration. First, reverse causality
+remains a concern despite our longitudinal design. Cognitive decline may
+reduce older adults’ capacity to earn income and give financial
+transfers, thereby shifting them into net-receiver positions. The lagged
+dependent variable model attenuated but did not eliminate the
+exchange-balance coefficients, and we cannot rule out the possibility
+that the association partly reflects a cognitive-decline-to-dependency
+pathway. Second, only financial transfers were measured. The CHARLS
+Harmonized dataset does not include time or care transfers in Wave 4, so
+we could not capture the full spectrum of intergenerational exchange.
+Older adults who provide childcare or household labor may be “giving” in
+ways our financial measure does not detect. Third, social participation
+was measured as a binary indicator, which collapses important
+distinctions among activity types, frequencies, and social contexts.
+Formal organizational participation, casual friend visits, and
+cognitively demanding games like mahjong likely differ in their
+protective mechanisms, but our measure could not distinguish among them.
+Fourth, selective attrition biased our sample toward healthier, younger,
+and more educated respondents. Attriters had lower baseline cognition
+and more functional limitations, meaning our estimates likely understate
+the true exchange-balance effect. Fifth, the cultural specificity of
+these findings deserves attention. Filial piety norms in Chinese society
+frame financial support from children as a moral obligation, which may
+buffer the dependency distress our models capture <span class="citation"
+data-cites="exchcog_cheng2006filial exchcog_xiao2024filialc">(Cheng and
+Chan 2006; Xiao et al. 2024)</span>. The same exchange imbalance might
+generate stronger or weaker cognitive costs in cultural contexts with
+different normative expectations about intergenerational
+reciprocity.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Using four waves of CHARLS data (2011–2018, <span
+class="math inline">N</span> = 12,742), this study found that older
+adults who were net receivers of intergenerational financial transfers
+experienced significantly faster cognitive decline than balanced
+exchangers (<span class="math inline">b</span> = +0.047, <span
+class="math inline">p &lt; .05</span>) and net givers (<span
+class="math inline">b</span> = +0.064, <span class="math inline">p &lt;
+.01</span>), accumulating a 0.45-point cognitive disadvantage over seven
+years. Three conclusions follow from these results. First, exchange
+balance matters more than transfer amount: the critical distinction is
+not how much older adults give or receive, but whether they occupy a
+position of structural dependence. Second, community social
+participation protects cognition independently (<span
+class="math inline">b</span> = +0.454, <span class="math inline">p &lt;
+.001</span>) but does not buffer the specific penalty associated with
+exchange imbalance, suggesting that family-level dependency distress and
+community-level social isolation operate through distinct mechanisms.
+Third, policy should prioritize preserving reciprocity roles for older
+adults, creating opportunities for them to contribute rather than simply
+increasing the flow of resources toward them. Future research should
+test whether interventions that create structured giving opportunities
+for dependent older adults, such as community teaching, mentoring, or
+mutual aid programs, can slow cognitive decline trajectories, and
+whether such programs are especially effective for those currently
+trapped in net-receiver positions.</p>
+<h1 class="unnumbered" id="tables">Tables</h1>
+<div class="tablenotes">
+<p><em>Note.</em> Values are mean (SD) for continuous variables and
+<span class="math inline">N</span> (%) for binary variables.</p>
+<p><span class="math inline">p</span>-values from one-way ANOVA
+(continuous) or <span class="math inline">\chi^2</span> test
+(binary).</p>
+<p><span class="math inline">^{***}p &lt; .001</span>; <span
+class="math inline">^{**}p &lt; .01</span>; <span
+class="math inline">^{*}p &lt; .05</span>.</p>
+<p>Exchange balance defined at each wave: net giver (gave <span
+class="math inline">&gt;</span> received),</p>
+<p>balanced (gave = received), net receiver (received <span
+class="math inline">&gt;</span> gave).</p>
+</div>
+<div class="tablenotes">
+<p><em>Note.</em> Unstandardized coefficients; standard errors in
+parentheses.</p>
+<p>Reference category for exchange balance: net receiver.</p>
+<p>All models include random intercept and random slope for time.</p>
+<p>Time coded as years since baseline: 0 (2011), 2 (2013), 4 (2015), 7
+(2018).</p>
+<p>Cognitive composite rescaled to 0–20.</p>
+<p><span class="math inline">^{***}p &lt; .001</span>; <span
+class="math inline">^{**}p &lt; .01</span>; <span
+class="math inline">^{*}p &lt; .05</span>.</p>
+</div>
+<div class="tablenotes">
+<p><em>Note.</em> All models use the Model 3 (three-way interaction)
+specification.</p>
+<p><em>Alt DV: CESD</em>: CES-D 10-item depressive symptoms (higher =
+worse).</p>
+<p><em>Alt DV: ADL</em>: ADL limitation count (higher = worse).</p>
+<p><em>Alt DV: SRH</em>: Self-rated health 1–5 (higher = worse).</p>
+<p><em>Continuous</em>: Categorical exchange balance replaced by
+signed-log</p>
+<p> net transfer (giving <span class="math inline">-</span>
+receiving).</p>
+<p><em>Lagged DV</em>: Adds <span class="math inline">t-1</span>
+cognitive score as covariate.</p>
+<p><span class="math inline">^{***}p &lt; .001</span>; <span
+class="math inline">^{**}p &lt; .01</span>; <span
+class="math inline">^{*}p &lt; .05</span>.</p>
+</div>
+<h1 class="unnumbered" id="figures">Figures</h1>
+<figure id="fig:trajectories" data-latex-placement="H">
+<img src="figures/Figure1_trajectories.png" style="width:85.0%" />
+<figcaption><strong>Figure 1.</strong> Observed Cognitive Decline
+Trajectories by Intergenerational Exchange Balance Group, CHARLS
+2011–2018.</figcaption>
+</figure>
+<figure id="fig:predicted" data-latex-placement="H">
+<img src="figures/Figure2_predicted.png" style="width:85.0%" />
+<figcaption><strong>Figure 2.</strong> Model-Predicted Cognitive
+Trajectories by Exchange Balance Group.</figcaption>
+</figure>
+<figure id="fig:participation" data-latex-placement="H">
+<img src="figures/Figure3_participation.png" style="width:85.0%" />
+<figcaption><strong>Figure 3.</strong> Mean Cognitive Function by Social
+Participation Status and Exchange Balance Group (Wave 4,
+2018).</figcaption>
+</figure>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="list">
+<div id="ref-exchcog_emerson1976social" class="csl-entry"
+role="listitem">
+Alwin, Duane F., and Robert M. Hauser. 1975. <span>“<span
+class="nocase">The Decomposition of Effects in Path
+Analysis</span>.”</span> <em>American Sociological Review</em> 40 (1):
+37–37. <a
+href="https://doi.org/10.2307/2094445">https://doi.org/10.2307/2094445</a>.
+</div>
+<div id="ref-exchcog_appleton2024money" class="csl-entry"
+role="listitem">
+Appleton, Simon, Jinying Huang, Xuyan Lou, and Minghai Zhou. 2024.
+<span>“<span class="nocase">Money and mental health: The impact of
+intergenerational transfers on elderly people in China.</span>”</span>
+<em>Health Economics</em> 33 (11): 2645–70. <a
+href="https://doi.org/10.1002/hec.4887">https://doi.org/10.1002/hec.4887</a>.
+</div>
+<div id="ref-exchcog_bai2025configurational" class="csl-entry"
+role="listitem">
+<span class="nocase">Bai, Qin, Duanduan Fu, Shichen Chen, et al.</span>
+2025. <span>“<span class="nocase">Configurational effects of
+intergenerational support on older adults’ depression: an empirical
+study from CHARLS data</span>.”</span> <em>BMC Public Health</em> 25
+(1). <a
+href="https://doi.org/10.1186/s12889-025-21532-x">https://doi.org/10.1186/s12889-025-21532-x</a>.
+</div>
+<div id="ref-exchcog_cai2024association" class="csl-entry"
+role="listitem">
+Cai, Yue, Yang Xue, Yuanyuan Yao, Zhengyue Jing, and Yu Xue. 2024.
+<em><span class="nocase">The association between intergenerational
+financial support and multidimensional health poverty among Chinese
+older adults: analysis of data from the China Health and Retirement
+Longitudinal Study (CHARLS)</span></em>. <a
+href="https://doi.org/10.21203/rs.3.rs-3908373/v1">https://doi.org/10.21203/rs.3.rs-3908373/v1</a>.
+</div>
+<div id="ref-exchcog_chen2025moderates" class="csl-entry"
+role="listitem">
+Chen, Anqi, and S. Ang. 2025a. <span>“<span class="nocase">Age moderates
+the social participation-mental health association differently in urban
+and rural areas.</span>”</span> <em>The Journals of Gerontology. Series
+B, Psychological Sciences and Social Sciences</em> 80 (10). <a
+href="https://doi.org/10.1093/geronb/gbaf151">https://doi.org/10.1093/geronb/gbaf151</a>.
+</div>
+<div id="ref-exchcog_chen2025social" class="csl-entry" role="listitem">
+Chen, Anqi, and S. Ang. 2025b. <span>“<span class="nocase">Social
+participation and cognitive function in Chinese older couples:
+Urban-rural variations in partner effects.</span>”</span> <em>Social
+Science &amp; Medicine (1967)</em> 389: 118831. <a
+href="https://doi.org/10.1016/j.socscimed.2025.118831">https://doi.org/10.1016/j.socscimed.2025.118831</a>.
+</div>
+<div id="ref-exchcog_chen2024influence" class="csl-entry"
+role="listitem">
+Chen, Chen, Yu Tian, Linghao Ni, Qianjie Xu, Yaoyue Hu, and Bin Peng.
+2024. <span>“<span class="nocase">The influence of social participation
+and depressive symptoms on cognition among middle-aged and older
+adults</span>.”</span> <em>Heliyon</em> 10 (2): e24110. <a
+href="https://doi.org/10.1016/j.heliyon.2024.e24110">https://doi.org/10.1016/j.heliyon.2024.e24110</a>.
+</div>
+<div id="ref-exchcog_cheng2006filial" class="csl-entry" role="listitem">
+Cheng, Sheung‐Tak, and Alfred Chan. 2006. <span>“<span
+class="nocase">Filial Piety and Psychological Well-Being in Well Older
+Chinese</span>.”</span> <em>The Journals of Gerontology Series B</em> 61
+(5): P262–69. <a
+href="https://doi.org/10.1093/geronb/61.5.p262">https://doi.org/10.1093/geronb/61.5.p262</a>.
+</div>
+<div id="ref-exchcog_choi2020gender" class="csl-entry" role="listitem">
+Choi, Kyungwon, Gyeong‐Suk Jeon, and Kwang-Sim Jang. 2020. <span>“<span
+class="nocase">Gender Differences in the Impact of Intergenerational
+Support on Depressive Symptoms among Older Adults in
+Korea</span>.”</span> <em>International Journal of Environmental
+Research and Public Health</em> 17 (12): 4380–80. <a
+href="https://doi.org/10.3390/ijerph17124380">https://doi.org/10.3390/ijerph17124380</a>.
+</div>
+<div id="ref-exchcog_davey1998patterns" class="csl-entry"
+role="listitem">
+Davey, Adam, and David J. Eggebeen. 1998. <span>“<span
+class="nocase">Patterns of Intergenerational Exchange and Mental
+Health</span>.”</span> <em>The Journals of Gerontology Series B</em> 53B
+(2): P86–95. <a
+href="https://doi.org/10.1093/geronb/53b.2.p86">https://doi.org/10.1093/geronb/53b.2.p86</a>.
+</div>
+<div id="ref-exchcog_fu2018association" class="csl-entry"
+role="listitem">
+Fu, Chang, Zhen Li, and Zongfu Mao. 2018. <span>“<span
+class="nocase">Association between Social Activities and Cognitive
+Function among the Elderly in China: A Cross-Sectional
+Study</span>.”</span> <em>International Journal of Environmental
+Research and Public Health</em> 15 (2): 231–31. <a
+href="https://doi.org/10.3390/ijerph15020231">https://doi.org/10.3390/ijerph15020231</a>.
+</div>
+<div id="ref-exchcog_fyrand2010reciprocity" class="csl-entry"
+role="listitem">
+Fyrand, Live. 2010. <span>“<span class="nocase">Reciprocity: A Predictor
+of Mental Health and Continuity in Elderly People’s Relationships? A
+Review</span>.”</span> <em>Current Gerontology and Geriatrics
+Research</em> 2010: 1–14. <a
+href="https://doi.org/10.1155/2010/340161">https://doi.org/10.1155/2010/340161</a>.
+</div>
+<div id="ref-exchcog_gao2024empty" class="csl-entry" role="listitem">
+<span class="nocase">Gao, Qiufeng, Xiaofei Wei, Cuiyao Lei, et
+al.</span> 2024. <span>“<span class="nocase">Empty nest but better off?
+Association between empty nest status and cognitive function among older
+adults with chronic diseases in rural China</span>.”</span> <em>BMC
+Geriatrics</em> 24 (1). <a
+href="https://doi.org/10.1186/s12877-024-05386-3">https://doi.org/10.1186/s12877-024-05386-3</a>.
+</div>
+<div id="ref-exchcog_glei2005participating" class="csl-entry"
+role="listitem">
+Glei, Dana A., David A Landau, Noreen Goldman, Yi‐Li Chuang, Germán
+Rodrı́guez, and Maxine Weinstein. 2005. <span>“<span
+class="nocase">Participating in social activities helps preserve
+cognitive function: an analysis of a longitudinal, population-based
+study of the elderly</span>.”</span> <em>International Journal of
+Epidemiology</em> 34 (4): 864–71. <a
+href="https://doi.org/10.1093/ije/dyi049">https://doi.org/10.1093/ije/dyi049</a>.
+</div>
+<div id="ref-exchcog_guo2024relationship" class="csl-entry"
+role="listitem">
+Guo, Xi-Ru, Taozhu Cheng, and Jing Guo. 2024. <span>“<span
+class="nocase">The relationship between leisure activity participation
+and cognitive function among older Chinese adults: the differences
+across gender and age</span>.”</span> <em>Archives of Public Health</em>
+82 (1). <a
+href="https://doi.org/10.1186/s13690-024-01438-7">https://doi.org/10.1186/s13690-024-01438-7</a>.
+</div>
+<div id="ref-exchcog_hmlinen2020short" class="csl-entry"
+role="listitem">
+Hämäläinen, Hasse, A. Tanskanen, M. Danielsbacka, and B. Arpino. 2020.
+<span>“<span class="nocase">Short-term reciprocity between adult
+children and parents: A within-person investigation of longitudinal
+data.</span>”</span> <em>Advances in Life Course Research</em> 44:
+100337. <a
+href="https://doi.org/10.1016/j.alcr.2020.100337">https://doi.org/10.1016/j.alcr.2020.100337</a>.
+</div>
+<div id="ref-exchcog_he2024association" class="csl-entry"
+role="listitem">
+<span class="nocase">He, Huihui, Suhang Wang, Xiao Huang, et al.</span>
+2024. <span>“<span class="nocase">Association between intergenerational
+contact and cognitive function in middle-aged and older Chinese adults:
+The mediating role of functional disability and depressive
+symptoms</span>.”</span> <em>BMC Public Health</em> 24 (1). <a
+href="https://doi.org/10.1186/s12889-024-20756-7">https://doi.org/10.1186/s12889-024-20756-7</a>.
+</div>
+<div id="ref-exchcog_ho2023social" class="csl-entry" role="listitem">
+Ho, Mabel, E. Pullenayegum, and E. Fuller-Thomson. 2023. <span>“<span
+class="nocase">Is Social Participation Associated with Successful Aging
+among Older Canadians? Findings from the Canadian Longitudinal Study on
+Aging (CLSA)</span>.”</span> <em>International Journal of Environmental
+Research and Public Health</em> 20 (12): 6058. <a
+href="https://doi.org/10.3390/ijerph20126058">https://doi.org/10.3390/ijerph20126058</a>.
+</div>
+<div id="ref-exchcog_hu2024intergenerational" class="csl-entry"
+role="listitem">
+Hu, Shanshan, Jingjing Ge, Ming Fang, and Jingjing Yang. 2024.
+<span>“<span class="nocase">Role of intergenerational connections in
+cognitive aging: Evidence from a Chinese longitudinal
+study</span>.”</span> <em>Frontiers in Public Health</em> 12. <a
+href="https://doi.org/10.3389/fpubh.2024.1396620">https://doi.org/10.3389/fpubh.2024.1396620</a>.
+</div>
+<div id="ref-exchcog_jiang2024influence" class="csl-entry"
+role="listitem">
+Jiang, Zicheng, Huan Liu, Jing Deng, Yizhong Ye, and De-Xun Li. 2024.
+<span>“<span class="nocase">Influence of intergenerational support on
+the mental health of older people in China</span>.”</span> <em>PLoS
+ONE</em> 19 (4): e0299986–86. <a
+href="https://doi.org/10.1371/journal.pone.0299986">https://doi.org/10.1371/journal.pone.0299986</a>.
+</div>
+<div id="ref-exchcog_lee2025trajectories" class="csl-entry"
+role="listitem">
+Lee, Dayeon, and S. Tak. 2025. <span>“<span class="nocase">Trajectories
+of Cognitive Function and Predictors Among Older Adults in Korea for 8
+Years: A National Panel Data Analysis</span>.”</span> <em>Journal of
+Applied Gerontology</em> 44: 1641–50. <a
+href="https://doi.org/10.1177/07334648251314281">https://doi.org/10.1177/07334648251314281</a>.
+</div>
+<div id="ref-exchcog_lee2021cohort" class="csl-entry" role="listitem">
+Lee, Yeonjin, and W. J. Yeung. 2021. <span>“<span class="nocase">Cohort
+matters: The relationships between living arrangements and psychological
+health from the Korean Longitudinal Study of Aging
+(KLoSA).</span>”</span> <em>Journal of Affective Disorders</em> 299:
+652–57. <a
+href="https://doi.org/10.1016/j.jad.2021.10.103">https://doi.org/10.1016/j.jad.2021.10.103</a>.
+</div>
+<div id="ref-exchcog_li2025bidirectional" class="csl-entry"
+role="listitem">
+Li, Ao, Xiaoxi Xie, Xinyan Wan, Zhanjing Dai, Feng Chang, and Yun Lu.
+2025. <span>“<span class="nocase">Bidirectional intergenerational
+support and mental health in older adults based on latent profile
+analysis: a moderated mediation model</span>.”</span> <em>Frontiers in
+Public Health</em> 13. <a
+href="https://doi.org/10.3389/fpubh.2025.1685701">https://doi.org/10.3389/fpubh.2025.1685701</a>.
+</div>
+<div id="ref-exchcog_li2025cognitive" class="csl-entry" role="listitem">
+<span class="nocase">Li, Wanling, Dinuo Xin, Xiaofang Feng, et
+al.</span> 2025. <span>“<span class="nocase">ADL and Cognitive Function
+in Chinese Elderly: Mediating Role of Social Participation and
+Moderating Role of Intergenerational Support</span>.”</span> <em>Journal
+of Multidisciplinary Healthcare</em> 18: 2509–22. <a
+href="https://doi.org/10.2147/JMDH.S523168">https://doi.org/10.2147/JMDH.S523168</a>.
+</div>
+<div id="ref-exchcog_lim2023specific" class="csl-entry" role="listitem">
+Lim, Seungju, Eun-Young Yoo, Ickpyo Hong, and Ji‐Hyuk Park. 2023.
+<span>“<span class="nocase">Age-specific findings on lifestyle and
+trajectories of cognitive function from the Korean Longitudinal Study of
+Aging</span>.”</span> <em>medRxiv</em> 45. <a
+href="https://doi.org/10.1101/2023.03.26.23287772">https://doi.org/10.1101/2023.03.26.23287772</a>.
+</div>
+<div id="ref-exchcog_lin2023association" class="csl-entry"
+role="listitem">
+Lin, Wenyi, Wanxia Yin, and Dinghuan Yuan. 2023. <span>“<span
+class="nocase">Association of home and community-based services and
+cognitive function of Chinese older adults: social participation as a
+mediator</span>.”</span> <em>BMC Geriatrics</em> 23 (1). <a
+href="https://doi.org/10.1186/s12877-023-04414-y">https://doi.org/10.1186/s12877-023-04414-y</a>.
+</div>
+<div id="ref-exchcog_liu2024reciprocity" class="csl-entry"
+role="listitem">
+Liu, Si-Yu, Wei Zhang, and Bei Wu. 2024. <span>“<span class="nocase">The
+Reciprocity of Intergenerational Support and Self-rated Health Among
+Chinese Older Adults</span>.”</span> <em>SAGE Open</em> 14 (3). <a
+href="https://doi.org/10.1177/21582440241271208">https://doi.org/10.1177/21582440241271208</a>.
+</div>
+<div id="ref-exchcog_liu2025distinct" class="csl-entry" role="listitem">
+Liu, Ying, Dayoung Lee, Stefan Schneider, and J. Strauss. 2025.
+<span>“<span class="nocase">Distinct Longitudinal Trajectories of
+Cognitive Change Among Middle-aged and Older Adults in
+China</span>.”</span> <em>Innovation in Aging</em> 9 (Supplement_2). <a
+href="https://doi.org/10.1093/geroni/igaf122.661">https://doi.org/10.1093/geroni/igaf122.661</a>.
+</div>
+<div id="ref-exchcog_lu2023children" class="csl-entry" role="listitem">
+Lu, Ying, Yi-Yang Lin, Junguang Qu, Yi Zeng, and Wan-Zong Wu. 2023.
+<span>“<span class="nocase">Children’s internal migration and subjective
+wellbeing of older parents left behind: Spiritual or financial
+support?</span>”</span> <em>Frontiers in Public Health</em> 11. <a
+href="https://doi.org/10.3389/fpubh.2023.1111288">https://doi.org/10.3389/fpubh.2023.1111288</a>.
+</div>
+<div id="ref-exchcog_lu2025specific" class="csl-entry" role="listitem">
+Lu, Yongbo, Jingya Zhang, Zongyang Zhou, R. He, Bin Zhu, and Ying Mao.
+2025. <span>“<span class="nocase">Age-specific associations between
+intergenerational support from children and depression in middle-aged
+and elderly Chinese: results from the China health and retirement
+longitudinal study</span>.”</span> <em>Frontiers in Psychology</em> 16.
+<a
+href="https://doi.org/10.3389/fpsyg.2025.1621444">https://doi.org/10.3389/fpsyg.2025.1621444</a>.
+</div>
+<div id="ref-exchcog_morrowhowell2003effects" class="csl-entry"
+role="listitem">
+Morrow‐Howell, Nancy, Jim Hinterlong, Philip A. Rozario, and Fengyan
+Tang. 2003. <span>“<span class="nocase">Effects of Volunteering on the
+Well-Being of Older Adults</span>.”</span> <em>The Journals of
+Gerontology Series B</em> 58 (3): S137–45. <a
+href="https://doi.org/10.1093/geronb/58.3.s137">https://doi.org/10.1093/geronb/58.3.s137</a>.
+</div>
+<div id="ref-exchcog_ning2023social" class="csl-entry" role="listitem">
+Ning, Hongting, Hui Feng, Junxin Li, and Mengchi Li. 2023.
+<span>“<span>SOCIAL PARTICIPATION AND DEPRESSIVE SYMPTOMS ON THE
+RELATIONSHIP BETWEEN COGNITIVE FRAILTY AND DISABILITY</span>.”</span>
+<em>Innovation in Aging</em> 7: 1164–64. <a
+href="https://doi.org/10.1093/geroni/igad104.3733">https://doi.org/10.1093/geroni/igad104.3733</a>.
+</div>
+<div id="ref-exchcog_pan2020power" class="csl-entry" role="listitem">
+Pan, Xi, and K. Chee. 2020. <span>“<span class="nocase">The power of
+weak ties in preserving cognitive function: a longitudinal study of
+older Chinese adults</span>.”</span> <em>Aging &amp; Mental Health</em>
+24 (7): 1046–53. <a
+href="https://doi.org/10.1080/13607863.2019.1597015">https://doi.org/10.1080/13607863.2019.1597015</a>.
+</div>
+<div id="ref-exchcog_pan2021cognitive" class="csl-entry"
+role="listitem">
+Pan, Xi, Ye Luo, and Nicholas J. Bishop. 2021. <span>“<span
+class="nocase">Cognitive Function Among Noncustodial Grandparents in
+China and the United States: A Cross-National
+Perspective</span>.”</span> <em>The International Journal of Aging &amp;
+Human Development</em> 95 (1): 18–41. <a
+href="https://doi.org/10.1177/00914150211050877">https://doi.org/10.1177/00914150211050877</a>.
+</div>
+<div id="ref-exchcog_peng2022cognitive" class="csl-entry"
+role="listitem">
+Peng, Changmin, J. Burr, and S. Han. 2022. <span>“<span
+class="nocase">Cognitive function and cognitive decline among older
+rural Chinese adults: the roles of social support, pension benefits, and
+medical insurance</span>.”</span> <em>Aging &amp; Mental Health</em> 27:
+771–79. <a
+href="https://doi.org/10.1080/13607863.2022.2088693">https://doi.org/10.1080/13607863.2022.2088693</a>.
+</div>
+<div id="ref-exchcog_ren2025impact" class="csl-entry" role="listitem">
+Ren, K., Jin-Yan Lan, Lingyu Ge, and Lei Zhou. 2025. <span>“<span
+class="nocase">The impact of intergenerational support on the mental
+health of older adults: a discussion of three dimensions of
+support</span>.”</span> <em>Frontiers in Public Health</em> 13. <a
+href="https://doi.org/10.3389/fpubh.2025.1467463">https://doi.org/10.3389/fpubh.2025.1467463</a>.
+</div>
+<div id="ref-exchcog_rook1987reciprocity" class="csl-entry"
+role="listitem">
+Rook, Karen S. 1987. <span>“<span class="nocase">Reciprocity of Social
+Exchange and Social Satisfaction among Older Women</span>.”</span>
+<em>Journal of Personality and Social Psychology</em> 52 (1): 145–54. <a
+href="https://doi.org/10.1037/0022-3514.52.1.145">https://doi.org/10.1037/0022-3514.52.1.145</a>.
+</div>
+<div id="ref-exchcog_sheng2024effects" class="csl-entry"
+role="listitem">
+Sheng, Kai, Hao Chen, and Xianguo Qu. 2024. <span>“<span
+class="nocase">The effects of cognitive leisure activities on frailty
+transitions in older adults in China: a CHARLS-Based longitudinal
+study</span>.”</span> <em>BMC Public Health</em> 24 (1): 1405–5. <a
+href="https://doi.org/10.1186/s12889-024-18889-w">https://doi.org/10.1186/s12889-024-18889-w</a>.
+</div>
+<div id="ref-exchcog_silverstein2002reciprocity" class="csl-entry"
+role="listitem">
+Silverstein, Merril, Stephen J. Conroy, H. Wang, Roseann Giarrusso, and
+Vern L. Bengtson. 2002. <span>“<span class="nocase">Reciprocity in
+Parent-Child Relations Over the Adult Life Course</span>.”</span>
+<em>The Journals of Gerontology Series B</em> 57 (1): S3–13. <a
+href="https://doi.org/10.1093/geronb/57.1.s3">https://doi.org/10.1093/geronb/57.1.s3</a>.
+</div>
+<div id="ref-exchcog_silverstein2025intergenerational" class="csl-entry"
+role="listitem">
+Silverstein, Merril, K. Fingerman, and J. Suitor. 2025. <span>“<span
+class="nocase">Intergenerational Relationships and Family Support:
+Implications for Health and Wellbeing.</span>”</span> <em>The
+Gerontologist</em> 65 (3). <a
+href="https://doi.org/10.1093/geront/gnaf003">https://doi.org/10.1093/geront/gnaf003</a>.
+</div>
+<div id="ref-exchcog_silverstein2020grandparents" class="csl-entry"
+role="listitem">
+Silverstein, M., and D. Zuo. 2020. <span>“<span
+class="nocase">Grandparents caring for grandchildren in rural China:
+consequences for emotional and cognitive health in later
+life</span>.”</span> <em>Aging &amp; Mental Health</em> 25: 2042–52. <a
+href="https://doi.org/10.1080/13607863.2020.1852175">https://doi.org/10.1080/13607863.2020.1852175</a>.
+</div>
+<div id="ref-exchcog_tang2023expectations" class="csl-entry"
+role="listitem">
+Tang, Zequn, Ning Wang, M. Evandrou, and J. Falkingham. 2023.
+<span>“<span class="nocase">Expectations Regarding Reciprocity of Flows
+of Intergenerational Support in China: Does Gender or Birth Order
+Matter?</span>”</span> <em>Journal of Applied Gerontology</em> 43:
+956–69. <a
+href="https://doi.org/10.1177/07334648231221635">https://doi.org/10.1177/07334648231221635</a>.
+</div>
+<div id="ref-exchcog_vatsyayan2025rural" class="csl-entry"
+role="listitem">
+Vatsyayan, Aarushi, and Nasim Ferdows. 2025. <span>“<span
+class="nocase">Rural-Urban Differences in Social Isolation and Dementia
+Risk Among Older Adults in India</span>.”</span> <em>Innovation in
+Aging</em> 9 (Supplement_2). <a
+href="https://doi.org/10.1093/geroni/igaf122.3120">https://doi.org/10.1093/geroni/igaf122.3120</a>.
+</div>
+<div id="ref-exchcog_wang2024influence" class="csl-entry"
+role="listitem">
+Wang, Ping, and Chunhai Tao. 2024. <span>“<span class="nocase">The
+influence of intergenerational support on cognitive functioning among
+middle-aged Chinese: Moderation by personal income.</span>”</span>
+<em>Archives of Gerontology and Geriatrics (Print)</em> 122: 105393. <a
+href="https://doi.org/10.1016/j.archger.2024.105393">https://doi.org/10.1016/j.archger.2024.105393</a>.
+</div>
+<div id="ref-exchcog_wang2023relationship" class="csl-entry"
+role="listitem">
+Wang, Yuran, Xuanji Chen, and Yaoyue Hu. 2023. <span>“<span
+class="nocase">Relationship between social support and 7-year
+trajectories of cognitive decline: results from the China Health and
+Retirement Longitudinal Study</span>.”</span> <em>Journal of
+Epidemiology and Community Health</em> 77: 578–86. <a
+href="https://doi.org/10.1136/jech-2022-219733">https://doi.org/10.1136/jech-2022-219733</a>.
+</div>
+<div id="ref-exchcog_whyte2003china" class="csl-entry" role="listitem">
+Whyte, Martin King. 2003. <em><span class="nocase">China’s Revolutions
+and Intergenerational Relations</span></em>. Center for Chinese Studies,
+University of Michigan. <a
+href="https://doi.org/10.3998/mpub.19840">https://doi.org/10.3998/mpub.19840</a>.
+</div>
+<div id="ref-exchcog_xiao2024filialc" class="csl-entry" role="listitem">
+Xiao, Chunhong, Rita Jablonski, Patricia A Patrician, Aoyjai P.
+Montgomery, Youhua Wang, and Adelais Markaki. 2024. <span>“<span>THE
+ROLE OF FILIAL PIETY IN AGING AND CAREGIVING AMONG CHINESE AND CHINESE
+AMERICANS</span>.”</span> <em>Innovation in Aging</em> 8: 1171–72. <a
+href="https://doi.org/10.1093/geroni/igae098.3754">https://doi.org/10.1093/geroni/igae098.3754</a>.
+</div>
+<div id="ref-exchcog_xu2019intergenerational" class="csl-entry"
+role="listitem">
+Xu, P., J. Burr, Kyungmin Kim, and Z. Cong. 2019. <span>“<span
+class="nocase">Intergenerational financial exchange and cognitive
+impairment among older adults in China</span>.”</span> <em>Aging &amp;
+Mental Health</em> 23 (9): 1209–17. <a
+href="https://doi.org/10.1080/13607863.2018.1481930">https://doi.org/10.1080/13607863.2018.1481930</a>.
+</div>
+<div id="ref-exchcog_yang2021impact" class="csl-entry" role="listitem">
+Yang, Yazhen, Maria Evandrou, and Athina Vlachantoni. 2021. <span>“<span
+class="nocase">The impact of living arrangements and intergenerational
+support on the health status of older people in China: are rural
+residents disadvantaged compared to urban residents?</span>”</span>
+<em>Ageing and Society</em> 43 (2): 469–94. <a
+href="https://doi.org/10.1017/s0144686x21000702">https://doi.org/10.1017/s0144686x21000702</a>.
+</div>
+<div id="ref-exchcog_yu2020social" class="csl-entry" role="listitem">
+Yu, Bin, A. Steptoe, Yongjie Chen, and Xiaohua Jia. 2020. <span>“<span
+class="nocase">Social isolation, rather than loneliness, is associated
+with cognitive decline in older adults: the China Health and Retirement
+Longitudinal Study</span>.”</span> <em>Psychological Medicine</em> 51:
+2414–21. <a
+href="https://doi.org/10.1017/S0033291720001014">https://doi.org/10.1017/S0033291720001014</a>.
+</div>
+<div id="ref-exchcog_zeng2025intergenerational" class="csl-entry"
+role="listitem">
+Zeng, Zhi, Guiqiong Xie, Yazhi He, and Sumei Zhou. 2025. <span>“<span
+class="nocase">How does intergenerational support from adult children
+shape the intrinsic capacity of older adults? Empirical evidence from
+the CHARLS</span>.”</span> <em>Aging Clinical and Experimental
+Research</em> 37 (1). <a
+href="https://doi.org/10.1007/s40520-025-03175-5">https://doi.org/10.1007/s40520-025-03175-5</a>.
+</div>
+<div id="ref-exchcog_zhang2026reconfiguring" class="csl-entry"
+role="listitem">
+Zhang, Yanjun, Chengbin Liu, Wenhao Yu, and Litao Zhao. 2026.
+<span>“<span class="nocase">Reconfiguring Functional Solidarity:
+Typologies of Intergenerational Support in Contemporary
+China</span>.”</span> <em>Journal of Marriage and Family</em>, ahead of
+print. <a
+href="https://doi.org/10.1111/jomf.70069">https://doi.org/10.1111/jomf.70069</a>.
+</div>
+<div id="ref-exchcog_zhao2023china" class="csl-entry" role="listitem">
+Zhao, Litao. 2023. <span>“<span class="nocase">China’s aging population:
+A review of living arrangement, intergenerational support, and
+wellbeing</span>.”</span> <em>Health Care Science</em> 2 (5): 317–27. <a
+href="https://doi.org/10.1002/hcs2.64">https://doi.org/10.1002/hcs2.64</a>.
+</div>
+<div id="ref-exchcog_zhao2026influence" class="csl-entry"
+role="listitem">
+Zhao, Nan, and Cuiying Zhu. 2026. <span>“<span class="nocase">The
+influence of intergenerational support on the subjective wellbeing of
+the older population: the moderating effects of community environment
+and filial expectation</span>.”</span> <em>Frontiers in Public
+Health</em> 13. <a
+href="https://doi.org/10.3389/fpubh.2025.1734304">https://doi.org/10.3389/fpubh.2025.1734304</a>.
+</div>
+<div id="ref-exchcog_zhou2020association" class="csl-entry"
+role="listitem">
+<span class="nocase">Zhou, Yongjie, Zhuo Chen, Ian Shaw, et al.</span>
+2020. <span>“<span class="nocase">Association between social
+participation and cognitive function among middle- and old-aged Chinese:
+A fixed-effects analysis</span>.”</span> <em>Journal of Global
+Health</em> 10 (2): 020801–1. <a
+href="https://doi.org/10.7189/jogh.10.020801">https://doi.org/10.7189/jogh.10.020801</a>.
+</div>
+<div id="ref-exchcog_zhu2025urban" class="csl-entry" role="listitem">
+Zhu, Wenjing, Jingwen Song, Yang Luo, and Aijun Xu. 2025. <span>“<span
+class="nocase">Urban–rural differences and bidirectional association
+between social participation and cognitive function among Chinese older
+adults: a 10-year prospective cohort study</span>.”</span> <em>Archives
+of Public Health</em> 84 (1). <a
+href="https://doi.org/10.1186/s13690-025-01802-1">https://doi.org/10.1186/s13690-025-01802-1</a>.
+</div>
+</div>
+<!-- Markup Reader: inline annotation toolkit -->
+<style id="markup-reader-panel-style">
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap");
+
+/* ── Annotation marks ─────────────────────────────────── */
+[data-annotation="true"] { border-radius: 2px; cursor: pointer; }
+[data-annotation="true"].annot-highlight { background: var(--annot-highlight-color, #fff2a8); box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+[data-annotation="true"].annot-underline { border-bottom: 3px solid var(--annot-underline-color, #cc4f1b); padding-bottom: 1px; }
+[data-annotation="true"].annot-note { background: var(--annot-highlight-color, #fff2a8); border-bottom: 2px dashed var(--annot-underline-color, #cc4f1b); cursor: help; position: relative; }
+[data-annotation="true"].annot-note::after { content: "\270E"; font-size: .75em; font-weight: 700; color: var(--annot-underline-color, #cc4f1b); margin-left: 1px; vertical-align: super; }
+[data-annotation="true"].annot-note[data-note]:hover::before {
+  content: attr(data-note);
+  position: absolute; bottom: calc(100% + 4px); left: 0;
+  max-width: 300px; padding: 6px 10px;
+  background: #1e3a27; color: #fff; font-size: 12px; font-weight: 400;
+  border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,.3);
+  white-space: pre-wrap; word-break: break-word;
+  z-index: 999998; pointer-events: none;
+  animation: mr-fadeIn .12s ease;
+}
+
+/* ── Selection tooltip ────────────────────────────────── */
+#mr-tooltip {
+  position: absolute; z-index: 999999;
+  display: none; align-items: center; gap: 4px;
+  padding: 5px 6px;
+  background: #1e3a27; color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.28);
+  font-family: "Manrope", "Segoe UI", sans-serif; font-size: 13px; font-weight: 600;
+  white-space: nowrap;
+  animation: mr-fadeIn .15s ease;
+}
+#mr-tooltip button {
+  border: none; background: rgba(255,255,255,.15);
+  color: #fff; border-radius: 7px;
+  padding: 5px 10px; font-size: 12px; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  transition: background .12s ease;
+}
+#mr-tooltip button:hover { background: rgba(255,255,255,.3); }
+#mr-tooltip .tt-sep { width: 1px; height: 18px; background: rgba(255,255,255,.22); }
+
+/* ── Note input box ───────────────────────────────────── */
+#mr-note-input {
+  position: absolute; z-index: 1000000;
+  display: none; flex-direction: column; gap: 6px;
+  width: 280px; padding: 10px 12px; box-sizing: border-box;
+  background: #1e3a27; color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 36px rgba(0,0,0,.35);
+  font-family: "Manrope", "Segoe UI", sans-serif; font-size: 13px;
+  animation: mr-fadeIn .15s ease;
+}
+#mr-note-input .ni-label { font-weight: 700; font-size: 12px; opacity: .85; }
+#mr-note-input textarea {
+  width: 100%; min-height: 60px; max-height: 140px;
+  padding: 8px 10px; border: 1px solid rgba(255,255,255,.25);
+  border-radius: 8px; background: rgba(255,255,255,.1);
+  color: #fff; font-family: inherit; font-size: 13px;
+  resize: vertical; outline: none; box-sizing: border-box;
+}
+#mr-note-input textarea:focus { border-color: rgba(255,255,255,.5); }
+#mr-note-input .ni-actions { display: flex; justify-content: flex-end; gap: 6px; }
+#mr-note-input .ni-actions button {
+  border: none; border-radius: 8px; padding: 6px 14px;
+  font-size: 12px; font-weight: 700; cursor: pointer; font-family: inherit;
+}
+#mr-note-input .ni-cancel { background: rgba(255,255,255,.15); color: #fff; }
+#mr-note-input .ni-cancel:hover { background: rgba(255,255,255,.25); }
+#mr-note-input .ni-confirm { background: #4caf6a; color: #fff; }
+#mr-note-input .ni-confirm:hover { background: #3d9e5a; }
+
+/* ── Floating toggle button ───────────────────────────── */
+#mr-toggle-btn {
+  position: fixed; bottom: 20px; right: 20px; z-index: 999990;
+  width: 48px; height: 48px; border-radius: 50%;
+  background: linear-gradient(135deg, #2f8a45, #1f6933); color: #fff;
+  border: none; font-size: 22px; cursor: pointer;
+  box-shadow: 0 6px 20px rgba(28,77,42,.35);
+  transition: transform .15s ease, box-shadow .2s ease;
+  font-family: "Manrope", sans-serif;
+}
+#mr-toggle-btn:hover { transform: scale(1.08); box-shadow: 0 8px 24px rgba(28,77,42,.45); }
+
+/* ── Side panel ───────────────────────────────────────── */
+#mr-panel {
+  position: fixed; top: 0; right: -340px; z-index: 999991;
+  width: 320px; height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #f9fbf3, #f5efe3);
+  border-left: 1px solid rgba(54,84,58,.18);
+  box-shadow: -4px 0 24px rgba(0,0,0,.12);
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  color: #24322a;
+  transition: right .3s ease;
+  overflow: hidden;
+  padding: 16px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+#mr-panel.open { right: 0; }
+#mr-panel h3 {
+  margin: 0 0 8px; font-size: .88rem; letter-spacing: .03em;
+  text-transform: uppercase; color: #214730;
+}
+#mr-panel .mr-section {
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(73,106,67,.14); border-radius: 14px;
+  padding: 12px;
+}
+#mr-panel .mr-pen-group { margin-bottom: 4px; }
+#mr-panel .mr-pen-label { font-size: .78rem; color: #5f6f62; margin-bottom: 6px; font-weight: 600; }
+#mr-panel .mr-pens { display: flex; gap: 8px; flex-wrap: wrap; }
+#mr-panel .mr-pen {
+  width: 28px; height: 28px; border-radius: 50%; border: 2px solid transparent;
+  cursor: pointer; transition: transform .12s ease, border-color .12s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15); position: relative;
+}
+#mr-panel .mr-pen:hover { transform: scale(1.15); }
+#mr-panel .mr-pen.active {
+  border-color: #1e3a27; box-shadow: 0 0 0 2px #1e3a27, 0 2px 8px rgba(0,0,0,.2);
+  transform: scale(1.1);
+}
+#mr-panel .mr-pen.active::after {
+  content: "\2713"; position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%); font-size: 13px; font-weight: 900;
+  color: rgba(0,0,0,.5); text-shadow: 0 0 2px rgba(255,255,255,.8);
+}
+#mr-panel .mr-annot-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; overflow-y: auto; }
+#mr-panel .mr-annot-item {
+  font-size: .82rem; line-height: 1.4; padding: 8px 10px;
+  background: rgba(255,255,255,.8); border: 1px solid rgba(60,90,60,.12);
+  border-radius: 10px; cursor: pointer; transition: background .15s ease;
+  word-break: break-word;
+}
+#mr-panel .mr-annot-item:hover { background: #edf5e4; }
+#mr-panel .mr-annot-type {
+  display: inline-block; font-size: .68rem; font-weight: 700; text-transform: uppercase;
+  padding: 2px 6px; border-radius: 6px; margin-right: 4px; vertical-align: middle;
+}
+#mr-panel .mr-annot-type.highlight { background: #fff2a8; color: #6b5a00; }
+#mr-panel .mr-annot-type.underline { background: #fce0cf; color: #7a3006; }
+#mr-panel .mr-annot-type.note { background: #d4f0dd; color: #1a5e2c; }
+#mr-panel .mr-annot-note { display: block; margin-top: 3px; font-style: italic; color: #5f6f62; font-size: .78rem; }
+#mr-panel .mr-annot-actions { margin-top: 5px; display: flex; gap: 5px; }
+#mr-panel .mr-annot-actions button {
+  font-size: .72rem; padding: 4px 8px; border: none; border-radius: 6px;
+  font-weight: 700; cursor: pointer; font-family: inherit;
+}
+#mr-panel .mr-btn-del { background: linear-gradient(135deg,#d9713f,#bc4b12); color: white; }
+#mr-panel .mr-btn-note { background: #f0f4e8; color: #24462f; border: 1px solid rgba(45,82,53,.18); }
+#mr-panel .mr-save-btn {
+  display: block; width: 100%; padding: 10px;
+  background: linear-gradient(135deg,#2f8a45,#1f6933); color: #fff;
+  border: none; border-radius: 10px; font-size: .88rem; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  box-shadow: 0 8px 18px rgba(28,77,42,.2);
+  flex-shrink: 0;
+}
+#mr-panel .mr-save-btn:hover { transform: translateY(-1px); }
+#mr-panel .mr-export-md {
+  display: block; width: 100%; padding: 10px;
+  background: linear-gradient(135deg,#3a6b8a,#1f4f6e); color: #fff;
+  border: none; border-radius: 10px; font-size: .88rem; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  box-shadow: 0 8px 18px rgba(28,60,90,.2);
+  flex-shrink: 0;
+}
+#mr-panel .mr-export-md:hover { transform: translateY(-1px); }
+#mr-panel .mr-empty { color: #5f6f62; font-size: .82rem; text-align: center; padding: 12px 0; }
+#mr-panel .mr-close {
+  position: absolute; top: 12px; right: 12px;
+  background: rgba(0,0,0,.06); border: none; border-radius: 8px;
+  width: 28px; height: 28px; font-size: 16px; cursor: pointer;
+  color: #24322a; font-family: inherit;
+}
+
+@keyframes mr-fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ── Mobile responsive ────────────────────────────────── */
+@media (max-width: 600px) {
+  #mr-panel { width: 100vw; right: -100vw; border-left: none; padding: 14px 16px; }
+  #mr-panel.open { right: 0; }
+  #mr-panel .mr-pen { width: 32px; height: 32px; }
+  #mr-panel .mr-save-btn { padding: 14px; font-size: .92rem; }
+  #mr-toggle-btn { width: 44px; height: 44px; font-size: 20px; bottom: 16px; right: 16px; }
+  #mr-tooltip { padding: 7px 8px; }
+  #mr-tooltip button { padding: 8px 12px; font-size: 13px; }
+  #mr-note-input { width: calc(100vw - 24px); max-width: none; left: 12px !important; padding: 12px 14px; font-size: 15px; }
+  #mr-note-input textarea { min-height: 72px; font-size: 15px; padding: 10px 12px; }
+  #mr-note-input .ni-actions button { padding: 10px 18px; font-size: 14px; }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  #mr-tooltip button { padding: 8px 14px; font-size: 14px; }
+}
+
+@media print {
+  #mr-toggle-btn, #mr-panel, #mr-tooltip, #mr-note-input { display: none !important; }
+}
+</style>
+
+<script>
+(function() {
+"use strict";
+
+/* ── Config ───────────────────────────────────────────── */
+let highlightColor = "#fff2a8";
+let underlineColor = "#cc4f1b";
+
+/* ── Annotation helpers ───────────────────────────────── */
+function genId() { return "ann-" + Date.now() + "-" + Math.random().toString(36).slice(2,8); }
+
+function wrapRange(range, type, noteText) {
+  const span = document.createElement("span");
+  span.setAttribute("data-annotation", "true");
+  span.setAttribute("data-type", type);
+  span.setAttribute("data-id", genId());
+  if (type === "highlight") {
+    span.className = "annot-highlight";
+    span.style.setProperty("--annot-highlight-color", highlightColor);
+  } else if (type === "underline") {
+    span.className = "annot-underline";
+    span.style.setProperty("--annot-underline-color", underlineColor);
+  } else if (type === "note") {
+    span.className = "annot-note";
+    span.setAttribute("data-note", noteText);
+    span.title = noteText;
+    span.style.setProperty("--annot-highlight-color", highlightColor);
+    span.style.setProperty("--annot-underline-color", underlineColor);
+  }
+  const frag = range.extractContents();
+  if (!frag.textContent || !frag.textContent.trim()) { range.insertNode(frag); return null; }
+  span.appendChild(frag);
+  range.insertNode(span);
+  return span;
+}
+
+function removeAnnotation(el) {
+  const p = el.parentNode; if (!p) return;
+  while (el.firstChild) p.insertBefore(el.firstChild, el);
+  p.removeChild(el); p.normalize();
+}
+
+function applyNote(el, text) {
+  el.setAttribute("data-note", text);
+  el.setAttribute("data-type", "note");
+  el.title = text;
+  el.className = "annot-note";
+}
+
+function allAnnotations() { return Array.from(document.querySelectorAll('[data-annotation="true"]')); }
+
+/* ── Tooltip ──────────────────────────────────────────── */
+function getEl(id) { return document.getElementById(id); }
+function mkEl(tag, id) {
+  let el = getEl(id);
+  if (el) return el;
+  el = document.createElement(tag);
+  el.id = id;
+  document.body.appendChild(el);
+  return el;
+}
+
+function showTooltip(rect, buttons) {
+  const tip = mkEl("div", "mr-tooltip");
+  tip.innerHTML = "";
+  buttons.forEach(function(b, i) {
+    if (i > 0) { const sep = document.createElement("span"); sep.className = "tt-sep"; tip.appendChild(sep); }
+    const btn = document.createElement("button");
+    btn.textContent = b.label;
+    btn.addEventListener("mousedown", function(e) { e.preventDefault(); e.stopPropagation(); b.action(); });
+    tip.appendChild(btn);
+  });
+  tip.style.display = "flex";
+  const sy = window.scrollY, sx = window.scrollX;
+  tip.style.top = Math.max(0, rect.top + sy - tip.offsetHeight - 8) + "px";
+  tip.style.left = Math.max(4, rect.left + sx + rect.width/2 - tip.offsetWidth/2) + "px";
+}
+
+function hideTooltip() {
+  const tip = getEl("mr-tooltip"); if (tip) tip.style.display = "none";
+  const ni = getEl("mr-note-input"); if (ni) ni.style.display = "none";
+}
+
+/* ── Note input ───────────────────────────────────────── */
+function showNoteInput(rect, existing, onConfirm) {
+  const tip = getEl("mr-tooltip"); if (tip) tip.style.display = "none";
+  const box = mkEl("div", "mr-note-input");
+  box.innerHTML = "";
+
+  const label = document.createElement("div");
+  label.className = "ni-label"; label.textContent = "Enter note:";
+  box.appendChild(label);
+
+  const ta = document.createElement("textarea");
+  ta.value = existing || ""; ta.setAttribute("rows","3");
+  box.appendChild(ta);
+
+  const acts = document.createElement("div");
+  acts.className = "ni-actions";
+
+  const cancelBtn = document.createElement("button");
+  cancelBtn.className = "ni-cancel"; cancelBtn.textContent = "Cancel";
+  cancelBtn.addEventListener("click", function(e) { e.preventDefault(); box.style.display = "none"; });
+  acts.appendChild(cancelBtn);
+
+  const okBtn = document.createElement("button");
+  okBtn.className = "ni-confirm"; okBtn.textContent = "OK";
+  okBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    const val = ta.value.trim();
+    if (!val) { ta.focus(); return; }
+    box.style.display = "none";
+    onConfirm(val);
+  });
+  acts.appendChild(okBtn);
+  box.appendChild(acts);
+
+  ta.addEventListener("keydown", function(e) {
+    if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); okBtn.click(); }
+    if (e.key === "Escape") { e.preventDefault(); cancelBtn.click(); }
+  });
+
+  box.style.display = "flex";
+  const sy = window.scrollY;
+  box.style.top = Math.max(sy + 4, rect.bottom + sy + 8) + "px";
+  box.style.left = Math.max(4, Math.min(rect.left, document.documentElement.clientWidth - 288)) + "px";
+  setTimeout(function() { ta.focus(); }, 30);
+}
+
+/* ── Annotate action ──────────────────────────────────── */
+function doAnnotate(type) {
+  hideTooltip();
+  const sel = window.getSelection();
+  if (!sel || sel.rangeCount === 0 || sel.isCollapsed) return;
+  const range = sel.getRangeAt(0);
+
+  if (type === "note") {
+    const saved = range.cloneRange();
+    const rect = range.getBoundingClientRect();
+    sel.removeAllRanges();
+    showNoteInput(rect, "", function(text) {
+      const ns = window.getSelection();
+      ns.removeAllRanges(); ns.addRange(saved);
+      const fr = ns.getRangeAt(0);
+      wrapRange(fr, "note", text);
+      ns.removeAllRanges();
+      refreshPanel();
+    });
+    return;
+  }
+
+  wrapRange(range, type, "");
+  sel.removeAllRanges();
+  refreshPanel();
+}
+
+/* ── Selection listener ───────────────────────────────── */
+let tooltipLock = false;
+
+function tooltipButtons() {
+  return [
+    { label: "Highlight", action: function() { doAnnotate("highlight"); } },
+    { label: "Underline", action: function() { doAnnotate("underline"); } },
+    { label: "Note", action: function() { doAnnotate("note"); } },
+  ];
+}
+
+document.addEventListener("mouseup", function() {
+  if (tooltipLock) return;
+  setTimeout(function() {
+    const sel = window.getSelection();
+    if (!sel || sel.isCollapsed || sel.rangeCount === 0) return;
+    const range = sel.getRangeAt(0);
+    const rect = range.getBoundingClientRect();
+    if (rect.width === 0 && rect.height === 0) return;
+    if (range.commonAncestorContainer.nodeType === 1 && range.commonAncestorContainer.closest && range.commonAncestorContainer.closest("#mr-panel")) return;
+    if (range.commonAncestorContainer.parentElement && range.commonAncestorContainer.parentElement.closest && range.commonAncestorContainer.parentElement.closest("#mr-panel")) return;
+    showTooltip(rect, tooltipButtons());
+  }, 10);
+});
+
+function handlePointerDown(e) {
+  const t = e.target;
+  if (t.closest && (t.closest("#mr-tooltip") || t.closest("#mr-note-input") || t.closest("#mr-panel"))) return;
+
+  const annot = t.closest && t.closest('[data-annotation="true"]');
+  if (annot) {
+    const sel = window.getSelection();
+    if (sel && sel.isCollapsed) {
+      e.preventDefault();
+      tooltipLock = true;
+      showTooltip(annot.getBoundingClientRect(), [
+        { label: "Note", action: function() {
+          hideTooltip(); tooltipLock = false;
+          var rect = annot.getBoundingClientRect();
+          showNoteInput(rect, annot.getAttribute("data-note") || "", function(text) {
+            applyNote(annot, text); refreshPanel();
+          });
+        }},
+        { label: "Remove", action: function() {
+          hideTooltip(); tooltipLock = false;
+          removeAnnotation(annot); refreshPanel();
+        }},
+      ]);
+      setTimeout(function() { tooltipLock = false; }, 300);
+      return;
+    }
+  }
+  hideTooltip();
+}
+
+document.addEventListener("mousedown", handlePointerDown);
+
+/* ── Touch / mobile support ──────────────────────────── */
+var selectionTimer = null;
+document.addEventListener("selectionchange", function() {
+  clearTimeout(selectionTimer);
+  selectionTimer = setTimeout(function() {
+    if (tooltipLock) return;
+    var sel = window.getSelection();
+    if (!sel || sel.isCollapsed || sel.rangeCount === 0) return;
+    var range = sel.getRangeAt(0);
+    if (range.commonAncestorContainer.nodeType === 1 && range.commonAncestorContainer.closest && range.commonAncestorContainer.closest("#mr-panel")) return;
+    if (range.commonAncestorContainer.parentElement && range.commonAncestorContainer.parentElement.closest && range.commonAncestorContainer.parentElement.closest("#mr-panel")) return;
+    var rect = range.getBoundingClientRect();
+    if (rect.width === 0 && rect.height === 0) return;
+    showTooltip(rect, tooltipButtons());
+  }, 300);
+});
+
+document.addEventListener("touchend", function(e) {
+  setTimeout(function() {
+    var sel = window.getSelection();
+    if (sel && !sel.isCollapsed) return;
+    handlePointerDown(e);
+  }, 50);
+});
+
+/* ── Side panel ───────────────────────────────────────── */
+function buildPanel() {
+  const toggle = document.createElement("button");
+  toggle.id = "mr-toggle-btn";
+  toggle.textContent = "\u270E";
+  toggle.title = "Annotation Tools";
+  document.body.appendChild(toggle);
+
+  const panel = document.createElement("div");
+  panel.id = "mr-panel";
+  var hlPens = [
+    { name: "Yellow", color: "#fff2a8" },
+    { name: "Green", color: "#b8f0c0" },
+    { name: "Blue", color: "#b3deff" },
+    { name: "Pink", color: "#ffc0cb" },
+    { name: "Orange", color: "#ffd9a8" },
+    { name: "Purple", color: "#dcc0f0" },
+  ];
+  var ulPens = [
+    { name: "Red", color: "#cc4f1b" },
+    { name: "Blue", color: "#2a6dd9" },
+    { name: "Green", color: "#2a8a3e" },
+    { name: "Orange", color: "#d98c2a" },
+    { name: "Purple", color: "#7b3ec4" },
+    { name: "Gray", color: "#666666" },
+  ];
+
+  function buildPenRow(pens, activeColor) {
+    return pens.map(function(p) {
+      var cls = p.color === activeColor ? "mr-pen active" : "mr-pen";
+      return '<button class="' + cls + '" data-color="' + p.color + '" style="background:' + p.color + ';" title="' + p.name + '"></button>';
+    }).join("");
+  }
+
+  panel.innerHTML =
+    '<button class="mr-close" id="mr-close-btn">\u2715</button>' +
+    '<h3>Annotations</h3>' +
+    '<div class="mr-section">' +
+      '<div class="mr-pen-group">' +
+        '<div class="mr-pen-label">Highlight</div>' +
+        '<div class="mr-pens" id="mr-hl-pens">' + buildPenRow(hlPens, highlightColor) + '</div>' +
+      '</div>' +
+      '<div class="mr-pen-group" style="margin-top:10px;">' +
+        '<div class="mr-pen-label">Underline</div>' +
+        '<div class="mr-pens" id="mr-ul-pens">' + buildPenRow(ulPens, underlineColor) + '</div>' +
+      '</div>' +
+    '</div>' +
+    '<div class="mr-section" style="flex:1;overflow-y:auto;min-height:0;display:flex;flex-direction:column;">' +
+      '<h3>Annotation List</h3>' +
+      '<ul id="mr-annot-list" class="mr-annot-list" style="flex:1;overflow-y:auto;min-height:0;">' +
+        '<li class="mr-empty">No annotations yet</li>' +
+      '</ul>' +
+    '</div>' +
+    '<button class="mr-save-btn" id="mr-save-btn">Download Annotated HTML</button>' +
+    '<button class="mr-export-md" id="mr-export-md">Export as Markdown</button>';
+  document.body.appendChild(panel);
+
+  toggle.addEventListener("click", function() { panel.classList.toggle("open"); });
+  document.getElementById("mr-close-btn").addEventListener("click", function() { panel.classList.remove("open"); });
+
+  document.getElementById("mr-hl-pens").addEventListener("click", function(e) {
+    var pen = e.target.closest(".mr-pen"); if (!pen) return;
+    highlightColor = pen.getAttribute("data-color");
+    this.querySelectorAll(".mr-pen").forEach(function(p) { p.classList.remove("active"); });
+    pen.classList.add("active");
+  });
+  document.getElementById("mr-ul-pens").addEventListener("click", function(e) {
+    var pen = e.target.closest(".mr-pen"); if (!pen) return;
+    underlineColor = pen.getAttribute("data-color");
+    this.querySelectorAll(".mr-pen").forEach(function(p) { p.classList.remove("active"); });
+    pen.classList.add("active");
+  });
+
+  document.getElementById("mr-save-btn").addEventListener("click", function() {
+    const toHide = ["mr-toggle-btn", "mr-panel", "mr-tooltip", "mr-note-input"];
+    toHide.forEach(function(id) { const el = getEl(id); if (el) el.style.display = "none"; });
+    const dt = document.doctype ? "<!DOCTYPE " + document.doctype.name + ">" : "<!DOCTYPE html>";
+    const blob = new Blob([dt + "\n" + document.documentElement.outerHTML], { type: "text/html;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    var origName = decodeURIComponent(location.pathname.split("/").pop() || "") || (document.title || "document").replace(/[<>:"/\\|?*]/g, "_") + ".html";
+    a.download = origName;
+    document.body.appendChild(a); a.click(); a.remove();
+    URL.revokeObjectURL(url);
+    toHide.forEach(function(id) { const el = getEl(id); if (el) el.style.display = ""; });
+    document.getElementById("mr-toggle-btn").style.display = "block";
+  });
+
+  document.getElementById("mr-export-md").addEventListener("click", exportMarkdown);
+}
+
+function refreshPanel() {
+  const list = getEl("mr-annot-list");
+  if (!list) return;
+  list.innerHTML = "";
+
+  const items = allAnnotations();
+  if (items.length === 0) {
+    list.innerHTML = '<li class="mr-empty">No annotations yet</li>';
+    return;
+  }
+
+  items.forEach(function(el) {
+    const li = document.createElement("li");
+    li.className = "mr-annot-item";
+
+    const type = el.getAttribute("data-type") || "highlight";
+    const text = (el.textContent || "").slice(0, 60);
+    const note = el.getAttribute("data-note");
+
+    const badge = document.createElement("span");
+    badge.className = "mr-annot-type " + type;
+    const typeNames = { highlight: "Highlight", underline: "Underline", note: "Note" };
+    badge.textContent = typeNames[type] || type;
+    li.appendChild(badge);
+
+    const txt = document.createElement("span");
+    txt.textContent = text + (el.textContent.length > 60 ? "\u2026" : "");
+    li.appendChild(txt);
+
+    if (note) {
+      const nt = document.createElement("span");
+      nt.className = "mr-annot-note";
+      nt.textContent = note;
+      li.appendChild(nt);
+    }
+
+    const actions = document.createElement("div");
+    actions.className = "mr-annot-actions";
+
+    if (type !== "note") {
+      const nb = document.createElement("button");
+      nb.className = "mr-btn-note"; nb.textContent = "Add Note";
+      nb.addEventListener("click", function(ev) {
+        ev.stopPropagation();
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+        showNoteInput(el.getBoundingClientRect(), el.getAttribute("data-note") || "", function(t) {
+          applyNote(el, t); refreshPanel();
+        });
+      });
+      actions.appendChild(nb);
+    }
+
+    const db = document.createElement("button");
+    db.className = "mr-btn-del"; db.textContent = "Remove";
+    db.addEventListener("click", function(ev) {
+      ev.stopPropagation();
+      removeAnnotation(el); refreshPanel();
+    });
+    actions.appendChild(db);
+    li.appendChild(actions);
+
+    li.addEventListener("click", function() {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+      el.style.outline = "3px solid #2f8a45";
+      setTimeout(function() { el.style.outline = ""; }, 1200);
+    });
+
+    list.appendChild(li);
+  });
+}
+
+/* ── Export annotations to Markdown ───────────────────── */
+function findHeading(el) {
+  var node = el;
+  while (node && node !== document.body) {
+    var prev = node.previousElementSibling;
+    while (prev) {
+      if (/^H[1-6]$/.test(prev.tagName)) return { level: parseInt(prev.tagName[1]), text: prev.textContent.trim() };
+      prev = prev.previousElementSibling;
+    }
+    node = node.parentElement;
+  }
+  return null;
+}
+
+function exportMarkdown() {
+  var items = allAnnotations();
+  if (items.length === 0) return;
+
+  var typeNames = { highlight: "Highlight", underline: "Underline", note: "Note" };
+  var lines = [];
+  lines.push("# " + (document.title || "Document") + " - Annotations");
+  lines.push("");
+  lines.push("_" + new Date().toLocaleString() + "_");
+  lines.push("");
+  lines.push("---");
+  lines.push("");
+
+  var lastHeading = null;
+
+  items.forEach(function(el) {
+    var type = el.getAttribute("data-type") || "highlight";
+    var text = el.textContent.trim();
+    var note = el.getAttribute("data-note") || "";
+
+    var heading = findHeading(el);
+    if (heading && (!lastHeading || lastHeading.text !== heading.text)) {
+      lines.push("#".repeat(Math.min(heading.level + 1, 4)) + " " + heading.text);
+      lines.push("");
+      lastHeading = heading;
+    }
+
+    lines.push("**[" + typeNames[type] + "]**");
+    lines.push("");
+    lines.push("> " + text.replace(/\n/g, "\n> "));
+    if (note) {
+      lines.push("");
+      lines.push("**Note:** " + note);
+    }
+    lines.push("");
+    lines.push("---");
+    lines.push("");
+  });
+
+  var md = lines.join("\n");
+  var blob = new Blob([md], { type: "text/markdown;charset=utf-8" });
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement("a");
+  a.href = url;
+  a.download = (document.title || "document").replace(/[<>:"/\\|?*]/g, "_") + ".annotations.md";
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+}
+
+/* ── Boot ─────────────────────────────────────────────── */
+function makeTranslatable() {
+  // Unwrap <header id="title-block-header"> entirely — move children to body
+  var header = document.getElementById('title-block-header');
+  if (header) {
+    var parent = header.parentNode;
+    var next = header.nextSibling;
+    while (header.firstChild) {
+      parent.insertBefore(header.firstChild, next);
+    }
+    parent.removeChild(header);
+  }
+  // Convert all headings to <p> with inline style
+  var sizes = { H1: '2em', H2: '1.5em', H3: '1.25em', H4: '1.1em', H5: '1em', H6: '0.9em' };
+  document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(function(h) {
+    var p = document.createElement('p');
+    p.innerHTML = h.innerHTML;
+    if (h.id) p.id = h.id;
+    if (h.className) p.className = h.className;
+    var sz = sizes[h.tagName] || '1.5em';
+    p.style.cssText = 'font-size:' + sz + ';font-weight:bold;margin-top:1.2em;margin-bottom:0.5em;';
+    if (h.classList.contains('title')) {
+      p.style.cssText = 'font-size:2.5em;font-weight:bold;text-align:center;line-height:1.2;margin-bottom:0.5em;';
+    }
+    h.parentNode.replaceChild(p, h);
+  });
+  // Unwrap <div class="abstract"> — flatten to plain <p> tags
+  var abDiv = document.querySelector('.abstract');
+  if (abDiv) {
+    var parent = abDiv.parentNode;
+    var next = abDiv.nextSibling;
+    while (abDiv.firstChild) {
+      parent.insertBefore(abDiv.firstChild, next);
+    }
+    parent.removeChild(abDiv);
+  }
+  // Convert abstract-title div to <p>
+  var abTitle = document.querySelector('.abstract-title');
+  if (abTitle && abTitle.tagName !== 'P') {
+    var p = document.createElement('p');
+    p.innerHTML = abTitle.innerHTML;
+    p.style.cssText = 'font-weight:bold;text-align:center;';
+    abTitle.parentNode.replaceChild(p, abTitle);
+  }
+}
+
+function boot() {
+  makeTranslatable();
+  buildPanel();
+  refreshPanel();
+}
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", boot);
+} else {
+  boot();
+}
+
+})();
+</script>
+</body>
+</html>
