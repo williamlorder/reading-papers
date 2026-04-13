@@ -1,0 +1,2755 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="[Blinded for Review]" />
+  <title>Generational Imprinting and the Persistence of Low Fertility Ideals: An Age-Period-Cohort Analysis of Ideal Number of Children in China, 2010–2023</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    div.abstract {
+      margin: 2em 2em 2em 2em;
+      text-align: left;
+      font-size: 85%;
+    }
+    div.abstract-title {
+      font-weight: bold;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0.5em;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/contrib/auto-render.min.js"></script>
+  <style>
+  /* Computer Modern Serif - LaTeX default font */
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunrm.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunbx.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunti.woff') format('woff');
+      font-weight: normal;
+      font-style: italic;
+  }
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunbi.woff') format('woff');
+      font-weight: bold;
+      font-style: italic;
+  }
+
+  body {line-height: 2em; font-size: 12pt}
+
+  p {text-indent: 0.5in; margin: 0; line-height: 2em}
+  div.Author p {
+    text-indent: 0;
+  }
+  .FigureTitle {font-weight: bold; margin: 5pt 0; font-size: 12pt; color: black;}
+  .FigureTitle p {text-indent: 0; text-align: left;}
+  .FigureNote p {text-indent: 0; margin: 0; padding: 0}
+  .Caption {font-style: italic; font-size: 12pt; color: black; text-align: left}
+  .Caption p {text-indent: 0; font-size: 12pt;}
+  .quarto-float, .quarto-float-tbl, .figure {margin: 0; margin-block-start: 0; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0}
+
+  h1, h2, h3, h4, h5 {border: none; margin: 0; padding: 0;line-height: 2; text-indent: 0 }
+
+  h1 {text-align: center;}
+  h3 {font-style: italic}
+  h4 {font-weight: bold}
+
+  h4, h5 {
+  text-indent: 0.5in;
+  display:inline-block;
+  margin: 0
+  }
+
+  h5 {
+    font-style: italic;
+  }
+
+  h4 + p, h5 + p {
+    display:inline;
+    text-indent: 0;
+  }
+
+
+  .Compact {
+    line-height: 1em;
+    text-indent: 0;
+    margin: 0;
+  }
+
+
+
+
+
+
+  td p, th p, li p {text-indent: 0; margin: 0;}
+
+
+
+  li p {text-indent: 0; margin: 0;}
+
+  .subtitle {font-size: 12pt; text-align: center; color: #303030; font-weight: bold;}
+
+  blockquote, .blockquote {border: none; margin: 0 .5in; padding: 0; font-style: normal; color: #303030;}
+
+  .Author {text-align:center; text-indent: 0}
+
+  .cell-output-display p {text-indent: 0}
+
+  div.hanging-indent {margin-left: 0.5in; text-indent: -0.5in}
+
+  div.hanging-indent .csl-entry {margin-left: 0; text-indent: -0.5in;}
+
+  .katex {font-size: 1em;}
+  .katex-display {font-size: 1.1em;}
+
+  .NoIndent p {text-indent: 0}
+
+  blockquote p:nth-child(1) {text-indent: 0}
+
+  table {
+      font-variant-numeric: tabular-nums;
+  }
+
+  .table {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .table>thead {
+    border-bottom: 1px solid black;
+  }
+
+  .table>:not(caption)>*>* {
+    border-bottom: none;
+  }
+
+  .tabwid {padding: 0}
+
+  .AbstractFirstParagraph p {text-indent: 0}
+
+
+  /* Override fonts to Computer Modern */
+  body {
+      font-family: 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+      font-family: 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;
+  }
+  code, pre {
+      font-family: 'Computer Modern Typewriter', 'Courier New', monospace;
+  }
+
+  /* KaTeX: match font size and weight to body text */
+  .katex {
+      font-size: 1.0em;
+      font-weight: normal;
+  }
+  .katex .mathnormal,
+  .katex .mathit {
+      font-weight: normal;
+  }
+  .katex .mathbf {
+      font-weight: bold;
+  }
+
+  /* Screen adaptation overrides for web viewing */
+  @media screen {
+      html { font-size: 12pt; }
+      body {
+          max-width: 52em;
+          margin: 2em auto;
+          padding: 0 2em;
+          column-count: 1;
+      }
+      figure img { max-width: 100%; height: auto; }
+      .math.display { overflow-x: auto; margin: 1.2em 0; }
+      pre {
+          overflow-x: auto;
+          background: #f5f5f5;
+          padding: 0.8em;
+          border-radius: 4px;
+      }
+  }
+  </style>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+          delimiters: [
+              {left: "$$", right: "$$", display: true},
+              {left: "\\[", right: "\\]", display: true},
+              {left: "$", right: "$", display: false},
+              {left: "\\(", right: "\\)", display: false}
+          ],
+          throwOnError: false
+      });
+  });
+  </script>
+  <script defer=""
+  src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Generational Imprinting and the Persistence of Low
+Fertility Ideals:<br />
+An Age-Period-Cohort Analysis of Ideal Number of Children in China,
+2010–2023</h1>
+<p class="author">[Blinded for Review]</p>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+<p>China reversed its one-child policy through three successive
+liberalizations between 2013 and 2021, yet stated fertility ideals have
+not increased. Using Hierarchical Age-Period-Cohort (HAPC) models on
+eight waves of the Chinese General Social Survey (2010–2023; <span
+class="math inline">N = 79{,}991</span>), we decompose the ideal number
+of children into age, period, and cohort components. Cohort effects are
+an order of magnitude larger than period effects (cohort <span
+class="math inline">\sigma^2 = 0.019</span> versus period <span
+class="math inline">\sigma^2 \approx 0.000</span>), indicating that
+generational socialization under the one-child policy, not contemporary
+policy changes, drives variation in fertility ideals. Women show three
+times the cohort variance of men (<span class="math inline">\sigma^2 =
+0.041</span> versus <span class="math inline">0.014</span>), and the
+gender gap in ideals is twice as large in urban areas (<span
+class="math inline">\beta = -0.108</span>) as in rural areas (<span
+class="math inline">\beta = -0.060</span>). Age effects follow a
+U-shaped pattern, with the youngest and oldest groups expressing higher
+ideals than middle-aged respondents. Actual number of children is the
+strongest individual-level predictor (<span class="math inline">\beta =
+0.319</span>), while marriage is associated with lower, not higher,
+fertility ideals (<span class="math inline">\beta = -0.086</span>). An
+Age-Period-Cohort-Interaction (APCI) model corroborates these patterns
+under alternative identifying assumptions. These results suggest that
+pronatalist policy reversal cannot undo generational norm change, and
+that gender-specific interventions targeting the opportunity costs of
+childbearing may be more effective than universal birth-permit
+relaxation.</p>
+</div>
+</header>
+<h1 id="introduction">Introduction</h1>
+<p>China’s three-child policy, announced in May 2021, was designed to
+reverse four decades of state-imposed fertility restriction. Two years
+later, the average ideal number of children among Chinese adults fell to
+1.87, the lowest value recorded in fifteen years of the Chinese General
+Social Survey (CGSS). This paper explains why pronatalist policy
+reversal has failed to raise fertility ideals: the one-child policy did
+not merely constrain behavior; it reshaped the norms of an entire
+generation.</p>
+<p>The stakes are considerable. China’s total fertility rate dropped
+below 1.1 in 2023, among the lowest in recorded demographic history
+<span class="citation"
+data-cites="idealchild_zhai2023china idealchild_yang2022china">(Zhai and
+Jin 2023; Yang et al. 2022)</span>. Policy responses have focused on
+removing administrative restrictions, from the selective two-child
+relaxation in 2013 to the universal two-child policy in 2016 and the
+three-child policy in 2021. The implicit assumption underlying these
+interventions is that pent-up demand for children exists and will be
+released once restrictions are lifted. Our findings challenge this
+assumption. If stated fertility ideals have declined not because of
+contemporary policy constraints but because of generational norm change,
+removing restrictions addresses the wrong problem.</p>
+<p>Prior research has documented the persistent two-child norm in
+Chinese fertility preferences <span class="citation"
+data-cites="idealchild_chen2023genuine idealchild_zheng2009below">(Chen
+and Gietel‐Basten 2023; Zheng et al. 2009)</span> and the limited
+behavioral response to policy liberalization <span class="citation"
+data-cites="idealchild_zhai2023china idealchild_wang2025fertility">(Zhai
+and Jin 2023; Wang et al. 2025)</span>. What existing studies cannot
+explain is whether the observed stability in aggregate fertility ideals
+conceals meaningful variation across birth cohorts, survey periods, and
+stages of the life course. Standard regression analyses confound these
+three temporal dimensions. Without a formal Age-Period-Cohort (APC)
+decomposition, it is impossible to determine whether changes in
+fertility ideals reflect life-course maturation (age effects),
+macro-level shocks that affect all respondents simultaneously (period
+effects), or lasting differences between generations socialized under
+different policy regimes (cohort effects).</p>
+<p>We address this gap by estimating Hierarchical Age-Period-Cohort
+(HAPC) models <span class="citation"
+data-cites="idealchild_yang2006mixed idealchild_yang2008period">(Yang
+and Land 2006, 2008)</span> on eight waves of CGSS data spanning 2010 to
+2023 (<span class="math inline">N = 79{,}991</span>). This design
+exploits the temporal structure of China’s policy transitions: the eight
+survey waves bracket three major policy changes, while the birth cohorts
+in our sample range from those born in the 1930s (who came of age before
+the one-child policy) to those born after 2000 (who never experienced
+reproductive restrictions). We supplement the HAPC estimates with the
+Age-Period-Cohort-Interaction (APCI) model <span class="citation"
+data-cites="idealchild_xu2022stata">(Xu and Luo 2022)</span> as a
+robustness check that does not rely on the same identifying
+assumptions.</p>
+<p>Three principal findings emerge. First, cohort effects on ideal
+number of children are an order of magnitude larger than period effects
+(cohort <span class="math inline">\sigma^2 = 0.019</span> versus period
+<span class="math inline">\sigma^2 \approx 0.000</span>), indicating
+that generational socialization, not contemporary policy signals, drives
+variation in fertility ideals. Second, women exhibit dramatically larger
+cohort differentiation than men (cohort <span
+class="math inline">\sigma^2 = 0.041</span> versus <span
+class="math inline">0.014</span>), with the gender gap in fertility
+ideals twice as large among urban residents (<span
+class="math inline">-0.108</span>) as among their rural counterparts
+(<span class="math inline">-0.060</span>). Third, actual number of
+children is the strongest individual-level predictor of fertility ideals
+(<span class="math inline">\beta = 0.319</span>), while married
+respondents report lower ideals than the never-married (<span
+class="math inline">\beta = -0.086</span>), suggesting that lived
+experience constrains rather than inflates stated preferences.</p>
+<p>This study makes three contributions to the literature on fertility
+and population policy. First, we provide the first systematic HAPC
+decomposition of fertility ideals in China, demonstrating that the
+apparent stability of the two-child norm masks substantial cohort-level
+variation. Second, we identify women as the primary demographic agents
+of declining fertility ideals, a finding with direct implications for
+the design of pronatalist policy. Third, we offer methodological
+triangulation by applying the APCI model to Chinese fertility preference
+data, addressing longstanding concerns about HAPC identification <span
+class="citation"
+data-cites="idealchild_bell2014another idealchild_fosse2019analyzing">(Bell
+and Jones 2014; Fosse and Winship 2019)</span>.</p>
+<h1 id="background-and-theoretical-framework">Background and Theoretical
+Framework</h1>
+<h2 id="fertility-preferences-in-demographic-theory">Fertility
+Preferences in Demographic Theory</h2>
+<p>The ideal number of children occupies a distinctive position in the
+architecture of fertility research. Unlike fertility intentions, which
+reflect plans contingent on current circumstances, and unlike actual
+fertility, which incorporates involuntary constraints, the stated ideal
+captures a normative orientation toward family size that functions as a
+leading indicator of reproductive culture <span class="citation"
+data-cites="idealchild_hagewen2005intended">(Hagewen and Morgan
+2005)</span>. When ideal family size shifts downward across a
+population, actual fertility tends to follow, though the two may diverge
+for years or decades due to institutional barriers, economic
+constraints, and timing adjustments. <span class="citation"
+data-cites="idealchild_bongaarts1998fertility">Bongaarts (1998)</span>
+demonstrated that in post-transitional societies, desired family size
+converges near two children while actual fertility frequently falls
+below replacement, a gap attributable to postponement, union
+instability, and rising opportunity costs rather than to any desire for
+childlessness. The distinction between the tempo and quantum of
+fertility is central here: <span class="citation"
+data-cites="idealchild_bongaarts1998quantum">Bongaarts and Feeney
+(1998)</span> showed that tempo distortions—shifts in the timing of
+births—can depress period fertility rates well below the level implied
+by completed family size, meaning that observed TFR declines may
+overstate the fall in lifetime fertility desires. Globally, <span
+class="citation" data-cites="idealchild_bongaarts2020trends">Bongaarts
+(2020)</span> documented that while fertility rates have converged
+toward replacement in most regions, desired family size varies
+substantially across societies and has continued to decline in East
+Asia, suggesting that the quantum itself is shifting downward rather
+than merely the tempo. The implication is that when ideals themselves
+fall below two, the usual mechanisms for closing the ideal-behavior gap
+cease to operate as a floor on fertility.</p>
+<p>The Second Demographic Transition (SDT) framework locates the engine
+of preference change in value transformation. As societies industrialize
+and secularize, individual autonomy, self-expression, and gender
+egalitarianism displace collective obligations and familistic norms
+<span class="citation"
+data-cites="idealchild_surkyn2004value idealchild_sobotka2008overview">(Surkyn
+and Lesthaeghe 2004; Sobotka 2008)</span>. In this account,
+below-replacement fertility preferences emerge not from policy coercion
+but from a shift in what individuals want from life. <span
+class="citation"
+data-cites="idealchild_inglehart2000modernization">Inglehart and Baker
+(2000)</span> showed, using World Values Survey data from 65 societies,
+that economic development drives systematic value change toward
+rationality, tolerance, and self-expression, yet cultural heritage
+leaves an enduring imprint—Confucian, Protestant, and Catholic societies
+retain distinctive value profiles even at similar income levels. The
+wealth flows theory offers a complementary economic logic: as the
+direction of intergenerational resource transfers reverses from
+children-to-parents toward parents-to-children, the economic rationale
+for large families collapses <span class="citation"
+data-cites="idealchild_caldwell2005intergenerational">(Caldwell
+2005)</span>. In China, this reversal has been particularly sharp, with
+parental investment in a single child’s education and housing consuming
+a growing share of household resources.</p>
+<p>Whether SDT dynamics apply to China remains contested. <span
+class="citation" data-cites="idealchild_yu2022there">Yu and Xie
+(2022)</span> found that key behavioral indicators of the SDT—delayed
+marriage, rising cohabitation, tolerance of nonmarital childbearing—are
+present in China, but that ideational changes precede behavioral ones,
+and that China’s pattern departs from Western trajectories in important
+respects. The central question for our study is whether Chinese
+fertility ideals reflect the gradual value change predicted by SDT
+theory or a more abrupt normative shift induced by the one-child policy.
+An age-period-cohort framework can distinguish these possibilities:
+SDT-driven preference change should appear as smooth cohort trends
+tracking modernization, while policy-induced change should produce
+discontinuities aligned with the birth cohorts directly exposed to the
+one-child regime.</p>
+<h2
+id="chinas-fertility-policy-regime-and-its-temporal-structure">China’s
+Fertility Policy Regime and Its Temporal Structure</h2>
+<p>China’s birth planning policies have passed through four distinct
+phases, each creating a different normative environment for the cohorts
+socialized under it. The first phase, from the early 1970s through 1979,
+centered on the “later, longer, fewer” campaign, which encouraged
+delayed marriage, longer birth intervals, and smaller families. This
+campaign alone reduced the total fertility rate from approximately 5.7
+in 1969 to 2.7 by 1978 <span class="citation"
+data-cites="idealchild_chen2020power">(Chen and Huang 2020)</span>,
+initiating a decline that would push China below replacement fertility
+by the early 1990s <span class="citation"
+data-cites="idealchild_s2009china">(S. et al. 2009)</span>.</p>
+<p>The second phase, the one-child policy proper (1979–2015), imposed
+strict birth quotas enforced through a combination of economic
+penalties, administrative sanctions, and social pressure <span
+class="citation" data-cites="idealchild_scharping2013birth">(Scharping
+2013)</span>. Enforcement, however, was not uniform. Urban residents
+faced the strictest constraints: fines for unauthorized births, loss of
+employment in state enterprises, and denial of household registration
+for second children. Rural households received partial
+exemptions—couples whose first child was a daughter could apply for a
+second birth in most provinces—and ethnic minorities were permitted two
+or three children depending on region <span class="citation"
+data-cites="idealchild_zhang2017evolution idealchild_yang2018educational">(Zhang
+2017; Yang and Wu 2018)</span>. Even before the one-child policy,
+planned fertility decline was already under way in rural areas; <span
+class="citation" data-cites="idealchild_yang1990planned">Yang
+(1990)</span> documented how collective-era mobilization campaigns in
+Anhui province reduced birth rates through a combination of ideological
+persuasion and material incentives. The enforcement of birth quotas
+intersected with the hukou system, which <span class="citation"
+data-cites="idealchild_chan1999hukou">Chan and Zhang (1999)</span>
+characterized as a key institutional mechanism structuring rural-urban
+inequality in China, creating sharply different reproductive
+environments for urban and rural populations. This differential
+enforcement is analytically consequential. Urban cohorts born between
+1980 and the late 1990s grew up in families where the single-child
+household was not merely common but legally mandated. Rural cohorts of
+the same era experienced a more permissive regime, with many observing
+two-child or even three-child families among neighbors and kin. <span
+class="citation" data-cites="idealchild_cai2021social">Cai and Wang
+(2021)</span> documented how the one-child policy altered China’s social
+fabric across nearly four decades, reshaping gender relations, family
+structures, and intergenerational expectations in fundamental ways.</p>
+<p>The third and fourth phases represent policy reversal. In November
+2013, the selective two-child policy allowed couples in which one spouse
+was an only child to have a second birth. In January 2016, the universal
+two-child policy extended this permission to all couples. In May 2021, a
+three-child policy was announced, accompanied by rhetoric about
+“fertility-supportive” social infrastructure <span class="citation"
+data-cites="idealchild_zhai2023china idealchild_yang2023third">(Zhai and
+Jin 2023; H. Yang et al. 2023)</span>. Early assessments suggest that
+the three-child policy has had limited impact on fertility intentions,
+with structural constraints outweighing the symbolic effect of permit
+relaxation <span class="citation"
+data-cites="idealchild_xu2023research">(Xu 2023)</span>. The response to
+these liberalizations was modest. <span class="citation"
+data-cites="idealchild_jiang2016fertility">Jiang and Liu (2016)</span>
+showed that China’s low fertility was sustained by factors well beyond
+the birth quota itself, and the selective two-child policy produced
+fewer applicants than projected. The universal two-child policy
+generated a temporary rebound in births in 2016–2017, but the effect
+dissipated by 2018, and births have declined each year since <span
+class="citation" data-cites="idealchild_chen2023changing">(Chen
+2023)</span>. City-level studies confirmed the pattern: <span
+class="citation" data-cites="idealchild_qiu2019fertility"><span
+class="nocase">Qiu et al.</span> (2019)</span> found that even in
+Dalian, where economic conditions were favorable, fertility intentions
+remained low after the two-child relaxation, with most respondents
+citing economic burden and childcare costs as primary deterrents. <span
+class="citation" data-cites="idealchild_chen2023genuine">Chen and
+Gietel‐Basten (2023)</span> exploited the 2015 policy shift in a
+difference-in-differences design and found that removing the one-child
+restriction increased ideal family size by approximately 0.2 children
+among married individuals aged 20–39, but sub-replacement ideals in
+urban China remained genuine even after the policy constraint was
+lifted.</p>
+<p>For APC analysis, this policy chronology generates a testable
+prediction. If pronatalist policy reversal raises fertility ideals, the
+effect should appear as a positive period shift after 2013 or 2016. If,
+instead, fertility ideals are governed by formative experiences during
+adolescence, the policy reversals should produce negligible period
+effects while cohort effects corresponding to the one-child generation
+remain dominant.</p>
+<h2 id="generational-socialization-and-cohort-imprinting">Generational
+Socialization and Cohort Imprinting</h2>
+<p>The sociology of generations holds that attitudes and values formed
+during late adolescence and early adulthood tend to persist across the
+life course, even when the structural conditions that produced them
+change. Individuals do not continuously update their normative
+orientations in response to new information; rather, the worldview
+absorbed during formative years becomes a durable cognitive frame
+through which later experiences are interpreted. Applied to fertility,
+this perspective predicts that cohorts who came of age under the
+one-child policy—born roughly between 1980 and 1999—should carry the
+small-family norm they absorbed during childhood into their adult
+reproductive years, regardless of subsequent policy liberalization.</p>
+<p><span class="citation" data-cites="idealchild_chen2025children">Chen
+and Gietel‐Basten (2025)</span> provided direct causal evidence for this
+mechanism. Using a fuzzy regression discontinuity design around the 1980
+introduction of the one-child policy, they showed that being an only
+child significantly reduces ideal family size among urban Chinese. The
+effect operates through what they term a “low-fertility trap” channel:
+individuals raised without siblings treat the one-child family as the
+default, and this default persists into adulthood as a normative anchor.
+The finding is consistent with socialization theory but goes further by
+identifying a specific transmission pathway—sibship size during
+childhood—rather than relying on period-of-birth as a proxy for
+exposure.</p>
+<p>The erosion of son preference across cohorts provides additional
+evidence of generational norm change. <span class="citation"
+data-cites="idealchild_ni2023daughters">Ni (2023)</span> found through
+qualitative interviews with one-child-generation cohorts in urban
+Jiangsu that son preference has given way to a more balanced preference
+composition, with two-daughter families gaining greater acceptance among
+younger couples. At the population level, <span class="citation"
+data-cites="idealchild_tang2024changes">Tang and Hou (2024)</span>
+documented a corresponding decline in the sex ratio at birth, tracing
+the weakening of son preference across successive cohorts of parents. In
+rural areas, <span class="citation"
+data-cites="idealchild_tilt2019fertility">Tilt et al. (2019)</span>
+found that fertility trends and son preference differ between Han and
+ethnic minority households, with minority communities retaining higher
+fertility norms even as sex ratio imbalances moderate. This shift
+matters because son preference historically sustained demand for
+additional births: couples who produced a daughter first would attempt a
+second or third birth to obtain a son. As son preference weakens among
+one-child-generation cohorts, one traditional motivation for larger
+families weakens with it.</p>
+<p>The gendered dimension of cohort change deserves particular
+attention. Urban women in the one-child generation experienced a
+confluence of forces that depressed fertility ideals more sharply than
+for men of the same cohorts. They were raised in single-child families,
+obtained higher levels of education than any previous female cohort in
+Chinese history <span class="citation"
+data-cites="idealchild_chen2023changing">(Chen 2023)</span>, and delayed
+marriage to ages that would have been unusual a generation earlier <span
+class="citation" data-cites="idealchild_song2023study">(Song et al.
+2023)</span>. They entered a labor market that penalizes maternal career
+interruptions and confronted housing costs that make the economic burden
+of children especially visible. In rural areas, internet access has
+exposed women to urban lifestyle models and expanded information about
+the costs of childrearing, further depressing fertility preferences
+<span class="citation" data-cites="idealchild_li2023influence">(Li and
+Wei 2023)</span>. <span class="citation"
+data-cites="idealchild_cheng2020ultra">Cheng (2020)</span> reviewed the
+institutional context of ultra-low fertility across East Asia and
+emphasized that Confucian patriarchal expectations—which assign women
+primary responsibility for childcare while demanding continued labor
+force participation—create compounding opportunity costs that rational
+actors seek to minimize by limiting family size. In urban China, these
+opportunity costs fall disproportionately on women, a pattern that
+should manifest as larger cohort effects among women than among men if
+generational socialization is the operative mechanism.</p>
+<h2 id="the-age-period-cohort-framework-for-fertility-ideals">The
+Age-Period-Cohort Framework for Fertility Ideals</h2>
+<p>Trend data on fertility ideals confound three temporal processes. Age
+effects capture life-course dynamics: as individuals marry, bear
+children, and accumulate resources, their stated ideals may shift.
+Period effects capture macro-level shocks that affect all respondents in
+a given survey year: a new policy announcement, an economic crisis, or a
+media campaign. Cohort effects capture generational socialization: the
+durable imprint of formative experiences shared by individuals born in
+the same historical window. Without a framework for separating these
+processes, one cannot determine whether a decline in fertility ideals
+reflects population aging, contemporaneous economic conditions, or a
+genuine generational shift in reproductive norms.</p>
+<p>The hierarchical age-period-cohort cross-classified random effects
+model (HAPC-CCREM), developed by <span class="citation"
+data-cites="idealchild_yang2006mixed">Yang and Land (2006)</span> and
+elaborated in <span class="citation"
+data-cites="idealchild_yang2008period">Yang and Land (2008)</span> and
+<span class="citation" data-cites="idealchild_yang2013period">Yang and
+Land (2013)</span>, addresses this challenge by treating period and
+cohort as crossed random grouping factors at the second level of a
+multilevel model. Individual responses are modeled as a function of age
+(fixed effects) plus random intercepts for the period in which the
+survey was conducted and the birth cohort to which the respondent
+belongs. The variance components <span
+class="math inline">\sigma^2_{\text{period}}</span> and <span
+class="math inline">\sigma^2_{\text{cohort}}</span> provide a direct
+comparison of the relative importance of period versus cohort variation,
+net of age and individual-level controls.</p>
+<p>The APC identification problem—the exact linear dependency <span
+class="math inline">\text{Cohort} = \text{Period} -
+\text{Age}</span>—has been recognized as a fundamental challenge since
+<span class="citation"
+data-cites="idealchild_fienberg1979identification">Fienberg and Mason
+(1979)</span>, and the HAPC model has been subject to sustained
+methodological scrutiny in this light. <span class="citation"
+data-cites="idealchild_bell2014another">Bell and Jones (2014)</span>
+demonstrated through simulations that the model can misattribute linear
+trends when both period and cohort effects are present, and <span
+class="citation" data-cites="idealchild_bell2015should">Bell and Jones
+(2015)</span> and <span class="citation"
+data-cites="idealchild_bell2017hierarchical">Bell and Jones
+(2017)</span> argued that HAPC estimates may reflect data structure
+rather than substantive temporal processes. <span class="citation"
+data-cites="idealchild_fosse2019analyzing">Fosse and Winship
+(2019)</span> provided a comprehensive review of the identification
+problem inherent in all APC methods and outlined conditions under which
+different approaches yield reliable estimates. In response, <span
+class="citation" data-cites="idealchild_reither2015clarifying"><span
+class="nocase">Reither et al.</span> (2015)</span> demonstrated through
+extensive simulations that HAPC models perform well when basic
+assumptions are met, particularly when one temporal dimension exhibits
+minimal linear trend. These critiques and defenses do not invalidate the
+HAPC framework but impose conditions on its appropriate use, reducing
+the risk of confounding.</p>
+<p>As a robustness strategy, we supplement the HAPC with the
+age-period-cohort-interaction (APC-I) model <span class="citation"
+data-cites="idealchild_xu2022stata">(Xu and Luo 2022)</span>, which
+decomposes temporal variation without relying on random-effects
+assumptions. The APC-I model identifies age and period main effects
+through sum-to-zero constraints, estimates cohort average deviations
+from the age-by-period surface, and recovers cohort-specific life-course
+slopes. Convergence between HAPC and APC-I estimates provides stronger
+evidence that the temporal decomposition is not an artifact of either
+model’s identifying assumptions. The broader literature on mixed models
+for APC analysis <span class="citation"
+data-cites="idealchild_obrien2017mixed">(O’Brien 2017)</span> provides
+additional guidance on when random-effects specifications are
+appropriate for temporal decomposition. Recent applications of HAPC
+models to Chinese social attitudes—including gender attitudes <span
+class="citation" data-cites="idealchild_su2023stalled">(Su and Ottervik
+2023)</span> and social values <span class="citation"
+data-cites="idealchild_gao2024chinese">(Gao et al. 2024)</span>—have
+demonstrated the framework’s utility for studying generational change in
+the Chinese context, and APC methods have been applied to other outcomes
+in China such as cognitive aging <span class="citation"
+data-cites="idealchild_yang2024study">(Yang and Yu 2024)</span>, though
+no prior study has applied this framework to fertility ideals.</p>
+<h2 id="research-gap-and-hypotheses">Research Gap and Hypotheses</h2>
+<p>No study has used hierarchical APC methods to decompose age, period,
+and cohort effects on fertility ideals in China. Existing research
+documents the persistence of a two-child norm and the limited impact of
+policy liberalization, but treats these as period-level phenomena rather
+than testing whether the primary source of variation is generational. By
+applying both HAPC and APC-I models to eight waves of nationally
+representative survey data, we can adjudicate between two competing
+accounts: a period-driven narrative in which pronatalist policy shapes
+contemporaneous fertility ideals, and a cohort-driven narrative in which
+generational socialization under the one-child regime produces durable
+preference change that policy reversal cannot undo.</p>
+<p>We test four hypotheses, each mapped to a specific model
+parameter:</p>
+<dl>
+<dt>H1:</dt>
+<dd>
+<p>Cohort effects on ideal fertility are larger than period effects. If
+the one-child policy created lasting generational norms, the cohort
+variance component (<span
+class="math inline">\sigma^2_{\text{cohort}}</span>) should
+substantially exceed the period variance component (<span
+class="math inline">\sigma^2_{\text{period}}</span>).</p>
+</dd>
+<dt>H2:</dt>
+<dd>
+<p>Cohorts socialized under the one-child policy exhibit lower fertility
+ideals. Cohort random effects for the 1980–1999 birth cohorts should be
+negative relative to the grand mean, reflecting the normative imprint of
+growing up in single-child families.</p>
+</dd>
+<dt>H3:</dt>
+<dd>
+<p>The urban–rural gap in fertility ideals reflects differential cohort
+socialization. Because urban enforcement of the one-child policy was
+stricter than rural enforcement, the cohort gradient in fertility ideals
+should be steeper for urban residents, manifesting as a significant
+random slope of hukou status across cohorts.</p>
+</dd>
+<dt>H4:</dt>
+<dd>
+<p>Women drive cohort-level fertility norm change. Given the compounding
+opportunity costs of childbearing for urban women and their concentrated
+exposure to single-child socialization, the cohort variance among women
+(<span class="math inline">\sigma^2_{\text{cohort, women}}</span>)
+should exceed that among men (<span
+class="math inline">\sigma^2_{\text{cohort, men}}</span>).</p>
+</dd>
+</dl>
+<h1 id="data-and-methods">Data and Methods</h1>
+<h2 id="data">Data</h2>
+<p>We use data from the Chinese General Social Survey (CGSS), China’s
+longest-running nationally representative repeated cross-sectional
+household survey, conducted annually or biennially since 2003 by the
+National Survey Research Center at Renmin University of China. The CGSS
+has been widely used to study social attitudes and wellbeing in China
+<span class="citation" data-cites="idealchild_xu2023social">(Xu et al.
+2023)</span>. The CGSS employs a multi-stage stratified probability
+sampling design covering all provinces, autonomous regions, and
+municipalities in mainland China, with respondents drawn from both urban
+and rural households. We pool eight waves containing our dependent
+variable: 2010, 2012, 2013, 2015, 2017, 2018, 2021, and 2023. The 2023
+wave adopted a mixed-mode design incorporating telephone interviews
+alongside traditional face-to-face administration. We restrict the
+analytic sample to respondents aged 18–70, exclude cases with missing
+data on the dependent variable, and arrive at a final pooled sample of
+<span class="math inline">N = 79{,}991</span> individual-level
+observations.</p>
+<h2 id="dependent-variable">Dependent Variable</h2>
+<p>The dependent variable is the ideal number of children, measured by
+the item: “If there were no policy restrictions, how many children would
+you want?” This question appears in all eight waves, though the variable
+name differs across years (a371, a37a, A37_1). We recode special
+response codes (<span class="math inline">-3</span>, <span
+class="math inline">-2</span>, <span class="math inline">-1</span>, 96,
+97, 98, 99, and 100) as missing, and treat values exceeding 10 as
+probable entry errors, also coded as missing. The resulting variable is
+treated as continuous in all models. In the pooled sample, the mean
+ideal number of children is 1.94 (<span class="math inline">SD =
+0.88</span>), with the distribution concentrated at 2, reflecting a
+persistent two-child norm. Values of 0 and 1 together account for
+roughly one-fifth of responses, while values of 3 or higher account for
+approximately 15%.</p>
+<h2 id="independent-variables">Independent Variables</h2>
+<h4 id="age-period-cohort-variables.">Age-period-cohort variables.</h4>
+<p>We construct a standard APC framework. Age enters the model as a set
+of fixed effects for eleven 5-year age groups (18–22 through 68–72),
+with 18–22 as the reference category, allowing the model to capture
+non-linear age patterns without imposing a functional form. Period is
+defined by the eight survey years (2010, 2012, 2013, 2015, 2017, 2018,
+2021, 2023). Birth cohort is constructed as five-year groups derived
+from each respondent’s year of birth (survey year minus age), yielding
+18 cohort categories spanning pre-1945 to post-2000.</p>
+<h4 id="individual-level-controls.">Individual-level controls.</h4>
+<p>We include sex (female = 1), education in four categories (junior
+high school or below [reference], senior high school or vocational,
+associate degree, bachelor’s degree or above), rural hukou status (1 =
+agricultural household registration), marital status in three categories
+(never married [reference], currently married, formerly married
+including divorced and widowed), logged personal annual income,
+religious affiliation (1 = any religious identification), ethnic
+minority status (1 = non-Han ethnicity), and actual number of children
+(continuous, computed as total sons plus total daughters). Variable
+names and coding differ across CGSS waves; we harmonize all variables to
+a common coding scheme (details in the online appendix).</p>
+<h2 id="missing-data">Missing Data</h2>
+<p>We handle item-level missingness using the <code>missRanger</code>
+algorithm, a random-forest-based chained imputation method with
+predictive mean matching (<span class="math inline">k = 5</span>) to
+preserve distributional properties. Pre-imputation missing rates are as
+follows: actual number of children is highest at 24.7%, driven primarily
+by questionnaire skip logic in the 2023 wave; personal income is missing
+at 8.4%; ideal number of children at 2.5%; and all remaining variables
+fall below 3%. We generate a single imputed dataset and conduct all
+analyses on the completed data, treating the dependent variable’s
+missing cases as listwise deletions prior to imputation.</p>
+<h2 id="analytical-strategy">Analytical Strategy</h2>
+<h4 id="hierarchical-age-period-cohort-models.">Hierarchical
+age-period-cohort models.</h4>
+<p>Our primary analytical framework is the hierarchical
+age-period-cohort cross-classified random effects model (HAPC-CCREM),
+which treats period and cohort as crossed random grouping factors at
+level 2, with individuals nested non-hierarchically within both <span
+class="citation"
+data-cites="idealchild_yang2006mixed idealchild_yang2008period idealchild_yang2013period">(Yang
+and Land 2006, 2008, 2013)</span>. At level 1, individual <span
+class="math inline">i</span> observed in period <span
+class="math inline">j</span> and cohort <span
+class="math inline">k</span> has ideal number of children modeled as:
+<span class="math display">\begin{equation}
+Y_{ijk} = \beta_0 + \sum_{g=2}^{11} \beta_g \text{AgeGroup}_{g,ijk} +
+\boldsymbol{\gamma} \mathbf{X}_{ijk} + u_{0j} + v_{0k} + e_{ijk}
+\end{equation}</span> where <span
+class="math inline">\text{AgeGroup}_{g}</span> are dummy indicators for
+the eleven 5-year age groups (reference: 18–22), <span
+class="math inline">u_{0j} \sim N(0, \sigma^2_u)</span> is the period
+random intercept, <span class="math inline">v_{0k} \sim N(0,
+\sigma^2_v)</span> is the cohort random intercept, and <span
+class="math inline">e_{ijk} \sim N(0, \sigma^2_e)</span> is the
+individual residual. All models are estimated via restricted maximum
+likelihood (REML) using the <code>lme4</code> package in R. We estimate
+three nested models: Model 1 includes only the APC structure (age group
+fixed effects, period and cohort random intercepts); Model 2 adds the
+full set of individual-level controls; Model 3 extends Model 2 by
+allowing a random slope on rural hukou across cohorts, testing whether
+the urban–rural gap in fertility ideals varies by birth cohort.</p>
+<h4 id="heterogeneity-analyses.">Heterogeneity analyses.</h4>
+<p>To examine how APC patterns differ across social groups, we
+re-estimate the Model 2 specification on six subsamples: urban hukou
+holders, rural hukou holders, men, women, respondents with at least one
+child, and childless respondents.</p>
+<h4 id="robustness-check-apc-i-model.">Robustness check: APC-I
+model.</h4>
+<p>As a robustness check, we implement the age-period-cohort-interaction
+(APC-I) model proposed by <span class="citation"
+data-cites="idealchild_xu2022stata">Xu and Luo (2022)</span>, which
+decomposes temporal variation into age and period main effects
+(identified via sum-to-zero constraints), cohort average deviations from
+the age-by-period surface, and cohort-specific life-course slopes. The
+APC-I model does not require the random-effects assumptions of the HAPC
+framework and thus provides a model-free benchmark for our estimates. We
+implement this model using the <code>APCI</code> R package.</p>
+<h4 id="addressing-identification-concerns.">Addressing identification
+concerns.</h4>
+<p>The APC identification problem — the exact linear dependency among
+age, period, and cohort — has generated extensive debate <span
+class="citation"
+data-cites="idealchild_bell2014another idealchild_bell2015should idealchild_fosse2019analyzing">(Bell
+and Jones 2014; Bell and Jones 2015; Fosse and Winship 2019)</span>, and
+recent work on causal inference in observational designs underscores the
+importance of transparent identifying assumptions when decomposing
+temporal effects <span class="citation"
+data-cites="idealchild_rohrer2025thinking">(Rohrer 2025)</span>. <span
+class="citation" data-cites="idealchild_bell2017hierarchical">Bell and
+Jones (2017)</span> caution that HAPC models may conflate linear trends
+when period and cohort effects are both substantial. In our application,
+the near-zero period variance (<span class="math inline">\sigma^2_u &lt;
+0.001</span> across all specifications) alleviates this concern: because
+there is essentially no period-level variation to misattribute, the risk
+of confounding between period and cohort trends is minimal. We report
+both HAPC and APC-I results to demonstrate that the dominance of cohort
+over period effects is robust to alternative decomposition
+strategies.</p>
+<h1 id="results">Results</h1>
+<h2 id="descriptive-patterns">Descriptive Patterns</h2>
+<p>Table <a href="#tab:descriptives" data-reference-type="ref"
+data-reference="tab:descriptives">[tab:descriptives]</a> presents sample
+characteristics across all eight survey waves. The mean ideal number of
+children is remarkably stable at approximately 1.95 from 2010 through
+2021, before declining to 1.87 in 2023 — the lowest value in the series.
+The standard deviation increases in 2023 (1.05 vs. 0.82–0.90 in earlier
+waves), indicating growing heterogeneity in fertility preferences. The
+two-child ideal remains dominant but shows signs of erosion.</p>
+<p>The sample reflects ongoing structural transformations in Chinese
+society. The proportion holding rural hukou ranges from 50.6% to 68.9%
+across waves, averaging 56.4%. Women constitute 51.2% of the pooled
+sample. Educational expansion is striking: the share holding a
+bachelor’s degree or above rose from 7.9% in 2010 to 29.6% in 2023. The
+proportion never married increased from 10.5% to 22.0% over the same
+period, consistent with delayed marriage trends. The mean actual number
+of children declined from 1.59 in 2010 to 1.24 in 2023.</p>
+<h2 id="hapc-main-results">HAPC Main Results</h2>
+<p>Table <a href="#tab:hapc_main" data-reference-type="ref"
+data-reference="tab:hapc_main">[tab:hapc_main]</a> reports estimates
+from three nested HAPC models. In Model 1 (baseline), age effects on
+ideal fertility follow a U-shaped pattern (Figure <a
+href="#fig:apc_effects" data-reference-type="ref"
+data-reference="fig:apc_effects">2</a>, Panel A). Relative to the
+youngest respondents (aged 18–22), middle-aged groups report lower
+fertility ideals in the unadjusted model, while older age groups report
+substantially higher ideals, with the 68–72 group at <span
+class="math inline">\hat{\beta} = 0.524</span> (<span
+class="math inline">p &lt; 0.001</span>). The key finding at this stage
+is the relative magnitude of the random effects: cohort variance is
+<span class="math inline">\sigma^2_v = 0.030</span>, while period
+variance is <span class="math inline">\sigma^2_u = 0.0002</span> — a
+ratio exceeding 100:1. Birth cohort accounts for the vast majority of
+contextual variation in ideal fertility.</p>
+<p>Model 2 introduces the full set of individual-level controls. With
+covariates included, the U-shaped age pattern sharpens: relative to the
+18–22 reference group, the nadir falls at ages 33–37 (<span
+class="math inline">\hat{\beta} = -0.251</span>, <span
+class="math inline">p &lt; 0.001</span>), and fertility ideals then rise
+among older respondents, with the 68–72 group showing <span
+class="math inline">\hat{\beta} = 0.129</span> (<span
+class="math inline">p &lt; 0.01</span>) above the reference. The actual
+number of children emerges as the strongest predictor (<span
+class="math inline">\hat{\beta} = 0.319</span>, <span
+class="math inline">p &lt; 0.001</span>): each additional child is
+associated with an increase of 0.319 in the ideal number. Rural hukou
+holders express higher fertility ideals than urban residents (<span
+class="math inline">\hat{\beta} = 0.105</span>, <span
+class="math inline">p &lt; 0.001</span>). Women report lower ideals than
+men (<span class="math inline">\hat{\beta} = -0.085</span>, <span
+class="math inline">p &lt; 0.001</span>). Religious respondents (<span
+class="math inline">\hat{\beta} = 0.142</span>, <span
+class="math inline">p &lt; 0.001</span>) and ethnic minorities (<span
+class="math inline">\hat{\beta} = 0.101</span>, <span
+class="math inline">p &lt; 0.001</span>) both report higher ideals.
+Among education categories, only the bachelor’s-or-above group differs
+significantly from the reference (<span class="math inline">\hat{\beta}
+= 0.061</span>, <span class="math inline">p &lt; 0.001</span>),
+indicating that the most educated respondents express higher fertility
+ideals after controlling for actual fertility and other characteristics.
+Currently married respondents report lower ideals than the never-married
+(<span class="math inline">\hat{\beta} = -0.086</span>, <span
+class="math inline">p &lt; 0.001</span>), and formerly married
+respondents show an even larger negative coefficient (<span
+class="math inline">\hat{\beta} = -0.112</span>, <span
+class="math inline">p &lt; 0.001</span>). Log income is not
+significantly associated with ideal fertility (<span
+class="math inline">\hat{\beta} = -0.001</span>, <span
+class="math inline">p &gt; 0.05</span>).</p>
+<p>The random-effects structure in Model 2 reveals a pattern of central
+importance: after adjusting for individual characteristics, cohort
+variance is <span class="math inline">\sigma^2_v = 0.0194</span>, while
+period variance is <span class="math inline">\sigma^2_u = 0.0001</span>.
+The cohort-to-period variance ratio exceeds 190:1. This result indicates
+that the individual-level controls absorb period-related variation
+(compositional shifts across survey years) but leave cohort-level
+variation intact — consistent with genuine generational differences in
+fertility ideals that cannot be reduced to observed characteristics.</p>
+<p>Model 3 allows rural hukou to have a random slope across cohorts.
+This specification improves model fit (AIC = 190,775 vs. 190,885 in
+Model 2), and cohort variance increases further to <span
+class="math inline">\sigma^2_v = 0.027</span>. The urban–rural gap in
+fertility ideals is not constant across generations; it varies
+systematically by birth cohort.</p>
+<h2 id="heterogeneity-analyses">Heterogeneity Analyses</h2>
+<p>Table <a href="#tab:heterogeneity" data-reference-type="ref"
+data-reference="tab:heterogeneity">[tab:heterogeneity]</a> presents the
+Model 2 specification estimated on six subsamples, revealing three
+notable patterns.</p>
+<h4 id="urbanrural-divergence.">Urban–rural divergence.</h4>
+<p>The intercept gap between urban (1.292) and rural (1.554) subsamples
+is 0.26 children — the baseline urban–rural difference in fertility
+ideals after controlling for all covariates. The gender gap is twice as
+large in urban areas (<span
+class="math inline">\hat{\beta}_{\text{female}} = -0.108</span>) as in
+rural areas (<span class="math inline">\hat{\beta}_{\text{female}} =
+-0.060</span>). Urban cohort variance (<span
+class="math inline">\sigma^2_v = 0.030</span>) exceeds rural cohort
+variance (<span class="math inline">\sigma^2_v = 0.013</span>) by a
+factor of 2.3, suggesting that generational differentiation in fertility
+ideals is more pronounced in urban settings where modernization
+pressures are strongest.</p>
+<h4 id="gendered-cohort-dynamics.">Gendered cohort dynamics.</h4>
+<p>The most striking finding across all subgroup models is the gender
+difference in cohort variance: women’s cohort variance (<span
+class="math inline">\sigma^2_v = 0.041</span>) is nearly three times
+men’s (<span class="math inline">\sigma^2_v = 0.014</span>).
+Generational shifts in fertility ideals are driven disproportionately by
+women. The income coefficient diverges by sex: positive for men (<span
+class="math inline">\hat{\beta} = 0.004</span>, <span
+class="math inline">p &lt; 0.01</span>) and negative for women (<span
+class="math inline">\hat{\beta} = -0.004</span>, <span
+class="math inline">p &lt; 0.001</span>), suggesting that higher
+personal income is associated with slightly higher fertility ideals
+among men but lower ideals among women — a pattern consistent with
+gendered opportunity costs of childbearing.</p>
+<h4 id="parenthood-status.">Parenthood status.</h4>
+<p>Among respondents with children, cohort variance is small (<span
+class="math inline">\sigma^2_v = 0.002</span>), and period variance is
+near zero (<span class="math inline">\sigma^2_u = 0.001</span>). Among
+childless respondents, both cohort variance (<span
+class="math inline">\sigma^2_v = 0.021</span>) and period variance
+(<span class="math inline">\sigma^2_u = 0.011</span>) are substantially
+larger, indicating that the childless are more responsive to both
+generational and contemporaneous influences on fertility ideals. The
+gender gap among childless respondents (<span
+class="math inline">\hat{\beta}_{\text{female}} = -0.182</span>) is
+triple that among parents (<span
+class="math inline">\hat{\beta}_{\text{female}} = -0.061</span>). The
+positive education effect (bachelor’s or above) is significant only
+among parents (<span class="math inline">\hat{\beta} = 0.075</span>,
+<span class="math inline">p &lt; 0.001</span>) and vanishes among the
+childless (<span class="math inline">\hat{\beta} = -0.002</span>, <span
+class="math inline">n.s.</span>), suggesting that the positive
+association between higher education and fertility ideals reflects a
+selection process: highly educated individuals who have already become
+parents may be those who actively desired children.</p>
+<h2 id="apc-i-robustness-check">APC-I Robustness Check</h2>
+<p>Figure <a href="#fig:apci_combined" data-reference-type="ref"
+data-reference="fig:apci_combined">4</a> presents results from the APC-I
+model, which decomposes temporal variation without relying on the
+random-effects assumptions of the HAPC framework. Panel A displays the
+age main effects: deviations follow a U-shaped pattern consistent with
+the HAPC age group fixed effects, with middle-aged groups (33–47) below
+the grand mean and both younger (18–22) and older (58–72) groups above
+it. The largest age effect is for the 68–72 group (<span
+class="math inline">\hat{\delta} = 0.141</span>), and the most negative
+is for the 33–37 group (<span class="math inline">\hat{\delta} =
+-0.080</span>).</p>
+<p>Panel B displays period deviations, which are uniformly small: the
+largest positive deviation is 2015 (<span
+class="math inline">\hat{\delta} = 0.046</span>), and the largest
+negative is 2023 (<span class="math inline">\hat{\delta} =
+-0.030</span>). No period deviation exceeds 0.05 in absolute value,
+confirming the HAPC finding that survey-year variation is minimal. Panel
+C shows cohort average deviations, which reveal meaningful generational
+variation. Cohorts born 1975–1999 show positive deviations, with the
+1990–94 cohort at the peak. The 2000+ cohort shows a sharply negative
+deviation, consistent with the HAPC finding that younger generations
+have internalized lower fertility ideals.</p>
+<p>Panel D presents the signature output of the APC-I framework:
+cohort-specific life-course slopes. These slopes capture how each birth
+cohort’s fertility ideals change across survey periods, net of age and
+period main effects. Cohorts born 1965–1989 display significantly
+positive slopes, meaning their ideals have risen over the observation
+window; the 1965–69 cohort shows the steepest positive trajectory. In
+contrast, the 2000+ cohort shows a significantly negative slope,
+indicating that its fertility ideals are declining as members enter
+adulthood. This divergence in life-course trajectories between older and
+younger cohorts provides direct evidence of generational imprinting that
+cannot be captured by the HAPC’s constant cohort intercepts alone.</p>
+<p>The APC-I results corroborate the HAPC estimates in three respects:
+(1) age effects on ideal fertility exhibit a U-shaped pattern, with the
+youngest and oldest groups above the middle-aged; (2) period effects are
+small and substantively negligible; (3) cohort effects exhibit
+meaningful variation that dominates the temporal structure of the data.
+The consistency of these findings across two models with different
+identifying assumptions strengthens confidence that the dominance of
+cohort over period effects is not an artifact of the HAPC specification
+<span class="citation"
+data-cites="idealchild_bell2014another idealchild_fosse2019analyzing">(Bell
+and Jones 2014; Fosse and Winship 2019)</span>.</p>
+<h1 id="discussion">Discussion</h1>
+<p>This study set out to decompose age, period, and cohort effects on
+fertility ideals in China using eight waves of CGSS data spanning 2010
+to 2023. The results point to a clear conclusion: cohort socialization,
+not period-specific policy change, is the dominant force shaping how
+many children Chinese adults say they want. We organize the discussion
+around three sets of findings that carry distinct implications for
+demographic theory and population policy.</p>
+<h2 id="the-persistence-of-one-child-norms">The Persistence of One-Child
+Norms</h2>
+<p>The most striking result is the near-complete absence of period
+effects on fertility ideals. In the full-controls model (Model 2), the
+period variance component is <span class="math inline">\sigma^2 =
+0.0001</span>, roughly 190 times smaller than the cohort variance (<span
+class="math inline">\sigma^2 = 0.019</span>). This disparity persists
+across all model specifications and subgroup analyses. Three major
+pronatalist policy shifts occurred during the observation window—the
+selective two-child policy in 2013, universal two-child in 2016, and
+three-child in 2021—yet none produced detectable variation in stated
+fertility ideals at the period level. The mean ideal number of children
+held steady near 1.95 from 2010 to 2021 and dropped to 1.87 in 2023.</p>
+<p>What drives the cohort pattern? We propose a generational
+socialization mechanism rooted in Mannheim’s theory of generational
+imprinting. Individuals born between 1980 and 1999 grew up in families
+shaped—and in urban areas, strictly constrained—by the one-child policy.
+Many were themselves only children who had no siblings, no cousins of
+similar age, and limited exposure to multi-child family life. <span
+class="citation" data-cites="idealchild_chen2025children">Chen and
+Gietel‐Basten (2025)</span> provided causal evidence for this channel:
+using a regression discontinuity design around the 1980 policy
+introduction, they showed that being an only child significantly reduces
+ideal family size among urban Chinese, a mechanism they link to the
+“low-fertility trap” hypothesis. Our HAPC estimates are consistent with
+their finding. After controlling for individual-level characteristics in
+Model 2, the cohort variance shifts from 0.030 to 0.019, indicating that
+observed characteristics account for some cohort-level variation, yet a
+substantial generational component persists that cannot be reduced to
+compositional shifts in education, income, or urbanization.</p>
+<p>The social consequences of this generational shift extend beyond
+individual preferences. <span class="citation"
+data-cites="idealchild_cai2021social">Cai and Wang (2021)</span>
+documented how the one-child policy altered China’s demographic and
+social fabric in fundamental ways, reshaping gender relations, family
+structures, and intergenerational expectations across nearly four
+decades of enforcement. Our results suggest that these transformations
+left a durable imprint on reproductive preferences: the cohorts
+socialized under the policy carry its normative legacy even after the
+policy itself has been dismantled. <span class="citation"
+data-cites="idealchild_chen2023genuine">Chen and Gietel‐Basten
+(2023)</span> reached a related conclusion through a different design.
+Using difference-in-differences around the 2015 policy relaxation, they
+found that removing the one-child restriction increased ideal family
+size by about 0.2 children among married individuals aged 20–39—but
+sub-replacement ideals in urban China remained genuine even after the
+policy change. Their estimate of the policy constraint effect (0.2
+children) is modest relative to the generational gap we observe across
+cohorts, which reinforces the interpretation that norm internalization,
+not policy restriction alone, sustains low fertility ideals.</p>
+<p>The implication for population policy is sobering. Pronatalist
+measures that focus on lifting birth restrictions address only the
+constraint component of low fertility. If fertility ideals themselves
+have declined through generational socialization—as the dominance of
+cohort over period effects suggests—then the policy challenge is not
+removing barriers to childbearing but reversing preferences that were
+formed during adolescence and early adulthood. Economic factors compound
+this generational norm shift. <span class="citation"
+data-cites="idealchild_yang2020upward">Yang et al. (2020)</span> showed
+that perceived upward social mobility is associated with lower demand
+for children in China, as parents substitute child quantity for quality
+in pursuit of status. <span class="citation"
+data-cites="idealchild_cai2025raising">Cai and Xie (2025)</span> found
+that intergenerational mobility expectations shape fertility desires,
+with parents who aspire to upward mobility for their children preferring
+smaller families to concentrate resources. <span class="citation"
+data-cites="idealchild_xu2025income">Xu and Wu (2025)</span> documented
+that rising income inequality widens the gap between desired and
+realized fertility, as households in the lower tail of the income
+distribution face binding constraints on achieving their stated ideals.
+The experience of other East Asian societies facing ultra-low fertility
+indicates that the reversal of generational norm change has not been
+achieved even with substantial financial incentives <span
+class="citation" data-cites="idealchild_cheng2020ultra">(Cheng
+2020)</span>.</p>
+<h2 id="gender-urbanization-and-the-agents-of-change">Gender,
+Urbanization, and the Agents of Change</h2>
+<p>The heterogeneity analyses reveal that the cohort-driven decline in
+fertility ideals is not uniform across the population. Two dimensions of
+stratification stand out: gender and hukou status. Women exhibit a
+cohort variance (<span class="math inline">\sigma^2 = 0.041</span>)
+roughly three times that of men (<span class="math inline">\sigma^2 =
+0.014</span>), and the gender gap in fertility ideals is twice as large
+in urban areas (<span class="math inline">-0.108</span>, <span
+class="math inline">p &lt; 0.001</span>) as in rural areas (<span
+class="math inline">-0.060</span>, <span class="math inline">p &lt;
+0.001</span>). Urban cohort effects (<span class="math inline">\sigma^2
+= 0.030</span>) also exceed rural ones (<span
+class="math inline">\sigma^2 = 0.013</span>) by a factor of more than
+two.</p>
+<p>These patterns suggest that urban women are the primary demographic
+agents of declining fertility ideals in China. Several reinforcing
+mechanisms are at work. First, one-child policy enforcement was
+considerably stricter in cities than in rural areas, where exceptions
+for agricultural households and ethnic minorities were common <span
+class="citation" data-cites="idealchild_zhang2017evolution">(Zhang
+2017)</span>. Urban cohorts therefore experienced more uniform exposure
+to the single-child family norm during their formative years. Second,
+urban women face compounding opportunity costs of childbearing that
+rural women experience less acutely: longer educational trajectories,
+greater labor-market attachment, higher housing costs, and stronger
+normative expectations of career continuity. <span class="citation"
+data-cites="idealchild_zhang2025fertility"><span class="nocase">Zhang et
+al.</span> (2025)</span> reported that higher educational attainment and
+urbanization are associated with lower fertility intention among married
+adults under the three-child policy, with the desire for three or more
+children lowest in eastern (most urbanized) regions at 8.2%. Third,
+patriarchal norms that historically sustained high fertility preferences
+have weakened more rapidly in urban settings. <span class="citation"
+data-cites="idealchild_ni2023daughters">Ni (2023)</span> found that
+among one-child generation cohorts in urban Jiangsu, son preference has
+given way to a more balanced—though not reversed—preference composition,
+with two-daughter families gaining greater acceptance. This erosion of
+son preference removes one traditional motivation for wanting larger
+families.</p>
+<p>The gender gap in cohort variance (<span
+class="math inline">0.041</span> vs. <span
+class="math inline">0.014</span>) deserves theoretical attention. It
+implies that the generational transformation of fertility norms has
+proceeded at a faster pace among women than among men. One
+interpretation is that women bear a disproportionate share of the costs
+associated with childbearing and childrearing—a pattern well documented
+in the literature on the “second shift” in domestic labor—and are
+therefore more responsive to structural changes that raise those costs.
+<span class="citation" data-cites="idealchild_yang2023examining">X. Yang
+et al. (2023)</span> found that fertility policy liberalization has not
+been accompanied by commensurate advances in gender equality, leaving
+women to absorb the costs of additional children without institutional
+support. Among urban women specifically, <span class="citation"
+data-cites="idealchild_yu2023second">Yu et al. (2023)</span> reported
+that second-child intentions remain low, constrained by career concerns
+and the unequal distribution of domestic labor. The Model 3 random slope
+specification, which allows cohort effects to vary by hukou status,
+improves model fit (AIC = 190,775 vs. 190,885 in Model 2), confirming
+that the rural-urban divide in fertility ideals is not merely a level
+difference but a difference in the pace of generational change.</p>
+<p>For policy, these findings indicate that universal birth-permit
+relaxation—the approach China has pursued since 2013—treats the symptom
+rather than the cause. Gender-specific interventions that reduce the
+opportunity costs of childbearing for women, such as subsidized
+childcare, flexible and non-penalizing parental leave, and workplace
+protections against maternal discrimination, may hold greater promise.
+<span class="citation" data-cites="idealchild_yang2025elderly">Yang
+(2025)</span> noted that expectations of old-age support from children
+continue to influence fertility desires among some subgroups, but this
+traditional motivation is weakening as pension coverage expands, further
+eroding the instrumental rationale for larger families. The fact that
+the steepest cohort declines concentrate among urban women points to a
+target population where such policies could have the largest marginal
+effect.</p>
+<h2 id="experience-constraints-and-the-education-paradox">Experience,
+Constraints, and the Education Paradox</h2>
+<p>The individual-level predictors in Model 2 reveal a pattern in which
+lived experience—rather than abstract attitudes—anchors fertility
+ideals. Actual number of children is the strongest predictor in the
+model (<span class="math inline">\beta = 0.319</span>, <span
+class="math inline">p &lt; 0.001</span>): each additional child a
+respondent already has is associated with an increase of 0.319 in their
+stated ideal. Married individuals report lower ideals than the
+never-married (<span class="math inline">\beta = -0.086</span>, <span
+class="math inline">p &lt; 0.001</span>), and formerly married
+respondents show an even larger negative association (<span
+class="math inline">\beta = -0.112</span>, <span class="math inline">p
+&lt; 0.001</span>).</p>
+<p>The positive parity effect reflects two processes that cannot be
+fully separated in cross-sectional data. The first is rationalization:
+parents adjust their stated ideals upward to match their lived reality,
+reducing cognitive dissonance between preference and behavior. The
+second is selection: individuals who have children are
+disproportionately those who wanted them in the first place. Both
+processes produce the same empirical signature, and disentangling them
+requires panel data that track ideals before and after births. What the
+cross-sectional association does establish is that parenthood experience
+is far more strongly associated with fertility ideals than any
+policy-period effect—a result that aligns with <span class="citation"
+data-cites="idealchild_chen2023fertility">Chen et al. (2023)</span>, who
+found that among families under the three-child policy, the ideal number
+of children averaged 1.85, with fertility intentions strongly
+conditioned by gender, age, residence, and existing parity. <span
+class="citation" data-cites="idealchild_zhang2021intention">Zhang et al.
+(2021)</span> reached a complementary conclusion: intentions to have a
+second or third child depend heavily on family support availability, and
+the gap between intended and actual fertility widens when institutional
+childcare is absent. <span class="citation"
+data-cites="idealchild_zhu2022fertility">Zhu et al. (2022)</span>
+similarly found that willingness to have a second or third child varies
+sharply by parity, income, and housing conditions, underscoring that
+structural constraints mediate the translation of ideals into
+behavior.</p>
+<p>The negative marriage coefficient is consistent with a “reality
+check” mechanism. The experience of marriage—and its associated
+financial pressures, domestic labor negotiations, and childcare
+demands—may constrain the upward revision of fertility ideals that
+characterizes the unmarried population. The heterogeneity analysis
+sharpens this interpretation: among childless respondents, being married
+is associated with <em>higher</em> ideals (<span
+class="math inline">\beta = 0.099</span>, <span class="math inline">p
+&lt; 0.001</span>), while among those with children, the marriage
+coefficient is negative and non-significant (<span
+class="math inline">\beta = -0.034</span>). This suggests that marriage
+itself does not depress fertility ideals; rather, the combination of
+marriage and parenthood triggers the constraining effect.</p>
+<p>The education results present what we call an “education paradox.”
+After controlling for actual children and other covariates, holding a
+bachelor’s degree or above is associated with higher fertility ideals
+than junior high education or below (<span class="math inline">\beta =
+0.061</span>, <span class="math inline">p &lt; 0.001</span>). This
+positive coefficient contradicts the well-established negative
+education-fertility gradient observed in behavioral data. The
+heterogeneity analysis resolves this apparent contradiction: the
+positive education effect appears only among respondents who already
+have children (<span class="math inline">\beta = 0.075</span>, <span
+class="math inline">p &lt; 0.001</span>) and vanishes among the
+childless (<span class="math inline">\beta = -0.002</span>, n.s.). The
+pattern is consistent with positive selection into parenthood among the
+highly educated: in a context where educated urban women face the
+highest opportunity costs, those who do become parents are likely those
+with the strongest pronatalist preferences. The positive coefficient
+thus reflects a compositional artifact of selection, not a causal effect
+of education on fertility ideals.</p>
+<p>The practical implication is that the gap between ideal and actual
+fertility—not the level of ideals themselves—may be the domain where
+policy can intervene most effectively. <span class="citation"
+data-cites="idealchild_wang2025fertility">Wang et al. (2025)</span>
+found that among college students in Guangzhou, only 43.9% planned to
+have children, while 26.3% had no intention of doing so. If a
+substantial share of the population already holds fertility ideals at or
+below replacement, the most productive policy approach may be to help
+those who <em>do</em> want children achieve their stated ideals, by
+reducing the structural barriers—cost, time, institutional support—that
+prevent desired births from being realized.</p>
+<h2 id="limitations">Limitations</h2>
+<p>Several limitations warrant acknowledgment. First, the CGSS is a
+repeated cross-sectional survey, not a panel. We cannot observe
+within-person change in fertility ideals over time, which limits our
+ability to distinguish rationalization from selection in the
+parity-ideal association. Second, stated ideals are not the same as
+fertility intentions, and intentions do not perfectly predict behavior;
+the distance from ideal to actual childbearing involves intervening
+decisions, constraints, and contingencies that our models do not
+capture. Third, while the HAPC framework provides a principled
+decomposition of age, period, and cohort effects, the fundamental linear
+dependency among these three temporal dimensions cannot be fully
+resolved by any statistical method. Our APCI robustness check yields a
+U-shaped age profile consistent with the HAPC age group estimates, which
+is reassuring but not definitive. Fourth, the 2023 wave of CGSS included
+a phone survey component that may affect sample composition relative to
+earlier face-to-face waves. Fifth, the 41.2% missing rate on actual
+number of children in the 2023 wave—imputed via the missRanger
+algorithm—introduces additional uncertainty, though sensitivity analyses
+excluding 2023 produce substantively identical cohort and period
+variance estimates.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Using hierarchical age-period-cohort models applied to eight waves of
+the Chinese General Social Survey (2010–2023, <span
+class="math inline">N = 79{,}991</span>), this study demonstrates that
+fertility ideals in China are shaped primarily by cohort socialization
+rather than period-specific policy changes. The one-child policy
+generation—cohorts born between 1980 and 1999 who grew up in
+single-child families—has internalized small-family norms that persist
+well after the policy’s dismantling. Period effects on ideal number of
+children are negligible (<span class="math inline">\sigma^2 =
+0.0001</span>) relative to cohort effects (<span
+class="math inline">\sigma^2 = 0.019</span>), despite three successive
+pronatalist policy liberalizations during the observation window.</p>
+<p>These findings carry three implications. For demographic theory, they
+demonstrate that generational norm formation under coercive fertility
+policy exhibits path dependence: preferences shaped during formative
+years do not simply revert when the policy environment changes. The
+“stickiness” of cohort-level fertility ideals challenges models that
+treat fertility preferences as responsive to contemporaneous incentives,
+and supports instead a socialization framework in which reproductive
+norms are transmitted and solidified within generational cohorts.</p>
+<p>For population policy, our results suggest that pronatalist
+incentives face a ceiling imposed by generational norm change. Removing
+birth restrictions—the primary strategy China has pursued—addresses a
+constraint that is less binding than the underlying shift in
+preferences. The concentration of declining fertility ideals among urban
+women points toward gender-targeted policies—subsidized childcare,
+flexible parental leave, workplace protections—as potentially more
+effective than universal permit relaxation. The gap between ideal and
+actual fertility offers a second, more tractable policy lever: helping
+those who want children overcome the structural barriers that prevent
+them from realizing their preferences.</p>
+<p>For methodology, the HAPC and APCI decomposition reveals dynamics in
+fertility ideals that are invisible to standard regression approaches.
+Without separating cohort from period variation, one might conclude that
+fertility ideals in China are stable—the mean has hovered near 1.95 for
+over a decade. The age-period-cohort lens shows that this aggregate
+stability masks a generational transformation: each successive cohort
+wants fewer children, offset in the aggregate by the aging of older,
+higher-ideal cohorts out of the sample.</p>
+<p>As China’s post-2000 cohorts—who grew up after the one-child policy’s
+strictest enforcement but who never experienced large-family norms
+firsthand—enter their childbearing years with the lowest recorded
+fertility ideals, the tension between population policy ambitions and
+individual reproductive preferences will only deepen.</p>
+<h1 class="unnumbered" id="tables">Tables</h1>
+<div class="tablenotes">
+<p><em>Note.</em> Data from the Chinese General Social Survey (CGSS),
+pooled 2010–2023. Standard deviations in parentheses. Percentages
+computed on non-missing values.</p>
+</div>
+<div class="tablenotes">
+<p><em>Note.</em> HAPC models estimated via REML using
+<code>lme4</code>. Period and cohort as cross-classified random effects.
+Age entered as 5-year group dummies (reference: 18–22). <span
+class="math inline">p</span>-values based on <span
+class="math inline">|t|&gt;1.96</span>. <span
+class="math inline">^{*}p&lt;0.05</span>; <span
+class="math inline">^{**}p&lt;0.01</span>; <span
+class="math inline">^{***}p&lt;0.001</span>.</p>
+</div>
+<div class="tablenotes">
+<p><em>Note.</em> HAPC Model 2 specification run on subsamples. Gender
+variable omitted in male/female subgroup models. Standard errors in
+parentheses. <span class="math inline">^{*}p&lt;0.05</span>; <span
+class="math inline">^{**}p&lt;0.01</span>; <span
+class="math inline">^{***}p&lt;0.001</span>.</p>
+</div>
+<h1 class="unnumbered" id="figures">Figures</h1>
+<figure id="fig:period_trends" data-latex-placement="H">
+<img src="figures/Figure1_period_trends.png" style="width:85.0%" />
+<figcaption><strong>Figure 1.</strong> Mean ideal number of children by
+survey year, CGSS 2010–2023. Error bars indicate 95% confidence
+intervals. Vertical dashed lines mark major policy changes: selective
+two-child (2013), universal two-child (2016), and three-child
+(2021).</figcaption>
+</figure>
+<figure id="fig:apc_effects" data-latex-placement="H">
+<img src="figures/Figure2_apc_effects.png" style="width:95.0%" />
+<figcaption><strong>Figure 2.</strong> HAPC Model 2 age, period, and
+cohort effects on ideal number of children. Panel A: fixed effects of
+5-year age groups (reference: 18–22) with 95% CIs, showing a U-shaped
+age pattern. Panel B: period random intercepts with 95% CIs. Panel C:
+cohort random intercepts with 95% CIs; shaded regions indicate
+policy-regime cohorts.</figcaption>
+</figure>
+<figure id="fig:heterogeneity" data-latex-placement="H">
+<img src="figures/Figure3_heterogeneity.png" style="width:95.0%" />
+<figcaption><strong>Figure 3.</strong> Heterogeneity in APC effects
+across subgroups. Columns: urban versus rural, male versus female, with
+versus without children. Row 1: mean ideal children by survey year. Row
+2: age group fixed effects. Row 3: period random effects. Row 4: cohort
+random effects.</figcaption>
+</figure>
+<figure id="fig:apci_combined" data-latex-placement="H">
+<img src="figures/Figure5_apci_combined.png" style="width:95.0%" />
+<figcaption><strong>Figure 4.</strong> APC-I model results. Panel A: age
+effect estimates (deviations from grand mean) with 95% CIs; the U-shaped
+pattern confirms the HAPC finding. Panel B: period deviations, uniformly
+small (<span class="math inline">|\hat{\delta}| &lt; 0.05</span>);
+vertical dashed lines mark policy changes. Panel C: cohort average
+deviations with 95% CIs; shaded regions indicate policy-regime cohorts.
+Panel D: cohort life-course slopes with 95% CIs; filled points denote
+statistically significant slopes (<span class="math inline">p &lt;
+0.05</span>). Older cohorts (born 1965–1989) show positive trajectories,
+while the 2000+ cohort shows a steep negative slope, providing direct
+evidence of generational divergence.</figcaption>
+</figure>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="list">
+<div id="ref-idealchild_bell2014another" class="csl-entry"
+role="listitem">
+Bell, Andrew, and K. Jones. 2014. <span>“<span class="nocase">Another
+’futile quest’? A simulation study of Yang and Land’s Hierarchical
+Age-Period-Cohort model</span>.”</span> <em>Demographic Research</em>
+30: 333–60. <a
+href="https://doi.org/10.4054/DEMRES.2014.30.11">https://doi.org/10.4054/DEMRES.2014.30.11</a>.
+</div>
+<div id="ref-idealchild_bell2015should" class="csl-entry"
+role="listitem">
+Bell, Andrew, and Kelvyn Jones. 2015. <span>“<span class="nocase">Should
+age-period-cohort analysts accept innovation without scrutiny? A
+response to Reither, Masters, Yang, Powers, Zheng and
+Land.</span>”</span> <em>Social Science &amp; Medicine (1982)</em> 128:
+331–33. <a
+href="https://doi.org/10.1016/j.socscimed.2015.01.040">https://doi.org/10.1016/j.socscimed.2015.01.040</a>.
+</div>
+<div id="ref-idealchild_bell2017hierarchical" class="csl-entry"
+role="listitem">
+Bell, Andrew, and Kelvyn Jones. 2017. <span>“<span class="nocase">The
+hierarchical age–period–cohort model: Why does it find the results that
+it finds?</span>”</span> <em>Quality &amp; Quantity</em> 52 (2): 783–99.
+<a
+href="https://doi.org/10.1007/s11135-017-0488-5">https://doi.org/10.1007/s11135-017-0488-5</a>.
+</div>
+<div id="ref-idealchild_bongaarts1998fertility" class="csl-entry"
+role="listitem">
+Bongaarts, John. 1998. <em><span class="nocase">Fertility and
+reproductive preferences in post-transitional societies</span></em>. <a
+href="https://doi.org/10.31899/pgy6.1015">https://doi.org/10.31899/pgy6.1015</a>.
+</div>
+<div id="ref-idealchild_bongaarts2020trends" class="csl-entry"
+role="listitem">
+Bongaarts, John. 2020. <span>“<span class="nocase">Trends in fertility
+and fertility preferences in sub-Saharan Africa: the roles of education
+and family planning programs</span>.”</span> <em>Genus</em> 76 (1). <a
+href="https://doi.org/10.1186/s41118-020-00098-z">https://doi.org/10.1186/s41118-020-00098-z</a>.
+</div>
+<div id="ref-idealchild_bongaarts1998quantum" class="csl-entry"
+role="listitem">
+Bongaarts, John, and Griffith Feeney. 1998. <em><span class="nocase">On
+the quantum and tempo of fertility</span></em>. <a
+href="https://doi.org/10.31899/pgy6.1010">https://doi.org/10.31899/pgy6.1010</a>.
+</div>
+<div id="ref-idealchild_cai2025raising" class="csl-entry"
+role="listitem">
+Cai, Weicheng, and Yu Xie. 2025. <span>“<span class="nocase">Raising
+hope: The impact of intergenerational mobility on fertility desire in
+China</span>.”</span> <em>Chinese Journal of Sociology</em> 11 (3):
+297–331. <a
+href="https://doi.org/10.1177/2057150X251347431">https://doi.org/10.1177/2057150X251347431</a>.
+</div>
+<div id="ref-idealchild_cai2021social" class="csl-entry"
+role="listitem">
+Cai, Yong, and Feng Wang. 2021. <span>“<span class="nocase">The Social
+and Sociological Consequences of China’s One-Child
+Policy</span>.”</span> <em>Annual Review of Sociology</em> 47 (1):
+587–606. <a
+href="https://doi.org/10.1146/annurev-soc-090220-032839">https://doi.org/10.1146/annurev-soc-090220-032839</a>.
+</div>
+<div id="ref-idealchild_caldwell2005intergenerational" class="csl-entry"
+role="listitem">
+Caldwell, John C. 2005. <span>“<span>On Net Intergenerational Wealth
+Flows: An Update</span>.”</span> <em>Population and Development
+Review</em> 31 (4): 721–40. <a
+href="https://doi.org/10.1111/j.1728-4457.2005.00095.x">https://doi.org/10.1111/j.1728-4457.2005.00095.x</a>.
+</div>
+<div id="ref-idealchild_chan1999hukou" class="csl-entry"
+role="listitem">
+Chan, Kam Wing, and Li Zhang. 1999. <span>“<span
+class="nocase">The&lt;i&gt;Hukou&lt;/i&gt;System and Rural-Urban
+Migration in China: Processes and Changes</span>.”</span> <em>The China
+Quarterly</em> 160 (160): 818–55. <a
+href="https://doi.org/10.1017/s0305741000001351">https://doi.org/10.1017/s0305741000001351</a>.
+</div>
+<div id="ref-idealchild_chen2023fertility" class="csl-entry"
+role="listitem">
+Chen, Qian, Aihua Wang, Xinli Song, et al. 2023. <span>“Fertility
+Intentions to Have a Second or Third Child Among the Childbearing-Age
+Population in Central China Under China’s Three-Child Policy: A
+Cross-Sectional Study.”</span> <em>Journal of Global Health</em> 13:
+04072. <a
+href="https://doi.org/10.7189/jogh.13.04072">https://doi.org/10.7189/jogh.13.04072</a>.
+</div>
+<div id="ref-idealchild_chen2025children" class="csl-entry"
+role="listitem">
+Chen, Shuang, and S. Gietel‐Basten. 2025. <span>“<span
+class="nocase">Only Children and Low Family Size Ideals: Did the
+One-Child Policy Create a <span>‘Low-Fertility Trap’</span> in
+China?</span>”</span> <em>European Journal of Population</em> 41 (1):
+32–32. <a
+href="https://doi.org/10.1007/s10680-025-09755-5">https://doi.org/10.1007/s10680-025-09755-5</a>.
+</div>
+<div id="ref-idealchild_chen2023genuine" class="csl-entry"
+role="listitem">
+Chen, Shuang, and Stuart Gietel‐Basten. 2023. <span>“<span
+class="nocase">How genuine are sub-replacement ideal family sizes in
+urban China?</span>”</span> <em>Population Studies</em> 78 (2): 305–24.
+<a
+href="https://doi.org/10.1080/00324728.2023.2194670">https://doi.org/10.1080/00324728.2023.2194670</a>.
+</div>
+<div id="ref-idealchild_chen2023changing" class="csl-entry"
+role="listitem">
+Chen, Wei. 2023. <span>“<span class="nocase">Changing fertility patterns
+in China</span>.”</span> <em>Chinese Journal of Sociology</em> 9:
+497–521. <a
+href="https://doi.org/10.1177/2057150X231209063">https://doi.org/10.1177/2057150X231209063</a>.
+</div>
+<div id="ref-idealchild_chen2020power" class="csl-entry"
+role="listitem">
+Chen, Yi, and Yingfei Huang. 2020. <span>“<span class="nocase">The power
+of the government: China’s Family Planning Leading Group and the
+fertility decline of the 1970s</span>.”</span> <em>Demographic
+Research</em> 42: 985–1038. <a
+href="https://doi.org/10.4054/demres.2020.42.35">https://doi.org/10.4054/demres.2020.42.35</a>.
+</div>
+<div id="ref-idealchild_cheng2020ultra" class="csl-entry"
+role="listitem">
+Cheng, Yen‐hsin Alice. 2020. <span>“<span class="nocase">Ultra-low
+fertility in East Asia: Confucianism and its discontents</span>.”</span>
+<em>Vienna Yearbook of Population Research</em> 18: 83–120. <a
+href="https://doi.org/10.1553/populationyearbook2020.rev01">https://doi.org/10.1553/populationyearbook2020.rev01</a>.
+</div>
+<div id="ref-idealchild_fienberg1979identification" class="csl-entry"
+role="listitem">
+Fienberg, S., and W. Mason. 1979. <span>“<span
+class="nocase">Identification and estimation of age-period-cohort models
+in the analysis of discrete archival data</span>.”</span>
+<em>Sociological Methodology</em> 10: 1–67. <a
+href="https://doi.org/10.2307/270764">https://doi.org/10.2307/270764</a>.
+</div>
+<div id="ref-idealchild_fosse2019analyzing" class="csl-entry"
+role="listitem">
+Fosse, E., and Christopher Winship. 2019. <span>“<span
+class="nocase">Analyzing Age-Period-Cohort Data: A Review and
+Critique</span>.”</span> <em>The Annual Review of Sociology</em> 45 (1):
+467–92. <a
+href="https://doi.org/10.1146/ANNUREV-SOC-073018-022616">https://doi.org/10.1146/ANNUREV-SOC-073018-022616</a>.
+</div>
+<div id="ref-idealchild_gao2024chinese" class="csl-entry"
+role="listitem">
+Gao, Haiyan, Peng Wang, and Tony Tam. 2024. <span>“<span
+class="nocase">Chinese social value change and its relevant factors: an
+age-period-cohort effect analysis</span>.”</span> <em>The Journal of
+Chinese Sociology</em> 11 (1). <a
+href="https://doi.org/10.1186/s40711-024-00209-9">https://doi.org/10.1186/s40711-024-00209-9</a>.
+</div>
+<div id="ref-idealchild_hagewen2005intended" class="csl-entry"
+role="listitem">
+Hagewen, Kellie J., and S. Philip Morgan. 2005. <span>“<span
+class="nocase">Intended and Ideal Family Size in the United States,
+1970–2002</span>.”</span> <em>Population and Development Review</em> 31
+(3): 507–27. <a
+href="https://doi.org/10.1111/j.1728-4457.2005.00081.x">https://doi.org/10.1111/j.1728-4457.2005.00081.x</a>.
+</div>
+<div id="ref-idealchild_inglehart2000modernization" class="csl-entry"
+role="listitem">
+Inglehart, R., and W. Baker. 2000. <span>“<span
+class="nocase">Modernization, Cultural Change, and the Persistence of
+Traditional Values</span>.”</span> <em>American Sociological Review</em>
+65 (1): 19–51. <a
+href="https://doi.org/10.1177/000312240006500103">https://doi.org/10.1177/000312240006500103</a>.
+</div>
+<div id="ref-idealchild_jiang2016fertility" class="csl-entry"
+role="listitem">
+Jiang, Q., and Yixiao Liu. 2016. <em><span class="nocase">Low fertility
+and concurrent birth control policy in China</span></em>. 21: 551–77. <a
+href="https://doi.org/10.1080/1081602X.2016.1213179">https://doi.org/10.1080/1081602X.2016.1213179</a>.
+</div>
+<div id="ref-idealchild_li2023influence" class="csl-entry"
+role="listitem">
+Li, Jiayu, and Wei Wei. 2023. <span>“<span class="nocase">Influence of
+Internet Use on Chinese Rural Women’s Fertility Intention: Evidence from
+China General Social Survey Data</span>.”</span> <em>American Journal of
+Health Behavior</em> 47 (6): 1192–201. <a
+href="https://doi.org/10.5993/ajhb.47.6.12">https://doi.org/10.5993/ajhb.47.6.12</a>.
+</div>
+<div id="ref-idealchild_ni2023daughters" class="csl-entry"
+role="listitem">
+Ni, Shibei. 2023. <span>“<span class="nocase">Are daughters more
+preferred by young people in contemporary China? Qualitative evidence
+from one-child generation cohorts in urban Jiangsu</span>.”</span>
+<em>Culture, Health and Sexuality</em> 26: 303–16. <a
+href="https://doi.org/10.1080/13691058.2023.2203242">https://doi.org/10.1080/13691058.2023.2203242</a>.
+</div>
+<div id="ref-idealchild_obrien2017mixed" class="csl-entry"
+role="listitem">
+O’Brien, Robert M. 2017. <span>“<span class="nocase">Mixed models,
+linear dependency, and identification in age-period-cohort
+models.</span>”</span> <em>Statistics in Medicine</em> 36 (16):
+2590–600. <a
+href="https://doi.org/10.1002/sim.7305">https://doi.org/10.1002/sim.7305</a>.
+</div>
+<div id="ref-idealchild_qiu2019fertility" class="csl-entry"
+role="listitem">
+<span class="nocase">Qiu, Hongyan, Qun Zhang, Jin Zhang, et al.</span>
+2019. <span>“<span class="nocase">Fertility intentions and influential
+factors in Dalian urban city —A cross-sectional study based on Universal
+Two-child policy in China</span>.”</span> <em>bioRxiv</em>, ahead of
+print. <a
+href="https://doi.org/10.1101/572008">https://doi.org/10.1101/572008</a>.
+</div>
+<div id="ref-idealchild_reither2015clarifying" class="csl-entry"
+role="listitem">
+<span class="nocase">Reither, E., K. Land, S. Jeon, et al.</span> 2015.
+<span>“<span class="nocase">Clarifying hierarchical age-period-cohort
+models: A rejoinder to Bell and Jones.</span>”</span> <em>Social Science
+&amp; Medicine (1967)</em> 145: 125–28. <a
+href="https://doi.org/10.1016/j.socscimed.2015.07.013">https://doi.org/10.1016/j.socscimed.2015.07.013</a>.
+</div>
+<div id="ref-idealchild_rohrer2025thinking" class="csl-entry"
+role="listitem">
+Rohrer, J. 2025. <span>“<span class="nocase">Thinking Clearly About Age,
+Period, and Cohort Effects</span>.”</span> <em>Advances in Methods and
+Practices in Psychological Science</em> 8 (2). <a
+href="https://doi.org/10.1177/25152459251342750">https://doi.org/10.1177/25152459251342750</a>.
+</div>
+<div id="ref-idealchild_scharping2013birth" class="csl-entry"
+role="listitem">
+Scharping, Thomas. 2013. <em><span class="nocase">Birth Control in China
+1949-2000</span></em>. <a
+href="https://doi.org/10.4324/9781315027777">https://doi.org/10.4324/9781315027777</a>.
+</div>
+<div id="ref-idealchild_s2009china" class="csl-entry" role="listitem">
+S., P. Morgan, Zhigang Guo, Sarah, R., and Hayford. 2009. <span>“<span
+class="nocase">China’s Below‐Replacement Fertility: Recent Trends and
+Future Prospects</span>.”</span> <em>Population and Development
+Review</em> 35 (3): 605–29. <a
+href="https://doi.org/10.1111/j.1728-4457.2009.00298.x">https://doi.org/10.1111/j.1728-4457.2009.00298.x</a>.
+</div>
+<div id="ref-idealchild_sobotka2008overview" class="csl-entry"
+role="listitem">
+Sobotka, T. 2008. <span>“<span class="nocase">Overview Chapter 6: The
+diverse faces of the second demographic transition in
+Europe.</span>”</span> <em>Demographic Research</em> 19: 171–224. <a
+href="https://doi.org/10.4054/DEMRES.2008.19.8">https://doi.org/10.4054/DEMRES.2008.19.8</a>.
+</div>
+<div id="ref-idealchild_song2023study" class="csl-entry"
+role="listitem">
+Song, Jing, Jiuqiang Liu, Huiqin Shi, and D. Song. 2023. <span>“<span
+class="nocase">A study on China’s education level and average age of
+first marriage</span>.”</span> <em>International Academic Journal of
+Humanities and Social Sciences</em> 4 (1): 8. <a
+href="https://doi.org/10.56028/iajhss.1.4.8.2023">https://doi.org/10.56028/iajhss.1.4.8.2023</a>.
+</div>
+<div id="ref-idealchild_su2023stalled" class="csl-entry"
+role="listitem">
+Su, Zheng, and Mattias Ottervik. 2023. <span>“<span
+class="nocase">Stalled and uneven? A hierarchical age-period-cohort
+analysis of gender attitudes in the public sphere in China
+1995–2018</span>.”</span> <em>Chinese Sociological Review</em> 55 (3):
+297–322. <a
+href="https://doi.org/10.1080/21620555.2023.2177146">https://doi.org/10.1080/21620555.2023.2177146</a>.
+</div>
+<div id="ref-idealchild_surkyn2004value" class="csl-entry"
+role="listitem">
+Surkyn, J., and R. Lesthaeghe. 2004. <em><span class="nocase">Value
+Orientations and the Second Demographic Transition (SDT) in Northern,
+Western and Southern Europe: An Update</span></em>. 3: 45–86. <a
+href="https://doi.org/10.4054/DEMRES.2004.S3.3">https://doi.org/10.4054/DEMRES.2004.S3.3</a>.
+</div>
+<div id="ref-idealchild_tang2024changes" class="csl-entry"
+role="listitem">
+Tang, M. Zhang H. Zhang Q., and Jiawei Hou. 2024. <span>“<span
+class="nocase">Changes of sex ratio at birth and son preferences in
+China: a mixed method study</span>.”</span> <em>China Population and
+Development Studies</em> 8 (1): 1–27. <a
+href="https://doi.org/10.1007/s42379-024-00151-w">https://doi.org/10.1007/s42379-024-00151-w</a>.
+</div>
+<div id="ref-idealchild_tilt2019fertility" class="csl-entry"
+role="listitem">
+Tilt, B., Xiaoyue Li, and E. Schmitt. 2019. <span>“<span
+class="nocase">Fertility trends, sex ratios, and son preference among
+Han and minority households in rural China</span>.”</span> <em>Asian
+Anthropology</em> 18: 110–28. <a
+href="https://doi.org/10.1080/1683478X.2019.1588199">https://doi.org/10.1080/1683478X.2019.1588199</a>.
+</div>
+<div id="ref-idealchild_wang2025fertility" class="csl-entry"
+role="listitem">
+Wang, Xiaona, Chonin Cheang, Xiaoqing Zhong, Shengguang Wu, and Sujian
+Xia. 2025. <span>“<span class="nocase">Fertility intention of college
+students responding to the three-child policy in Guangzhou, China: a
+cross-sectional study</span>.”</span> <em>Frontiers in Sociology</em>
+10. <a
+href="https://doi.org/10.3389/fsoc.2025.1504166">https://doi.org/10.3389/fsoc.2025.1504166</a>.
+</div>
+<div id="ref-idealchild_xu2023social" class="csl-entry" role="listitem">
+Xu, Haiping, Chuqiao Zhang, and Yawen Huang. 2023. <span>“<span
+class="nocase">Social trust, social capital, and subjective well-being
+of rural residents: micro-empirical evidence based on the Chinese
+General Social Survey (CGSS)</span>.”</span> <em>Humanities and Social
+Sciences Communications</em> 10 (1). <a
+href="https://doi.org/10.1057/s41599-023-01532-1">https://doi.org/10.1057/s41599-023-01532-1</a>.
+</div>
+<div id="ref-idealchild_xu2022stata" class="csl-entry" role="listitem">
+Xu, Jiahui, and Liying Luo. 2022. <span>“<span class="nocase">APCI: An R
+and Stata Package for Visualizing and Analyzing Age-Period-Cohort
+Data</span>.”</span> <em>The R Journal</em> 14 (2): 77–95. <a
+href="https://doi.org/10.32614/rj-2022-026">https://doi.org/10.32614/rj-2022-026</a>.
+</div>
+<div id="ref-idealchild_xu2025income" class="csl-entry" role="listitem">
+Xu, Jiayi, and Yuqing Wu. 2025. <span>“<span class="nocase">Income
+Inequality and the Realization of Fertility Desires in China: Evidence
+from CGSS Panel Data</span>.”</span> <em>Advances in Economics,
+Management and Political Sciences</em> 226 (1): 7–15. <a
+href="https://doi.org/10.54254/2754-1169/2025.lh27674">https://doi.org/10.54254/2754-1169/2025.lh27674</a>.
+</div>
+<div id="ref-idealchild_xu2023research" class="csl-entry"
+role="listitem">
+Xu, Keyu. 2023. <span>“<span class="nocase">Research on the Impact of
+Implementing the Three Child Policy: Perspective from a Social and
+Economic</span>.”</span> <em>Advances in Economics, Management and
+Political Sciences</em> 53 (1): 46–51. <a
+href="https://doi.org/10.54254/2754-1169/53/20230785">https://doi.org/10.54254/2754-1169/53/20230785</a>.
+</div>
+<div id="ref-idealchild_yang2023third" class="csl-entry"
+role="listitem">
+Yang, Hanmo, R. Han, and Zhenjie Wang. 2023. <span>“<span
+class="nocase">Third-child fertility intention and its socioeconomic
+factors among women aged 20–34 years in China</span>.”</span> <em>BMC
+Public Health</em> 23 (1): 821–21. <a
+href="https://doi.org/10.1186/s12889-023-15719-3">https://doi.org/10.1186/s12889-023-15719-3</a>.
+</div>
+<div id="ref-idealchild_yang2025elderly" class="csl-entry"
+role="listitem">
+Yang, Jia. 2025. <span>“<span class="nocase">Elderly care expectation
+how to influence the fertility desire: Evidence from Chinese general
+social survey data</span>.”</span> <em>PLoS ONE</em> 20 (5): e0318628.
+<a
+href="https://doi.org/10.1371/journal.pone.0318628">https://doi.org/10.1371/journal.pone.0318628</a>.
+</div>
+<div id="ref-idealchild_yang2024study" class="csl-entry"
+role="listitem">
+Yang, Qian, and Tong Yu. 2024. <span>“<span class="nocase">Study on the
+age-period-cohort effects of cognitive abilities among older Chinese
+adults based on the cognitive reserve hypothesis</span>.”</span> <em>BMC
+Geriatrics</em> 24 (1). <a
+href="https://doi.org/10.1186/s12877-024-05576-z">https://doi.org/10.1186/s12877-024-05576-z</a>.
+</div>
+<div id="ref-idealchild_yang1990planned" class="csl-entry"
+role="listitem">
+Yang, Quanhe. 1990. <span>“<span class="nocase">Planned fertility
+decline in rural China : the case of Anhui Province</span>.”</span>
+<em>ANU Open Research (Australian National University)</em>, ahead of
+print. <a
+href="https://doi.org/10.25911/5d78d995476e1">https://doi.org/10.25911/5d78d995476e1</a>.
+</div>
+<div id="ref-idealchild_yang2018educational" class="csl-entry"
+role="listitem">
+Yang, Rui, and Mei Wu. 2018. <span>“<span>EDUCATIONAL POLICY FOR ETHNIC
+MINORITIES IN CHINA</span>.”</span> <em>Tạp Chí Nghiên Cứu Dân Tộc</em>,
+no. 24. <a
+href="https://doi.org/10.25073/0866-773x/78">https://doi.org/10.25073/0866-773x/78</a>.
+</div>
+<div id="ref-idealchild_yang2022china" class="csl-entry"
+role="listitem">
+Yang, Shucai, Quanbao Jiang, and Jesús J. Sánchez‐Barricarte. 2022.
+<span>“<span class="nocase">China’s fertility change: an analysis with
+multiple measures</span>.”</span> <em>Population Health Metrics</em> 20
+(1): 12–12. <a
+href="https://doi.org/10.1186/s12963-022-00290-7">https://doi.org/10.1186/s12963-022-00290-7</a>.
+</div>
+<div id="ref-idealchild_yang2020upward" class="csl-entry"
+role="listitem">
+Yang, Xiaojun, Qiang Wen, Jie Ma, Jun Li, and Jun Li. 2020. <em><span
+class="nocase">Upward mobility and the demand for children: Evidence
+from China</span></em>. 60: 101393. <a
+href="https://doi.org/10.1016/j.chieco.2019.101393">https://doi.org/10.1016/j.chieco.2019.101393</a>.
+</div>
+<div id="ref-idealchild_yang2023examining" class="csl-entry"
+role="listitem">
+Yang, Xueyan, Wanxin Li, and Rui Li. 2023. <span>“<span
+class="nocase">Examining the Influence of Fertility Policy Adjustments
+on Gender Equality in China During the Period of Exceptionally Slow
+Population Growth</span>.”</span> <em>China CDC Weekly</em> 5: 605–8. <a
+href="https://doi.org/10.46234/ccdcw2023.116">https://doi.org/10.46234/ccdcw2023.116</a>.
+</div>
+<div id="ref-idealchild_yang2006mixed" class="csl-entry"
+role="listitem">
+Yang, Yang, and Kenneth C. Land. 2006. <span>“<span class="nocase">A
+Mixed Models Approach to the Age-Period-Cohort Analysis of Repeated
+Cross-Section Surveys, with an Application to Data on Trends in Verbal
+Test Scores</span>.”</span> <em>Sociological Methodology</em> 36 (1):
+75–97. <a
+href="https://doi.org/10.1111/j.1467-9531.2006.00175.x">https://doi.org/10.1111/j.1467-9531.2006.00175.x</a>.
+</div>
+<div id="ref-idealchild_yang2008period" class="csl-entry"
+role="listitem">
+Yang, Yang, and Kenneth C. Land. 2008. <span>“<span
+class="nocase">Age–Period–Cohort Analysis of Repeated Cross-Section
+Surveys: Fixed or Random Effects?</span>”</span> <em>Sociological
+Methods &amp; Research</em> 36 (3): 297–326. <a
+href="https://doi.org/10.1177/0049124106292360">https://doi.org/10.1177/0049124106292360</a>.
+</div>
+<div id="ref-idealchild_yang2013period" class="csl-entry"
+role="listitem">
+Yang, Yang, and Kenneth C. Land. 2013. <em><span
+class="nocase">Age-Period-Cohort Analysis: New Models, Methods, and
+Empirical Applications</span></em>. <a
+href="https://doi.org/10.1201/b13902">https://doi.org/10.1201/b13902</a>.
+</div>
+<div id="ref-idealchild_yu2022there" class="csl-entry" role="listitem">
+Yu, Jia, and Yu Xie. 2022. <span>“<span class="nocase">Is there a
+Chinese pattern of the second demographic transition?</span>”</span>
+<em>China Population and Development Studies</em> 6 (3): 237–66. <a
+href="https://doi.org/10.1007/s42379-022-00113-0">https://doi.org/10.1007/s42379-022-00113-0</a>.
+</div>
+<div id="ref-idealchild_yu2023second" class="csl-entry" role="listitem">
+Yu, Yang, Rongxin He, Ning Zhang, and Liming Li. 2023. <span>“<span
+class="nocase">Second-Child Fertility Intentions among Urban Women in
+China: A Systematic Review and Meta-Analysis</span>.”</span>
+<em>International Journal of Environmental Research and Public
+Health</em> 20 (4): 3744–44. <a
+href="https://doi.org/10.3390/ijerph20043744">https://doi.org/10.3390/ijerph20043744</a>.
+</div>
+<div id="ref-idealchild_zhai2023china" class="csl-entry"
+role="listitem">
+Zhai, Z., and Guang-Sheng Jin. 2023. <span>“<span class="nocase">China’s
+family planning policy and fertility transition</span>.”</span>
+<em>Chinese Journal of Sociology</em> 9 (4): 479–96. <a
+href="https://doi.org/10.1177/2057150X231205773">https://doi.org/10.1177/2057150X231205773</a>.
+</div>
+<div id="ref-idealchild_zhang2025fertility" class="csl-entry"
+role="listitem">
+<span class="nocase">Zhang, Chenyun, Yingying Zhou, Yujing Ke, et
+al.</span> 2025. <span>“<span class="nocase">Fertility intentions in the
+era of the new three-child policy in China: a cross-sectional survey of
+married adults of reproductive age</span>.”</span> <em>Frontiers in
+Public Health</em> 13. <a
+href="https://doi.org/10.3389/fpubh.2025.1674687">https://doi.org/10.3389/fpubh.2025.1674687</a>.
+</div>
+<div id="ref-idealchild_zhang2017evolution" class="csl-entry"
+role="listitem">
+Zhang, Junsen. 2017. <span>“<span class="nocase">The Evolution of
+China’s One-Child Policy and Its Effects on Family
+Outcomes</span>.”</span> <em>The Journal of Economic Perspectives</em>
+31 (1): 141–60. <a
+href="https://doi.org/10.1257/jep.31.1.141">https://doi.org/10.1257/jep.31.1.141</a>.
+</div>
+<div id="ref-idealchild_zhang2021intention" class="csl-entry"
+role="listitem">
+Zhang, Lianchao, Jianghua Liu, and Virpi Lummaa. 2021. <span>“<span
+class="nocase">Intention to have a second child, family support and
+actual fertility behavior in current China: An evolutionary
+perspective</span>.”</span> <em>American Journal of Human Biology</em>
+34 (4): e23669–69. <a
+href="https://doi.org/10.1002/ajhb.23669">https://doi.org/10.1002/ajhb.23669</a>.
+</div>
+<div id="ref-idealchild_zheng2009below" class="csl-entry"
+role="listitem">
+Zheng, Zhenzhen, Yong Cai, Feng Wang, and Baochang Gu. 2009.
+<span>“<span>BELOW-REPLACEMENT FERTILITY AND CHILDBEARING INTENTION IN
+JIANGSU PROVINCE, CHINA</span>.”</span> <em>Asian Population
+Studies</em> 5 (3): 329–47. <a
+href="https://doi.org/10.1080/17441730903351701">https://doi.org/10.1080/17441730903351701</a>.
+</div>
+<div id="ref-idealchild_zhu2022fertility" class="csl-entry"
+role="listitem">
+Zhu, C., C. He, L. Yan, J. Huirne, B. Mol, and J. Zhang. 2022.
+<span>“<span class="nocase">P-744 Fertility intention for a second or
+third child among childbearing couple in Shanghai, China</span>.”</span>
+<em>Human Reproduction</em> 37 (Supplement_1). <a
+href="https://doi.org/10.1093/humrep/deac107.689">https://doi.org/10.1093/humrep/deac107.689</a>.
+</div>
+</div>
+<!-- Markup Reader: inline annotation toolkit -->
+<style id="markup-reader-panel-style">
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap");
+
+/* ── Annotation marks ─────────────────────────────────── */
+[data-annotation="true"] { border-radius: 2px; cursor: pointer; }
+[data-annotation="true"].annot-highlight { background: var(--annot-highlight-color, #fff2a8); box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+[data-annotation="true"].annot-underline { border-bottom: 3px solid var(--annot-underline-color, #cc4f1b); padding-bottom: 1px; }
+[data-annotation="true"].annot-note { background: var(--annot-highlight-color, #fff2a8); border-bottom: 2px dashed var(--annot-underline-color, #cc4f1b); cursor: help; position: relative; }
+[data-annotation="true"].annot-note::after { content: "\270E"; font-size: .75em; font-weight: 700; color: var(--annot-underline-color, #cc4f1b); margin-left: 1px; vertical-align: super; }
+[data-annotation="true"].annot-note[data-note]:hover::before {
+  content: attr(data-note);
+  position: absolute; bottom: calc(100% + 4px); left: 0;
+  max-width: 300px; padding: 6px 10px;
+  background: #1e3a27; color: #fff; font-size: 12px; font-weight: 400;
+  border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,.3);
+  white-space: pre-wrap; word-break: break-word;
+  z-index: 999998; pointer-events: none;
+  animation: mr-fadeIn .12s ease;
+}
+
+/* ── Selection tooltip ────────────────────────────────── */
+#mr-tooltip {
+  position: absolute; z-index: 999999;
+  display: none; align-items: center; gap: 4px;
+  padding: 5px 6px;
+  background: #1e3a27; color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.28);
+  font-family: "Manrope", "Segoe UI", sans-serif; font-size: 13px; font-weight: 600;
+  white-space: nowrap;
+  animation: mr-fadeIn .15s ease;
+}
+#mr-tooltip button {
+  border: none; background: rgba(255,255,255,.15);
+  color: #fff; border-radius: 7px;
+  padding: 5px 10px; font-size: 12px; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  transition: background .12s ease;
+}
+#mr-tooltip button:hover { background: rgba(255,255,255,.3); }
+#mr-tooltip .tt-sep { width: 1px; height: 18px; background: rgba(255,255,255,.22); }
+
+/* ── Note input box ───────────────────────────────────── */
+#mr-note-input {
+  position: absolute; z-index: 1000000;
+  display: none; flex-direction: column; gap: 6px;
+  width: 280px; padding: 10px 12px; box-sizing: border-box;
+  background: #1e3a27; color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 36px rgba(0,0,0,.35);
+  font-family: "Manrope", "Segoe UI", sans-serif; font-size: 13px;
+  animation: mr-fadeIn .15s ease;
+}
+#mr-note-input .ni-label { font-weight: 700; font-size: 12px; opacity: .85; }
+#mr-note-input textarea {
+  width: 100%; min-height: 60px; max-height: 140px;
+  padding: 8px 10px; border: 1px solid rgba(255,255,255,.25);
+  border-radius: 8px; background: rgba(255,255,255,.1);
+  color: #fff; font-family: inherit; font-size: 13px;
+  resize: vertical; outline: none; box-sizing: border-box;
+}
+#mr-note-input textarea:focus { border-color: rgba(255,255,255,.5); }
+#mr-note-input .ni-actions { display: flex; justify-content: flex-end; gap: 6px; }
+#mr-note-input .ni-actions button {
+  border: none; border-radius: 8px; padding: 6px 14px;
+  font-size: 12px; font-weight: 700; cursor: pointer; font-family: inherit;
+}
+#mr-note-input .ni-cancel { background: rgba(255,255,255,.15); color: #fff; }
+#mr-note-input .ni-cancel:hover { background: rgba(255,255,255,.25); }
+#mr-note-input .ni-confirm { background: #4caf6a; color: #fff; }
+#mr-note-input .ni-confirm:hover { background: #3d9e5a; }
+
+/* ── Floating toggle button ───────────────────────────── */
+#mr-toggle-btn {
+  position: fixed; bottom: 20px; right: 20px; z-index: 999990;
+  width: 48px; height: 48px; border-radius: 50%;
+  background: linear-gradient(135deg, #2f8a45, #1f6933); color: #fff;
+  border: none; font-size: 22px; cursor: pointer;
+  box-shadow: 0 6px 20px rgba(28,77,42,.35);
+  transition: transform .15s ease, box-shadow .2s ease;
+  font-family: "Manrope", sans-serif;
+}
+#mr-toggle-btn:hover { transform: scale(1.08); box-shadow: 0 8px 24px rgba(28,77,42,.45); }
+
+/* ── Side panel ───────────────────────────────────────── */
+#mr-panel {
+  position: fixed; top: 0; right: -340px; z-index: 999991;
+  width: 320px; height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #f9fbf3, #f5efe3);
+  border-left: 1px solid rgba(54,84,58,.18);
+  box-shadow: -4px 0 24px rgba(0,0,0,.12);
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  color: #24322a;
+  transition: right .3s ease;
+  overflow: hidden;
+  padding: 16px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+#mr-panel.open { right: 0; }
+#mr-panel h3 {
+  margin: 0 0 8px; font-size: .88rem; letter-spacing: .03em;
+  text-transform: uppercase; color: #214730;
+}
+#mr-panel .mr-section {
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(73,106,67,.14); border-radius: 14px;
+  padding: 12px;
+}
+#mr-panel .mr-pen-group { margin-bottom: 4px; }
+#mr-panel .mr-pen-label { font-size: .78rem; color: #5f6f62; margin-bottom: 6px; font-weight: 600; }
+#mr-panel .mr-pens { display: flex; gap: 8px; flex-wrap: wrap; }
+#mr-panel .mr-pen {
+  width: 28px; height: 28px; border-radius: 50%; border: 2px solid transparent;
+  cursor: pointer; transition: transform .12s ease, border-color .12s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15); position: relative;
+}
+#mr-panel .mr-pen:hover { transform: scale(1.15); }
+#mr-panel .mr-pen.active {
+  border-color: #1e3a27; box-shadow: 0 0 0 2px #1e3a27, 0 2px 8px rgba(0,0,0,.2);
+  transform: scale(1.1);
+}
+#mr-panel .mr-pen.active::after {
+  content: "\2713"; position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%); font-size: 13px; font-weight: 900;
+  color: rgba(0,0,0,.5); text-shadow: 0 0 2px rgba(255,255,255,.8);
+}
+#mr-panel .mr-annot-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; overflow-y: auto; }
+#mr-panel .mr-annot-item {
+  font-size: .82rem; line-height: 1.4; padding: 8px 10px;
+  background: rgba(255,255,255,.8); border: 1px solid rgba(60,90,60,.12);
+  border-radius: 10px; cursor: pointer; transition: background .15s ease;
+  word-break: break-word;
+}
+#mr-panel .mr-annot-item:hover { background: #edf5e4; }
+#mr-panel .mr-annot-type {
+  display: inline-block; font-size: .68rem; font-weight: 700; text-transform: uppercase;
+  padding: 2px 6px; border-radius: 6px; margin-right: 4px; vertical-align: middle;
+}
+#mr-panel .mr-annot-type.highlight { background: #fff2a8; color: #6b5a00; }
+#mr-panel .mr-annot-type.underline { background: #fce0cf; color: #7a3006; }
+#mr-panel .mr-annot-type.note { background: #d4f0dd; color: #1a5e2c; }
+#mr-panel .mr-annot-note { display: block; margin-top: 3px; font-style: italic; color: #5f6f62; font-size: .78rem; }
+#mr-panel .mr-annot-actions { margin-top: 5px; display: flex; gap: 5px; }
+#mr-panel .mr-annot-actions button {
+  font-size: .72rem; padding: 4px 8px; border: none; border-radius: 6px;
+  font-weight: 700; cursor: pointer; font-family: inherit;
+}
+#mr-panel .mr-btn-del { background: linear-gradient(135deg,#d9713f,#bc4b12); color: white; }
+#mr-panel .mr-btn-note { background: #f0f4e8; color: #24462f; border: 1px solid rgba(45,82,53,.18); }
+#mr-panel .mr-save-btn {
+  display: block; width: 100%; padding: 10px;
+  background: linear-gradient(135deg,#2f8a45,#1f6933); color: #fff;
+  border: none; border-radius: 10px; font-size: .88rem; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  box-shadow: 0 8px 18px rgba(28,77,42,.2);
+  flex-shrink: 0;
+}
+#mr-panel .mr-save-btn:hover { transform: translateY(-1px); }
+#mr-panel .mr-export-md {
+  display: block; width: 100%; padding: 10px;
+  background: linear-gradient(135deg,#3a6b8a,#1f4f6e); color: #fff;
+  border: none; border-radius: 10px; font-size: .88rem; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  box-shadow: 0 8px 18px rgba(28,60,90,.2);
+  flex-shrink: 0;
+}
+#mr-panel .mr-export-md:hover { transform: translateY(-1px); }
+#mr-panel .mr-empty { color: #5f6f62; font-size: .82rem; text-align: center; padding: 12px 0; }
+#mr-panel .mr-close {
+  position: absolute; top: 12px; right: 12px;
+  background: rgba(0,0,0,.06); border: none; border-radius: 8px;
+  width: 28px; height: 28px; font-size: 16px; cursor: pointer;
+  color: #24322a; font-family: inherit;
+}
+
+@keyframes mr-fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ── Mobile responsive ────────────────────────────────── */
+@media (max-width: 600px) {
+  #mr-panel { width: 100vw; right: -100vw; border-left: none; padding: 14px 16px; }
+  #mr-panel.open { right: 0; }
+  #mr-panel .mr-pen { width: 32px; height: 32px; }
+  #mr-panel .mr-save-btn { padding: 14px; font-size: .92rem; }
+  #mr-toggle-btn { width: 44px; height: 44px; font-size: 20px; bottom: 16px; right: 16px; }
+  #mr-tooltip { padding: 7px 8px; }
+  #mr-tooltip button { padding: 8px 12px; font-size: 13px; }
+  #mr-note-input { width: calc(100vw - 24px); max-width: none; left: 12px !important; padding: 12px 14px; font-size: 15px; }
+  #mr-note-input textarea { min-height: 72px; font-size: 15px; padding: 10px 12px; }
+  #mr-note-input .ni-actions button { padding: 10px 18px; font-size: 14px; }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  #mr-tooltip button { padding: 8px 14px; font-size: 14px; }
+}
+
+@media print {
+  #mr-toggle-btn, #mr-panel, #mr-tooltip, #mr-note-input { display: none !important; }
+}
+</style>
+
+<script>
+(function() {
+"use strict";
+
+/* ── Config ───────────────────────────────────────────── */
+let highlightColor = "#fff2a8";
+let underlineColor = "#cc4f1b";
+
+/* ── Annotation helpers ───────────────────────────────── */
+function genId() { return "ann-" + Date.now() + "-" + Math.random().toString(36).slice(2,8); }
+
+function wrapRange(range, type, noteText) {
+  const span = document.createElement("span");
+  span.setAttribute("data-annotation", "true");
+  span.setAttribute("data-type", type);
+  span.setAttribute("data-id", genId());
+  if (type === "highlight") {
+    span.className = "annot-highlight";
+    span.style.setProperty("--annot-highlight-color", highlightColor);
+  } else if (type === "underline") {
+    span.className = "annot-underline";
+    span.style.setProperty("--annot-underline-color", underlineColor);
+  } else if (type === "note") {
+    span.className = "annot-note";
+    span.setAttribute("data-note", noteText);
+    span.title = noteText;
+    span.style.setProperty("--annot-highlight-color", highlightColor);
+    span.style.setProperty("--annot-underline-color", underlineColor);
+  }
+  const frag = range.extractContents();
+  if (!frag.textContent || !frag.textContent.trim()) { range.insertNode(frag); return null; }
+  span.appendChild(frag);
+  range.insertNode(span);
+  return span;
+}
+
+function removeAnnotation(el) {
+  const p = el.parentNode; if (!p) return;
+  while (el.firstChild) p.insertBefore(el.firstChild, el);
+  p.removeChild(el); p.normalize();
+}
+
+function applyNote(el, text) {
+  el.setAttribute("data-note", text);
+  el.setAttribute("data-type", "note");
+  el.title = text;
+  el.className = "annot-note";
+}
+
+function allAnnotations() { return Array.from(document.querySelectorAll('[data-annotation="true"]')); }
+
+/* ── Tooltip ──────────────────────────────────────────── */
+function getEl(id) { return document.getElementById(id); }
+function mkEl(tag, id) {
+  let el = getEl(id);
+  if (el) return el;
+  el = document.createElement(tag);
+  el.id = id;
+  document.body.appendChild(el);
+  return el;
+}
+
+function showTooltip(rect, buttons) {
+  const tip = mkEl("div", "mr-tooltip");
+  tip.innerHTML = "";
+  buttons.forEach(function(b, i) {
+    if (i > 0) { const sep = document.createElement("span"); sep.className = "tt-sep"; tip.appendChild(sep); }
+    const btn = document.createElement("button");
+    btn.textContent = b.label;
+    btn.addEventListener("mousedown", function(e) { e.preventDefault(); e.stopPropagation(); b.action(); });
+    tip.appendChild(btn);
+  });
+  tip.style.display = "flex";
+  const sy = window.scrollY, sx = window.scrollX;
+  tip.style.top = Math.max(0, rect.top + sy - tip.offsetHeight - 8) + "px";
+  tip.style.left = Math.max(4, rect.left + sx + rect.width/2 - tip.offsetWidth/2) + "px";
+}
+
+function hideTooltip() {
+  const tip = getEl("mr-tooltip"); if (tip) tip.style.display = "none";
+  const ni = getEl("mr-note-input"); if (ni) ni.style.display = "none";
+}
+
+/* ── Note input ───────────────────────────────────────── */
+function showNoteInput(rect, existing, onConfirm) {
+  const tip = getEl("mr-tooltip"); if (tip) tip.style.display = "none";
+  const box = mkEl("div", "mr-note-input");
+  box.innerHTML = "";
+
+  const label = document.createElement("div");
+  label.className = "ni-label"; label.textContent = "Enter note:";
+  box.appendChild(label);
+
+  const ta = document.createElement("textarea");
+  ta.value = existing || ""; ta.setAttribute("rows","3");
+  box.appendChild(ta);
+
+  const acts = document.createElement("div");
+  acts.className = "ni-actions";
+
+  const cancelBtn = document.createElement("button");
+  cancelBtn.className = "ni-cancel"; cancelBtn.textContent = "Cancel";
+  cancelBtn.addEventListener("click", function(e) { e.preventDefault(); box.style.display = "none"; });
+  acts.appendChild(cancelBtn);
+
+  const okBtn = document.createElement("button");
+  okBtn.className = "ni-confirm"; okBtn.textContent = "OK";
+  okBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    const val = ta.value.trim();
+    if (!val) { ta.focus(); return; }
+    box.style.display = "none";
+    onConfirm(val);
+  });
+  acts.appendChild(okBtn);
+  box.appendChild(acts);
+
+  ta.addEventListener("keydown", function(e) {
+    if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); okBtn.click(); }
+    if (e.key === "Escape") { e.preventDefault(); cancelBtn.click(); }
+  });
+
+  box.style.display = "flex";
+  const sy = window.scrollY;
+  box.style.top = Math.max(sy + 4, rect.bottom + sy + 8) + "px";
+  box.style.left = Math.max(4, Math.min(rect.left, document.documentElement.clientWidth - 288)) + "px";
+  setTimeout(function() { ta.focus(); }, 30);
+}
+
+/* ── Annotate action ──────────────────────────────────── */
+function doAnnotate(type) {
+  hideTooltip();
+  const sel = window.getSelection();
+  if (!sel || sel.rangeCount === 0 || sel.isCollapsed) return;
+  const range = sel.getRangeAt(0);
+
+  if (type === "note") {
+    const saved = range.cloneRange();
+    const rect = range.getBoundingClientRect();
+    sel.removeAllRanges();
+    showNoteInput(rect, "", function(text) {
+      const ns = window.getSelection();
+      ns.removeAllRanges(); ns.addRange(saved);
+      const fr = ns.getRangeAt(0);
+      wrapRange(fr, "note", text);
+      ns.removeAllRanges();
+      refreshPanel();
+    });
+    return;
+  }
+
+  wrapRange(range, type, "");
+  sel.removeAllRanges();
+  refreshPanel();
+}
+
+/* ── Selection listener ───────────────────────────────── */
+let tooltipLock = false;
+
+function tooltipButtons() {
+  return [
+    { label: "Highlight", action: function() { doAnnotate("highlight"); } },
+    { label: "Underline", action: function() { doAnnotate("underline"); } },
+    { label: "Note", action: function() { doAnnotate("note"); } },
+  ];
+}
+
+document.addEventListener("mouseup", function() {
+  if (tooltipLock) return;
+  setTimeout(function() {
+    const sel = window.getSelection();
+    if (!sel || sel.isCollapsed || sel.rangeCount === 0) return;
+    const range = sel.getRangeAt(0);
+    const rect = range.getBoundingClientRect();
+    if (rect.width === 0 && rect.height === 0) return;
+    if (range.commonAncestorContainer.nodeType === 1 && range.commonAncestorContainer.closest && range.commonAncestorContainer.closest("#mr-panel")) return;
+    if (range.commonAncestorContainer.parentElement && range.commonAncestorContainer.parentElement.closest && range.commonAncestorContainer.parentElement.closest("#mr-panel")) return;
+    showTooltip(rect, tooltipButtons());
+  }, 10);
+});
+
+function handlePointerDown(e) {
+  const t = e.target;
+  if (t.closest && (t.closest("#mr-tooltip") || t.closest("#mr-note-input") || t.closest("#mr-panel"))) return;
+
+  const annot = t.closest && t.closest('[data-annotation="true"]');
+  if (annot) {
+    const sel = window.getSelection();
+    if (sel && sel.isCollapsed) {
+      e.preventDefault();
+      tooltipLock = true;
+      showTooltip(annot.getBoundingClientRect(), [
+        { label: "Note", action: function() {
+          hideTooltip(); tooltipLock = false;
+          var rect = annot.getBoundingClientRect();
+          showNoteInput(rect, annot.getAttribute("data-note") || "", function(text) {
+            applyNote(annot, text); refreshPanel();
+          });
+        }},
+        { label: "Remove", action: function() {
+          hideTooltip(); tooltipLock = false;
+          removeAnnotation(annot); refreshPanel();
+        }},
+      ]);
+      setTimeout(function() { tooltipLock = false; }, 300);
+      return;
+    }
+  }
+  hideTooltip();
+}
+
+document.addEventListener("mousedown", handlePointerDown);
+
+/* ── Touch / mobile support ──────────────────────────── */
+var selectionTimer = null;
+document.addEventListener("selectionchange", function() {
+  clearTimeout(selectionTimer);
+  selectionTimer = setTimeout(function() {
+    if (tooltipLock) return;
+    var sel = window.getSelection();
+    if (!sel || sel.isCollapsed || sel.rangeCount === 0) return;
+    var range = sel.getRangeAt(0);
+    if (range.commonAncestorContainer.nodeType === 1 && range.commonAncestorContainer.closest && range.commonAncestorContainer.closest("#mr-panel")) return;
+    if (range.commonAncestorContainer.parentElement && range.commonAncestorContainer.parentElement.closest && range.commonAncestorContainer.parentElement.closest("#mr-panel")) return;
+    var rect = range.getBoundingClientRect();
+    if (rect.width === 0 && rect.height === 0) return;
+    showTooltip(rect, tooltipButtons());
+  }, 300);
+});
+
+document.addEventListener("touchend", function(e) {
+  setTimeout(function() {
+    var sel = window.getSelection();
+    if (sel && !sel.isCollapsed) return;
+    handlePointerDown(e);
+  }, 50);
+});
+
+/* ── Side panel ───────────────────────────────────────── */
+function buildPanel() {
+  const toggle = document.createElement("button");
+  toggle.id = "mr-toggle-btn";
+  toggle.textContent = "\u270E";
+  toggle.title = "Annotation Tools";
+  document.body.appendChild(toggle);
+
+  const panel = document.createElement("div");
+  panel.id = "mr-panel";
+  var hlPens = [
+    { name: "Yellow", color: "#fff2a8" },
+    { name: "Green", color: "#b8f0c0" },
+    { name: "Blue", color: "#b3deff" },
+    { name: "Pink", color: "#ffc0cb" },
+    { name: "Orange", color: "#ffd9a8" },
+    { name: "Purple", color: "#dcc0f0" },
+  ];
+  var ulPens = [
+    { name: "Red", color: "#cc4f1b" },
+    { name: "Blue", color: "#2a6dd9" },
+    { name: "Green", color: "#2a8a3e" },
+    { name: "Orange", color: "#d98c2a" },
+    { name: "Purple", color: "#7b3ec4" },
+    { name: "Gray", color: "#666666" },
+  ];
+
+  function buildPenRow(pens, activeColor) {
+    return pens.map(function(p) {
+      var cls = p.color === activeColor ? "mr-pen active" : "mr-pen";
+      return '<button class="' + cls + '" data-color="' + p.color + '" style="background:' + p.color + ';" title="' + p.name + '"></button>';
+    }).join("");
+  }
+
+  panel.innerHTML =
+    '<button class="mr-close" id="mr-close-btn">\u2715</button>' +
+    '<h3>Annotations</h3>' +
+    '<div class="mr-section">' +
+      '<div class="mr-pen-group">' +
+        '<div class="mr-pen-label">Highlight</div>' +
+        '<div class="mr-pens" id="mr-hl-pens">' + buildPenRow(hlPens, highlightColor) + '</div>' +
+      '</div>' +
+      '<div class="mr-pen-group" style="margin-top:10px;">' +
+        '<div class="mr-pen-label">Underline</div>' +
+        '<div class="mr-pens" id="mr-ul-pens">' + buildPenRow(ulPens, underlineColor) + '</div>' +
+      '</div>' +
+    '</div>' +
+    '<div class="mr-section" style="flex:1;overflow-y:auto;min-height:0;display:flex;flex-direction:column;">' +
+      '<h3>Annotation List</h3>' +
+      '<ul id="mr-annot-list" class="mr-annot-list" style="flex:1;overflow-y:auto;min-height:0;">' +
+        '<li class="mr-empty">No annotations yet</li>' +
+      '</ul>' +
+    '</div>' +
+    '<button class="mr-save-btn" id="mr-save-btn">Download Annotated HTML</button>' +
+    '<button class="mr-export-md" id="mr-export-md">Export as Markdown</button>';
+  document.body.appendChild(panel);
+
+  toggle.addEventListener("click", function() { panel.classList.toggle("open"); });
+  document.getElementById("mr-close-btn").addEventListener("click", function() { panel.classList.remove("open"); });
+
+  document.getElementById("mr-hl-pens").addEventListener("click", function(e) {
+    var pen = e.target.closest(".mr-pen"); if (!pen) return;
+    highlightColor = pen.getAttribute("data-color");
+    this.querySelectorAll(".mr-pen").forEach(function(p) { p.classList.remove("active"); });
+    pen.classList.add("active");
+  });
+  document.getElementById("mr-ul-pens").addEventListener("click", function(e) {
+    var pen = e.target.closest(".mr-pen"); if (!pen) return;
+    underlineColor = pen.getAttribute("data-color");
+    this.querySelectorAll(".mr-pen").forEach(function(p) { p.classList.remove("active"); });
+    pen.classList.add("active");
+  });
+
+  document.getElementById("mr-save-btn").addEventListener("click", function() {
+    const toHide = ["mr-toggle-btn", "mr-panel", "mr-tooltip", "mr-note-input"];
+    toHide.forEach(function(id) { const el = getEl(id); if (el) el.style.display = "none"; });
+    const dt = document.doctype ? "<!DOCTYPE " + document.doctype.name + ">" : "<!DOCTYPE html>";
+    const blob = new Blob([dt + "\n" + document.documentElement.outerHTML], { type: "text/html;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    var origName = decodeURIComponent(location.pathname.split("/").pop() || "") || (document.title || "document").replace(/[<>:"/\\|?*]/g, "_") + ".html";
+    a.download = origName;
+    document.body.appendChild(a); a.click(); a.remove();
+    URL.revokeObjectURL(url);
+    toHide.forEach(function(id) { const el = getEl(id); if (el) el.style.display = ""; });
+    document.getElementById("mr-toggle-btn").style.display = "block";
+  });
+
+  document.getElementById("mr-export-md").addEventListener("click", exportMarkdown);
+}
+
+function refreshPanel() {
+  const list = getEl("mr-annot-list");
+  if (!list) return;
+  list.innerHTML = "";
+
+  const items = allAnnotations();
+  if (items.length === 0) {
+    list.innerHTML = '<li class="mr-empty">No annotations yet</li>';
+    return;
+  }
+
+  items.forEach(function(el) {
+    const li = document.createElement("li");
+    li.className = "mr-annot-item";
+
+    const type = el.getAttribute("data-type") || "highlight";
+    const text = (el.textContent || "").slice(0, 60);
+    const note = el.getAttribute("data-note");
+
+    const badge = document.createElement("span");
+    badge.className = "mr-annot-type " + type;
+    const typeNames = { highlight: "Highlight", underline: "Underline", note: "Note" };
+    badge.textContent = typeNames[type] || type;
+    li.appendChild(badge);
+
+    const txt = document.createElement("span");
+    txt.textContent = text + (el.textContent.length > 60 ? "\u2026" : "");
+    li.appendChild(txt);
+
+    if (note) {
+      const nt = document.createElement("span");
+      nt.className = "mr-annot-note";
+      nt.textContent = note;
+      li.appendChild(nt);
+    }
+
+    const actions = document.createElement("div");
+    actions.className = "mr-annot-actions";
+
+    if (type !== "note") {
+      const nb = document.createElement("button");
+      nb.className = "mr-btn-note"; nb.textContent = "Add Note";
+      nb.addEventListener("click", function(ev) {
+        ev.stopPropagation();
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+        showNoteInput(el.getBoundingClientRect(), el.getAttribute("data-note") || "", function(t) {
+          applyNote(el, t); refreshPanel();
+        });
+      });
+      actions.appendChild(nb);
+    }
+
+    const db = document.createElement("button");
+    db.className = "mr-btn-del"; db.textContent = "Remove";
+    db.addEventListener("click", function(ev) {
+      ev.stopPropagation();
+      removeAnnotation(el); refreshPanel();
+    });
+    actions.appendChild(db);
+    li.appendChild(actions);
+
+    li.addEventListener("click", function() {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+      el.style.outline = "3px solid #2f8a45";
+      setTimeout(function() { el.style.outline = ""; }, 1200);
+    });
+
+    list.appendChild(li);
+  });
+}
+
+/* ── Export annotations to Markdown ───────────────────── */
+function findHeading(el) {
+  var node = el;
+  while (node && node !== document.body) {
+    var prev = node.previousElementSibling;
+    while (prev) {
+      if (/^H[1-6]$/.test(prev.tagName)) return { level: parseInt(prev.tagName[1]), text: prev.textContent.trim() };
+      prev = prev.previousElementSibling;
+    }
+    node = node.parentElement;
+  }
+  return null;
+}
+
+function exportMarkdown() {
+  var items = allAnnotations();
+  if (items.length === 0) return;
+
+  var typeNames = { highlight: "Highlight", underline: "Underline", note: "Note" };
+  var lines = [];
+  lines.push("# " + (document.title || "Document") + " - Annotations");
+  lines.push("");
+  lines.push("_" + new Date().toLocaleString() + "_");
+  lines.push("");
+  lines.push("---");
+  lines.push("");
+
+  var lastHeading = null;
+
+  items.forEach(function(el) {
+    var type = el.getAttribute("data-type") || "highlight";
+    var text = el.textContent.trim();
+    var note = el.getAttribute("data-note") || "";
+
+    var heading = findHeading(el);
+    if (heading && (!lastHeading || lastHeading.text !== heading.text)) {
+      lines.push("#".repeat(Math.min(heading.level + 1, 4)) + " " + heading.text);
+      lines.push("");
+      lastHeading = heading;
+    }
+
+    lines.push("**[" + typeNames[type] + "]**");
+    lines.push("");
+    lines.push("> " + text.replace(/\n/g, "\n> "));
+    if (note) {
+      lines.push("");
+      lines.push("**Note:** " + note);
+    }
+    lines.push("");
+    lines.push("---");
+    lines.push("");
+  });
+
+  var md = lines.join("\n");
+  var blob = new Blob([md], { type: "text/markdown;charset=utf-8" });
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement("a");
+  a.href = url;
+  a.download = (document.title || "document").replace(/[<>:"/\\|?*]/g, "_") + ".annotations.md";
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+}
+
+/* ── Boot ─────────────────────────────────────────────── */
+function makeTranslatable() {
+  // Unwrap <header id="title-block-header"> entirely — move children to body
+  var header = document.getElementById('title-block-header');
+  if (header) {
+    var parent = header.parentNode;
+    var next = header.nextSibling;
+    while (header.firstChild) {
+      parent.insertBefore(header.firstChild, next);
+    }
+    parent.removeChild(header);
+  }
+  // Convert all headings to <p> with inline style
+  var sizes = { H1: '2em', H2: '1.5em', H3: '1.25em', H4: '1.1em', H5: '1em', H6: '0.9em' };
+  document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(function(h) {
+    var p = document.createElement('p');
+    p.innerHTML = h.innerHTML;
+    if (h.id) p.id = h.id;
+    if (h.className) p.className = h.className;
+    var sz = sizes[h.tagName] || '1.5em';
+    p.style.cssText = 'font-size:' + sz + ';font-weight:bold;margin-top:1.2em;margin-bottom:0.5em;';
+    if (h.classList.contains('title')) {
+      p.style.cssText = 'font-size:2.5em;font-weight:bold;text-align:center;line-height:1.2;margin-bottom:0.5em;';
+    }
+    h.parentNode.replaceChild(p, h);
+  });
+  // Unwrap <div class="abstract"> — flatten to plain <p> tags
+  var abDiv = document.querySelector('.abstract');
+  if (abDiv) {
+    var parent = abDiv.parentNode;
+    var next = abDiv.nextSibling;
+    while (abDiv.firstChild) {
+      parent.insertBefore(abDiv.firstChild, next);
+    }
+    parent.removeChild(abDiv);
+  }
+  // Convert abstract-title div to <p>
+  var abTitle = document.querySelector('.abstract-title');
+  if (abTitle && abTitle.tagName !== 'P') {
+    var p = document.createElement('p');
+    p.innerHTML = abTitle.innerHTML;
+    p.style.cssText = 'font-weight:bold;text-align:center;';
+    abTitle.parentNode.replaceChild(p, abTitle);
+  }
+}
+
+function boot() {
+  makeTranslatable();
+  buildPanel();
+  refreshPanel();
+}
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", boot);
+} else {
+  boot();
+}
+
+})();
+</script>
+</body>
+</html>
