@@ -1,0 +1,2353 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="[Blinded for Review]" />
+  <title>Age, Period, and Cohort Effects on Poor Mental Health Days Among US Adults, 1993–2024</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    div.abstract {
+      margin: 2em 2em 2em 2em;
+      text-align: left;
+      font-size: 85%;
+    }
+    div.abstract-title {
+      font-weight: bold;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0.5em;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/contrib/auto-render.min.js"></script>
+  <style>
+  /* Computer Modern Serif - LaTeX default font */
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunrm.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunbx.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunti.woff') format('woff');
+      font-weight: normal;
+      font-style: italic;
+  }
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunbi.woff') format('woff');
+      font-weight: bold;
+      font-style: italic;
+  }
+
+  body {line-height: 2em; font-size: 12pt}
+
+  p {text-indent: 0.5in; margin: 0; line-height: 2em}
+  div.Author p {
+    text-indent: 0;
+  }
+  .FigureTitle {font-weight: bold; margin: 5pt 0; font-size: 12pt; color: black;}
+  .FigureTitle p {text-indent: 0; text-align: left;}
+  .FigureNote p {text-indent: 0; margin: 0; padding: 0}
+  .Caption {font-style: italic; font-size: 12pt; color: black; text-align: left}
+  .Caption p {text-indent: 0; font-size: 12pt;}
+  .quarto-float, .quarto-float-tbl, .figure {margin: 0; margin-block-start: 0; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0}
+
+  h1, h2, h3, h4, h5 {border: none; margin: 0; padding: 0;line-height: 2; text-indent: 0 }
+
+  h1 {text-align: center;}
+  h3 {font-style: italic}
+  h4 {font-weight: bold}
+
+  h4, h5 {
+  text-indent: 0.5in;
+  display:inline-block;
+  margin: 0
+  }
+
+  h5 {
+    font-style: italic;
+  }
+
+  h4 + p, h5 + p {
+    display:inline;
+    text-indent: 0;
+  }
+
+
+  .Compact {
+    line-height: 1em;
+    text-indent: 0;
+    margin: 0;
+  }
+
+
+
+
+
+
+  td p, th p, li p {text-indent: 0; margin: 0;}
+
+
+
+  li p {text-indent: 0; margin: 0;}
+
+  .subtitle {font-size: 12pt; text-align: center; color: #303030; font-weight: bold;}
+
+  blockquote, .blockquote {border: none; margin: 0 .5in; padding: 0; font-style: normal; color: #303030;}
+
+  .Author {text-align:center; text-indent: 0}
+
+  .cell-output-display p {text-indent: 0}
+
+  div.hanging-indent {margin-left: 0.5in; text-indent: -0.5in}
+
+  div.hanging-indent .csl-entry {margin-left: 0; text-indent: -0.5in;}
+
+  .katex {font-size: 1em;}
+  .katex-display {font-size: 1.1em;}
+
+  .NoIndent p {text-indent: 0}
+
+  blockquote p:nth-child(1) {text-indent: 0}
+
+  table {
+      font-variant-numeric: tabular-nums;
+  }
+
+  .table {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .table>thead {
+    border-bottom: 1px solid black;
+  }
+
+  .table>:not(caption)>*>* {
+    border-bottom: none;
+  }
+
+  .tabwid {padding: 0}
+
+  .AbstractFirstParagraph p {text-indent: 0}
+
+
+  /* Override fonts to Computer Modern */
+  body {
+      font-family: 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+      font-family: 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;
+  }
+  code, pre {
+      font-family: 'Computer Modern Typewriter', 'Courier New', monospace;
+  }
+
+  /* KaTeX: match font size and weight to body text */
+  .katex {
+      font-size: 1.0em;
+      font-weight: normal;
+  }
+  .katex .mathnormal,
+  .katex .mathit {
+      font-weight: normal;
+  }
+  .katex .mathbf {
+      font-weight: bold;
+  }
+
+  /* Screen adaptation overrides for web viewing */
+  @media screen {
+      html { font-size: 12pt; }
+      body {
+          max-width: 52em;
+          margin: 2em auto;
+          padding: 0 2em;
+          column-count: 1;
+      }
+      figure img { max-width: 100%; height: auto; }
+      .math.display { overflow-x: auto; margin: 1.2em 0; }
+      pre {
+          overflow-x: auto;
+          background: #f5f5f5;
+          padding: 0.8em;
+          border-radius: 4px;
+      }
+  }
+  </style>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+          delimiters: [
+              {left: "$$", right: "$$", display: true},
+              {left: "\\[", right: "\\]", display: true},
+              {left: "$", right: "$", display: false},
+              {left: "\\(", right: "\\)", display: false}
+          ],
+          throwOnError: false
+      });
+  });
+  </script>
+  <script defer=""
+  src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Age, Period, and Cohort Effects on Poor Mental Health
+Days Among US Adults, 1993–2024</h1>
+<p class="author">[Blinded for Review]</p>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+<p><strong>Objectives.</strong> To decompose secular increases in poor
+mental health days among US adults into age, period, and cohort effects,
+and to examine whether these effects differ by sex and
+race/ethnicity.</p>
+<p><strong>Methods.</strong> We analyzed 31 years of Behavioral Risk
+Factor Surveillance System data (1993–2024; United States; <span
+class="math inline">N = 10{,}406{,}149</span>) using hierarchical
+age-period-cohort cross-classified random effects models. We fit
+separate models for males and females and for four racial/ethnic groups
+(White non-Hispanic, Black non-Hispanic, Hispanic, Other).</p>
+<p><strong>Results.</strong> Cohort effects explained 185 times more
+variance than period effects (<span
+class="math inline">\sigma^2_{\text{cohort}} = 3.43</span> vs. <span
+class="math inline">\sigma^2_{\text{period}} = 0.02</span>). Poor mental
+health days increased monotonically across birth cohorts, spanning 6.5
+days from the Silent Generation to Generation Z. Women showed stronger
+cohort effects than men (<span class="math inline">\sigma^2 =
+4.39</span> vs. 2.74). White non-Hispanic Americans exhibited the
+steepest cohort gradient (<span class="math inline">\sigma^2 =
+5.52</span>); Hispanic Americans showed near-zero cohort effects (<span
+class="math inline">\sigma^2 = 0.20</span>).</p>
+<p><strong>Conclusions.</strong> The US mental health crisis is
+primarily generational, not a response to recent period-level
+disruptions.</p>
+<p><strong>Public Health Implications.</strong> Structural interventions
+targeting formative-year conditions – childhood poverty, housing,
+education – may be more effective than period-focused responses. The
+racial heterogeneity in cohort effects demands targeted, culturally
+informed strategies.</p>
+</div>
+</header>
+<h1 id="introduction">Introduction</h1>
+<p>US adults in 2024 reported 70% more poor mental health days than
+those surveyed in 1993 – 4.9 versus 2.9 days per month on the Behavioral
+Risk Factor Surveillance System (BRFSS). The source of this
+deterioration remains contested. Popular accounts point to social media,
+political polarization, and the COVID-19 pandemic, all period-level
+forces that, in principle, should affect everyone exposed to them at a
+given moment in time. An alternative explanation locates the crisis in
+generational experience: successive cohorts come of age under
+progressively worse structural conditions and carry that burden forward
+across the life course. Distinguishing these accounts has direct
+consequences for intervention. If the crisis is period-driven, it is
+potentially reversible once the contextual stressor recedes. If it is
+cohort-driven, it reflects accumulated structural damage that requires
+long-term investment to address.</p>
+<p>The BRFSS mentally unhealthy days item, available since 1993,
+provides the longest continuous surveillance series of self-reported
+mental health in the US adult population <span class="citation"
+data-cites="brfssapc_iachan2016national brfssapc_pierannunzi2013systematic">(Iachan
+et al. 2016; Pierannunzi et al. 2013)</span>. During the pandemic, 40.9%
+of US adults reported adverse mental or behavioral health conditions
+<span class="citation" data-cites="brfssapc_czeisler2020mental">(<span
+class="nocase">Czeisler et al.</span> 2020)</span>, and elevated
+distress persisted into the third year of COVID-19 with racial and
+income disparities <span class="citation"
+data-cites="brfssapc_kim2023prevalence">(Kim et al. 2023)</span>. In
+parallel, <span class="citation"
+data-cites="brfssapc_casedeaton2015despair">Case and Deaton
+(2015)</span> documented rising midlife mortality among White
+non-Hispanic Americans from suicides, drug poisoning, and liver disease
+– deaths of despair linked to cumulative economic distress.</p>
+<p>Age-period-cohort (APC) analysis offers a formal framework for
+separating these temporal dimensions. Age effects capture biological and
+developmental processes; period effects represent shared historical
+forces; cohort effects reflect cumulative exposures during formative
+years that become embedded in health trajectories <span class="citation"
+data-cites="brfssapc_bell2020multilevel brfssapc_yang2013period">(Bell
+and Jones 2020; Yang and Land 2013)</span>. The hierarchical APC
+cross-classified random effects model (HAPC-CCREM), developed for
+repeated cross-sectional designs, treats period and cohort as crossed
+random intercepts and focuses interpretation on variance decomposition
+and nonlinear curvature rather than linear trends.</p>
+<p>Whether APC patterns differ by sex and race/ethnicity is a question
+with clear theoretical grounding. Women report higher rates of
+internalizing disorders than men. Racial disparities in mental health
+persist after socioeconomic adjustment, with discrimination operating as
+an independent risk <span class="citation"
+data-cites="brfssapc_williams1997racial">(Williams et al. 1997)</span>.
+The weathering hypothesis proposes that cumulative adversity accelerates
+health decline among Black Americans <span class="citation"
+data-cites="brfssapc_geronimus1992weathering">(Geronimus 1992)</span>,
+and fundamental cause theory predicts that groups with fewer flexible
+resources face disproportionate health consequences when new threats
+emerge <span class="citation"
+data-cites="brfssapc_phelan2010social">(Phelan et al. 2010)</span>.
+These frameworks predict that if cohort effects drive the mental health
+crisis, their magnitude should vary across demographic groups.</p>
+<p>Only one prior study applied APC methods to US adult mental health
+using BRFSS. <span class="citation"
+data-cites="brfssapc_xu2024temporal"><span class="nocase">Xu et
+al.</span> (2024)</span> decomposed age, period, and cohort effects on
+depression from 2013 through 2022, covering 3.1 million respondents with
+a binary indicator over 10 years. That short window missed the 1993–2007
+baseline needed to identify older cohort trajectories, and the binary
+outcome discarded severity information. No study has used the full
+30-year MENTHLTH series for APC decomposition, and none has stratified
+APC effects by sex and race/ethnicity at national scale.</p>
+<p>We addressed these gaps using 31 years of BRFSS data (<span
+class="math inline">N = 10.4</span> million), fitting HAPC-CCREM models
+to the overall sample and to subgroups defined by sex and
+race/ethnicity. Cohort effects explained 185 times more variance than
+period effects, with a monotonic 6.5-day increase in poor mental health
+days from the Silent Generation to Generation Z. Women and White
+non-Hispanic Americans showed the steepest cohort gradients; Hispanic
+Americans were nearly immune to cohort effects. This study contributes
+to the literature in three ways. First, we provide the first 30-year APC
+decomposition of a continuous mental health outcome in the US adult
+population. Second, we identify generational drift – not period-level
+disruption – as the primary mechanism underlying the mental health
+crisis. Third, we document racial divergence in cohort trajectories that
+connects the deaths-of-despair thesis with the Hispanic health paradox
+within a unified analytical framework.</p>
+<h1 id="methods">Methods</h1>
+<h2 id="data-source">Data Source</h2>
+<p>Data came from the Behavioral Risk Factor Surveillance System
+(BRFSS), an annual state-based telephone survey administered by the
+Centers for Disease Control and Prevention (CDC) in collaboration with
+state health departments. BRFSS is the largest continuously conducted
+health survey in the world, covering all 50 states and the District of
+Columbia, and uses random-digit-dialed probability sampling to produce
+nationally representative estimates of the noninstitutionalized US adult
+population aged 18 years and older <span class="citation"
+data-cites="brfssapc_iachan2016national brfssapc_pierannunzi2013systematic">(Iachan
+et al. 2016; Pierannunzi et al. 2013)</span>. We used data from 1993
+through 2024, the full period during which the mental health days item
+has been available. We excluded the 2002 survey year because
+questionnaire restructuring that year produced approximately 60%
+missingness on the mental health outcome, yielding 31 survey years for
+analysis. After restricting to respondents with complete data on all
+study variables, the analytic sample comprised <span
+class="math inline">N = 10{,}406{,}149</span> adults. Complete-case
+exclusions accounted for less than 1% of all respondents.</p>
+<h2 id="measures">Measures</h2>
+<p><strong>Outcome.</strong> The primary outcome was self-reported
+number of poor mental health days in the past 30 days (MENTHLTH): “Now
+thinking about your mental health, which includes stress, depression,
+and problems with emotions, for how many days during the past 30 days
+was your mental health not good?” Responses ranged from 0 to 30. As a
+secondary outcome, we defined frequent mental distress (FMD) as
+reporting 14 or more poor mental health days, consistent with the CDC
+standard threshold for clinically relevant burden.</p>
+<p><strong>Age-Period-Cohort Dimensions.</strong> Age was measured using
+the BRFSS five-year age group variable (_AGEG5YR), producing 14
+categories from 18–24 through 80 and older. Period was defined as survey
+year (1993–2024, excluding 2002). Birth cohort was computed as period
+minus the midpoint of the respondent’s age group, then classified into
+17 five-year cohort groups spanning those born in 1924 or earlier
+through those born in 2000–2004.</p>
+<p><strong>Covariates.</strong> Fixed-effect covariates included sex
+(male, female), race/ethnicity (White non-Hispanic, Black non-Hispanic,
+Hispanic, Other), and education (six levels ranging from no formal
+schooling through college graduate). Race/ethnicity was harmonized
+across three coding eras in the BRFSS to maintain consistent
+four-category classification over the 31-year study period.</p>
+<p><strong>Survey Weights.</strong> We applied the recommended BRFSS
+survey weights: _FINALWT for survey years 1993–2010 and _LLCPWT for
+2011–2024, reflecting the transition from post-stratification to
+iterative proportional fitting (raking) that accompanied the addition of
+cell phone sampling. All weights were scaled to a mean of 1 within each
+survey year to prevent years with larger samples from dominating the
+pooled estimates.</p>
+<h2 id="statistical-analysis">Statistical Analysis</h2>
+<p>We estimated hierarchical age-period-cohort cross-classified random
+effects models (HAPC-CCREM), following the framework developed by <span
+class="citation" data-cites="brfssapc_yang2013period">Yang and Land
+(2013)</span>. In this specification, individual-level covariates (age
+group, sex, race/ethnicity, and education) entered as fixed effects,
+while period and birth cohort entered as crossed random intercepts. The
+HAPC-CCREM treats each survey year and each birth cohort as draws from
+separate normal distributions, allowing simultaneous estimation of
+period-specific and cohort-specific deviations from the population mean
+after adjusting for age and compositional changes.</p>
+<p>To reduce computational burden and stabilize estimation with over 10
+million observations, we aggregated individual responses into cells
+defined by the full cross-classification of age group, sex,
+race/ethnicity, education, period, and cohort. This produced 17,391
+cells. The outcome for each cell was the weighted mean of poor mental
+health days, and each cell received a precision weight equal to the
+square root of its sample size. Cell-level aggregation is standard
+practice in APC analyses of large-scale repeated cross-sectional surveys
+<span class="citation" data-cites="brfssapc_yang2013period">(Yang and
+Land 2013)</span>.</p>
+<p>We fit six HAPC models: one full-sample model and five stratified
+models (two by sex, four by race/ethnicity). Stratified models allowed
+cohort and period variance components to differ across demographic
+groups, testing whether the APC structure of mental health varies by sex
+and race/ethnicity.</p>
+<p><strong>Sensitivity Analyses.</strong> We conducted three sets of
+sensitivity analyses. First, we fit the APC-I
+(age-period-cohort-interaction) model <span class="citation"
+data-cites="brfssapc_luo2019period">(Luo and Hodges 2019)</span>, which
+reconceptualizes cohort effects as deviations from the average age
+profile within each period, bypassing the linear identification
+constraint through a different parameterization. Second, we split the
+sample at the 2011 weight-methodology break to test whether the
+transition from post-stratification to raking weights influenced the
+pattern of results; we fit separate HAPC models for 1993–2010 and
+2011–2024. Third, we restricted the analysis to the 1993–2012 subsample
+where continuous age (rather than grouped age) was available, to verify
+that five-year age grouping did not distort the estimated age
+profile.</p>
+<p><strong>Identification.</strong> The exact linear dependency among
+age, period, and cohort (<span class="math inline">C = P - A</span>)
+means that linear trends cannot be uniquely attributed to any single
+temporal dimension <span class="citation"
+data-cites="brfssapc_bell2020multilevel brfssapc_fosse2019analyzing">(Bell
+and Jones 2020; Fosse and Winship 2019)</span>. We interpret results
+with this constraint in mind, focusing on nonlinear curvature in age,
+period, and cohort profiles and on variance decomposition rather than
+point estimates of linear slopes. The HAPC random-effects specification
+partially addresses the identification problem by treating period and
+cohort effects as variance components rather than fixed coefficients,
+though this approach rests on distributional assumptions that have been
+debated <span class="citation"
+data-cites="brfssapc_bell2014another">(Bell and Jones 2014)</span>.</p>
+<p>All models were fit in R (version 4.x) using the <code>lme4</code>
+package. Variance components, best linear unbiased predictions (BLUPs),
+and fixed-effect coefficients were extracted for reporting.</p>
+<h1 id="results">Results</h1>
+<h2 id="descriptive-trends">Descriptive Trends</h2>
+<p>Mean poor mental health days increased across the three decades of
+observation (Table 1). During 1993–2000, respondents reported an average
+of 2.98 days per month (SE = 0.007), with 8.8% meeting the FMD
+threshold. By 2001–2010, the mean had risen to 3.42 days (SE = 0.004)
+and FMD prevalence reached 10.3%. The most recent period, 2011–2024,
+showed a further increase to 4.19 days (SE = 0.003) with 13.1% reporting
+FMD. This 41% increase in mean days and 49% relative increase in FMD
+prevalence over three decades occurred against a backdrop of substantial
+compositional change in the BRFSS sample, including shifts in age
+distribution, racial/ethnic composition, and educational attainment.</p>
+<h2 id="age-period-cohort-decomposition">Age-Period-Cohort
+Decomposition</h2>
+<p>The full-sample HAPC model revealed that birth cohort membership
+explained the vast majority of temporal variation in poor mental health
+days. The estimated variance component for cohort random effects was
+<span class="math inline">\hat{\sigma}^2_{\text{cohort}} =
+3.4335</span>, compared with <span
+class="math inline">\hat{\sigma}^2_{\text{period}} = 0.0185</span> for
+period effects, a ratio of approximately 185:1. This finding indicates
+that knowing when a person was born provides far more information about
+their expected mental health burden than knowing when they were
+surveyed.</p>
+<p>Age effects followed an inverted-U pattern, with poor mental health
+days increasing from young adulthood through middle age, peaking in the
+55–59 age group, declining through early old age, and then spiking again
+among those aged 85 and older. Period effects were near zero across all
+31 survey years, with only a slight uptick during 2021–2024 that did not
+substantively alter the overall pattern. Even the COVID-19 pandemic
+years did not produce a detectable period deviation in the HAPC
+framework once cohort composition was accounted for.</p>
+<p>Cohort effects showed a monotonic increase across successive birth
+cohorts (Figure 1). The BLUP for the earliest cohort (born 1924 or
+earlier) was <span class="math inline">-2.5</span> days relative to the
+grand mean, while the BLUP for the most recent cohort (born 2000–2004)
+was <span class="math inline">+4.05</span> days. This 6.5-day gap means
+that, at any given age and in any given survey year, members of the
+youngest cohort reported approximately 6.5 more poor mental health days
+per month than members of the oldest cohort. The cohort gradient was
+approximately linear on the log scale, with each five-year birth cohort
+reporting roughly 0.4 more poor mental health days than the preceding
+one.</p>
+<h2 id="sex-stratified-analysis">Sex-Stratified Analysis</h2>
+<p>Sex-stratified HAPC models confirmed that cohort effects dominated
+period effects for both women and men, though the magnitude differed
+(Figure 2). The cohort variance component for women (<span
+class="math inline">\hat{\sigma}^2 = 4.39</span>) was 60% larger than
+for men (<span class="math inline">\hat{\sigma}^2 = 2.74</span>). For
+cohorts born before 1980, the male and female BLUP trajectories were
+roughly parallel, with women reporting higher levels at each point.
+Beginning with the 1980 birth cohort, the trajectories diverged: women’s
+cohort BLUPs accelerated while men’s continued at a steadier rate. By
+the 2000–2004 birth cohort, the female BLUP reached <span
+class="math inline">+4.75</span> days compared with <span
+class="math inline">+3.5</span> days for males, a 1.25-day gap that was
+not present among earlier cohorts. Period effects remained near zero for
+both sexes.</p>
+<h2 id="raceethnicity-stratified-analysis">Race/Ethnicity-Stratified
+Analysis</h2>
+<p>The race/ethnicity-stratified models produced the most striking
+divergence in cohort patterns (Figure 3). White non-Hispanic respondents
+showed the steepest cohort gradient, with a variance component of <span
+class="math inline">\hat{\sigma}^2 = 5.52</span>, the largest of any
+subgroup. Each successive White non-Hispanic birth cohort reported a
+larger increment in poor mental health days than the corresponding
+increment for any other racial/ethnic group. Black non-Hispanic
+respondents showed an intermediate pattern (<span
+class="math inline">\hat{\sigma}^2 = 3.67</span>), with a clear cohort
+gradient that was less steep than the White non-Hispanic trajectory.
+Respondents classified as Other race/ethnicity also displayed a moderate
+cohort gradient (<span class="math inline">\hat{\sigma}^2 =
+3.14</span>).</p>
+<p>Hispanic respondents presented a qualitatively different pattern.
+Their cohort variance component was <span
+class="math inline">\hat{\sigma}^2 = 0.20</span>, approximately 28 times
+smaller than the White non-Hispanic estimate. The cohort BLUP trajectory
+for Hispanic respondents was nearly flat, with minimal differences
+across birth cohorts born from the 1930s through the 2000s. This
+near-immunity to cohort effects stands in sharp contrast to the steep
+generational deterioration observed among White non-Hispanic Americans
+and represents a cohort-level manifestation of what has been termed the
+Hispanic health paradox in the mortality literature. Period effects
+remained negligible across all four racial/ethnic groups.</p>
+<h2 id="sensitivity-analyses">Sensitivity Analyses</h2>
+<p>All three sensitivity analyses supported the main findings. When the
+sample was split at the 2011 weight-methodology break, HAPC models fit
+separately to the 1993–2010 and 2011–2024 subsamples both showed cohort
+dominance over period effects, indicating that the transition from
+post-stratification to raking weights did not drive the observed
+pattern. The APC-I model <span class="citation"
+data-cites="brfssapc_luo2019period">(Luo and Hodges 2019)</span>
+produced results consistent with the HAPC specification; model fit
+improved by <span class="math inline">\Delta</span>AIC = 341.6 relative
+to an age-period-only model, confirming that cohort-related variation
+captured meaningful structure beyond what age and period alone could
+explain. The continuous-age subset analysis (1993–2012) yielded cohort
+and period effect estimates in the same direction and of comparable
+magnitude as the main models, confirming that five-year age grouping did
+not introduce systematic bias into the decomposition.</p>
+<h1 id="discussion">Discussion</h1>
+<p>The central finding of this study is that birth cohort membership,
+not historical period, drives the deterioration of mental health among
+US adults. Cohort effects explained 185 times more variance than period
+effects (<span class="math inline">\sigma^2_{\text{cohort}} =
+3.43</span> vs. <span class="math inline">\sigma^2_{\text{period}} =
+0.02</span>), with a monotonic increase in poor mental health days from
+the Silent Generation (BLUP <span class="math inline">= -2.5</span> days
+for those born before 1925) to Generation Z (BLUP <span
+class="math inline">= +4.05</span> days for the 2000–04 cohort),
+spanning a 6.5-day range. Period effects were negligible even during the
+COVID-19 pandemic, the 2008 Great Recession, and other widely discussed
+historical disruptions. These results reframe the US mental health
+crisis: it is not a reaction to recent contextual shocks but a
+generational drift rooted in the accumulated conditions under which
+successive cohorts came of age.</p>
+<h2 id="the-mental-health-crisis-as-generational-drift">The Mental
+Health Crisis as Generational Drift</h2>
+<p>The near-zero period variance challenges prevailing narratives that
+attribute rising psychological distress to social media proliferation,
+political polarization, or pandemic-related disruption <span
+class="citation" data-cites="brfssapc_czeisler2020mental">(<span
+class="nocase">Czeisler et al.</span> 2020)</span>. If these
+period-level forces were the principal drivers, the HAPC decomposition
+would have revealed meaningful period random effects; instead, the data
+point to a slow, cohort-by-cohort accumulation of risk.</p>
+<p><span class="citation" data-cites="brfssapc_xu2024temporal"><span
+class="nocase">Xu et al.</span> (2024)</span> reported both cohort and
+period effects in a 10-year BRFSS analysis of depression (2013–2022),
+with COVID-19 emerging as a detectable period shock. Our 30-year window,
+which captures pre-Great Recession baseline cohorts born as early as the
+1920s, provides a far longer observational lever. The 10-year design in
+Xu et al. conflated the steep cohort gradient among younger adults with
+a short-term period spike, an interpretation our extended time series
+can adjudicate more cleanly. In the United Kingdom, <span
+class="citation" data-cites="brfssapc_thomson2018mental">Thomson and
+Katikireddi (2018)</span> identified cohort-specific mental health
+deterioration among the post-1979 “jilted generation” following the
+Great Recession, a pattern consistent with our observation that each
+successive US birth cohort enters adulthood with a higher burden of poor
+mental health days. <span class="citation"
+data-cites="brfssapc_otten2023gender">Otten et al. (2023)</span> applied
+HAPC to German population data and found significant cohort effects for
+women but not men, a sex-stratified pattern that aligns with our finding
+of stronger female cohort variance (<span class="math inline">\sigma^2 =
+4.39</span>) compared with male cohort variance (<span
+class="math inline">\sigma^2 = 2.74</span>), with post-1980 divergence
+reaching 1.25 days by the 2000–04 cohort.</p>
+<p>Life course epidemiology offers a coherent theoretical account of
+these cohort effects <span class="citation"
+data-cites="brfssapc_kuh2003course brfssapc_benshlomo2016decades">(Kuh
+et al. 2003; Ben-Shlomo et al. 2016)</span>. Cohort membership captures
+cumulative exposures during formative developmental periods – childhood
+economic conditions, family stability, educational environments, and
+availability of community social capital. Successive US cohorts entered
+adulthood facing compounding structural disadvantages: stagnant real
+wages, rising housing costs, growing student debt burdens, and declining
+rates of civic participation and institutional trust. These exposures
+are not experienced as discrete period events but as the ambient
+conditions of a generation’s formative years, and they become embedded
+in health trajectories that persist across the life course.</p>
+<h2
+id="racial-divergence-deaths-of-despair-meets-the-hispanic-paradox">Racial
+Divergence: Deaths of Despair Meets the Hispanic Paradox</h2>
+<p>Race-stratified analyses revealed sharply divergent cohort
+trajectories. White non-Hispanic Americans exhibited the steepest cohort
+gradient (<span class="math inline">\sigma^2 = 5.52</span>), extending
+the “deaths of despair” framework from mortality to mental health at a
+population scale. <span class="citation"
+data-cites="brfssapc_casedeaton2015despair">Case and Deaton
+(2015)</span> documented a reversal in all-cause mortality among midlife
+White non-Hispanic Americans driven by suicides, drug poisoning, and
+liver disease – outcomes tied to cumulative economic distress. Our data
+suggest that the same generational erosion of economic security and
+social integration that produces excess mortality among White Americans
+also generates a steep, cohort-linked rise in poor mental health days
+among this group.</p>
+<p>Hispanic Americans displayed near-immunity to cohort effects (<span
+class="math inline">\sigma^2 = 0.20</span>), a finding that extends the
+Hispanic health paradox – typically discussed in the context of
+mortality <span class="citation"
+data-cites="brfssapc_williams1997racial">(Williams et al. 1997)</span> –
+to the domain of cohort-level mental health trajectories. Strong family
+networks, immigrant selection, and cultural norms of collective coping
+may buffer successive Hispanic cohorts against the structural
+deterioration that afflicts other groups. This cohort-level resilience
+held even as cross-sectional racial disparities in mental health care
+access persisted <span class="citation"
+data-cites="brfssapc_olfson2023racial">(Olfson et al. 2023)</span>.</p>
+<p>Black non-Hispanic Americans occupied an intermediate position (<span
+class="math inline">\sigma^2 = 3.67</span>). The weathering hypothesis
+<span class="citation"
+data-cites="brfssapc_geronimus1992weathering">(Geronimus 1992)</span>
+predicts that cumulative adversity produces accelerated health decline
+among Black Americans, and <span class="citation"
+data-cites="brfssapc_simons2020effects">Simons et al. (2020)</span>
+documented biological markers of this process. Yet the Black
+non-Hispanic cohort gradient was less steep than that of White
+non-Hispanic Americans, possibly because Black communities have long
+borne high baseline mental health burdens – leaving less room for
+cohort-driven deterioration – and have developed durable coping
+structures in response to persistent adversity.</p>
+<p>The finding that White non-Hispanic Americans show the steepest
+decline complicates straightforward applications of fundamental cause
+theory <span class="citation"
+data-cites="brfssapc_phelan2010social brfssapc_clouston2021retrospective">(Phelan
+et al. 2010; Clouston and Link 2021)</span>. If flexible resources
+consistently protect the socioeconomically advantaged, the group with
+the greatest historical advantages should show the least deterioration.
+Instead, the mental health crisis operates through mechanisms – erosion
+of economic expectations, decline of social capital, loss of perceived
+status – that disproportionately affect the group whose previous
+advantages are receding. The SES-health gradient persists <span
+class="citation" data-cites="brfssapc_phelan2004fundamental">(Phelan et
+al. 2004)</span>, but the cohort-level story is one of relative decline
+rather than absolute disadvantage.</p>
+<h2 id="limitations">Limitations</h2>
+<p>Several limitations warrant consideration. First, the BRFSS is a
+repeated cross-sectional survey; we cannot observe within-individual
+aging, and cohort effects are inferred from between-cohort comparisons
+at comparable ages. Second, MENTHLTH is a self-reported measure, and
+growing mental health awareness across successive cohorts may inflate
+the apparent trend. <span class="citation"
+data-cites="brfssapc_leeuwen2022trajectories">Jp Jos Leeuwen and Leopold
+(2022)</span> found that rising diagnosed depression in Germany
+coexisted with stable or improving general mental health, suggesting
+that changing reporting norms can decouple self-report from underlying
+prevalence. Third, cell-level aggregation, while standard in APC
+research, sacrifices individual-level variation and precludes multilevel
+mediation analysis. Fourth, the fundamental APC identification
+constraint means that linear components of age, period, and cohort
+cannot be uniquely separated <span class="citation"
+data-cites="brfssapc_bell2020multilevel brfssapc_fosse2019analyzing">(Bell
+and Jones 2020; Fosse and Winship 2019)</span>; our interpretation
+focuses on nonlinear curvature effects, which are identifiable under all
+modeling approaches. Fifth, the 2011 transition from post-stratification
+to raking weights introduced a design discontinuity, though sensitivity
+analyses excluding years around this break confirmed the robustness of
+results. Sixth, race and ethnicity coding changed across the three eras
+of BRFSS data collection (pre-2001, 2001–2012, post-2013), and
+harmonization may introduce measurement error. Seventh, the BRFSS
+excludes institutionalized populations, who carry disproportionate
+mental health burdens.</p>
+<h1 id="public-health-implications">Public Health Implications</h1>
+<p>If the mental health crisis is generational rather than contextual,
+several implications follow for practice, policy, and research.</p>
+<p><em>Practice.</em> Clinical approaches calibrated to acute period
+stressors – crisis hotlines scaled during pandemics, disaster mental
+health teams deployed after mass events – address real needs but do not
+reach the structural roots of cohort-driven deterioration. Mental health
+service planning should account for the differential burden across birth
+cohorts: younger cohorts carry a systematically higher baseline of poor
+mental health days and will require proportionally greater resources as
+they age into midlife and beyond. The inverted-U age curve, peaking at
+ages 55–59, implies that the largest absolute burden will materialize as
+Millennial and Generation Z cohorts reach middle adulthood. Racial
+stratification of cohort trajectories further indicates that service
+models effective for White non-Hispanic populations – the group with the
+steepest rise – will not translate directly to Hispanic communities,
+where cohort effects are minimal and access barriers remain the dominant
+concern <span class="citation"
+data-cites="brfssapc_olfson2023racial">(Olfson et al. 2023)</span>.</p>
+<p><em>Policy.</em> Structural interventions targeting conditions during
+formative years are more likely to bend the cohort curve than
+period-focused regulations. Childhood poverty reduction, affordable
+housing programs, equitable educational access, and student debt relief
+address the cumulative exposures that life course epidemiology
+identifies as the substrates of cohort effects <span class="citation"
+data-cites="brfssapc_kuh2003course brfssapc_benshlomo2016decades">(Kuh
+et al. 2003; Ben-Shlomo et al. 2016)</span>. These investments operate
+on a generational time scale and will not produce immediate changes in
+population mental health statistics – a political liability that public
+health advocates must address directly. The ACA Medicaid expansion
+increased mental health treatment admissions <span class="citation"
+data-cites="brfssapc_ortega2022medicaid">(Ortega 2022)</span> and
+improved coverage and access for low-income adults <span
+class="citation" data-cites="brfssapc_miller2017health">(Miller and
+Wherry 2017)</span>, demonstrating that policy levers can reach
+populations at highest risk. The racial heterogeneity in cohort effects
+demands targeted strategies: understanding what protects Hispanic
+communities – family cohesion, community networks, immigrant cultural
+frameworks – could inform universal prevention models. Conversely, the
+steepness of the White non-Hispanic cohort gradient suggests that policy
+responses directed solely at racial minorities will miss the largest
+source of growing population burden.</p>
+<p><em>Research.</em> Future BRFSS analyses should maintain the MENTHLTH
+item for ongoing cohort monitoring; replacing it with screener
+instruments would break the 30-year time series. Mechanism-based APC
+studies that link cohort effects to measurable generational exposures –
+childhood economic conditions, neighborhood lead levels, community
+social capital indices – are needed to move beyond description toward
+causal understanding <span class="citation"
+data-cites="brfssapc_fosse2019analyzing">(Fosse and Winship
+2019)</span>. The finding that COVID-19 produced minimal period effects
+in a cohort-dominated model warrants replication with post-2024 data as
+additional pandemic follow-up years accumulate. The sex-stratified
+divergence after the 1980 birth cohort invites investigation into
+whether changes in labor force participation, educational attainment
+patterns, or social media exposure during adolescence differentially
+shaped the mental health trajectories of women and men born in recent
+decades.</p>
+<h1 class="unnumbered" id="tables">Tables</h1>
+<div class="adjustbox">
+<p><span>max width=</span></p>
+<div id="tab:descriptives">
+<table>
+<caption>Descriptive statistics for BRFSS respondents by period,
+1993–2024</caption>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Characteristic</strong></th>
+<th style="text-align: center;"><strong>1993–2000</strong></th>
+<th style="text-align: center;"><strong>2001–2010</strong></th>
+<th style="text-align: center;"><strong>2011–2024</strong></th>
+<th style="text-align: center;"><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">N</td>
+<td style="text-align: center;">1,059,529</td>
+<td style="text-align: center;">3,166,624</td>
+<td style="text-align: center;">6,233,573</td>
+<td style="text-align: center;">10,459,726</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><em>Age group,
+%</em></strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">-24</td>
+<td style="text-align: center;">12.9</td>
+<td style="text-align: center;">12.2</td>
+<td style="text-align: center;">12.5</td>
+<td style="text-align: center;">12.5</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.03)</td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;">-29</td>
+<td style="text-align: center;">9.8</td>
+<td style="text-align: center;">8.0</td>
+<td style="text-align: center;">8.0</td>
+<td style="text-align: center;">8.4</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.03)</td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;">-34</td>
+<td style="text-align: center;">10.8</td>
+<td style="text-align: center;">10.0</td>
+<td style="text-align: center;">9.3</td>
+<td style="text-align: center;">9.8</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.03)</td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;">-39</td>
+<td style="text-align: center;">11.1</td>
+<td style="text-align: center;">9.4</td>
+<td style="text-align: center;">7.8</td>
+<td style="text-align: center;">9.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.03)</td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;">-44</td>
+<td style="text-align: center;">10.3</td>
+<td style="text-align: center;">10.6</td>
+<td style="text-align: center;">8.5</td>
+<td style="text-align: center;">9.5</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.03)</td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;">-49</td>
+<td style="text-align: center;">8.9</td>
+<td style="text-align: center;">9.3</td>
+<td style="text-align: center;">7.2</td>
+<td style="text-align: center;">8.2</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.03)</td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;">-54</td>
+<td style="text-align: center;">7.3</td>
+<td style="text-align: center;">9.4</td>
+<td style="text-align: center;">8.8</td>
+<td style="text-align: center;">8.6</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.03)</td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;">-59</td>
+<td style="text-align: center;">6.0</td>
+<td style="text-align: center;">7.4</td>
+<td style="text-align: center;">7.8</td>
+<td style="text-align: center;">7.3</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;">-64</td>
+<td style="text-align: center;">5.3</td>
+<td style="text-align: center;">6.3</td>
+<td style="text-align: center;">8.2</td>
+<td style="text-align: center;">7.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;">-69</td>
+<td style="text-align: center;">5.8</td>
+<td style="text-align: center;">4.9</td>
+<td style="text-align: center;">6.5</td>
+<td style="text-align: center;">5.9</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;">-74</td>
+<td style="text-align: center;">5.0</td>
+<td style="text-align: center;">4.0</td>
+<td style="text-align: center;">5.4</td>
+<td style="text-align: center;">4.9</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;">-79</td>
+<td style="text-align: center;">3.5</td>
+<td style="text-align: center;">3.8</td>
+<td style="text-align: center;">4.0</td>
+<td style="text-align: center;">3.9</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;">-84</td>
+<td style="text-align: center;">3.0</td>
+<td style="text-align: center;">3.9</td>
+<td style="text-align: center;">4.5</td>
+<td style="text-align: center;">4.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;">+</td>
+<td style="text-align: center;">0.4</td>
+<td style="text-align: center;">0.6</td>
+<td style="text-align: center;">1.4</td>
+<td style="text-align: center;">0.9</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.00)</td>
+<td style="text-align: center;">(0.00)</td>
+<td style="text-align: center;">(0.00)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><em>Sex, %</em></strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Female</td>
+<td style="text-align: center;">51.9</td>
+<td style="text-align: center;">51.4</td>
+<td style="text-align: center;">51.3</td>
+<td style="text-align: center;">51.5</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.05)</td>
+<td style="text-align: center;">(0.03)</td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.02)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><em>Race/ethnicity,
+%</em></strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">White non-Hispanic</td>
+<td style="text-align: center;">75.8</td>
+<td style="text-align: center;">6.1</td>
+<td style="text-align: center;">56.5</td>
+<td style="text-align: center;">46.4</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.04)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.02)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Black non-Hispanic</td>
+<td style="text-align: center;">9.4</td>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">10.7</td>
+<td style="text-align: center;">7.7</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.03)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hispanic</td>
+<td style="text-align: center;">10.6</td>
+<td style="text-align: center;">0.0</td>
+<td style="text-align: center;">15.0</td>
+<td style="text-align: center;">9.7</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.03)</td>
+<td style="text-align: center;">(0.00)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Other/multiracial</td>
+<td style="text-align: center;">4.3</td>
+<td style="text-align: center;">92.9</td>
+<td style="text-align: center;">17.7</td>
+<td style="text-align: center;">36.2</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><em>Education,
+%</em></strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Never attended/Kindergarten</td>
+<td style="text-align: center;">0.6</td>
+<td style="text-align: center;">0.2</td>
+<td style="text-align: center;">0.3</td>
+<td style="text-align: center;">0.3</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.00)</td>
+<td style="text-align: center;">(0.00)</td>
+<td style="text-align: center;">(0.00)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Elementary (grades 1-8)</td>
+<td style="text-align: center;">4.8</td>
+<td style="text-align: center;">4.1</td>
+<td style="text-align: center;">4.3</td>
+<td style="text-align: center;">4.4</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Some high school</td>
+<td style="text-align: center;">8.6</td>
+<td style="text-align: center;">7.3</td>
+<td style="text-align: center;">8.5</td>
+<td style="text-align: center;">8.2</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.03)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;">High school graduate</td>
+<td style="text-align: center;">32.4</td>
+<td style="text-align: center;">29.2</td>
+<td style="text-align: center;">28.0</td>
+<td style="text-align: center;">29.3</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.05)</td>
+<td style="text-align: center;">(0.03)</td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Some college</td>
+<td style="text-align: center;">27.1</td>
+<td style="text-align: center;">26.5</td>
+<td style="text-align: center;">30.7</td>
+<td style="text-align: center;">28.7</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.04)</td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;">College graduate</td>
+<td style="text-align: center;">26.5</td>
+<td style="text-align: center;">32.7</td>
+<td style="text-align: center;">28.3</td>
+<td style="text-align: center;">29.1</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.04)</td>
+<td style="text-align: center;">(0.03)</td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><em>MENTHLTH
+outcomes</em></strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Mean days (0-30)</td>
+<td style="text-align: center;">2.98</td>
+<td style="text-align: center;">3.42</td>
+<td style="text-align: center;">4.19</td>
+<td style="text-align: center;">3.70</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.00)</td>
+<td style="text-align: center;">(0.00)</td>
+<td style="text-align: center;">(0.00)</td>
+</tr>
+<tr>
+<td style="text-align: left;">% reporting 0 days</td>
+<td style="text-align: center;">68.3</td>
+<td style="text-align: center;">65.9</td>
+<td style="text-align: center;">62.5</td>
+<td style="text-align: center;">64.8</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.05)</td>
+<td style="text-align: center;">(0.03)</td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+<tr>
+<td style="text-align: left;">% Frequent Mental Distress (<span
+class="math inline">\geq</span>14 days)</td>
+<td style="text-align: center;">8.8</td>
+<td style="text-align: center;">10.3</td>
+<td style="text-align: center;">13.1</td>
+<td style="text-align: center;">11.4</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.03)</td>
+<td style="text-align: center;">(0.02)</td>
+<td style="text-align: center;">(0.01)</td>
+<td style="text-align: center;">(0.01)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="minipage">
+<p><em>Note:</em> Percentages are survey-weighted. Standard errors in
+parentheses. Race/ethnicity harmonized across three coding eras
+(1993–2000, 2001–2012, 2013–2024). Frequent Mental Distress (FMD)
+defined as <span class="math inline">\geq</span>14 days of poor mental
+health per month (CDC standard). 2002 excluded due to anomalous valid
+response rate (39.5%).</p>
+</div>
+<h1 class="unnumbered" id="figures">Figures</h1>
+<figure id="fig:apc" data-latex-placement="H">
+<img src="figures/Figure1_apc_decomposition.png" style="width:95.0%" />
+<figcaption><strong>Figure 1.</strong> Age, period, and cohort effects
+on poor mental health days among US adults, BRFSS 1993–2024. Panel (a)
+shows age fixed effects (reference: age 18–24); panel (b) shows period
+random effect BLUPs by survey year; panel (c) shows cohort random effect
+BLUPs by 5-year birth cohort. Shaded bands represent 95% confidence
+intervals. From hierarchical age-period-cohort cross-classified random
+effects model (N = 10<span>,</span>406<span>,</span>149).</figcaption>
+</figure>
+<figure id="fig:sex" data-latex-placement="H">
+<img src="figures/Figure2_apc_by_sex.png" style="width:95.0%" />
+<figcaption><strong>Figure 2.</strong> Age, period, and cohort effects
+on poor mental health days by sex, BRFSS 1993–2024. Sex-stratified
+hierarchical age-period-cohort models. Shaded bands represent 95%
+confidence intervals.</figcaption>
+</figure>
+<figure id="fig:race" data-latex-placement="H">
+<img src="figures/Figure3_apc_by_race.png" style="width:95.0%" />
+<figcaption><strong>Figure 3.</strong> Age, period, and cohort effects
+on poor mental health days by race/ethnicity, BRFSS 1993–2024.
+Race/ethnicity-stratified hierarchical age-period-cohort models. NH =
+non-Hispanic. Shaded bands represent 95% confidence
+intervals.</figcaption>
+</figure>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="list">
+<div id="ref-brfssapc_bell2014another" class="csl-entry"
+role="listitem">
+Bell, Andrew, and K. Jones. 2014. <span>“<span class="nocase">Another
+’futile quest’? A simulation study of Yang and Land’s Hierarchical
+Age-Period-Cohort model</span>.”</span> <em>Demographic Research</em>
+30: 333–60. <a
+href="https://doi.org/10.4054/DEMRES.2014.30.11">https://doi.org/10.4054/DEMRES.2014.30.11</a>.
+</div>
+<div id="ref-brfssapc_bell2020multilevel" class="csl-entry"
+role="listitem">
+Bell, Andrew, and K. Jones. 2020. <span>“<span class="nocase">Multilevel
+models for age–period–cohort analysis</span>.”</span> <em>Age, Period
+and Cohort Effects</em>, 23–40. <a
+href="https://doi.org/10.4324/9780429056819-3">https://doi.org/10.4324/9780429056819-3</a>.
+</div>
+<div id="ref-brfssapc_benshlomo2016decades" class="csl-entry"
+role="listitem">
+Ben-Shlomo, Y., R. Cooper, and D. Kuh. 2016. <span>“<span
+class="nocase">The last two decades of life course epidemiology, and its
+relevance for research on ageing</span>.”</span> <em>International
+Journal of Epidemiology</em> 45: 973–88. <a
+href="https://doi.org/10.1093/ije/dyw096">https://doi.org/10.1093/ije/dyw096</a>.
+</div>
+<div id="ref-brfssapc_casedeaton2015despair" class="csl-entry"
+role="listitem">
+Case, Anne, and Angus Deaton. 2015. <span>“<span class="nocase">Rising
+morbidity and mortality in midlife among white non-Hispanic Americans in
+the 21st century</span>.”</span> <em>Proceedings of the National Academy
+of Sciences</em> 112 (49): 15078–83. <a
+href="https://doi.org/10.1073/pnas.1518393112">https://doi.org/10.1073/pnas.1518393112</a>.
+</div>
+<div id="ref-brfssapc_clouston2021retrospective" class="csl-entry"
+role="listitem">
+Clouston, Sean A. P., and Bruce G. Link. 2021. <span>“<span
+class="nocase">A retrospective on fundamental cause theory: State of the
+literature, and goals for the future.</span>”</span> <em>The Annual
+Review of Sociology</em> 47 1: 131–56. <a
+href="https://doi.org/10.1146/ANNUREV-SOC-090320-094912">https://doi.org/10.1146/ANNUREV-SOC-090320-094912</a>.
+</div>
+<div id="ref-brfssapc_czeisler2020mental" class="csl-entry"
+role="listitem">
+<span class="nocase">Czeisler, Mark E, R. Lane, Emiko Petrosky, et
+al.</span> 2020. <span>“<span class="nocase">Mental Health, Substance
+Use, and Suicidal Ideation During the COVID-19 Pandemic — United States,
+June 24–30, 2020</span>.”</span> <em>MMWR. Morbidity and Mortality
+Weekly Report</em> 69: 1049–57. <a
+href="https://doi.org/10.15585/mmwr.mm6932a1">https://doi.org/10.15585/mmwr.mm6932a1</a>.
+</div>
+<div id="ref-brfssapc_fosse2019analyzing" class="csl-entry"
+role="listitem">
+Fosse, Ethan, and Christopher Winship. 2019. <span>“<span
+class="nocase">Analyzing Age-Period-Cohort Data: A Review and
+Critique</span>.”</span> <em>Annual Review of Sociology</em> 45 (1):
+467–92. <a
+href="https://doi.org/10.1146/annurev-soc-073018-022616">https://doi.org/10.1146/annurev-soc-073018-022616</a>.
+</div>
+<div id="ref-brfssapc_geronimus1992weathering" class="csl-entry"
+role="listitem">
+Geronimus, A. 1992. <span>“<span class="nocase">The weathering
+hypothesis and the health of African-American women and infants:
+evidence and speculations.</span>”</span> <em>Ethnicity &amp;
+Disease</em> 2 3 (3): 207–21.
+</div>
+<div id="ref-brfssapc_iachan2016national" class="csl-entry"
+role="listitem">
+Iachan, Ronaldo, Carol Pierannunzi, Kristie Healey, K. Greenlund, and M.
+Town. 2016. <span>“<span class="nocase">National weighting of data from
+the Behavioral Risk Factor Surveillance System (BRFSS)</span>.”</span>
+<em>BMC Medical Research Methodology</em> 16 (1). <a
+href="https://doi.org/10.1186/s12874-016-0255-7">https://doi.org/10.1186/s12874-016-0255-7</a>.
+</div>
+<div id="ref-brfssapc_leeuwen2022trajectories" class="csl-entry"
+role="listitem">
+Jp Jos Leeuwen, van, and Liliya Leopold. 2022. <em><span
+class="nocase">Life trajectories and social change in mental health: A
+study of change in general mental health and diagnosed depression in
+Germany</span></em>. <a
+href="https://doi.org/10.31235/osf.io/25ka3">https://doi.org/10.31235/osf.io/25ka3</a>.
+</div>
+<div id="ref-brfssapc_kim2023prevalence" class="csl-entry"
+role="listitem">
+Kim, Jiyeong, Eleni Linos, C. Rodriguez, Michael L. Chen, M. Dove, and
+Theresa H. Keegan. 2023. <span>“<span class="nocase">Prevalence and
+associations of poor mental health in the third year of COVID-19: U.S.
+population-based analysis from 2020 to 2022.</span>”</span>
+<em>Psychiatry Research</em> 330: 115622. <a
+href="https://doi.org/10.1016/j.psychres.2023.115622">https://doi.org/10.1016/j.psychres.2023.115622</a>.
+</div>
+<div id="ref-brfssapc_kuh2003course" class="csl-entry" role="listitem">
+Kuh, Diana, Y Ben-Shlomo, J Lynch, J Hallqvist, and C Power. 2003.
+<span>“<span class="nocase">Life course epidemiology: Figure
+1</span>.”</span> <em>Journal of Epidemiology &amp; Community
+Health</em> 57 (10): 778–83. <a
+href="https://doi.org/10.1136/jech.57.10.778">https://doi.org/10.1136/jech.57.10.778</a>.
+</div>
+<div id="ref-brfssapc_luo2019period" class="csl-entry" role="listitem">
+Luo, Liying, and J. Hodges. 2019. <span>“<span class="nocase">The
+Age-Period-Cohort-Interaction Model for Describing and Investigating
+Inter-cohort Deviations and Intra-cohort Life-course
+Dynamics</span>.”</span> <em>Sociological Methods &amp; Research</em> 51
+(3): 1164–210. <a
+href="https://doi.org/10.1177/0049124119882451">https://doi.org/10.1177/0049124119882451</a>.
+</div>
+<div id="ref-brfssapc_miller2017health" class="csl-entry"
+role="listitem">
+Miller, Sarah, and Laura Wherry. 2017. <span>“<span
+class="nocase">Health and Access to Care during the First 2 Years of the
+ACA Medicaid Expansions</span>.”</span> <em>New England Journal of
+Medicine</em> 376 (10): 947–56. <a
+href="https://doi.org/10.1056/nejmsa1612890">https://doi.org/10.1056/nejmsa1612890</a>.
+</div>
+<div id="ref-brfssapc_olfson2023racial" class="csl-entry"
+role="listitem">
+Olfson, M., S. Zuvekas, C. McClellan, M. Wall, Sidney H Hankerson, and
+C. Blanco. 2023. <span>“<span class="nocase">Racial-Ethnic Disparities
+in Outpatient Mental Health Care in the United States.</span>”</span>
+<em>Psychiatric Services</em> 74 (7): appips20220365. <a
+href="https://doi.org/10.1176/appi.ps.20220365">https://doi.org/10.1176/appi.ps.20220365</a>.
+</div>
+<div id="ref-brfssapc_ortega2022medicaid" class="csl-entry"
+role="listitem">
+Ortega, Alberto. 2022. <span>“<span class="nocase">Medicaid Expansion
+and mental health treatment: Evidence from the Affordable Care
+Act.</span>”</span> <em>Health Economics</em> 32 (4): 755–806. <a
+href="https://doi.org/10.1002/hec.4633">https://doi.org/10.1002/hec.4633</a>.
+</div>
+<div id="ref-brfssapc_otten2023gender" class="csl-entry"
+role="listitem">
+Otten, D., Ayline Heller, P. Schmidt, M. Beutel, and E. Brähler. 2023.
+<span>“<span class="nocase">Gender differences in the prevalence of
+mental distress in East and West Germany over time: a hierarchical
+age-period-cohort analysis, 2006–2021</span>.”</span> <em>Social
+Psychiatry and Psychiatric Epidemiology</em> 59 (2): 315–28. <a
+href="https://doi.org/10.1007/s00127-023-02479-z">https://doi.org/10.1007/s00127-023-02479-z</a>.
+</div>
+<div id="ref-brfssapc_phelan2004fundamental" class="csl-entry"
+role="listitem">
+Phelan, J., Bruce G. Link, A. Diez-Roux, I. Kawachi, and B. Levin. 2004.
+<span>“<span class="nocase"><span>‘Fundamental Causes’</span> of Social
+Inequalities in Mortality: A Test of the Theory∗</span>.”</span>
+<em>Journal of Health and Social Behavior</em> 45 (3): 265–85. <a
+href="https://doi.org/10.1177/002214650404500303">https://doi.org/10.1177/002214650404500303</a>.
+</div>
+<div id="ref-brfssapc_phelan2010social" class="csl-entry"
+role="listitem">
+Phelan, Jo C., Bruce G. Link, and Parisa Tehranifar. 2010. <span>“<span
+class="nocase">Social Conditions as Fundamental Causes of Health
+Inequalities: Theory, Evidence, and Policy Implications</span>.”</span>
+<em>Journal of Health and Social Behavior</em> 51 (1_suppl): S28–40. <a
+href="https://doi.org/10.1177/0022146510383498">https://doi.org/10.1177/0022146510383498</a>.
+</div>
+<div id="ref-brfssapc_pierannunzi2013systematic" class="csl-entry"
+role="listitem">
+Pierannunzi, Carol, S. Hu, and L. Balluz. 2013. <span>“<span
+class="nocase">A systematic review of publications assessing reliability
+and validity of the Behavioral Risk Factor Surveillance System (BRFSS),
+2004–2011</span>.”</span> <em>BMC Medical Research Methodology</em> 13:
+49–49. <a
+href="https://doi.org/10.1186/1471-2288-13-49">https://doi.org/10.1186/1471-2288-13-49</a>.
+</div>
+<div id="ref-brfssapc_simons2020effects" class="csl-entry"
+role="listitem">
+Simons, R., M. Lei, Eric T. Klopack, S. Beach, F. Gibbons, and R.
+Philibert. 2020. <span>“<span class="nocase">The effects of social
+adversity, discrimination, and health risk behaviors on the accelerated
+aging of African Americans: Further support for the weathering
+hypothesis.</span>”</span> <em>Social Science &amp; Medicine (1967)</em>
+282: 113169. <a
+href="https://doi.org/10.1016/j.socscimed.2020.113169">https://doi.org/10.1016/j.socscimed.2020.113169</a>.
+</div>
+<div id="ref-brfssapc_thomson2018mental" class="csl-entry"
+role="listitem">
+Thomson, R., and S. Katikireddi. 2018. <span>“<span
+class="nocase">Mental health and the jilted generation: Using
+age-period-cohort analysis to assess differential trends in young
+people’s mental health following the Great Recession and austerity in
+England</span>.”</span> <em>Social Science &amp; Medicine (1967)</em>
+214: 133–43. <a
+href="https://doi.org/10.1016/j.socscimed.2018.08.034">https://doi.org/10.1016/j.socscimed.2018.08.034</a>.
+</div>
+<div id="ref-brfssapc_williams1997racial" class="csl-entry"
+role="listitem">
+Williams, David R., Yan Yu, James S. Jackson, and Norman B. Anderson.
+1997. <span>“<span class="nocase">Racial Differences in Physical and
+Mental Health</span>.”</span> <em>Journal of Health Psychology</em> 2
+(3): 335–51. <a
+href="https://doi.org/10.1177/135910539700200305">https://doi.org/10.1177/135910539700200305</a>.
+</div>
+<div id="ref-brfssapc_xu2024temporal" class="csl-entry" role="listitem">
+<span class="nocase">Xu, Yang, Zibo Wu, Sitong Xin, et al.</span> 2024.
+<span>“<span class="nocase">Temporal trends and age-period-cohort
+analysis of depression in U.S. adults from 2013 to 2022.</span>”</span>
+<em>Journal of Affective Disorders</em> 362: 237–43. <a
+href="https://doi.org/10.1016/j.jad.2024.06.090">https://doi.org/10.1016/j.jad.2024.06.090</a>.
+</div>
+<div id="ref-brfssapc_yang2013period" class="csl-entry" role="listitem">
+Yang, Yang, and Kenneth C. Land. 2013. <em><span
+class="nocase">Age-Period-Cohort Analysis: New Models, Methods, and
+Empirical Applications</span></em>. <a
+href="https://doi.org/10.1201/b13902">https://doi.org/10.1201/b13902</a>.
+</div>
+</div>
+<!-- Markup Reader: inline annotation toolkit -->
+<style id="markup-reader-panel-style">
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap");
+
+/* ── Annotation marks ─────────────────────────────────── */
+[data-annotation="true"] { border-radius: 2px; cursor: pointer; }
+[data-annotation="true"].annot-highlight { background: var(--annot-highlight-color, #fff2a8); box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+[data-annotation="true"].annot-underline { border-bottom: 3px solid var(--annot-underline-color, #cc4f1b); padding-bottom: 1px; }
+[data-annotation="true"].annot-note { background: var(--annot-highlight-color, #fff2a8); border-bottom: 2px dashed var(--annot-underline-color, #cc4f1b); cursor: help; position: relative; }
+[data-annotation="true"].annot-note::after { content: "\270E"; font-size: .75em; font-weight: 700; color: var(--annot-underline-color, #cc4f1b); margin-left: 1px; vertical-align: super; }
+[data-annotation="true"].annot-note[data-note]:hover::before {
+  content: attr(data-note);
+  position: absolute; bottom: calc(100% + 4px); left: 0;
+  max-width: 300px; padding: 6px 10px;
+  background: #1e3a27; color: #fff; font-size: 12px; font-weight: 400;
+  border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,.3);
+  white-space: pre-wrap; word-break: break-word;
+  z-index: 999998; pointer-events: none;
+  animation: mr-fadeIn .12s ease;
+}
+
+/* ── Selection tooltip ────────────────────────────────── */
+#mr-tooltip {
+  position: absolute; z-index: 999999;
+  display: none; align-items: center; gap: 4px;
+  padding: 5px 6px;
+  background: #1e3a27; color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.28);
+  font-family: "Manrope", "Segoe UI", sans-serif; font-size: 13px; font-weight: 600;
+  white-space: nowrap;
+  animation: mr-fadeIn .15s ease;
+}
+#mr-tooltip button {
+  border: none; background: rgba(255,255,255,.15);
+  color: #fff; border-radius: 7px;
+  padding: 5px 10px; font-size: 12px; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  transition: background .12s ease;
+}
+#mr-tooltip button:hover { background: rgba(255,255,255,.3); }
+#mr-tooltip .tt-sep { width: 1px; height: 18px; background: rgba(255,255,255,.22); }
+
+/* ── Note input box ───────────────────────────────────── */
+#mr-note-input {
+  position: absolute; z-index: 1000000;
+  display: none; flex-direction: column; gap: 6px;
+  width: 280px; padding: 10px 12px; box-sizing: border-box;
+  background: #1e3a27; color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 36px rgba(0,0,0,.35);
+  font-family: "Manrope", "Segoe UI", sans-serif; font-size: 13px;
+  animation: mr-fadeIn .15s ease;
+}
+#mr-note-input .ni-label { font-weight: 700; font-size: 12px; opacity: .85; }
+#mr-note-input textarea {
+  width: 100%; min-height: 60px; max-height: 140px;
+  padding: 8px 10px; border: 1px solid rgba(255,255,255,.25);
+  border-radius: 8px; background: rgba(255,255,255,.1);
+  color: #fff; font-family: inherit; font-size: 13px;
+  resize: vertical; outline: none; box-sizing: border-box;
+}
+#mr-note-input textarea:focus { border-color: rgba(255,255,255,.5); }
+#mr-note-input .ni-actions { display: flex; justify-content: flex-end; gap: 6px; }
+#mr-note-input .ni-actions button {
+  border: none; border-radius: 8px; padding: 6px 14px;
+  font-size: 12px; font-weight: 700; cursor: pointer; font-family: inherit;
+}
+#mr-note-input .ni-cancel { background: rgba(255,255,255,.15); color: #fff; }
+#mr-note-input .ni-cancel:hover { background: rgba(255,255,255,.25); }
+#mr-note-input .ni-confirm { background: #4caf6a; color: #fff; }
+#mr-note-input .ni-confirm:hover { background: #3d9e5a; }
+
+/* ── Floating toggle button ───────────────────────────── */
+#mr-toggle-btn {
+  position: fixed; bottom: 20px; right: 20px; z-index: 999990;
+  width: 48px; height: 48px; border-radius: 50%;
+  background: linear-gradient(135deg, #2f8a45, #1f6933); color: #fff;
+  border: none; font-size: 22px; cursor: pointer;
+  box-shadow: 0 6px 20px rgba(28,77,42,.35);
+  transition: transform .15s ease, box-shadow .2s ease;
+  font-family: "Manrope", sans-serif;
+}
+#mr-toggle-btn:hover { transform: scale(1.08); box-shadow: 0 8px 24px rgba(28,77,42,.45); }
+
+/* ── Side panel ───────────────────────────────────────── */
+#mr-panel {
+  position: fixed; top: 0; right: -340px; z-index: 999991;
+  width: 320px; height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #f9fbf3, #f5efe3);
+  border-left: 1px solid rgba(54,84,58,.18);
+  box-shadow: -4px 0 24px rgba(0,0,0,.12);
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  color: #24322a;
+  transition: right .3s ease;
+  overflow: hidden;
+  padding: 16px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+#mr-panel.open { right: 0; }
+#mr-panel h3 {
+  margin: 0 0 8px; font-size: .88rem; letter-spacing: .03em;
+  text-transform: uppercase; color: #214730;
+}
+#mr-panel .mr-section {
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(73,106,67,.14); border-radius: 14px;
+  padding: 12px;
+}
+#mr-panel .mr-pen-group { margin-bottom: 4px; }
+#mr-panel .mr-pen-label { font-size: .78rem; color: #5f6f62; margin-bottom: 6px; font-weight: 600; }
+#mr-panel .mr-pens { display: flex; gap: 8px; flex-wrap: wrap; }
+#mr-panel .mr-pen {
+  width: 28px; height: 28px; border-radius: 50%; border: 2px solid transparent;
+  cursor: pointer; transition: transform .12s ease, border-color .12s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15); position: relative;
+}
+#mr-panel .mr-pen:hover { transform: scale(1.15); }
+#mr-panel .mr-pen.active {
+  border-color: #1e3a27; box-shadow: 0 0 0 2px #1e3a27, 0 2px 8px rgba(0,0,0,.2);
+  transform: scale(1.1);
+}
+#mr-panel .mr-pen.active::after {
+  content: "\2713"; position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%); font-size: 13px; font-weight: 900;
+  color: rgba(0,0,0,.5); text-shadow: 0 0 2px rgba(255,255,255,.8);
+}
+#mr-panel .mr-annot-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; overflow-y: auto; }
+#mr-panel .mr-annot-item {
+  font-size: .82rem; line-height: 1.4; padding: 8px 10px;
+  background: rgba(255,255,255,.8); border: 1px solid rgba(60,90,60,.12);
+  border-radius: 10px; cursor: pointer; transition: background .15s ease;
+  word-break: break-word;
+}
+#mr-panel .mr-annot-item:hover { background: #edf5e4; }
+#mr-panel .mr-annot-type {
+  display: inline-block; font-size: .68rem; font-weight: 700; text-transform: uppercase;
+  padding: 2px 6px; border-radius: 6px; margin-right: 4px; vertical-align: middle;
+}
+#mr-panel .mr-annot-type.highlight { background: #fff2a8; color: #6b5a00; }
+#mr-panel .mr-annot-type.underline { background: #fce0cf; color: #7a3006; }
+#mr-panel .mr-annot-type.note { background: #d4f0dd; color: #1a5e2c; }
+#mr-panel .mr-annot-note { display: block; margin-top: 3px; font-style: italic; color: #5f6f62; font-size: .78rem; }
+#mr-panel .mr-annot-actions { margin-top: 5px; display: flex; gap: 5px; }
+#mr-panel .mr-annot-actions button {
+  font-size: .72rem; padding: 4px 8px; border: none; border-radius: 6px;
+  font-weight: 700; cursor: pointer; font-family: inherit;
+}
+#mr-panel .mr-btn-del { background: linear-gradient(135deg,#d9713f,#bc4b12); color: white; }
+#mr-panel .mr-btn-note { background: #f0f4e8; color: #24462f; border: 1px solid rgba(45,82,53,.18); }
+#mr-panel .mr-save-btn {
+  display: block; width: 100%; padding: 10px;
+  background: linear-gradient(135deg,#2f8a45,#1f6933); color: #fff;
+  border: none; border-radius: 10px; font-size: .88rem; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  box-shadow: 0 8px 18px rgba(28,77,42,.2);
+  flex-shrink: 0;
+}
+#mr-panel .mr-save-btn:hover { transform: translateY(-1px); }
+#mr-panel .mr-export-md {
+  display: block; width: 100%; padding: 10px;
+  background: linear-gradient(135deg,#3a6b8a,#1f4f6e); color: #fff;
+  border: none; border-radius: 10px; font-size: .88rem; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  box-shadow: 0 8px 18px rgba(28,60,90,.2);
+  flex-shrink: 0;
+}
+#mr-panel .mr-export-md:hover { transform: translateY(-1px); }
+#mr-panel .mr-empty { color: #5f6f62; font-size: .82rem; text-align: center; padding: 12px 0; }
+#mr-panel .mr-close {
+  position: absolute; top: 12px; right: 12px;
+  background: rgba(0,0,0,.06); border: none; border-radius: 8px;
+  width: 28px; height: 28px; font-size: 16px; cursor: pointer;
+  color: #24322a; font-family: inherit;
+}
+
+@keyframes mr-fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ── Mobile responsive ────────────────────────────────── */
+@media (max-width: 600px) {
+  #mr-panel { width: 100vw; right: -100vw; border-left: none; padding: 14px 16px; }
+  #mr-panel.open { right: 0; }
+  #mr-panel .mr-pen { width: 32px; height: 32px; }
+  #mr-panel .mr-save-btn { padding: 14px; font-size: .92rem; }
+  #mr-toggle-btn { width: 44px; height: 44px; font-size: 20px; bottom: 16px; right: 16px; }
+  #mr-tooltip { padding: 7px 8px; }
+  #mr-tooltip button { padding: 8px 12px; font-size: 13px; }
+  #mr-note-input { width: calc(100vw - 24px); max-width: none; left: 12px !important; padding: 12px 14px; font-size: 15px; }
+  #mr-note-input textarea { min-height: 72px; font-size: 15px; padding: 10px 12px; }
+  #mr-note-input .ni-actions button { padding: 10px 18px; font-size: 14px; }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  #mr-tooltip button { padding: 8px 14px; font-size: 14px; }
+}
+
+@media print {
+  #mr-toggle-btn, #mr-panel, #mr-tooltip, #mr-note-input { display: none !important; }
+}
+</style>
+
+<script>
+(function() {
+"use strict";
+
+/* ── Config ───────────────────────────────────────────── */
+let highlightColor = "#fff2a8";
+let underlineColor = "#cc4f1b";
+
+/* ── Annotation helpers ───────────────────────────────── */
+function genId() { return "ann-" + Date.now() + "-" + Math.random().toString(36).slice(2,8); }
+
+function wrapRange(range, type, noteText) {
+  const span = document.createElement("span");
+  span.setAttribute("data-annotation", "true");
+  span.setAttribute("data-type", type);
+  span.setAttribute("data-id", genId());
+  if (type === "highlight") {
+    span.className = "annot-highlight";
+    span.style.setProperty("--annot-highlight-color", highlightColor);
+  } else if (type === "underline") {
+    span.className = "annot-underline";
+    span.style.setProperty("--annot-underline-color", underlineColor);
+  } else if (type === "note") {
+    span.className = "annot-note";
+    span.setAttribute("data-note", noteText);
+    span.title = noteText;
+    span.style.setProperty("--annot-highlight-color", highlightColor);
+    span.style.setProperty("--annot-underline-color", underlineColor);
+  }
+  const frag = range.extractContents();
+  if (!frag.textContent || !frag.textContent.trim()) { range.insertNode(frag); return null; }
+  span.appendChild(frag);
+  range.insertNode(span);
+  return span;
+}
+
+function removeAnnotation(el) {
+  const p = el.parentNode; if (!p) return;
+  while (el.firstChild) p.insertBefore(el.firstChild, el);
+  p.removeChild(el); p.normalize();
+}
+
+function applyNote(el, text) {
+  el.setAttribute("data-note", text);
+  el.setAttribute("data-type", "note");
+  el.title = text;
+  el.className = "annot-note";
+}
+
+function allAnnotations() { return Array.from(document.querySelectorAll('[data-annotation="true"]')); }
+
+/* ── Tooltip ──────────────────────────────────────────── */
+function getEl(id) { return document.getElementById(id); }
+function mkEl(tag, id) {
+  let el = getEl(id);
+  if (el) return el;
+  el = document.createElement(tag);
+  el.id = id;
+  document.body.appendChild(el);
+  return el;
+}
+
+function showTooltip(rect, buttons) {
+  const tip = mkEl("div", "mr-tooltip");
+  tip.innerHTML = "";
+  buttons.forEach(function(b, i) {
+    if (i > 0) { const sep = document.createElement("span"); sep.className = "tt-sep"; tip.appendChild(sep); }
+    const btn = document.createElement("button");
+    btn.textContent = b.label;
+    btn.addEventListener("mousedown", function(e) { e.preventDefault(); e.stopPropagation(); b.action(); });
+    tip.appendChild(btn);
+  });
+  tip.style.display = "flex";
+  const sy = window.scrollY, sx = window.scrollX;
+  tip.style.top = Math.max(0, rect.top + sy - tip.offsetHeight - 8) + "px";
+  tip.style.left = Math.max(4, rect.left + sx + rect.width/2 - tip.offsetWidth/2) + "px";
+}
+
+function hideTooltip() {
+  const tip = getEl("mr-tooltip"); if (tip) tip.style.display = "none";
+  const ni = getEl("mr-note-input"); if (ni) ni.style.display = "none";
+}
+
+/* ── Note input ───────────────────────────────────────── */
+function showNoteInput(rect, existing, onConfirm) {
+  const tip = getEl("mr-tooltip"); if (tip) tip.style.display = "none";
+  const box = mkEl("div", "mr-note-input");
+  box.innerHTML = "";
+
+  const label = document.createElement("div");
+  label.className = "ni-label"; label.textContent = "Enter note:";
+  box.appendChild(label);
+
+  const ta = document.createElement("textarea");
+  ta.value = existing || ""; ta.setAttribute("rows","3");
+  box.appendChild(ta);
+
+  const acts = document.createElement("div");
+  acts.className = "ni-actions";
+
+  const cancelBtn = document.createElement("button");
+  cancelBtn.className = "ni-cancel"; cancelBtn.textContent = "Cancel";
+  cancelBtn.addEventListener("click", function(e) { e.preventDefault(); box.style.display = "none"; });
+  acts.appendChild(cancelBtn);
+
+  const okBtn = document.createElement("button");
+  okBtn.className = "ni-confirm"; okBtn.textContent = "OK";
+  okBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    const val = ta.value.trim();
+    if (!val) { ta.focus(); return; }
+    box.style.display = "none";
+    onConfirm(val);
+  });
+  acts.appendChild(okBtn);
+  box.appendChild(acts);
+
+  ta.addEventListener("keydown", function(e) {
+    if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); okBtn.click(); }
+    if (e.key === "Escape") { e.preventDefault(); cancelBtn.click(); }
+  });
+
+  box.style.display = "flex";
+  const sy = window.scrollY;
+  box.style.top = Math.max(sy + 4, rect.bottom + sy + 8) + "px";
+  box.style.left = Math.max(4, Math.min(rect.left, document.documentElement.clientWidth - 288)) + "px";
+  setTimeout(function() { ta.focus(); }, 30);
+}
+
+/* ── Annotate action ──────────────────────────────────── */
+function doAnnotate(type) {
+  hideTooltip();
+  const sel = window.getSelection();
+  if (!sel || sel.rangeCount === 0 || sel.isCollapsed) return;
+  const range = sel.getRangeAt(0);
+
+  if (type === "note") {
+    const saved = range.cloneRange();
+    const rect = range.getBoundingClientRect();
+    sel.removeAllRanges();
+    showNoteInput(rect, "", function(text) {
+      const ns = window.getSelection();
+      ns.removeAllRanges(); ns.addRange(saved);
+      const fr = ns.getRangeAt(0);
+      wrapRange(fr, "note", text);
+      ns.removeAllRanges();
+      refreshPanel();
+    });
+    return;
+  }
+
+  wrapRange(range, type, "");
+  sel.removeAllRanges();
+  refreshPanel();
+}
+
+/* ── Selection listener ───────────────────────────────── */
+let tooltipLock = false;
+
+function tooltipButtons() {
+  return [
+    { label: "Highlight", action: function() { doAnnotate("highlight"); } },
+    { label: "Underline", action: function() { doAnnotate("underline"); } },
+    { label: "Note", action: function() { doAnnotate("note"); } },
+  ];
+}
+
+document.addEventListener("mouseup", function() {
+  if (tooltipLock) return;
+  setTimeout(function() {
+    const sel = window.getSelection();
+    if (!sel || sel.isCollapsed || sel.rangeCount === 0) return;
+    const range = sel.getRangeAt(0);
+    const rect = range.getBoundingClientRect();
+    if (rect.width === 0 && rect.height === 0) return;
+    if (range.commonAncestorContainer.nodeType === 1 && range.commonAncestorContainer.closest && range.commonAncestorContainer.closest("#mr-panel")) return;
+    if (range.commonAncestorContainer.parentElement && range.commonAncestorContainer.parentElement.closest && range.commonAncestorContainer.parentElement.closest("#mr-panel")) return;
+    showTooltip(rect, tooltipButtons());
+  }, 10);
+});
+
+function handlePointerDown(e) {
+  const t = e.target;
+  if (t.closest && (t.closest("#mr-tooltip") || t.closest("#mr-note-input") || t.closest("#mr-panel"))) return;
+
+  const annot = t.closest && t.closest('[data-annotation="true"]');
+  if (annot) {
+    const sel = window.getSelection();
+    if (sel && sel.isCollapsed) {
+      e.preventDefault();
+      tooltipLock = true;
+      showTooltip(annot.getBoundingClientRect(), [
+        { label: "Note", action: function() {
+          hideTooltip(); tooltipLock = false;
+          var rect = annot.getBoundingClientRect();
+          showNoteInput(rect, annot.getAttribute("data-note") || "", function(text) {
+            applyNote(annot, text); refreshPanel();
+          });
+        }},
+        { label: "Remove", action: function() {
+          hideTooltip(); tooltipLock = false;
+          removeAnnotation(annot); refreshPanel();
+        }},
+      ]);
+      setTimeout(function() { tooltipLock = false; }, 300);
+      return;
+    }
+  }
+  hideTooltip();
+}
+
+document.addEventListener("mousedown", handlePointerDown);
+
+/* ── Touch / mobile support ──────────────────────────── */
+var selectionTimer = null;
+document.addEventListener("selectionchange", function() {
+  clearTimeout(selectionTimer);
+  selectionTimer = setTimeout(function() {
+    if (tooltipLock) return;
+    var sel = window.getSelection();
+    if (!sel || sel.isCollapsed || sel.rangeCount === 0) return;
+    var range = sel.getRangeAt(0);
+    if (range.commonAncestorContainer.nodeType === 1 && range.commonAncestorContainer.closest && range.commonAncestorContainer.closest("#mr-panel")) return;
+    if (range.commonAncestorContainer.parentElement && range.commonAncestorContainer.parentElement.closest && range.commonAncestorContainer.parentElement.closest("#mr-panel")) return;
+    var rect = range.getBoundingClientRect();
+    if (rect.width === 0 && rect.height === 0) return;
+    showTooltip(rect, tooltipButtons());
+  }, 300);
+});
+
+document.addEventListener("touchend", function(e) {
+  setTimeout(function() {
+    var sel = window.getSelection();
+    if (sel && !sel.isCollapsed) return;
+    handlePointerDown(e);
+  }, 50);
+});
+
+/* ── Side panel ───────────────────────────────────────── */
+function buildPanel() {
+  const toggle = document.createElement("button");
+  toggle.id = "mr-toggle-btn";
+  toggle.textContent = "\u270E";
+  toggle.title = "Annotation Tools";
+  document.body.appendChild(toggle);
+
+  const panel = document.createElement("div");
+  panel.id = "mr-panel";
+  var hlPens = [
+    { name: "Yellow", color: "#fff2a8" },
+    { name: "Green", color: "#b8f0c0" },
+    { name: "Blue", color: "#b3deff" },
+    { name: "Pink", color: "#ffc0cb" },
+    { name: "Orange", color: "#ffd9a8" },
+    { name: "Purple", color: "#dcc0f0" },
+  ];
+  var ulPens = [
+    { name: "Red", color: "#cc4f1b" },
+    { name: "Blue", color: "#2a6dd9" },
+    { name: "Green", color: "#2a8a3e" },
+    { name: "Orange", color: "#d98c2a" },
+    { name: "Purple", color: "#7b3ec4" },
+    { name: "Gray", color: "#666666" },
+  ];
+
+  function buildPenRow(pens, activeColor) {
+    return pens.map(function(p) {
+      var cls = p.color === activeColor ? "mr-pen active" : "mr-pen";
+      return '<button class="' + cls + '" data-color="' + p.color + '" style="background:' + p.color + ';" title="' + p.name + '"></button>';
+    }).join("");
+  }
+
+  panel.innerHTML =
+    '<button class="mr-close" id="mr-close-btn">\u2715</button>' +
+    '<h3>Annotations</h3>' +
+    '<div class="mr-section">' +
+      '<div class="mr-pen-group">' +
+        '<div class="mr-pen-label">Highlight</div>' +
+        '<div class="mr-pens" id="mr-hl-pens">' + buildPenRow(hlPens, highlightColor) + '</div>' +
+      '</div>' +
+      '<div class="mr-pen-group" style="margin-top:10px;">' +
+        '<div class="mr-pen-label">Underline</div>' +
+        '<div class="mr-pens" id="mr-ul-pens">' + buildPenRow(ulPens, underlineColor) + '</div>' +
+      '</div>' +
+    '</div>' +
+    '<div class="mr-section" style="flex:1;overflow-y:auto;min-height:0;display:flex;flex-direction:column;">' +
+      '<h3>Annotation List</h3>' +
+      '<ul id="mr-annot-list" class="mr-annot-list" style="flex:1;overflow-y:auto;min-height:0;">' +
+        '<li class="mr-empty">No annotations yet</li>' +
+      '</ul>' +
+    '</div>' +
+    '<button class="mr-save-btn" id="mr-save-btn">Download Annotated HTML</button>' +
+    '<button class="mr-export-md" id="mr-export-md">Export as Markdown</button>';
+  document.body.appendChild(panel);
+
+  toggle.addEventListener("click", function() { panel.classList.toggle("open"); });
+  document.getElementById("mr-close-btn").addEventListener("click", function() { panel.classList.remove("open"); });
+
+  document.getElementById("mr-hl-pens").addEventListener("click", function(e) {
+    var pen = e.target.closest(".mr-pen"); if (!pen) return;
+    highlightColor = pen.getAttribute("data-color");
+    this.querySelectorAll(".mr-pen").forEach(function(p) { p.classList.remove("active"); });
+    pen.classList.add("active");
+  });
+  document.getElementById("mr-ul-pens").addEventListener("click", function(e) {
+    var pen = e.target.closest(".mr-pen"); if (!pen) return;
+    underlineColor = pen.getAttribute("data-color");
+    this.querySelectorAll(".mr-pen").forEach(function(p) { p.classList.remove("active"); });
+    pen.classList.add("active");
+  });
+
+  document.getElementById("mr-save-btn").addEventListener("click", function() {
+    const toHide = ["mr-toggle-btn", "mr-panel", "mr-tooltip", "mr-note-input"];
+    toHide.forEach(function(id) { const el = getEl(id); if (el) el.style.display = "none"; });
+    const dt = document.doctype ? "<!DOCTYPE " + document.doctype.name + ">" : "<!DOCTYPE html>";
+    const blob = new Blob([dt + "\n" + document.documentElement.outerHTML], { type: "text/html;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    var origName = decodeURIComponent(location.pathname.split("/").pop() || "") || (document.title || "document").replace(/[<>:"/\\|?*]/g, "_") + ".html";
+    a.download = origName;
+    document.body.appendChild(a); a.click(); a.remove();
+    URL.revokeObjectURL(url);
+    toHide.forEach(function(id) { const el = getEl(id); if (el) el.style.display = ""; });
+    document.getElementById("mr-toggle-btn").style.display = "block";
+  });
+
+  document.getElementById("mr-export-md").addEventListener("click", exportMarkdown);
+}
+
+function refreshPanel() {
+  const list = getEl("mr-annot-list");
+  if (!list) return;
+  list.innerHTML = "";
+
+  const items = allAnnotations();
+  if (items.length === 0) {
+    list.innerHTML = '<li class="mr-empty">No annotations yet</li>';
+    return;
+  }
+
+  items.forEach(function(el) {
+    const li = document.createElement("li");
+    li.className = "mr-annot-item";
+
+    const type = el.getAttribute("data-type") || "highlight";
+    const text = (el.textContent || "").slice(0, 60);
+    const note = el.getAttribute("data-note");
+
+    const badge = document.createElement("span");
+    badge.className = "mr-annot-type " + type;
+    const typeNames = { highlight: "Highlight", underline: "Underline", note: "Note" };
+    badge.textContent = typeNames[type] || type;
+    li.appendChild(badge);
+
+    const txt = document.createElement("span");
+    txt.textContent = text + (el.textContent.length > 60 ? "\u2026" : "");
+    li.appendChild(txt);
+
+    if (note) {
+      const nt = document.createElement("span");
+      nt.className = "mr-annot-note";
+      nt.textContent = note;
+      li.appendChild(nt);
+    }
+
+    const actions = document.createElement("div");
+    actions.className = "mr-annot-actions";
+
+    if (type !== "note") {
+      const nb = document.createElement("button");
+      nb.className = "mr-btn-note"; nb.textContent = "Add Note";
+      nb.addEventListener("click", function(ev) {
+        ev.stopPropagation();
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+        showNoteInput(el.getBoundingClientRect(), el.getAttribute("data-note") || "", function(t) {
+          applyNote(el, t); refreshPanel();
+        });
+      });
+      actions.appendChild(nb);
+    }
+
+    const db = document.createElement("button");
+    db.className = "mr-btn-del"; db.textContent = "Remove";
+    db.addEventListener("click", function(ev) {
+      ev.stopPropagation();
+      removeAnnotation(el); refreshPanel();
+    });
+    actions.appendChild(db);
+    li.appendChild(actions);
+
+    li.addEventListener("click", function() {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+      el.style.outline = "3px solid #2f8a45";
+      setTimeout(function() { el.style.outline = ""; }, 1200);
+    });
+
+    list.appendChild(li);
+  });
+}
+
+/* ── Export annotations to Markdown ───────────────────── */
+function findHeading(el) {
+  var node = el;
+  while (node && node !== document.body) {
+    var prev = node.previousElementSibling;
+    while (prev) {
+      if (/^H[1-6]$/.test(prev.tagName)) return { level: parseInt(prev.tagName[1]), text: prev.textContent.trim() };
+      prev = prev.previousElementSibling;
+    }
+    node = node.parentElement;
+  }
+  return null;
+}
+
+function exportMarkdown() {
+  var items = allAnnotations();
+  if (items.length === 0) return;
+
+  var typeNames = { highlight: "Highlight", underline: "Underline", note: "Note" };
+  var lines = [];
+  lines.push("# " + (document.title || "Document") + " - Annotations");
+  lines.push("");
+  lines.push("_" + new Date().toLocaleString() + "_");
+  lines.push("");
+  lines.push("---");
+  lines.push("");
+
+  var lastHeading = null;
+
+  items.forEach(function(el) {
+    var type = el.getAttribute("data-type") || "highlight";
+    var text = el.textContent.trim();
+    var note = el.getAttribute("data-note") || "";
+
+    var heading = findHeading(el);
+    if (heading && (!lastHeading || lastHeading.text !== heading.text)) {
+      lines.push("#".repeat(Math.min(heading.level + 1, 4)) + " " + heading.text);
+      lines.push("");
+      lastHeading = heading;
+    }
+
+    lines.push("**[" + typeNames[type] + "]**");
+    lines.push("");
+    lines.push("> " + text.replace(/\n/g, "\n> "));
+    if (note) {
+      lines.push("");
+      lines.push("**Note:** " + note);
+    }
+    lines.push("");
+    lines.push("---");
+    lines.push("");
+  });
+
+  var md = lines.join("\n");
+  var blob = new Blob([md], { type: "text/markdown;charset=utf-8" });
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement("a");
+  a.href = url;
+  a.download = (document.title || "document").replace(/[<>:"/\\|?*]/g, "_") + ".annotations.md";
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+}
+
+/* ── Boot ─────────────────────────────────────────────── */
+function makeTranslatable() {
+  // Unwrap <header id="title-block-header"> entirely — move children to body
+  var header = document.getElementById('title-block-header');
+  if (header) {
+    var parent = header.parentNode;
+    var next = header.nextSibling;
+    while (header.firstChild) {
+      parent.insertBefore(header.firstChild, next);
+    }
+    parent.removeChild(header);
+  }
+  // Convert all headings to <p> with inline style
+  var sizes = { H1: '2em', H2: '1.5em', H3: '1.25em', H4: '1.1em', H5: '1em', H6: '0.9em' };
+  document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(function(h) {
+    var p = document.createElement('p');
+    p.innerHTML = h.innerHTML;
+    if (h.id) p.id = h.id;
+    if (h.className) p.className = h.className;
+    var sz = sizes[h.tagName] || '1.5em';
+    p.style.cssText = 'font-size:' + sz + ';font-weight:bold;margin-top:1.2em;margin-bottom:0.5em;';
+    if (h.classList.contains('title')) {
+      p.style.cssText = 'font-size:2.5em;font-weight:bold;text-align:center;line-height:1.2;margin-bottom:0.5em;';
+    }
+    h.parentNode.replaceChild(p, h);
+  });
+  // Unwrap <div class="abstract"> — flatten to plain <p> tags
+  var abDiv = document.querySelector('.abstract');
+  if (abDiv) {
+    var parent = abDiv.parentNode;
+    var next = abDiv.nextSibling;
+    while (abDiv.firstChild) {
+      parent.insertBefore(abDiv.firstChild, next);
+    }
+    parent.removeChild(abDiv);
+  }
+  // Convert abstract-title div to <p>
+  var abTitle = document.querySelector('.abstract-title');
+  if (abTitle && abTitle.tagName !== 'P') {
+    var p = document.createElement('p');
+    p.innerHTML = abTitle.innerHTML;
+    p.style.cssText = 'font-weight:bold;text-align:center;';
+    abTitle.parentNode.replaceChild(p, abTitle);
+  }
+}
+
+function boot() {
+  makeTranslatable();
+  buildPanel();
+  refreshPanel();
+}
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", boot);
+} else {
+  boot();
+}
+
+})();
+</script>
+</body>
+</html>
