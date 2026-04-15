@@ -1,0 +1,2756 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>From Social Problem to Clinical Risk: Computational Textual Evidence of How ACE Discourse Reshapes the Child Welfare Knowledge Field</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="katex/katex.min.css">
+  <script src="katex/katex.min.js"></script>
+  <script src="katex/contrib/auto-render.min.js"></script>
+  <style>
+  /* Computer Modern Serif - LaTeX default font */
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunrm.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunbx.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunti.woff') format('woff');
+      font-weight: normal;
+      font-style: italic;
+  }
+  @font-face {
+      font-family: 'Computer Modern Serif';
+      src: url('cm-fonts/cmunbi.woff') format('woff');
+      font-weight: bold;
+      font-style: italic;
+  }
+
+  body {line-height: 2em; font-size: 12pt}
+
+  p {text-indent: 0.5in; margin: 0; line-height: 2em}
+  div.Author p {
+    text-indent: 0;
+  }
+  .FigureTitle {font-weight: bold; margin: 5pt 0; font-size: 12pt; color: black;}
+  .FigureTitle p {text-indent: 0; text-align: left;}
+  .FigureNote p {text-indent: 0; margin: 0; padding: 0}
+  .Caption {font-style: italic; font-size: 12pt; color: black; text-align: left}
+  .Caption p {text-indent: 0; font-size: 12pt;}
+  .quarto-float, .quarto-float-tbl, .figure {margin: 0; margin-block-start: 0; margin-block-end: 0; margin-block-start: 0; margin-inline-start: 0; margin-inline-end: 0}
+
+  h1, h2, h3, h4, h5 {border: none; margin: 0; padding: 0;line-height: 2; text-indent: 0 }
+
+  h1 {text-align: center;}
+  h3 {font-style: italic}
+  h4 {font-weight: bold}
+
+  h4, h5 {
+  text-indent: 0.5in;
+  display:inline-block;
+  margin: 0
+  }
+
+  h5 {
+    font-style: italic;
+  }
+
+  h4 + p, h5 + p {
+    display:inline;
+    text-indent: 0;
+  }
+
+
+  .Compact {
+    line-height: 1em;
+    text-indent: 0;
+    margin: 0;
+  }
+
+
+
+
+
+
+  td p, th p, li p {text-indent: 0; margin: 0;}
+
+
+
+  li p {text-indent: 0; margin: 0;}
+
+  .subtitle {font-size: 12pt; text-align: center; color: #303030; font-weight: bold;}
+
+  blockquote, .blockquote {border: none; margin: 0 .5in; padding: 0; font-style: normal; color: #303030;}
+
+  .Author {text-align:center; text-indent: 0}
+
+  .cell-output-display p {text-indent: 0}
+
+  div.hanging-indent {margin-left: 0.5in; text-indent: -0.5in}
+
+  div.hanging-indent .csl-entry {margin-left: 0; text-indent: -0.5in;}
+
+  .katex {font-size: 1em;}
+  .katex-display {font-size: 1.1em;}
+
+  .NoIndent p {text-indent: 0}
+
+  blockquote p:nth-child(1) {text-indent: 0}
+
+  table {
+      font-variant-numeric: tabular-nums;
+  }
+
+  .table {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .table>thead {
+    border-bottom: 1px solid black;
+  }
+
+  .table>:not(caption)>*>* {
+    border-bottom: none;
+  }
+
+  .tabwid {padding: 0}
+
+  .AbstractFirstParagraph p {text-indent: 0}
+
+
+  /* Override fonts to Computer Modern */
+  body {
+      font-family: 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+      font-family: 'Computer Modern Serif', 'Latin Modern Roman', 'Times New Roman', serif;
+  }
+  code, pre {
+      font-family: 'Computer Modern Typewriter', 'Courier New', monospace;
+  }
+
+  /* KaTeX: match font size and weight to body text */
+  .katex {
+      font-size: 1.0em;
+      font-weight: normal;
+  }
+  .katex .mathnormal,
+  .katex .mathit {
+      font-weight: normal;
+  }
+  .katex .mathbf {
+      font-weight: bold;
+  }
+
+  /* Screen adaptation overrides for web viewing */
+  @media screen {
+      html { font-size: 12pt; }
+      body {
+          max-width: 52em;
+          margin: 2em auto;
+          padding: 0 2em;
+          column-count: 1;
+      }
+      figure img { max-width: 100%; height: auto; }
+      .math.display { overflow-x: auto; margin: 1.2em 0; }
+      pre {
+          overflow-x: auto;
+          background: #f5f5f5;
+          padding: 0.8em;
+          border-radius: 4px;
+      }
+  }
+  </style>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+          delimiters: [
+              {left: "$$", right: "$$", display: true},
+              {left: "\\[", right: "\\]", display: true},
+              {left: "$", right: "$", display: false},
+              {left: "\\(", right: "\\)", display: false}
+          ],
+          throwOnError: false
+      });
+  });
+  </script>
+  <script defer=""
+  src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">From Social Problem to Clinical Risk: Computational
+Textual Evidence of How ACE Discourse Reshapes the Child Welfare
+Knowledge Field</h1>
+</header>
+<h1 id="introduction">Introduction</h1>
+<p>A child welfare social worker in an underfunded urban office opens a
+referral. The family lives in public housing, the neighborhood has no
+pediatric clinic within walking distance, and the mother, herself a
+survivor of foster care, works two minimum-wage jobs. The intake form
+asks the worker to count the child’s adverse childhood experiences. The
+score tells the worker how “at risk” the child is for future depression,
+substance use, and chronic disease. It says nothing about the landlord
+who refuses to fix the mold, the school district that eliminated its
+counseling staff, or the child protective services system that removed
+the mother’s own siblings two decades earlier. The worker is left with a
+number and a referral to a therapist.</p>
+<p>This vignette captures a tension at the center of contemporary child
+welfare: the ACE framework, developed by <span class="citation"
+data-cites="acebib_Felitti1998">Felitti et al. (1998)</span> in a Kaiser
+Permanente health maintenance organization, has become the dominant lens
+through which practitioners, policymakers, and researchers understand
+childhood adversity. Across its two waves, the study enrolled 17,337
+predominantly white, middle-class adults and defined ACEs through
+categories of household dysfunction, abuse, and neglect (seven in the
+original report, later expanded to ten), and a dose-response gradient
+linked cumulative ACE scores to adult morbidity and mortality. That
+gradient became one of the most cited findings in public health, fueling
+an exponential growth in research that now exceeds 17,000 publications.
+The framework’s appeal is straightforward: it provides a standardized,
+quantifiable measure of childhood adversity that translates easily into
+clinical screening protocols and policy targets.</p>
+<p>But translation comes at a cost. In social work, the study of child
+maltreatment has historically emphasized legal accountability, family
+systems, community context, and the structural conditions (poverty,
+racism, housing instability) that produce harm <span class="citation"
+data-cites="acebib_Pelton2015 acebib_Roberts2002">(Pelton 2014; Roberts
+2002)</span>. The ACE framework recasts these complex social
+relationships as calculable risk exposures, individual attributes that
+predict future pathology. Critics within social work and public health
+have questioned whether this reconceptualization amounts to what <span
+class="citation" data-cites="acebib_Conrad2007">Conrad (2007)</span>
+terms the “medicalization of social problems”: the absorption of
+inherently social phenomena into biomedical categories that locate the
+problem, and the solution, in the individual body rather than the social
+structure <span class="citation"
+data-cites="acebib_Finkelhor2015 acebib_Karatekin2018">(Finkelhor 2017;
+Karatekin and Hill 2018)</span>. <span class="citation"
+data-cites="acebib_Bernard2020">Bernard et al. (2020)</span> has argued
+that racism itself should be recognized as an adverse childhood
+experience, challenging the framework’s original silence on structural
+determinants. <span class="citation"
+data-cites="acebib_Cronholm2015">Cronholm et al. (2015)</span>
+demonstrated in Philadelphia that community-level adversities
+(neighborhood violence, discrimination, poverty) predicted poor adult
+health outcomes independently of conventional ACEs; <span
+class="citation" data-cites="acebib_wade2016household"><span
+class="nocase">Wade et al.</span> (2015)</span> examined these patterns
+in a racially diverse urban sample, documenting the co-occurrence of
+household and community-level adversities while noting the continued
+primacy of family-level exposures.</p>
+<p>Despite the scale of the accumulated literature, no study has
+systematically mapped the full trajectory of this epistemic
+transformation using computational methods capable of detecting subtle
+shifts in the field’s conceptual architecture. Existing reviews have
+relied on systematic review and meta-analysis <span class="citation"
+data-cites="acebib_Hughes2017 acebib_Petruccelli2019">(Hughes et al.
+2017; Petruccelli et al. 2019)</span> or standard bibliometric trend
+analysis <span class="citation" data-cites="acebib_Struck2020">(Struck
+et al. 2020)</span> that cannot capture how core concepts change meaning
+as they circulate across disciplinary communities. Are we witnessing a
+genuine integration of structural analysis into ACE research, or is the
+field absorbing structural language without restructuring its clinical
+foundations? Are social workers and child welfare practitioners being
+given tools for systemic change, or for more efficient screening of
+future patients?</p>
+<p>This study deploys three complementary computational methods across
+17,758 publications to answer these questions. Bibliometric analysis
+maps the field’s institutional infrastructure: who publishes, where, and
+in what disciplinary contexts. Word2Vec word embedding models <span
+class="citation" data-cites="acebib_Mikolov2013">(Mikolov et al.
+2013)</span> trained on period-specific corpora measure shifts in the
+semantic distance between ACE terminology and vocabularies of structural
+determinants, clinical psychiatry, and social justice. BERTopic dynamic
+topic modeling <span class="citation"
+data-cites="acebib_Grootendorst2022">(Grootendorst 2022)</span>
+identifies and tracks 48 distinct research sub-domains across the
+field’s history, revealing which conversations are growing, which are
+stalling, and which remain marginal.</p>
+<p>This review makes three contributions. First, it provides the most
+comprehensive computational mapping of ACE discourse to date,
+documenting a pattern of <em>selective absorption</em>: the differential
+incorporation of structural perspectives based on their compatibility
+with clinical logic, such that poverty and life course concepts gain
+semantic traction while racism and discrimination lose ground. Second,
+it introduces distributional semantic analysis to the study of child
+welfare knowledge production, providing quantitative evidence that the
+field’s stated commitment to structural determinants has outpaced its
+actual conceptual integration. Third, it traces the rapid expansion of
+trauma-informed care discourse alongside the marginalization of racial
+justice vocabulary, raising pointed questions for social work about
+whether the profession’s most visible practice innovation addresses the
+structural violence that produces childhood adversity in the first
+place.</p>
+<h1 id="background">Background</h1>
+<h2
+id="the-ace-framework-from-clinical-instrument-to-contested-paradigm">The
+ACE Framework: From Clinical Instrument to Contested Paradigm</h2>
+<p>The original ACE Study <span class="citation"
+data-cites="acebib_Felitti1998">(Felitti et al. 1998)</span>
+demonstrated a graded relationship between cumulative ACE exposure and
+leading causes of adult morbidity and mortality. Respondents reporting
+four or more ACEs showed elevated risks for heart disease, cancer,
+chronic lung disease, depression, and suicide attempts. The
+dose-response gradient, the study’s most influential empirical
+contribution, provided compelling evidence that childhood adversity
+operates as a cumulative stressor with lasting biological and behavioral
+consequences. Meta-analytic evidence from <span class="citation"
+data-cites="acebib_Hughes2017">Hughes et al. (2017)</span>, synthesizing
+37 studies across multiple countries, confirmed significant associations
+between ACEs and a broad array of health-risk behaviors and conditions,
+with pooled odds ratios for the highest exposure categories (<span
+class="math inline">\geq</span>4 ACEs) reaching more than 30 for
+outcomes such as suicide attempts. Population-based surveillance data
+showed that approximately 61% of U.S. adults reported at least one ACE,
+and nearly 16% reported four or more <span class="citation"
+data-cites="acebib_Merrick2019">(Merrick et al. 2019)</span>.</p>
+<p>The framework’s rapid diffusion was accompanied by growing
+recognition of its conceptual limitations. <span class="citation"
+data-cites="acebib_Finkelhor2015inventory">Finkelhor et al.
+(2015)</span> argued that the original questionnaire omitted common
+forms of childhood adversity, including peer victimization, exposure to
+community violence, and socioeconomic hardship, while <span
+class="citation" data-cites="acebib_Finkelhor2015">Finkelhor
+(2017)</span> raised broader cautions about screening practices. The
+Expanded ACE framework developed by <span class="citation"
+data-cites="acebib_Cronholm2015">Cronholm et al. (2015)</span> in
+Philadelphia incorporated community-level adversities and demonstrated
+that these structural exposures significantly predicted poor adult
+health outcomes independently of conventional ACEs. <span
+class="citation" data-cites="acebib_Bernard2020">Bernard et al.
+(2020)</span> explicitly argued that racism should be recognized as an
+adverse childhood experience, <span class="citation"
+data-cites="acebib_Metzler2017">Metzler et al. (2016)</span> argued that
+ACEs are linked to broader socioeconomic disadvantage and that
+prevention efforts must address root causes beyond individual
+households. International studies documented similar prevalence patterns
+across diverse cultural contexts, including national household surveys
+in England <span class="citation" data-cites="acebib_Bellis2014">(Bellis
+et al. 2014)</span> and investigations in low- and middle-income
+settings <span class="citation" data-cites="acebib_Soares2016">(Soares
+et al. 2015)</span>.</p>
+<p>This expansion marked a turning point. The field moved from
+conceptualizing childhood adversity as primarily household-level
+dysfunction toward recognizing it as embedded within broader systems of
+social stratification. But the nature of that recognition remains an
+open empirical question. Social work scholars have long distinguished
+between rhetorical acknowledgment of structural conditions and their
+substantive operationalization in research design and practice <span
+class="citation"
+data-cites="acebib_Featherstone2018 acebib_Dominelli2002">(Featherstone
+et al. 2018; Dominelli 2002)</span>. The gap between saying “poverty
+matters” and designing studies that treat poverty as a causal force
+rather than a covariate is precisely what this computational analysis is
+designed to detect.</p>
+<h2
+id="child-welfare-at-the-crossroads-clinical-logic-versus-anti-oppressive-practice">Child
+Welfare at the Crossroads: Clinical Logic versus Anti-Oppressive
+Practice</h2>
+<p>Within child welfare, the tension between clinical and structural
+approaches has deep roots. Traditional child maltreatment scholarship
+emphasized the legal, relational, and community dimensions of harm to
+children: what constitutes abuse, who bears responsibility, and what
+systems of accountability exist to protect children and support families
+<span class="citation" data-cites="acebib_Pelton2015">(Pelton
+2014)</span>. The anti-oppressive practice (AOP) tradition in social
+work, articulated by <span class="citation"
+data-cites="acebib_Dominelli2002">Dominelli (2002)</span> and extended
+by <span class="citation"
+data-cites="acebib_Featherstone2018">Featherstone et al. (2018)</span>,
+insists that child welfare cannot be separated from the structural
+conditions (poverty, racism, colonialism, gender inequality) that
+produce vulnerability. In this tradition, the social worker’s task is
+not merely to identify and treat individual trauma but to challenge the
+systems that generate it.</p>
+<p>The ACE framework exists in tension with this tradition. By reducing
+complex social relationships to a ten-item checklist and framing the
+resulting score as a predictor of future pathology, the framework risks
+what <span class="citation" data-cites="acebib_Garrett2017">Garrett
+(2017)</span> calls “welfare words”: the adoption of seemingly
+progressive language that actually narrows the field of vision. A child
+who has experienced four ACEs is repositioned from a member of a
+community that needs resources to a patient who needs treatment. <span
+class="citation" data-cites="acebib_Roberts2002">Roberts (2002)</span>
+documented how child welfare systems already disproportionately surveil
+and separate Black families, and <span class="citation"
+data-cites="acebib_feely2021which">Feely and Bosk (2021)</span> have
+shown that structural risk factors, particularly poverty and economic
+hardship, drive racial disproportionality in child protective services
+far more than differences in parenting behavior. The addition of ACE
+screening to this apparatus raises questions about whether the framework
+functions as a tool for understanding adversity or as a mechanism for
+extending clinical authority over marginalized populations.</p>
+<p>The medicalization thesis <span class="citation"
+data-cites="acebib_Conrad2007">(Conrad 2007)</span> provides the
+theoretical anchor for this critique. <span class="citation"
+data-cites="acebib_Conrad2007">Conrad (2007)</span> argued that
+biomedical frameworks tend to absorb social critique by translating
+structural claims into clinical language, producing an appearance of
+integration without substantive epistemological change. Applied to ACEs,
+the medicalization thesis predicts that structural language (“social
+determinants,” “health equity,” “structural racism”) will enter the
+discourse, but the underlying research designs, measurement instruments,
+and causal models will remain individual-level. The computational
+analysis presented here tests this prediction directly.</p>
+<p>The ACE concept’s capacity to travel across disciplinary boundaries
+suggests that it operates as what <span class="citation"
+data-cites="acebib_Star1989">Star and Griesemer (1989)</span> termed a
+“boundary object”: a construct sufficiently plastic to be adapted by
+different communities of practice yet robust enough to maintain a shared
+identity across them. Clinicians use ACEs to screen for trauma exposure;
+epidemiologists use the same construct to model dose-response gradients;
+sociologists invoke it to critique structural inequalities; and
+policymakers deploy it to justify prevention programs. This interpretive
+flexibility has fueled the framework’s diffusion but has also generated
+conceptual tensions, as different disciplinary communities project
+distinct meanings onto the same ostensible construct. The question is
+whether some meanings have more institutional power than others, and
+whether the clinical interpretation has become hegemonic in ways that
+constrain alternatives.</p>
+<h2
+id="computational-approaches-to-knowledge-field-analysis">Computational
+Approaches to Knowledge Field Analysis</h2>
+<p>The scale of the ACE literature (nearly 18,000 publications
+accumulated over three decades) exceeds the capacity of conventional
+review methods. Computational approaches to studying scientific
+knowledge fields have gained ground in sociology and the health
+sciences, where large textual corpora are increasingly treated as
+artifacts of collective meaning-making amenable to systematic empirical
+investigation <span class="citation"
+data-cites="acebib_DiMaggio2013 acebib_Evans2016 acebib_Nelson2020">(DiMaggio
+et al. 2013; Evans and Aceves 2016; Nelson 2017)</span>.</p>
+<p>Bibliometric mapping enables quantitative characterization of a
+field’s infrastructure: publication trajectories, collaboration
+networks, and disciplinary diffusion <span class="citation"
+data-cites="acebib_Aria2017 acebib_Donthu2021 acebib_Zupic2015">(Aria
+and Cuccurullo 2017; Donthu et al. 2021; Župič and Čater 2014)</span>.
+Word embedding models, exemplified by Word2Vec <span class="citation"
+data-cites="acebib_Mikolov2013">(Mikolov et al. 2013)</span>, represent
+words as dense vectors in continuous semantic space, capturing the
+associative structure of meaning within a corpus. Social scientists have
+shown that such embeddings encode meaningful cultural content, from
+gender stereotypes <span class="citation"
+data-cites="acebib_Caliskan2017">(Caliskan et al. 2017)</span> and
+racial bias <span class="citation" data-cites="acebib_Garg2018">(Garg et
+al. 2018)</span> to shifting class associations <span class="citation"
+data-cites="acebib_Kozlowski2019">(Kozlowski et al. 2019)</span>, making
+them effective instruments for tracking how conceptual boundaries move
+over time. BERTopic <span class="citation"
+data-cites="acebib_Grootendorst2022">(Grootendorst 2022)</span> combines
+transformer-based document embeddings with UMAP dimensionality reduction
+and HDBSCAN density-based clustering to generate coherent, interpretable
+topics. Where earlier approaches such as Latent Dirichlet Allocation
+<span class="citation" data-cites="acebib_Blei2003">(Blei et al.
+2003)</span> and structural topic models <span class="citation"
+data-cites="acebib_Roberts2014">(Roberts et al. 2014)</span> relied on
+bag-of-words representations, BERTopic leverages contextual embeddings
+to produce more semantically coherent topic structures.</p>
+<p>No prior study of the ACE literature has combined these computational
+approaches to move beyond metadata-level description toward deep
+semantic analysis of the field’s conceptual evolution and its
+implications for child welfare practice. The present study addresses
+this gap.</p>
+<h1 id="data-and-methods">Data and Methods</h1>
+<h2 id="data-and-corpus-preparation">Data and Corpus Preparation</h2>
+<p>We retrieved all publications indexed in the Web of Science Core
+Collection (WoS; SCI-Expanded, SSCI, A&amp;HCI, ESCI) with topic-level
+relevance to adverse childhood experiences. The search query targeted
+ACE-specific terminology:
+<code>TS=("adverse childhood experience*" OR "early adversit*" OR ("ACE*" AND ("child*" OR "adversit*")))</code>.
+The search was conducted in February 2026 and covered 1998–2026. An
+important scope clarification: this query captures <em>ACE-labelled
+literature</em> specifically, not the entire field of childhood
+adversity research. Substantial bodies of work on child maltreatment,
+family violence, community violence, toxic stress, and historical trauma
+exist under separate terminological traditions and are not captured by
+ACE-centric search terms. Our findings therefore describe epistemic
+patterns within the discourse that explicitly adopts the ACE framework,
+and the clinical turn we document is a property of this ACE-labelled
+literature rather than a claim about all research on childhood
+adversity. This scope is analytically appropriate: it is precisely the
+ACE label’s capacity to reorganize how childhood adversity is discussed,
+measured, and intervened upon that our analysis is designed to evaluate.
+We selected WoS rather than Scopus or PubMed because WoS provides the
+most comprehensive structured metadata (including institutional
+affiliations with country information, author keywords, and Keywords
+Plus) needed for multi-level bibliometric analysis.</p>
+<p>The initial retrieval yielded 20,579 bibliographic records exported
+in BibTeX format across 21 files. Each record contained structured
+metadata including title, abstract, author names, institutional
+affiliations, journal name, publication year, document type, author
+keywords, Keywords Plus (WoS-assigned), and DOI.</p>
+<p>The raw retrieval was refined through a systematic cleaning pipeline.
+We first excluded non-research document types that lack original
+empirical or theoretical contributions, principally meeting abstracts
+(<span class="math inline">n</span> = 1,978), which contained no full
+abstract text, along with corrections, retractions, news items, book
+reviews, and reprints (collectively <span class="math inline">n</span> =
+98). Editorial materials and letters presented a judgment call: we
+retained those containing substantive abstracts of at least 100
+characters (127 of 547), reasoning that editorials in this field often
+advance theoretical arguments worthy of inclusion in discourse analysis.
+We then removed entries lacking valid abstracts (<span
+class="math inline">n</span> = 304), as the natural language processing
+pipeline requires sufficient text for meaningful semantic analysis.
+Deduplication identified 21 redundant entries through normalized DOI and
+title matching. The final cleaned corpus comprised
+<strong>17,758</strong> publications, representing an 86.3% retention
+rate from the raw retrieval. All entries contain valid abstracts (mean
+length = 1,607 characters), 98.7% have DOIs, and 81.6% include author
+keywords.</p>
+<h2 id="bibliometric-analysis">Bibliometric Analysis</h2>
+<p>Descriptive bibliometric analysis examined publication volume trends
+(1998–2025), geographical distribution based on author institutional
+affiliations (parsed from the WoS affiliation field), journal
+concentration, author productivity, research area classification, and
+keyword frequency. Country information was extracted by parsing detailed
+affiliation strings, mapping institution addresses to countries using
+last-element parsing with standardized country name normalization (e.g.,
+“England” <span class="math inline">\rightarrow</span> “United Kingdom,”
+U.S. state abbreviations <span class="math inline">\rightarrow</span>
+“USA”).</p>
+<h2 id="analytical-strategy">Analytical Strategy</h2>
+<p>Our analytical strategy employed two complementary computational text
+analysis methods to move beyond descriptive bibliometrics into the
+semantic and discursive structure of the ACE literature.</p>
+<p>To capture semantic shifts in how the field’s core concepts relate to
+broader vocabularies, we trained period-specific Word2Vec skip-gram
+models <span class="citation" data-cites="acebib_Mikolov2013">(Mikolov
+et al. 2013)</span> on the 17,444 documents that met the minimum
+text-length threshold (the same subset used for topic modeling; 314
+short-text documents excluded). These were distributed across five
+temporal windows: 1998–2005 (<span class="math inline">n</span> = 237),
+2006–2010 (<span class="math inline">n</span> = 593), 2011–2015 (<span
+class="math inline">n</span> = 1,873), 2016–2019 (<span
+class="math inline">n</span> = 3,562), and 2020–2025 (<span
+class="math inline">n</span> = 11,179). The analysis corpus consisted of
+concatenated title, author keywords, and abstract text for each
+publication. Text preprocessing involved lowercasing and cleaning of
+URLs and LaTeX artifacts, followed by joining 41 multi-word domain
+concepts into single tokens (e.g., “adverse childhood experiences” <span
+class="math inline">\rightarrow</span>
+<code>adverse_childhood_experience</code>; “social determinants” <span
+class="math inline">\rightarrow</span> <code>social_determinant</code>)
+to preserve semantic integrity. Tokenization and lemmatization were
+performed, followed by domain-specific stopword removal and synonym
+consolidation to reduce surface-level lexical variation. For each
+period, we computed the mean cosine similarity between a set of ten ACE
+seed terms (including <code>adverse_childhood_experience</code>,
+<code>maltreatment</code>, <code>trauma</code>,
+<code>childhood_adversity</code>) and curated groups of target terms
+representing two broad domains: (a) structural determinants,
+encompassing poverty/inequality, discrimination/racism,
+housing/environment, education, healthcare access, criminal justice,
+intergenerational transmission, and life course perspective; and (b)
+clinical/individual factors, encompassing mental health, physical
+health, neuroscience, and substance use. Following <span
+class="citation" data-cites="acebib_Kozlowski2019">Kozlowski et al.
+(2019)</span> and <span class="citation"
+data-cites="acebib_Garg2018">Garg et al. (2018)</span>, who demonstrated
+that period-specific word embeddings capture meaningful shifts in
+cultural associations, we compared era-averaged similarity scores
+between the early period (1998–2015, comprising the first three windows)
+and the late period (2016–2025, comprising the final two), with each
+period weighted equally regardless of corpus size to avoid
+over-representing the most recent and largest window. Vocabulary sizes
+ranged from 2,847 tokens in the earliest window to 18,432 in the most
+recent.</p>
+<p>To identify and track thematic structures, we applied BERTopic <span
+class="citation" data-cites="acebib_Grootendorst2022">(Grootendorst
+2022)</span>, which combines transformer-based document embeddings with
+UMAP dimensionality reduction and HDBSCAN density-based clustering to
+generate coherent, interpretable topics without requiring a
+pre-specified number of topics. Documents were embedded using a
+pre-trained sentence transformer, reduced to a low-dimensional manifold,
+and clustered with a minimum cluster size of 50. Topic representations
+were refined through KeyBERT-inspired re-ranking of candidate terms. The
+48 topics identified after automatic reduction from an initial 65
+clusters were organized into nine macro-themes through expert
+classification: the first author assigned each topic to a macro-theme
+based on top-20 keywords and representative documents, and a second
+researcher independently classified a random sample of 15 topics (<span
+class="math inline">\kappa</span> = 0.91). Dynamic topic modeling traced
+frequency trajectories across 20 temporal bins, with evolution and
+global tuning enabled to smooth short-term fluctuations while preserving
+trends.</p>
+<p>Each analytical layer captures a distinct dimension of epistemic
+change: bibliometrics establishes the institutional infrastructure of
+the field; Word2Vec penetrates beneath this surface to capture deep
+associative structure; and topic modeling reveals the manifest discourse
+structure. All analysis was conducted in R (v4.4.3) and Python (v3.11),
+using Gensim for Word2Vec models, spaCy for NLP preprocessing, and the
+BERTopic library with sentence-transformers for topic modeling.</p>
+<h1 id="results">Results</h1>
+<h2 id="the-reinforced-clinical-core">The Reinforced Clinical Core</h2>
+<p>The ACE literature has grown exponentially, expanding from 4
+publications in 1998 to 2,415 in 2025 (Figure 1A). The cumulative count
+surpassed 17,000 by early 2026, with the majority of growth occurring
+after 2016 (Figure 1B). The post-2020 acceleration, with annual output
+nearly doubling from 1,355 in 2020 to 2,415 in 2025, likely reflects
+both policy-driven institutional demand and heightened societal
+awareness of childhood adversity during and after the COVID-19
+pandemic.</p>
+<p>Author affiliations spanned 149 countries, but the field remains
+heavily concentrated in the Global North. The United States contributed
+9,183 publications (51.7%), followed by the United Kingdom (<span
+class="math inline">n</span> = 1,874; 10.6%), Canada (<span
+class="math inline">n</span> = 1,346; 7.6%), China (<span
+class="math inline">n</span> = 1,148; 6.5%), Germany (<span
+class="math inline">n</span> = 1,014; 5.7%), and Australia (<span
+class="math inline">n</span> = 854; 4.8%) (Figure 2A). The top three
+English-speaking nations account for nearly 70% of the entire corpus,
+concentrating definitional authority over what counts as childhood
+adversity, how it should be measured, and what counts as evidence.
+Publications appeared across 2,608 unique journals, with the
+top-contributing outlets being <em>Child Abuse &amp; Neglect</em> (<span
+class="math inline">n</span> = 597), <em>Journal of Affective
+Disorders</em> (<span class="math inline">n</span> = 315),
+<em>Psychoneuroendocrinology</em> (<span class="math inline">n</span> =
+242), <em>PLOS ONE</em> (<span class="math inline">n</span> = 232), and
+<em>Frontiers in Psychiatry</em> (<span class="math inline">n</span> =
+222) (Figure 2B). That four of the five top journals are psychiatric or
+psychobiological outlets, with only <em>Child Abuse &amp; Neglect</em>
+anchored in child welfare, is itself a telling indicator of the field’s
+center of gravity.</p>
+<p>This clinical dominance is confirmed by the topic structure. The
+BERTopic model, applied to the 17,444 documents that produced valid
+embeddings (314 documents were excluded due to insufficient text length
+after preprocessing), identified 48 distinct topics organized into nine
+macro-themes (Figure 3). The largest topic, Mental Health &amp;
+Depressive Symptoms (Topic 0; <span class="math inline">n</span> =
+3,616), captured more than one-fifth of all classified documents. Other
+dominant topics reinforced the clinical pattern: Substance Use &amp;
+Alcohol Dependence (Topic 9; <span class="math inline">n</span> = 295),
+PTSD &amp; Veteran Populations (Topic 10; <span
+class="math inline">n</span> = 264), and DNA Methylation &amp;
+Epigenetics (Topic 4; <span class="math inline">n</span> = 338). Topic
+coherence (<span class="math inline">C_V</span> = 0.52) fell within the
+range typically reported for neural topic models on academic corpora;
+stability was verified through re-running the model with three different
+random seeds (Jaccard similarity <span class="math inline">&gt;</span>
+0.85 for keyword sets).</p>
+<p>The document-level DataMapPlot (Figure 4) provides a topographic view
+of the entire corpus in embedding space. Clinical clusters, particularly
+mental health and substance use, occupy densely populated central
+regions, while structural and equity-focused topics are positioned at
+the periphery with lower document density. The spatial arrangement is
+not random: it encodes the field’s associative structure, and it places
+social work’s core concerns (structural inequality, community context,
+anti-oppressive frameworks) at the margins of the knowledge field that
+social workers are increasingly expected to use.</p>
+<p>The Word2Vec analysis quantifies this centrality. Mental health terms
+showed the strongest and most consistently increasing semantic proximity
+to ACE terms (era-averaged <span class="math inline">\Delta</span> =
++0.065), with cosine similarity rising from 0.230 in the 2006–2010
+window to 0.343 in the 2020–2025 window (a point-to-point increase of
++0.113), reflecting a deepening entanglement between ACE research and
+psychiatric vocabulary (Figure 6). Neuroscience proximity also increased
+(<span class="math inline">\Delta</span> = +0.022), consistent with the
+growing biological embedding research program. Physical health (<span
+class="math inline">\Delta</span> = +0.002) and substance use (<span
+class="math inline">\Delta</span> = <span
+class="math inline">-</span>0.001) associations remained stable. All
+four clinical domains showed positive or near-zero era shifts. The ACE
+concept, in its dominant discursive instantiation, is becoming more
+psychiatric, not less.</p>
+<p>For child welfare practitioners, the implications are direct. When
+ACE research is concentrated in psychiatric and psychobiological
+journals, when the dominant topic captures one-fifth of all publications
+under the heading “depression,” and when the field’s semantic center of
+gravity pulls steadily toward mental health vocabulary, the practical
+consequence is a framing that positions abused and neglected children as
+future psychiatric patients. <span class="citation"
+data-cites="acebib_Featherstone2018">Featherstone et al. (2018)</span>
+have argued that such framing displaces the social model of child
+protection, which locates the causes of harm not in the child’s risk
+profile but in the conditions of deprivation, discrimination, and
+institutional failure that surround the family. The computational
+evidence presented here suggests that displacement is not hypothetical;
+it is measurable in the field’s own language.</p>
+<h2
+id="structural-discourse-selective-integration-and-its-limits">Structural
+Discourse: Selective Integration and Its Limits</h2>
+<p>The period-specific Word2Vec analysis revealed an asymmetry that goes
+to the heart of the field’s relationship with structural analysis.
+Comparing era-averaged cosine similarities between the early period
+(1998–2015) and the late period (2016–2025), structural determinant
+domains split sharply (Figure 5B). The poverty/inequality domain showed
+the most pronounced increase (<span class="math inline">\Delta</span> =
++0.020), indicating growing discursive integration of socioeconomic
+factors. Life course perspective (<span
+class="math inline">\Delta</span> = +0.015) and education systems (<span
+class="math inline">\Delta</span> = +0.014) also strengthened.
+Period-specific trajectories (Figure 5A) confirmed that
+poverty/inequality proximity followed a U-shaped pattern, declining from
+the earliest period before recovering and surpassing initial levels by
+2020–2025.</p>
+<p>By contrast, discrimination/racism showed the largest decline of any
+domain (<span class="math inline">\Delta</span> = <span
+class="math inline">-</span>0.060), indicating that despite growing
+scholarly attention to structural racism <span class="citation"
+data-cites="acebib_Bernard2020">(Bernard et al. 2020)</span>, this
+vocabulary has not become integrated into the ACE discourse’s core
+semantic field. Housing/environment (<span
+class="math inline">\Delta</span> = <span
+class="math inline">-</span>0.053) and intergenerational (<span
+class="math inline">\Delta</span> = <span
+class="math inline">-</span>0.045) domains also decreased, while
+healthcare access remained stable (<span
+class="math inline">\Delta</span> = 0.000).</p>
+<p>This pattern demands naming. The ACE field has not rejected
+structural perspectives wholesale; it has absorbed them selectively.
+Socioeconomic gradients and developmental trajectories can be
+operationalized as individual-level covariates in clinical research
+designs: a child’s family income or developmental stage can be
+controlled for in a regression predicting depression scores. Structural
+racism and environmental justice cannot be so easily domesticated. They
+require a different kind of research design, one that treats the social
+structure as the unit of analysis, not the child. They require
+engagement with power, with the historical and ongoing production of
+racial inequality, and with the institutions (child protective services,
+schools, policing systems) that mediate the relationship between
+structural conditions and individual outcomes <span class="citation"
+data-cites="acebib_Roberts2002 acebib_Blackstock2011">(Roberts 2002;
+Blackstock 2010)</span>.</p>
+<p>The disproportion is stark. Mental health proximity gained at more
+than three times the rate of poverty/inequality proximity (<span
+class="math inline">\Delta</span> = +0.065 vs. +0.020). If the
+“structural turn” in ACE research were as thoroughgoing as some
+advocates have claimed <span class="citation"
+data-cites="acebib_Cronholm2015 acebib_Bernard2020">(Cronholm et al.
+2015; Bernard et al. 2020)</span>, we would expect structural and
+clinical proximity gains to be at least comparable in magnitude. The
+documented disproportion suggests that structural language is being
+adopted in ways that do not require fundamental changes to how ACE
+research is designed and conducted. This is precisely the pattern that
+<span class="citation" data-cites="acebib_Conrad2007">Conrad
+(2007)</span> described in his analysis of medicalization: biomedical
+frameworks absorb social critique by translating structural claims into
+clinical variables, producing an appearance of integration without
+substantive epistemological change.</p>
+<p>For social work, this finding is not merely an academic observation.
+The anti-oppressive practice tradition <span class="citation"
+data-cites="acebib_Dominelli2002">(Dominelli 2002)</span> insists that
+attention to structural conditions is not optional but constitutive of
+ethical practice. If the knowledge base that informs child welfare
+decision-making systematically marginalizes racism while centering
+psychiatric diagnosis, then the evidence base itself becomes a mechanism
+of depoliticization. The social worker who consults the ACE literature
+for guidance on working with a Black family in a neighborhood shaped by
+redlining, disinvestment, and over-policing will find abundant research
+on the child’s risk of depression and relatively little on the
+structural conditions that produced the family’s circumstances in the
+first place.</p>
+<h2 id="reshaping-the-practice-frontier">Reshaping the Practice
+Frontier</h2>
+<p>The BERTopic dynamic trajectories (Figure 7) and macro-theme
+evolution (Figure 8) revealed three lifecycle patterns among the 48
+topics, each with distinct implications for child welfare practice.
+<em>Persistent topics</em> (depression, substance use, PTSD) maintained
+steady presence throughout the study period, constituting the field’s
+settled knowledge base. <em>Growth topics</em> (trauma-informed care,
+epigenetics, intergenerational transmission) showed rapid post-2015
+acceleration, consistent with new research programs that extend the ACE
+framework beyond its original clinical boundaries. <em>Emerging
+topics</em> appeared primarily in 2020–2025, including COVID-19
+intersections with childhood adversity, where systematic reviews have
+examined potential shifts in maltreatment patterns during
+pandemic-related school closures and economic disruption, though the
+evidence remains mixed <span class="citation"
+data-cites="acebib_rubeis2025changes">(<span class="nocase">Rubeis et
+al.</span> 2025)</span>, and equity-focused frameworks that foreground
+structural racism.</p>
+<p>The trajectory of trauma-informed care (TIC) is particularly
+consequential for child welfare. Topic 1 (Trauma-Informed Care &amp;
+Implementation; <span class="math inline">n</span> = 507) showed the
+steepest growth curve of any topic after 2015, a period that coincided
+with SAMHSA’s formal definition of trauma-informed approaches <span
+class="citation" data-cites="acebib_Substance2014">(Substance Abuse and
+Mental Health Services Administration 2014)</span> and state-level
+mandates such as California’s ACEs Aware screening initiative. TIC has
+become the child welfare field’s most visible practice innovation,
+adopted by child protective services agencies, schools, juvenile justice
+facilities, and foster care programs across the United States and beyond
+<span class="citation" data-cites="acebib_duffee2021trauma">(Forkey et
+al. 2021)</span>.</p>
+<p>But the semantic analysis introduces a complication. The rapid
+expansion of TIC discourse occurred alongside, not in opposition to, the
+decline in discrimination/racism semantic proximity (<span
+class="math inline">\Delta</span> = <span
+class="math inline">-</span>0.060). The two trends are not
+contradictory; they are complementary features of the same epistemic
+dynamic. TIC, as implemented in most child welfare settings, is a
+clinical framework: it trains practitioners to recognize trauma
+symptoms, to avoid re-traumatization, and to create therapeutic
+environments <span class="citation"
+data-cites="acebib_Berliner2016">(Berliner and Kolko 2016)</span>. A
+decade after initial critiques, <span class="citation"
+data-cites="acebib_lang2026years">Lang and Hanson (2026)</span>
+concluded that TIC implementation continues to outpace its evidence
+base, with practice adoption still running ahead of conceptual clarity
+and rigorous outcome evaluation. It does not, in its dominant
+instantiation, require practitioners to confront the structural
+conditions (systemic racism, poverty, housing instability) that produce
+trauma in the first place. Our data suggest that TIC’s rapid adoption
+may represent what <span class="citation"
+data-cites="acebib_Berliner2016">Berliner and Kolko (2016)</span>
+critiqued as an embrace of trauma-informed language and techniques
+without the deeper clinical rigor and political commitments needed to
+address structural causes of childhood adversity. If TIC in child
+welfare settings means training foster parents to recognize dissociation
+but not addressing why Black children are removed from their families at
+disproportionate rates <span class="citation"
+data-cites="acebib_Roberts2002 acebib_feely2021which">(Roberts 2002;
+Feely and Bosk 2021)</span>, then the framework’s emancipatory potential
+is unrealized.</p>
+<p>The temporal correspondence between policy events and topic
+lifecycles is instructive. The rapid growth of trauma-informed care
+after 2015 coincided with government-led mandates that required clinical
+screening and intervention; the growth of epigenetics and biological
+embedding research programs coincided with increased NIH investment in
+developmental neuroscience. Both growth trajectories reinforced the
+clinical core. By contrast, no comparable policy mechanism has driven
+equivalent growth in structural ACE research. There is no “structural
+racism screening mandate” analogous to California’s ACEs Aware
+initiative, and funding structures have not created equivalent
+incentives for research that locates adversity in political economy
+rather than household dysfunction.</p>
+<p>Aggregating the 48 topics into nine macro-themes (Figure 8) revealed
+compositional shifts over time. Core Mental Health &amp; Psychopathology
+has consistently dominated. Structural Inequalities &amp; Marginalized
+Populations and Life Course, Resilience &amp; Interventions gained
+increasing share after 2015, but from very small baselines. The
+disciplinary trajectory documented in the bibliometric data clarifies
+the institutional conditions of these shifts. Prior to 2010, the
+overwhelming majority of ACE publications appeared in clinical
+psychology, psychiatry, and child abuse journals. By 2020, the field had
+established footholds in public health, social work, pediatrics, and, to
+a lesser extent, sociology and criminology. This institutional migration
+maps onto the semantic changes: as ACE research entered social work and
+public health outlets, poverty/inequality and life course terminology
+gained semantic proximity. But the clinical journals did not lose their
+quantitative dominance, and the influx of publications in those outlets
+continued to anchor the field’s vocabulary in psychiatric and
+psychological language.</p>
+<h1 id="discussion">Discussion</h1>
+<h2
+id="the-pathologization-trap-clinical-hegemony-and-its-consequences-for-child-welfare">The
+Pathologization Trap: Clinical Hegemony and Its Consequences for Child
+Welfare</h2>
+<p>The convergent evidence from bibliometric, semantic, and topic
+modeling analyses documents a systematic pattern: the ACE field’s
+conceptual expansion has proceeded along clinical axes more readily than
+structural ones, producing what we term <em>selective absorption</em>.
+The field has incorporated perspectives that extend its clinical logic
+(life course development, biological embedding, mental health
+comorbidity) more readily than those that challenge it (structural
+racism, political economy, Global South epistemologies). This
+selectivity is not simply an intellectual oversight; it is produced and
+maintained by the institutional structures within which ACE research is
+conducted: funding agencies that reward clinical outcomes, measurement
+instruments that channel inquiry toward individual-level phenomena, and
+disciplinary incentive systems that privilege psychiatric over
+sociological approaches.</p>
+<p>For child welfare, the consequences of clinical hegemony are
+concrete. When the dominant ACE topic captures 3,616 documents under the
+heading “Mental Health &amp; Depressive Symptoms,” when four of the five
+most prolific journals are psychiatric or psychobiological, and when the
+field’s semantic center of gravity pulls steadily toward mental health
+vocabulary (<span class="math inline">\Delta</span> = +0.065), the
+practical result is a knowledge base that frames abused and neglected
+children primarily through the lens of individual psychopathology. <span
+class="citation" data-cites="acebib_Featherstone2018">Featherstone et
+al. (2018)</span> have argued that this framing displaces the social
+model of child protection, which locates harm not in the child’s risk
+profile but in the conditions of deprivation that surround the family.
+<span class="citation" data-cites="acebib_Pelton2015">Pelton
+(2014)</span> documented that material deprivation, not parental
+psychopathology, is the strongest predictor of child maltreatment
+reports and out-of-home placements. Yet the ACE literature, as our
+analysis demonstrates, has moved further from poverty-focused analysis
+toward psychiatric framing, not closer.</p>
+<p>The medicalization thesis <span class="citation"
+data-cites="acebib_Conrad2007">(Conrad 2007)</span> predicted this
+trajectory. Biomedical frameworks absorb social critique by translating
+structural claims into clinical language. The ACE field has followed
+this script with precision: “social determinants” become covariates in
+clinical models rather than objects of analysis in their own right;
+“health equity” becomes a discussion section paragraph rather than a
+research design principle; “structural racism” becomes a limitation
+rather than a variable. The persistence of the original ten-item
+checklist, which describes household events rather than structural
+conditions, creates methodological path dependency that anchors the
+field’s empirical practice in individual-level measurement regardless of
+researchers’ theoretical commitments. This is not a conspiracy; it is
+the routine operation of institutional structures that reward clinical
+productivity and make structural research more difficult to fund,
+publish, and translate into practice. Alternative models do exist:
+community-driven, non-medicalized approaches to mental health care that
+center housing, peer support, and daily living assistance over
+diagnostic categorization <span class="citation"
+data-cites="acebib_fordjones2026medicalization">(Ford-Jones et al.
+2026)</span>, but these models remain marginal in the ACE
+literature.</p>
+<p>The anti-oppressive practice tradition in social work <span
+class="citation" data-cites="acebib_Dominelli2002">(Dominelli
+2002)</span> has always insisted that attention to structural conditions
+is constitutive of ethical practice, not an optional addendum. If the
+evidence base that informs child welfare decision-making systematically
+centers psychiatric diagnosis while marginalizing analysis of racism,
+poverty, and institutional power, then the evidence base itself becomes
+what <span class="citation" data-cites="acebib_Garrett2017">Garrett
+(2017)</span> terms a “welfare word”: language that appears progressive
+but narrows the field of vision to individual-level intervention. The
+computational evidence presented here suggests that this narrowing is
+not hypothetical. It is encoded in the distributional structure of the
+field’s vocabulary and reproduced through the institutional mechanisms
+(journal hierarchies, funding priorities, measurement conventions) that
+govern knowledge production.</p>
+<p>The consequences extend beyond child welfare into the broader field
+of trauma, violence, and abuse research. In the child maltreatment
+tradition, violence and abuse are relational and contextual: they
+describe acts embedded in power relations, family systems, and
+institutional structures. Trauma, in this tradition, is one possible
+consequence of violence and abuse, not their defining feature. The ACE
+framework inverts this relationship. By centering the dose-response
+gradient between adverse experiences and health outcomes, it repositions
+violence and abuse as inputs to a biomedical risk model, and trauma as
+the primary output that warrants clinical attention. The semantic
+evidence quantifies this inversion: as mental health vocabulary drew
+closer to ACE terminology (<span class="math inline">\Delta</span> =
++0.065), the field’s discursive center shifted from understanding why
+violence occurs to measuring what it does to the individual body and
+brain. When violence is understood primarily as a cause of individual
+trauma, the logical intervention is therapy; when abuse is
+operationalized as a risk factor for future psychopathology, the logical
+response is screening. These are not wrong responses, but they are
+incomplete, leaving unaddressed the conditions that produce violence and
+the systems that fail to prevent abuse. The ACE field, as currently
+constituted, is better equipped to treat the consequences of violence
+than to prevent its occurrence, and better positioned to diagnose trauma
+than to dismantle the conditions that produce it.</p>
+<h2
+id="trauma-informed-care-between-emancipatory-promise-and-structural-evasion">Trauma-Informed
+Care: Between Emancipatory Promise and Structural Evasion</h2>
+<p>The rapid growth of the trauma-informed care topic (Topic 1; <span
+class="math inline">n</span> = 507, steepest growth curve post-2015)
+represents the child welfare field’s most consequential practice
+development in the ACE era. TIC has been adopted by child protective
+services agencies, schools, juvenile justice facilities, and foster care
+programs across multiple countries. SAMHSA’s formal framework <span
+class="citation" data-cites="acebib_Substance2014">(Substance Abuse and
+Mental Health Services Administration 2014)</span> and state-level
+mandates such as California’s ACEs Aware initiative have created
+institutional demand that has driven both research production and
+practice implementation.</p>
+<p>But the computational evidence introduces a pointed question. The
+semantic analysis shows that TIC’s rapid expansion occurred during the
+same period in which discrimination/racism vocabulary moved further from
+the ACE concept’s semantic core (<span class="math inline">\Delta</span>
+= <span class="math inline">-</span>0.060). This temporal coincidence is
+not causal, but it is revealing. TIC, as currently institutionalized in
+child welfare, is predominantly a clinical framework. Its four pillars
+(realize, recognize, respond, resist re-traumatization) describe
+practices within service delivery settings; they do not require
+practitioners or agencies to confront the structural conditions that
+produce childhood adversity in the first place <span class="citation"
+data-cites="acebib_Berliner2016">(Berliner and Kolko 2016)</span>. A
+child welfare agency can adopt a trauma-informed approach, train its
+staff in trauma recognition, and redesign its intake procedures, all
+without addressing the racial disproportionality in its own caseload or
+the poverty that drives the majority of its referrals.</p>
+<p>This is the risk of “superficial adoption”: the embrace of a
+framework’s techniques without its deeper political commitments. The
+BERTopic lifecycle data (Figure 7) show that TIC’s growth trajectory
+closely follows policy-driven institutional demand. Government mandates
+required clinical screening and intervention; research production
+responded. The growth of epigenetics and biological embedding followed a
+parallel trajectory, driven by increased NIH investment in developmental
+neuroscience. Both trajectories reinforced the clinical core. By
+contrast, no comparable policy mechanism has driven equivalent growth in
+structural ACE research. The structural topics that did grow
+(poverty/inequality in the Word2Vec analysis, equity-focused frameworks
+in the BERTopic results) did so from small baselines and without the
+institutional backing that propelled TIC.</p>
+<p>For social work, this analysis suggests that TIC’s emancipatory
+potential remains largely unrealized. If trauma-informed care in child
+welfare means training foster parents to recognize dissociation but not
+asking why Black children are consistently overrepresented in foster
+care relative to their share of the child population <span
+class="citation" data-cites="acebib_Roberts2002">(Roberts 2002)</span>,
+then the framework functions as a clinical overlay on an unreformed
+system. <span class="citation"
+data-cites="acebib_Blackstock2011">Blackstock (2010)</span> demonstrated
+that Indigenous children in Canada are overrepresented in child welfare
+systems not because of higher rates of parental pathology but because of
+the structural legacy of colonialism, residential schools, and
+systematic under-funding of on-reserve child welfare services. <span
+class="citation" data-cites="acebib_westby2025adverse">Westby et al.
+(2025)</span> extended this analysis by documenting how ACEs in
+Indigenous populations cannot be separated from intergenerational and
+historical trauma rooted in forced family separation and cultural
+erasure. A genuinely structural TIC would require confronting these
+conditions, not merely training practitioners to be “trauma-sensitive”
+within them. The data presented here suggest that the ACE field has not
+yet developed the conceptual infrastructure to support such a
+transformation.</p>
+<h2
+id="knowledge-geopolitics-cultural-specificity-and-global-equity">Knowledge
+Geopolitics, Cultural Specificity, and Global Equity</h2>
+<p>The bibliometric analysis reveals a concentration of knowledge
+production that has direct implications for how childhood adversity is
+defined and addressed globally. The United States (51.7%), United
+Kingdom (10.6%), and Canada (7.6%) together account for nearly 70% of
+all ACE publications, while Africa, South America, and South/Southeast
+Asia remain substantially underrepresented. This concentration matters
+not only because it limits the empirical scope of ACE research but
+because it determines whose definitions of childhood adversity become
+authoritative.</p>
+<p>The original ACE Study was conducted in a specific institutional and
+cultural context: a U.S. health maintenance organization serving
+predominantly white, middle-class adults. The ten-item questionnaire
+reflects the concerns and categories of that context: household
+dysfunction, parental substance use, domestic violence, sexual abuse. It
+does not include categories that might be more salient in other cultural
+contexts: exposure to armed conflict, forced migration, child labor,
+female genital cutting, caste-based discrimination, or the collective
+trauma of colonialism. When this framework is exported to the Global
+South as a “scientific” measure of childhood adversity, it carries with
+it a set of assumptions about what adversity is, how it should be
+measured, and what constitutes an appropriate response <span
+class="citation" data-cites="acebib_Soares2016">(Soares et al.
+2015)</span>.</p>
+<p>The risk is a form of epistemological imperialism: the imposition of
+a culturally specific framework as a universal standard. Child welfare
+systems in the Global South may be pressured to adopt ACE screening
+protocols developed for and validated in wealthy, English-speaking
+populations, even when those protocols poorly capture the forms of
+adversity that children in those contexts actually experience. The
+bibliometric concentration documented here is not neutral; it reflects
+and reproduces global inequalities in research infrastructure, academic
+publishing, and policy influence.</p>
+<p>Indigenous populations present a particularly striking case. The ACE
+framework’s emphasis on individual-level household events maps poorly
+onto concepts of historical trauma, collective dispossession, and
+intergenerational effects of forced assimilation that are central to
+Indigenous understandings of childhood adversity <span class="citation"
+data-cites="acebib_Blackstock2011">(Blackstock 2010)</span>. Indigenous
+scholars have developed alternative frameworks (e.g., historical trauma
+theory, relational accountability models) that foreground collective and
+structural dimensions of harm. These frameworks appear in our corpus as
+emerging topics with small document counts and peripheral positions in
+the embedding space. The ACE field has not rejected them, but it has not
+absorbed them either; they exist at the margins, visible in the
+DataMapPlot (Figure 4) as small, low-density clusters far from the
+clinical center.</p>
+<p>The LGBTQ+ population and gender nonconforming youth constitute
+another underrepresented group. Research on minority stress and its
+developmental consequences has expanded substantially in recent years,
+but this work remains only loosely connected to the ACE framework in our
+semantic analysis. The gap between the ACE literature’s stated
+commitment to “diversity” and its empirical attention to diverse
+populations is measurable in the distributional structure of the
+corpus.</p>
+<h2 id="toward-reclaiming-the-anti-oppressive-tradition">Toward
+Reclaiming the Anti-Oppressive Tradition</h2>
+<p>The computational evidence presented here supports a clear
+conclusion: the ACE field has undergone a measurable epistemic
+transformation, but that transformation has been shaped by clinical
+institutional power in ways that marginalize structural analysis,
+depoliticize childhood adversity, and concentrate definitional authority
+in the Global North. For social work and child welfare, these findings
+are not merely descriptive; they are a call to action.</p>
+<p>Three directions for reclamation follow from the evidence. First, the
+knowledge base itself must be restructured. This means not only adding
+structural variables to clinical models but reconsidering the causal
+architecture of those models so that structural conditions are treated
+as causes rather than covariates. The ACE questionnaire’s ten household
+items encode a theory of adversity (household dysfunction causes
+individual harm) that excludes structural causation by design. Expanded
+measures like the Philadelphia ACE framework <span class="citation"
+data-cites="acebib_Cronholm2015">(Cronholm et al. 2015)</span> represent
+a step, and community-engaged approaches that foreground residents’ own
+understandings of adversity and resilience <span class="citation"
+data-cites="acebib_boyd2024community">(Boyd et al. 2024)</span> offer a
+model for how research designs might center structural conditions rather
+than individual risk scores. But genuine structural integration would
+require abandoning the individual-level dose-response model as the
+field’s organizing principle and developing research designs that treat
+neighborhoods, policies, and institutions as units of analysis.</p>
+<p>Second, trauma-informed care must be reconnected to its emancipatory
+roots. The concept of “trauma-informed” originated in feminist and
+survivor-led movements that understood trauma as produced by power
+relations, not merely by discrete events. If TIC in child welfare is to
+be more than a clinical overlay, it must incorporate analysis of the
+structural conditions that produce childhood adversity: the racial
+disproportionality in child protective services <span class="citation"
+data-cites="acebib_Roberts2002">(Roberts 2002)</span>, the concentration
+of child maltreatment reports in communities experiencing poverty <span
+class="citation" data-cites="acebib_Pelton2015">(Pelton 2014)</span>,
+and the institutional mechanisms that surveil marginalized families
+while providing resources to affluent ones. The computational evidence
+suggests that the field has not yet taken this step; the rapid growth of
+TIC discourse has occurred without corresponding growth in structural
+racism analysis.</p>
+<p>Third, the geographical and cultural monopoly over ACE knowledge
+production must be broken. The 70% concentration of ACE research in
+three English-speaking nations is not only a limitation but a form of
+epistemic injustice. Childhood adversity is a universal human
+experience, but its forms, determinants, and meanings are culturally and
+structurally specific. Research investment must be redirected toward
+low- and middle-income countries, Indigenous communities, and other
+populations whose experiences of adversity do not fit the ten-item mold.
+The computational methods demonstrated here, capable of detecting subtle
+semantic shifts across large corpora, can monitor whether the field’s
+geographical and conceptual diversification is real or rhetorical.</p>
+<h2 id="diversity-discussion">Diversity Discussion</h2>
+<p>The diversity characteristics of the reviewed literature are central
+to interpreting its findings. The ACE corpus is overwhelmingly produced
+by researchers affiliated with institutions in the Global North: the
+United States (51.7%), United Kingdom (10.6%), and Canada (7.6%) account
+for nearly 70% of all publications. Africa, South America, and
+South/Southeast Asia are substantially underrepresented. This
+geographical concentration shapes not only which populations are studied
+but which definitions of childhood adversity become authoritative,
+raising questions about the generalizability of ACE findings to
+communities and cultures outside the Anglophone research mainstream.</p>
+<p>Within the reviewed literature, race-specific and ethnicity-specific
+ACE research has not permeated the field’s dominant discourse despite
+explicit advocacy for expanded frameworks <span class="citation"
+data-cites="acebib_Cronholm2015 acebib_Bernard2020">(Cronholm et al.
+2015; Bernard et al. 2020)</span>. Our Word2Vec analysis quantifies this
+gap: discrimination/racism vocabulary moved further from ACE terms
+(<span class="math inline">\Delta</span> = <span
+class="math inline">-</span>0.060) even as the field grew. Indigenous
+populations, for whom historical and intergenerational trauma carry deep
+conceptual resonance with the ACE framework, remain underrepresented
+<span class="citation" data-cites="acebib_Blackstock2011">(Blackstock
+2010)</span>. Dedicated attention to LGBTQ+ populations and gender
+nonconforming youth is sparse, appearing only in emerging BERTopic
+clusters with small document counts, despite evidence that sexual
+minority and gender nonconforming adolescents experience ACEs at
+substantially elevated rates <span class="citation"
+data-cites="acebib_mittleman2025adverse acebib_baams2018disparities">(Mittleman
+2025; Baams 2018)</span>.</p>
+<p>These gaps have direct implications for practice. Child welfare
+practitioners working with racially marginalized, immigrant, Indigenous,
+or LGBTQ+ families will find an evidence base that poorly represents the
+populations they serve. The ACE framework’s origins in a predominantly
+white, middle-class clinical sample continue to constrain its
+applicability. Research from the Global South may employ different
+vocabularies (“child maltreatment,” “family violence,” or culturally
+specific terms) that fall outside ACE-centric search strategies,
+producing systematic underrepresentation. Future research must invest in
+non-English-language databases, culturally grounded conceptual
+frameworks, and intersectional approaches that attend to how race,
+class, gender, sexuality, and geography interact in shaping childhood
+adversity and its consequences.</p>
+<h2 id="limitations">Limitations</h2>
+<p>Several limitations warrant acknowledgment. First, our corpus
+captures ACE-labelled literature specifically, excluding parallel
+research traditions on child maltreatment, family violence, community
+violence, and historical trauma that do not use ACE terminology. The
+clinical turn we document may therefore be a property of ACE-branded
+discourse rather than the childhood adversity field as a whole; research
+communities organized around “child maltreatment” or “family violence”
+may exhibit different conceptual structures. Second, our analysis is
+restricted to publications indexed in the Web of Science Core
+Collection, excluding grey literature, dissertations, and publications
+in non-indexed journals, potentially underrepresenting research from
+low-resource settings and reinforcing the very geographical
+concentration we critique. Second, Word2Vec models are sensitive to
+corpus size, and the earliest period (1998–2005, <span
+class="math inline">n</span> = 237) may produce less stable embeddings
+than later periods. We addressed this by applying rigorous NLP
+preprocessing (lemmatization, domain-specific stopword removal, synonym
+consolidation) and by reporting era-averaged comparisons (1998–2015
+vs. 2016–2025) rather than single-point contrasts, reducing the
+influence of any one period’s idiosyncrasies. Third, BERTopic’s topic
+assignments are influenced by hyperparameter choices; we used
+established defaults and automatic topic reduction, but alternative
+configurations might yield different topic structures. Fourth, our
+analysis captures discursive patterns rather than causal mechanisms: we
+document what the field discusses, not what it has empirically
+established. A field’s vocabulary can change without corresponding
+changes in research practice, and our methods cannot distinguish between
+rhetorical adoption and substantive operationalization of structural
+concepts. Fifth, country attribution relies on institutional
+affiliations, which may not reflect the study populations or contexts
+examined. Sixth, the paradoxical decline in discrimination/racism
+semantic proximity may partly reflect the formation of a distinct
+sub-field with specialized vocabulary (“structural racism,” “racial
+weathering,” “historical trauma”) that diverges from generic
+discrimination/racism terms in our target list, creating apparent
+semantic distance despite growing scholarly attention.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Over three decades, the ACE concept has evolved from a
+clinical-epidemiological instrument into a broad explanatory framework
+linking individual biography to social structure. This computational
+analysis, integrating bibliometric mapping, Word2Vec semantic analysis,
+and BERTopic dynamic topic modeling across 17,758 publications, provides
+systematic evidence of that evolution and reveals its internal
+contradictions. The field has grown exponentially, expanded
+geographically and disciplinarily, and progressively incorporated
+structural, life course, and intergenerational perspectives into its
+conceptual vocabulary. But the incorporation has been selective in ways
+that matter for child welfare practice.</p>
+<p>The evidence converges on a single diagnosis: the ACE field has
+absorbed structural language without restructuring its clinical
+foundations. Mental health vocabulary gained semantic proximity to ACE
+terms at three times the rate of poverty/inequality vocabulary.
+Discrimination and racism moved further from the field’s semantic core
+even as scholars called for their inclusion. Trauma-informed care
+expanded rapidly as a practice framework without corresponding growth in
+analysis of the structural conditions that produce childhood trauma. And
+the knowledge base remains concentrated in three English-speaking
+nations whose institutional contexts poorly represent the global
+diversity of childhood adversity.</p>
+<p>For social work and child welfare, these findings constitute both a
+diagnosis and a provocation. The anti-oppressive practice tradition has
+always insisted that structural analysis is not optional but
+constitutive of ethical practice <span class="citation"
+data-cites="acebib_Dominelli2002">(Dominelli 2002)</span>. The ACE
+framework, in its dominant discursive instantiation, does not meet this
+standard. It has become a tool for identifying at-risk individuals
+rather than challenging the systems that produce risk. Reclaiming the
+framework for social justice will require changes not only in how
+researchers write about ACEs but in how the field funds, designs,
+measures, and institutionalizes its research. The social worker in the
+underfunded urban office needs more than a risk score. She needs an
+evidence base that takes seriously the conditions of deprivation,
+discrimination, and institutional failure that brought the family to her
+desk, and a practice framework that equips her to challenge those
+conditions rather than merely document their consequences.</p>
+<p>The computational methods demonstrated here can monitor whether the
+field’s evolution proceeds toward genuine structural integration or
+remains a case of conceptual expansion without epistemological
+transformation. The ACE field’s trajectory offers a broader lesson: the
+absorption of structural language into a clinical framework does not, by
+itself, produce structural analysis, and the appearance of conceptual
+progress can mask the persistence of clinical authority.</p>
+<h1 class="unnumbered" id="tables">Tables</h1>
+<div id="tab:findings">
+<table>
+<caption>Summary of Critical Findings from the Computational Review of
+ACE Literature (<span class="math inline">N</span> = 17,758
+Publications, 1998–2025)</caption>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Domain</strong></th>
+<th style="text-align: left;"><strong>Finding</strong></th>
+<th style="text-align: left;"><strong>Evidence</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Clinical hegemony</strong></td>
+<td style="text-align: left;">Mental health vocabulary shows the
+strongest and most consistent semantic integration with ACE terms</td>
+<td style="text-align: left;">Word2Vec <span
+class="math inline">\Delta</span> = +0.065; Topic 0 (Mental Health &amp;
+Depressive Symptoms) is the largest topic (<span
+class="math inline">n</span> = 3,616, 20.7% of corpus)</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Psychiatric and psychobiological journals
+dominate the publication infrastructure</td>
+<td style="text-align: left;">4 of top 5 journals are
+psychiatric/psychobiological; only <em>Child Abuse &amp; Neglect</em> is
+anchored in child welfare</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Selective absorption of structural
+perspectives</strong></td>
+<td style="text-align: left;">Poverty/inequality vocabulary increasingly
+integrated into ACE discourse</td>
+<td style="text-align: left;">Word2Vec <span
+class="math inline">\Delta</span> = +0.020; U-shaped trajectory with
+recovery after 2015</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Discrimination/racism vocabulary moves
+<em>away</em> from ACE semantic core despite scholarly advocacy</td>
+<td style="text-align: left;">Word2Vec <span
+class="math inline">\Delta</span> = <span
+class="math inline">-</span>0.060; largest decline of any domain</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Clinical proximity gains exceed structural
+gains by 3:1 ratio</td>
+<td style="text-align: left;">Mental health <span
+class="math inline">\Delta</span> = +0.065 vs. poverty/inequality <span
+class="math inline">\Delta</span> = +0.020</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Practice frontier
+dynamics</strong></td>
+<td style="text-align: left;">Trauma-informed care is the
+fastest-growing research sub-domain</td>
+<td style="text-align: left;">BERTopic Topic 1 (<span
+class="math inline">n</span> = 507); steepest post-2015 growth curve,
+driven by policy mandates</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">TIC growth coincides with declining racial
+justice discourse</td>
+<td style="text-align: left;">TIC expansion and discrimination/racism
+semantic decline occur in the same period (2016–2025)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Knowledge
+geopolitics</strong></td>
+<td style="text-align: left;">Research production concentrated in Global
+North</td>
+<td style="text-align: left;">USA 51.7%, UK 10.6%, Canada 7.6%; top 3
+nations = 69.8% of all publications</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Structural and equity-focused topics
+occupy peripheral positions in the knowledge field</td>
+<td style="text-align: left;">DataMapPlot shows clinical clusters at
+center, structural topics at low-density periphery</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tab:implications">
+<table>
+<caption>Implications of the Review for Practice, Policy, and
+Research</caption>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Domain</strong></th>
+<th style="text-align: left;"><strong>Implication</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2" style="text-align: left;"><strong>Practice</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">ACE screening in child welfare settings
+should be accompanied by structural assessment tools that evaluate
+neighborhood conditions, institutional racism, and material deprivation,
+not only household-level risk factors.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Trauma-informed care implementation should
+incorporate analysis of the structural conditions that produce childhood
+adversity (racial disproportionality in child protective services,
+concentrated poverty, housing instability), not only clinical techniques
+for recognizing and responding to trauma symptoms.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Social work education and training
+programs should equip practitioners to critically evaluate the ACE
+evidence base, recognizing the clinical orientation documented in this
+review and supplementing it with structural and anti-oppressive
+frameworks.</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><strong>Policy</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">State-level ACE screening mandates (e.g.,
+California’s ACEs Aware) should be evaluated for whether they channel
+resources toward individual-level clinical interventions at the expense
+of community-level structural investment.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Global adoption of ACE frameworks should
+be accompanied by culturally specific adaptation and validation, rather
+than direct export of instruments developed in wealthy, English-speaking
+populations.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Research funding agencies should create
+dedicated mechanisms for structural ACE research that treats
+neighborhoods, policies, and institutions as units of analysis,
+counterbalancing existing incentives that favor clinical outcomes
+research.</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: left;"><strong>Research</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Future ACE research should move beyond
+adding structural variables as covariates in clinical models toward
+study designs that treat structural conditions as causal forces in their
+own right.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">The field needs expanded measurement
+instruments that capture community-level and structural adversities
+(discrimination, environmental hazards, institutional neglect) alongside
+household-level ACEs.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Computational text analysis methods
+(Word2Vec, BERTopic) can be applied as ongoing monitoring tools to track
+whether the field’s evolution proceeds toward genuine structural
+integration or remains a case of rhetorical adoption without
+epistemological change.</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Research from the Global South, Indigenous
+communities, and other underrepresented populations must be actively
+supported and integrated, requiring investment in non-English-language
+databases and culturally grounded conceptual frameworks.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 class="unnumbered" id="figures">Figures</h1>
+<figure id="fig:trends" data-latex-placement="H">
+<img src="figures/Figure1_publication_trends.png" />
+<figcaption>Publication trends in ACE research, 1998–2025. (A) Annual
+publication volume with Savitzky-Golay smoother. (B) Cumulative
+publication growth. <span class="math inline">N</span> = 17,758
+publications from the Web of Science Core Collection.</figcaption>
+</figure>
+<figure id="fig:geo" data-latex-placement="H">
+<img src="figures/Figure2_countries_journals.png" />
+<figcaption>Geographic and journal distribution of ACE research. (A) Top
+15 countries/regions by author institutional affiliation. (B) Top 15
+journals by publication count. The concentration of leading journals in
+psychiatric and psychobiological outlets reflects the field’s clinical
+center of gravity.</figcaption>
+</figure>
+<figure id="fig:topics" data-latex-placement="H">
+<img src="figures/Figure5_bertopic_named_topics.png" />
+<figcaption>Top 30 research topics identified by BERTopic (<span
+class="math inline">N</span> = 48 topics total, 17,444 documents).
+Topics are labeled with expert-assigned names and color-coded by
+macro-theme. Topic 0 (Mental Health &amp; Depressive Symptoms; <span
+class="math inline">n</span> = 3,616) captures more than one-fifth of
+all classified documents, confirming clinical psychiatry as the field’s
+dominant research focus.</figcaption>
+</figure>
+<figure id="fig:datamap" data-latex-placement="H">
+<img src="figures/Figure8_bertopic_datamap.png" />
+<figcaption>DataMapPlot visualization of the ACE literature corpus. Each
+point represents a single document in UMAP-reduced embedding space.
+Clinical clusters occupy dense central regions; structural and
+equity-focused topics are positioned at the periphery, encoding the
+field’s systematic marginalization of non-clinical perspectives (<span
+class="math inline">N</span> = 17,444 documents).</figcaption>
+</figure>
+<figure id="fig:w2v_struct" data-latex-placement="H">
+<img src="figures/Figure3_w2v_structural.png" />
+<figcaption>Semantic proximity between ACE-related terms and structural
+determinant vocabularies. (A) Period-specific cosine similarity
+trajectories across five temporal windows, measured using Word2Vec
+skip-gram models (<span class="math inline">d</span> = 100, lemmatized
+corpus). (B) Era-averaged proximity shift comparing the early period
+(1998–2015) to the late period (2016–2025). Poverty/inequality
+vocabulary drew closer (<span class="math inline">\Delta</span> =
++0.020), while discrimination/racism moved further away (<span
+class="math inline">\Delta</span> = <span
+class="math inline">-</span>0.060), revealing the field’s selective
+absorption of structural perspectives.</figcaption>
+</figure>
+<figure id="fig:w2v_clin" data-latex-placement="H">
+<img src="figures/Figure4_w2v_clinical.png" />
+<figcaption>Semantic proximity between ACE-related terms and
+clinical/individual factor vocabularies. (A) Period-specific cosine
+similarity trajectories. (B) Era-averaged proximity shift (1998–2015
+<span class="math inline">\rightarrow</span> 2016–2025). Mental health
+showed the strongest increase (<span class="math inline">\Delta</span> =
++0.065), confirming the deepening clinical orientation of ACE
+discourse.</figcaption>
+</figure>
+<figure id="fig:dynamic" data-latex-placement="H">
+<img src="figures/Figure6_bertopic_dynamic_log.png" />
+<figcaption>Dynamic topic evolution for the 12 largest research
+sub-domains in ACE literature, 2000–2025 (log-scale frequency). Three
+lifecycle patterns are visible: persistent clinical topics (stable),
+growth topics with post-2015 acceleration (trauma-informed care,
+epigenetics), and emerging topics in the most recent period. The
+steepest growth curve belongs to trauma-informed care, driven by policy
+mandates and institutional demand.</figcaption>
+</figure>
+<figure id="fig:macro" data-latex-placement="H">
+<img src="figures/Figure7_macro_theme_evolution.png" />
+<figcaption>Macro-theme evolution in ACE research, 2002–2025. (A)
+Stacked area plot showing compositional changes in discourse proportion
+over time. (B) Individual trend lines for each macro-theme. Core Mental
+Health &amp; Psychopathology maintains dominant share throughout, while
+Structural Inequalities &amp; Marginalized Populations grows from a
+small baseline without displacing the clinical core.</figcaption>
+</figure>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="list">
+<div id="ref-acebib_Aria2017" class="csl-entry" role="listitem">
+Aria, Massimo, and Corrado Cuccurullo. 2017. <span>“Bibliometrix: An
+<span>R</span>-Tool for Comprehensive Science Mapping Analysis.”</span>
+<em>Journal of Informetrics</em> 11 (4): 959–75. <a
+href="https://doi.org/10.1016/j.joi.2017.08.007">https://doi.org/10.1016/j.joi.2017.08.007</a>.
+</div>
+<div id="ref-acebib_baams2018disparities" class="csl-entry"
+role="listitem">
+Baams, Laura. 2018. <span>“<span class="nocase">Disparities for LGBTQ
+and Gender Nonconforming Adolescents</span>.”</span> <em>PEDIATRICS</em>
+141 (5). <a
+href="https://doi.org/10.1542/peds.2017-3004">https://doi.org/10.1542/peds.2017-3004</a>.
+</div>
+<div id="ref-acebib_Bellis2014" class="csl-entry" role="listitem">
+Bellis, Mark A., Karen Hughes, Nicola Leckenby, Clare Perkins, and Helen
+Lowey. 2014. <span>“National Household Survey of Adverse Childhood
+Experiences and Their Relationship with Resilience to Health-Harming
+Behaviors in <span>England</span>.”</span> <em>BMC Medicine</em> 12: 72.
+<a
+href="https://doi.org/10.1186/1741-7015-12-72">https://doi.org/10.1186/1741-7015-12-72</a>.
+</div>
+<div id="ref-acebib_Berliner2016" class="csl-entry" role="listitem">
+Berliner, Lucy, and David J. Kolko. 2016. <span>“Trauma Informed Care: A
+Commentary and Critique.”</span> <em>Child Maltreatment</em> 21 (2):
+168–72. <a
+href="https://doi.org/10.1177/1077559516643785">https://doi.org/10.1177/1077559516643785</a>.
+</div>
+<div id="ref-acebib_Bernard2020" class="csl-entry" role="listitem">
+Bernard, DeLeon L., Casey D. Calhoun, Devin E. Banks, Colleen A.
+Halliday, Chanita Hughes-Halbert, and Carla Kmett Danielson. 2020.
+<span>“Making the <span>‘<span>C-ACE</span>’</span> for a
+Culturally-Informed Adverse Childhood Experiences Framework to
+Understand the Pervasive Mental Health Impact of Racism on
+<span>Black</span> Youth.”</span> <em>Journal of Child &amp; Adolescent
+Trauma</em> 14 (2): 233–47. <a
+href="https://doi.org/10.1007/s40653-020-00319-9">https://doi.org/10.1007/s40653-020-00319-9</a>.
+</div>
+<div id="ref-acebib_Blackstock2011" class="csl-entry" role="listitem">
+Blackstock, Cindy. 2010. <span>“The <span>Canadian</span> <span>Human
+Rights Tribunal</span> on <span>First Nations</span> Child Welfare: Why
+If <span>Canada</span> Wins, Equality and Justice Lose.”</span>
+<em>Children and Youth Services Review</em> 33 (1): 187–94. <a
+href="https://doi.org/10.1016/j.childyouth.2010.09.002">https://doi.org/10.1016/j.childyouth.2010.09.002</a>.
+</div>
+<div id="ref-acebib_Blei2003" class="csl-entry" role="listitem">
+Blei, David M., Andrew Y. Ng, and Michael I. Jordan. 2003. <span>“Latent
+<span>Dirichlet</span> Allocation.”</span> <em>Journal of Machine
+Learning Research</em> 3: 993–1022. <a
+href="https://www.jmlr.org/papers/v3/blei03a.html">https://www.jmlr.org/papers/v3/blei03a.html</a>.
+</div>
+<div id="ref-acebib_boyd2024community" class="csl-entry"
+role="listitem">
+Boyd, Danielle Pester, Sara Lappan, Martez Files, Mallory Redmond, and
+Monica L. Coleman. 2024. <span>“<span class="nocase">A Community-Engaged
+Exploration of Childhood Adversity and Resilience to Inform Mental
+Health Intervention</span>.”</span> <em>Journal for Social Action in
+Counseling &amp;Amp; Psychology</em>, ahead of print. <a
+href="https://doi.org/10.33043/z3c4dz9212">https://doi.org/10.33043/z3c4dz9212</a>.
+</div>
+<div id="ref-acebib_Caliskan2017" class="csl-entry" role="listitem">
+Caliskan, Aylin, Joanna J. Bryson, and Arvind Narayanan. 2017.
+<span>“Semantics Derived Automatically from Language Corpora Contain
+Human-Like Biases.”</span> <em>Science</em> 356 (6334): 183–86. <a
+href="https://doi.org/10.1126/science.aal4230">https://doi.org/10.1126/science.aal4230</a>.
+</div>
+<div id="ref-acebib_Conrad2007" class="csl-entry" role="listitem">
+Conrad, Peter. 2007. <em>The Medicalization of Society: On the
+Transformation of Human Conditions into Treatable Disorders</em>. Johns
+Hopkins University Press. <a
+href="https://jhupbooks.press.jhu.edu/title/medicalization-society">https://jhupbooks.press.jhu.edu/title/medicalization-society</a>.
+</div>
+<div id="ref-acebib_Cronholm2015" class="csl-entry" role="listitem">
+Cronholm, Peter F., Christine M. Forke, Roy Wade, et al. 2015.
+<span>“Adverse Childhood Experiences: Expanding the Concept of
+Adversity.”</span> <em>American Journal of Preventive Medicine</em> 49
+(3): 354–61. <a
+href="https://doi.org/10.1016/j.amepre.2015.02.001">https://doi.org/10.1016/j.amepre.2015.02.001</a>.
+</div>
+<div id="ref-acebib_DiMaggio2013" class="csl-entry" role="listitem">
+DiMaggio, Paul, Manish Nag, and David Blei. 2013. <span>“Exploiting
+Affinities Between Topic Modeling and the Sociological Perspective on
+Culture: Application to Newspaper Coverage of <span>U.S.</span>
+Government Arts Funding.”</span> <em>Poetics</em> 41 (6): 570–606. <a
+href="https://doi.org/10.1016/j.poetic.2013.08.004">https://doi.org/10.1016/j.poetic.2013.08.004</a>.
+</div>
+<div id="ref-acebib_Dominelli2002" class="csl-entry" role="listitem">
+Dominelli, Lena. 2002. <em>Anti-Oppressive Social Work Theory and
+Practice</em>. Palgrave Macmillan. <a
+href="https://doi.org/10.1007/978-1-4039-1400-2">https://doi.org/10.1007/978-1-4039-1400-2</a>.
+</div>
+<div id="ref-acebib_Donthu2021" class="csl-entry" role="listitem">
+Donthu, Naveen, Satish Kumar, Debmalya Mukherjee, Nitesh Pandey, and
+Weng Marc Lim. 2021. <span>“How to Conduct a Bibliometric Analysis: An
+Overview and Guidelines.”</span> <em>Journal of Business Research</em>
+133: 285–96. <a
+href="https://doi.org/10.1016/j.jbusres.2021.04.070">https://doi.org/10.1016/j.jbusres.2021.04.070</a>.
+</div>
+<div id="ref-acebib_Evans2016" class="csl-entry" role="listitem">
+Evans, James A., and Pedro Aceves. 2016. <span>“Machine Translation:
+Mining Text for Social Theory.”</span> <em>Annual Review of
+Sociology</em> 42: 21–50. <a
+href="https://doi.org/10.1146/annurev-soc-081715-074206">https://doi.org/10.1146/annurev-soc-081715-074206</a>.
+</div>
+<div id="ref-acebib_Featherstone2018" class="csl-entry" role="listitem">
+Featherstone, Brid, Anna Gupta, Kate Morris, and Sue White. 2018.
+<em>Protecting Children: A Social Model</em>. Policy Press. <a
+href="https://doi.org/10.1332/policypress/9781447340539.001.0001">https://doi.org/10.1332/policypress/9781447340539.001.0001</a>.
+</div>
+<div id="ref-acebib_feely2021which" class="csl-entry" role="listitem">
+Feely, Megan, and E. Bosk. 2021. <span>“<span class="nocase">That Which
+is Essential has been Made Invisible: The Need to Bring a Structural
+Risk Perspective to Reduce Racial Disproportionality in Child
+Welfare</span>.”</span> <em>Race and Social Problems</em> 13: 49–62. <a
+href="https://doi.org/10.1007/s12552-021-09313-8">https://doi.org/10.1007/s12552-021-09313-8</a>.
+</div>
+<div id="ref-acebib_Felitti1998" class="csl-entry" role="listitem">
+Felitti, Vincent J., Robert F. Anda, Dale Nordenberg, et al. 1998.
+<span>“Relationship of Childhood Abuse and Household Dysfunction to Many
+of the Leading Causes of Death in Adults: The <span>Adverse Childhood
+Experiences (ACE) Study</span>.”</span> <em>American Journal of
+Preventive Medicine</em> 14 (4): 245–58. <a
+href="https://doi.org/10.1016/S0749-3797(98)00017-8">https://doi.org/10.1016/S0749-3797(98)00017-8</a>.
+</div>
+<div id="ref-acebib_Finkelhor2015" class="csl-entry" role="listitem">
+Finkelhor, David. 2017. <span>“Screening for Adverse Childhood
+Experiences (<span>ACEs</span>): Cautions and Suggestions.”</span>
+<em>Child Abuse &amp; Neglect</em> 85: 174–79. <a
+href="https://doi.org/10.1016/j.chiabu.2017.07.016">https://doi.org/10.1016/j.chiabu.2017.07.016</a>.
+</div>
+<div id="ref-acebib_Finkelhor2015inventory" class="csl-entry"
+role="listitem">
+Finkelhor, David, Anne Shattuck, Heather Turner, and Sherry Hamby. 2015.
+<span>“A Revised Inventory of <span>Adverse Childhood
+Experiences</span>.”</span> <em>Child Abuse &amp; Neglect</em> 48:
+13–21. <a
+href="https://doi.org/10.1016/j.chiabu.2015.07.011">https://doi.org/10.1016/j.chiabu.2015.07.011</a>.
+</div>
+<div id="ref-acebib_fordjones2026medicalization" class="csl-entry"
+role="listitem">
+Ford-Jones, P., Chiemela Iheanacho, Maria Rahman, and Simon Adam. 2026.
+<span>“From Medicalization to Structural Response: Reimagining Nursing
+Practice Through Community-Driven Models of Care.”</span> <em>Issues in
+Mental Health Nursing</em>, 1–9. <a
+href="https://doi.org/10.1080/01612840.2026.2632769">https://doi.org/10.1080/01612840.2026.2632769</a>.
+</div>
+<div id="ref-acebib_duffee2021trauma" class="csl-entry" role="listitem">
+Forkey, Heather, Moira Szilagyi, Erin T. Kelly, and James H. Duffee.
+2021. <span>“Trauma-Informed Care in Child Health Systems.”</span>
+<em>Pediatrics</em> 148 (2): e2021052580. <a
+href="https://doi.org/10.1542/peds.2021-052580">https://doi.org/10.1542/peds.2021-052580</a>.
+</div>
+<div id="ref-acebib_Garg2018" class="csl-entry" role="listitem">
+Garg, Nikhil, Londa Schiebinger, Dan Jurafsky, and James Zou. 2018.
+<span>“Word Embeddings Quantify 100 Years of Gender and Ethnic
+Stereotypes.”</span> <em>Proceedings of the National Academy of
+Sciences</em> 115 (16): E3635–44. <a
+href="https://doi.org/10.1073/pnas.1720347115">https://doi.org/10.1073/pnas.1720347115</a>.
+</div>
+<div id="ref-acebib_Garrett2017" class="csl-entry" role="listitem">
+Garrett, Paul Michael. 2017. <em>Welfare Words: Critical Social Work and
+Social Policy</em>. Sage. <a
+href="https://uk.sagepub.com/en-gb/eur/welfare-words/book245498">https://uk.sagepub.com/en-gb/eur/welfare-words/book245498</a>.
+</div>
+<div id="ref-acebib_Grootendorst2022" class="csl-entry" role="listitem">
+Grootendorst, Maarten. 2022. <span>“<span>BERTopic</span>: Neural Topic
+Modeling with a Class-Based <span>TF-IDF</span> Procedure.”</span>
+<em>arXiv Preprint arXiv:2203.05794</em>, ahead of print. <a
+href="https://doi.org/10.48550/arXiv.2203.05794">https://doi.org/10.48550/arXiv.2203.05794</a>.
+</div>
+<div id="ref-acebib_Hughes2017" class="csl-entry" role="listitem">
+Hughes, Karen, Mark A. Bellis, Katherine A. Hardcastle, et al. 2017.
+<span>“The Effect of Multiple Adverse Childhood Experiences on Health: A
+Systematic Review and Meta-Analysis.”</span> <em>The Lancet Public
+Health</em> 2 (8): e356–66. <a
+href="https://doi.org/10.1016/S2468-2667(17)30118-4">https://doi.org/10.1016/S2468-2667(17)30118-4</a>.
+</div>
+<div id="ref-acebib_Karatekin2018" class="csl-entry" role="listitem">
+Karatekin, Canan, and Monica Hill. 2018. <span>“Expanding the Original
+Definition of Adverse Childhood Experiences (<span>ACEs</span>).”</span>
+<em>Journal of Child &amp; Adolescent Trauma</em> 12 (3): 289–306. <a
+href="https://doi.org/10.1007/s40653-018-0237-5">https://doi.org/10.1007/s40653-018-0237-5</a>.
+</div>
+<div id="ref-acebib_Kozlowski2019" class="csl-entry" role="listitem">
+Kozlowski, Austin C., Matt Taddy, and James A. Evans. 2019. <span>“The
+Geometry of Culture: Analyzing the Meanings of Class Through Word
+Embeddings.”</span> <em>American Sociological Review</em> 84 (5):
+905–49. <a
+href="https://doi.org/10.1177/0003122419877135">https://doi.org/10.1177/0003122419877135</a>.
+</div>
+<div id="ref-acebib_lang2026years" class="csl-entry" role="listitem">
+Lang, Jason M., and Rochelle F. Hanson. 2026. <span>“<span
+class="nocase">Ten Years Later: An Updated Critical Look at Trauma
+Informed Care Among Agencies and Systems Serving Youth and Their
+Families</span>.”</span> <em>Child Maltreatment</em> 31: 201–6. <a
+href="https://doi.org/10.1177/10775595261420295">https://doi.org/10.1177/10775595261420295</a>.
+</div>
+<div id="ref-acebib_Merrick2019" class="csl-entry" role="listitem">
+Merrick, Melissa T., Derek C. Ford, Katie A. Ports, et al. 2019.
+<span>“Vital Signs: Estimated Proportion of Adult Health Problems
+Attributable to Adverse Childhood Experiences and Implications for
+Prevention—25 States, 2015–2017.”</span> <em>MMWR. Morbidity and
+Mortality Weekly Report</em> 68 (44): 999–1005. <a
+href="https://doi.org/10.15585/mmwr.mm6844e1">https://doi.org/10.15585/mmwr.mm6844e1</a>.
+</div>
+<div id="ref-acebib_Metzler2017" class="csl-entry" role="listitem">
+Metzler, Marilyn, Melissa T. Merrick, Joanne Klevens, James S. Marks,
+Monica R. Gerber, and Kenneth R. Stern. 2016. <span>“Adverse Childhood
+Experiences and Life Opportunities: Shifting the Narrative.”</span>
+<em>Children and Youth Services Review</em> 72: 141–49. <a
+href="https://doi.org/10.1016/j.childyouth.2016.10.021">https://doi.org/10.1016/j.childyouth.2016.10.021</a>.
+</div>
+<div id="ref-acebib_Mikolov2013" class="csl-entry" role="listitem">
+Mikolov, Tomas, Ilya Sutskever, Kai Chen, Greg S. Corrado, and Jeff
+Dean. 2013. <span>“Distributed Representations of Words and Phrases and
+Their Compositionality.”</span> <em>Advances in Neural Information
+Processing Systems</em> 26: 3111–19. <a
+href="https://papers.nips.cc/paper/2013/hash/9aa42b31882ec039965f3c4923ce901b-Abstract.html">https://papers.nips.cc/paper/2013/hash/9aa42b31882ec039965f3c4923ce901b-Abstract.html</a>.
+</div>
+<div id="ref-acebib_mittleman2025adverse" class="csl-entry"
+role="listitem">
+Mittleman, Joel. 2025. <span>“<span class="nocase">Adverse Childhood
+Experiences Among LGBTQ+ High School Students: National Evidence From
+the 2023 Youth Risk Behavior Survey.</span>”</span> <em>American Journal
+of Public Health</em> 115 (7): e1–9. <a
+href="https://doi.org/10.2105/AJPH.2025.308094">https://doi.org/10.2105/AJPH.2025.308094</a>.
+</div>
+<div id="ref-acebib_Nelson2020" class="csl-entry" role="listitem">
+Nelson, Laura K. 2017. <span>“Computational Grounded Theory: A
+Methodological Framework.”</span> <em>Sociological Methods &amp;
+Research</em> 49 (1): 3–42. <a
+href="https://doi.org/10.1177/0049124117729703">https://doi.org/10.1177/0049124117729703</a>.
+</div>
+<div id="ref-acebib_Pelton2015" class="csl-entry" role="listitem">
+Pelton, Leroy H. 2014. <span>“The Continuing Role of Material Factors in
+Child Maltreatment and Placement.”</span> <em>Child Abuse &amp;
+Neglect</em> 41: 30–39. <a
+href="https://doi.org/10.1016/j.chiabu.2014.08.001">https://doi.org/10.1016/j.chiabu.2014.08.001</a>.
+</div>
+<div id="ref-acebib_Petruccelli2019" class="csl-entry" role="listitem">
+Petruccelli, Kristen, Joshua Davis, and Tara Berman. 2019.
+<span>“Adverse Childhood Experiences and Associated Health Outcomes: A
+Systematic Review and Meta-Analysis.”</span> <em>Child Abuse &amp;
+Neglect</em> 97: 104127. <a
+href="https://doi.org/10.1016/j.chiabu.2019.104127">https://doi.org/10.1016/j.chiabu.2019.104127</a>.
+</div>
+<div id="ref-acebib_Roberts2002" class="csl-entry" role="listitem">
+Roberts, Dorothy E. 2002. <em>Shattered Bonds: The Color of Child
+Welfare</em>. Basic Books. <a
+href="https://www.hachettebookgroup.com/titles/dorothy-roberts/shattered-bonds/9780465070596/">https://www.hachettebookgroup.com/titles/dorothy-roberts/shattered-bonds/9780465070596/</a>.
+</div>
+<div id="ref-acebib_Roberts2014" class="csl-entry" role="listitem">
+Roberts, Margaret E., Brandon M. Stewart, Dustin Tingley, et al. 2014.
+<span>“Structural Topic Models for Open-Ended Survey Responses.”</span>
+<em>American Journal of Political Science</em> 58 (4): 1064–82. <a
+href="https://doi.org/10.1111/ajps.12103">https://doi.org/10.1111/ajps.12103</a>.
+</div>
+<div id="ref-acebib_rubeis2025changes" class="csl-entry"
+role="listitem">
+<span class="nocase">Rubeis, Vanessa De, L. Tonmyr, S. Rahman, et
+al.</span> 2025. <span>“<span class="nocase">Changes in child
+maltreatment occurrence during the COVID-19 pandemic: A systematic
+review.</span>”</span> <em>Child Abuse &amp; Neglect</em> 169: 107744.
+<a
+href="https://doi.org/10.1016/j.chiabu.2025.107744">https://doi.org/10.1016/j.chiabu.2025.107744</a>.
+</div>
+<div id="ref-acebib_Soares2016" class="csl-entry" role="listitem">
+Soares, Andrea Luiza V., Laura D. Howe, Alicia Matijasevich, Fernando C.
+Wehrmeister, Ana Maria B. Menezes, and Helen Gonçalves. 2015.
+<span>“Adverse Childhood Experiences: Prevalence and Related Factors in
+Adolescents of a <span>Brazilian</span> Birth Cohort.”</span> <em>Child
+Abuse &amp; Neglect</em> 51: 21–30. <a
+href="https://doi.org/10.1016/j.chiabu.2015.11.017">https://doi.org/10.1016/j.chiabu.2015.11.017</a>.
+</div>
+<div id="ref-acebib_Star1989" class="csl-entry" role="listitem">
+Star, Susan Leigh, and James R. Griesemer. 1989. <span>“Institutional
+Ecology, <span>‘Translations’</span> and Boundary Objects: Amateurs and
+Professionals in <span class="nocase">Berkeley’s Museum of Vertebrate
+Zoology</span>, 1907–39.”</span> <em>Social Studies of Science</em> 19
+(3): 387–420. <a
+href="https://doi.org/10.1177/030631289019003001">https://doi.org/10.1177/030631289019003001</a>.
+</div>
+<div id="ref-acebib_Struck2020" class="csl-entry" role="listitem">
+Struck, Shannon, Ashley Stewart-Tufescu, Aleiia J. N. Asmundson, Gordon
+J. G. Asmundson, and Tracie O. Afifi. 2020. <span>“Adverse Childhood
+Experiences (<span>ACEs</span>) Research: A Bibliometric Analysis of
+Publication Trends over the First 20 Years.”</span> <em>Child Abuse
+&amp; Neglect</em> 112: 104895. <a
+href="https://doi.org/10.1016/j.chiabu.2020.104895">https://doi.org/10.1016/j.chiabu.2020.104895</a>.
+</div>
+<div id="ref-acebib_Substance2014" class="csl-entry" role="listitem">
+Substance Abuse and Mental Health Services Administration. 2014.
+<em><span>SAMHSA</span>’s Concept of Trauma and Guidance for a
+Trauma-Informed Approach</em>. HHS Publication SMA 14-4884. U.S.
+Department of Health; Human Services. <a
+href="https://store.samhsa.gov/product/samhsas-concept-trauma-and-guidance-trauma-informed-approach/sma14-4884">https://store.samhsa.gov/product/samhsas-concept-trauma-and-guidance-trauma-informed-approach/sma14-4884</a>.
+</div>
+<div id="ref-acebib_wade2016household" class="csl-entry"
+role="listitem">
+<span class="nocase">Wade, Roy, Peter F Cronholm, Joel A Fein, et
+al.</span> 2015. <span>“<span class="nocase">Household and
+community-level Adverse Childhood Experiences and adult health outcomes
+in a diverse urban population.</span>”</span> <em>Child Abuse &amp;
+Neglect</em> 52: 135–45. <a
+href="https://doi.org/10.1016/j.chiabu.2015.11.021">https://doi.org/10.1016/j.chiabu.2015.11.021</a>.
+</div>
+<div id="ref-acebib_westby2025adverse" class="csl-entry"
+role="listitem">
+Westby, Carol, Leslie E. Kokotek, and Karla N. Washington. 2025.
+<span>“<span class="nocase">Adverse Childhood Experiences,
+Intergenerational Trauma, and Historical Trauma: A Child’s
+Story.</span>”</span> <em>Language, Speech &amp; Hearing Services in
+Schools</em> 57 (1): 1–16. <a
+href="https://doi.org/10.1044/2025_LSHSS-24-00123">https://doi.org/10.1044/2025_LSHSS-24-00123</a>.
+</div>
+<div id="ref-acebib_Zupic2015" class="csl-entry" role="listitem">
+Župič, Ivan, and Tomaž Čater. 2014. <span>“Bibliometric Methods in
+Management and Organization.”</span> <em>Organizational Research
+Methods</em> 18 (3): 429–72. <a
+href="https://doi.org/10.1177/1094428114562629">https://doi.org/10.1177/1094428114562629</a>.
+</div>
+</div>
+<!-- Markup Reader: inline annotation toolkit -->
+<style id="markup-reader-panel-style">
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap");
+
+/* ── Annotation marks ─────────────────────────────────── */
+[data-annotation="true"] { border-radius: 2px; cursor: pointer; }
+[data-annotation="true"].annot-highlight { background: var(--annot-highlight-color, #fff2a8); box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+[data-annotation="true"].annot-underline { border-bottom: 3px solid var(--annot-underline-color, #cc4f1b); padding-bottom: 1px; }
+[data-annotation="true"].annot-note { background: var(--annot-highlight-color, #fff2a8); border-bottom: 2px dashed var(--annot-underline-color, #cc4f1b); cursor: help; position: relative; }
+[data-annotation="true"].annot-note::after { content: "\270E"; font-size: .75em; font-weight: 700; color: var(--annot-underline-color, #cc4f1b); margin-left: 1px; vertical-align: super; }
+[data-annotation="true"].annot-note[data-note]:hover::before {
+  content: attr(data-note);
+  position: absolute; bottom: calc(100% + 4px); left: 0;
+  max-width: 300px; padding: 6px 10px;
+  background: #1e3a27; color: #fff; font-size: 12px; font-weight: 400;
+  border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,.3);
+  white-space: pre-wrap; word-break: break-word;
+  z-index: 999998; pointer-events: none;
+  animation: mr-fadeIn .12s ease;
+}
+
+/* ── Selection tooltip ────────────────────────────────── */
+#mr-tooltip {
+  position: absolute; z-index: 999999;
+  display: none; align-items: center; gap: 4px;
+  padding: 5px 6px;
+  background: #1e3a27; color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.28);
+  font-family: "Manrope", "Segoe UI", sans-serif; font-size: 13px; font-weight: 600;
+  white-space: nowrap;
+  animation: mr-fadeIn .15s ease;
+}
+#mr-tooltip button {
+  border: none; background: rgba(255,255,255,.15);
+  color: #fff; border-radius: 7px;
+  padding: 5px 10px; font-size: 12px; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  transition: background .12s ease;
+}
+#mr-tooltip button:hover { background: rgba(255,255,255,.3); }
+#mr-tooltip .tt-sep { width: 1px; height: 18px; background: rgba(255,255,255,.22); }
+
+/* ── Note input box ───────────────────────────────────── */
+#mr-note-input {
+  position: absolute; z-index: 1000000;
+  display: none; flex-direction: column; gap: 6px;
+  width: 280px; padding: 10px 12px; box-sizing: border-box;
+  background: #1e3a27; color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 36px rgba(0,0,0,.35);
+  font-family: "Manrope", "Segoe UI", sans-serif; font-size: 13px;
+  animation: mr-fadeIn .15s ease;
+}
+#mr-note-input .ni-label { font-weight: 700; font-size: 12px; opacity: .85; }
+#mr-note-input textarea {
+  width: 100%; min-height: 60px; max-height: 140px;
+  padding: 8px 10px; border: 1px solid rgba(255,255,255,.25);
+  border-radius: 8px; background: rgba(255,255,255,.1);
+  color: #fff; font-family: inherit; font-size: 13px;
+  resize: vertical; outline: none; box-sizing: border-box;
+}
+#mr-note-input textarea:focus { border-color: rgba(255,255,255,.5); }
+#mr-note-input .ni-actions { display: flex; justify-content: flex-end; gap: 6px; }
+#mr-note-input .ni-actions button {
+  border: none; border-radius: 8px; padding: 6px 14px;
+  font-size: 12px; font-weight: 700; cursor: pointer; font-family: inherit;
+}
+#mr-note-input .ni-cancel { background: rgba(255,255,255,.15); color: #fff; }
+#mr-note-input .ni-cancel:hover { background: rgba(255,255,255,.25); }
+#mr-note-input .ni-confirm { background: #4caf6a; color: #fff; }
+#mr-note-input .ni-confirm:hover { background: #3d9e5a; }
+
+/* ── Floating toggle button ───────────────────────────── */
+#mr-toggle-btn {
+  position: fixed; bottom: 20px; right: 20px; z-index: 999990;
+  width: 48px; height: 48px; border-radius: 50%;
+  background: linear-gradient(135deg, #2f8a45, #1f6933); color: #fff;
+  border: none; font-size: 22px; cursor: pointer;
+  box-shadow: 0 6px 20px rgba(28,77,42,.35);
+  transition: transform .15s ease, box-shadow .2s ease;
+  font-family: "Manrope", sans-serif;
+}
+#mr-toggle-btn:hover { transform: scale(1.08); box-shadow: 0 8px 24px rgba(28,77,42,.45); }
+
+/* ── Side panel ───────────────────────────────────────── */
+#mr-panel {
+  position: fixed; top: 0; right: -340px; z-index: 999991;
+  width: 320px; height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #f9fbf3, #f5efe3);
+  border-left: 1px solid rgba(54,84,58,.18);
+  box-shadow: -4px 0 24px rgba(0,0,0,.12);
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  color: #24322a;
+  transition: right .3s ease;
+  overflow: hidden;
+  padding: 16px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+#mr-panel.open { right: 0; }
+#mr-panel h3 {
+  margin: 0 0 8px; font-size: .88rem; letter-spacing: .03em;
+  text-transform: uppercase; color: #214730;
+}
+#mr-panel .mr-section {
+  background: rgba(255,255,255,.72);
+  border: 1px solid rgba(73,106,67,.14); border-radius: 14px;
+  padding: 12px;
+}
+#mr-panel .mr-pen-group { margin-bottom: 4px; }
+#mr-panel .mr-pen-label { font-size: .78rem; color: #5f6f62; margin-bottom: 6px; font-weight: 600; }
+#mr-panel .mr-pens { display: flex; gap: 8px; flex-wrap: wrap; }
+#mr-panel .mr-pen {
+  width: 28px; height: 28px; border-radius: 50%; border: 2px solid transparent;
+  cursor: pointer; transition: transform .12s ease, border-color .12s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15); position: relative;
+}
+#mr-panel .mr-pen:hover { transform: scale(1.15); }
+#mr-panel .mr-pen.active {
+  border-color: #1e3a27; box-shadow: 0 0 0 2px #1e3a27, 0 2px 8px rgba(0,0,0,.2);
+  transform: scale(1.1);
+}
+#mr-panel .mr-pen.active::after {
+  content: "\2713"; position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%); font-size: 13px; font-weight: 900;
+  color: rgba(0,0,0,.5); text-shadow: 0 0 2px rgba(255,255,255,.8);
+}
+#mr-panel .mr-annot-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; overflow-y: auto; }
+#mr-panel .mr-annot-item {
+  font-size: .82rem; line-height: 1.4; padding: 8px 10px;
+  background: rgba(255,255,255,.8); border: 1px solid rgba(60,90,60,.12);
+  border-radius: 10px; cursor: pointer; transition: background .15s ease;
+  word-break: break-word;
+}
+#mr-panel .mr-annot-item:hover { background: #edf5e4; }
+#mr-panel .mr-annot-type {
+  display: inline-block; font-size: .68rem; font-weight: 700; text-transform: uppercase;
+  padding: 2px 6px; border-radius: 6px; margin-right: 4px; vertical-align: middle;
+}
+#mr-panel .mr-annot-type.highlight { background: #fff2a8; color: #6b5a00; }
+#mr-panel .mr-annot-type.underline { background: #fce0cf; color: #7a3006; }
+#mr-panel .mr-annot-type.note { background: #d4f0dd; color: #1a5e2c; }
+#mr-panel .mr-annot-note { display: block; margin-top: 3px; font-style: italic; color: #5f6f62; font-size: .78rem; }
+#mr-panel .mr-annot-actions { margin-top: 5px; display: flex; gap: 5px; }
+#mr-panel .mr-annot-actions button {
+  font-size: .72rem; padding: 4px 8px; border: none; border-radius: 6px;
+  font-weight: 700; cursor: pointer; font-family: inherit;
+}
+#mr-panel .mr-btn-del { background: linear-gradient(135deg,#d9713f,#bc4b12); color: white; }
+#mr-panel .mr-btn-note { background: #f0f4e8; color: #24462f; border: 1px solid rgba(45,82,53,.18); }
+#mr-panel .mr-save-btn {
+  display: block; width: 100%; padding: 10px;
+  background: linear-gradient(135deg,#2f8a45,#1f6933); color: #fff;
+  border: none; border-radius: 10px; font-size: .88rem; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  box-shadow: 0 8px 18px rgba(28,77,42,.2);
+  flex-shrink: 0;
+}
+#mr-panel .mr-save-btn:hover { transform: translateY(-1px); }
+#mr-panel .mr-export-md {
+  display: block; width: 100%; padding: 10px;
+  background: linear-gradient(135deg,#3a6b8a,#1f4f6e); color: #fff;
+  border: none; border-radius: 10px; font-size: .88rem; font-weight: 700;
+  cursor: pointer; font-family: inherit;
+  box-shadow: 0 8px 18px rgba(28,60,90,.2);
+  flex-shrink: 0;
+}
+#mr-panel .mr-export-md:hover { transform: translateY(-1px); }
+#mr-panel .mr-empty { color: #5f6f62; font-size: .82rem; text-align: center; padding: 12px 0; }
+#mr-panel .mr-close {
+  position: absolute; top: 12px; right: 12px;
+  background: rgba(0,0,0,.06); border: none; border-radius: 8px;
+  width: 28px; height: 28px; font-size: 16px; cursor: pointer;
+  color: #24322a; font-family: inherit;
+}
+
+@keyframes mr-fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ── Mobile responsive ────────────────────────────────── */
+@media (max-width: 600px) {
+  #mr-panel { width: 100vw; right: -100vw; border-left: none; padding: 14px 16px; }
+  #mr-panel.open { right: 0; }
+  #mr-panel .mr-pen { width: 32px; height: 32px; }
+  #mr-panel .mr-save-btn { padding: 14px; font-size: .92rem; }
+  #mr-toggle-btn { width: 44px; height: 44px; font-size: 20px; bottom: 16px; right: 16px; }
+  #mr-tooltip { padding: 7px 8px; }
+  #mr-tooltip button { padding: 8px 12px; font-size: 13px; }
+  #mr-note-input { width: calc(100vw - 24px); max-width: none; left: 12px !important; padding: 12px 14px; font-size: 15px; }
+  #mr-note-input textarea { min-height: 72px; font-size: 15px; padding: 10px 12px; }
+  #mr-note-input .ni-actions button { padding: 10px 18px; font-size: 14px; }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  #mr-tooltip button { padding: 8px 14px; font-size: 14px; }
+}
+
+@media print {
+  #mr-toggle-btn, #mr-panel, #mr-tooltip, #mr-note-input { display: none !important; }
+}
+</style>
+
+<script>
+(function() {
+"use strict";
+
+/* ── Config ───────────────────────────────────────────── */
+let highlightColor = "#fff2a8";
+let underlineColor = "#cc4f1b";
+
+/* ── Annotation helpers ───────────────────────────────── */
+function genId() { return "ann-" + Date.now() + "-" + Math.random().toString(36).slice(2,8); }
+
+function wrapRange(range, type, noteText) {
+  const span = document.createElement("span");
+  span.setAttribute("data-annotation", "true");
+  span.setAttribute("data-type", type);
+  span.setAttribute("data-id", genId());
+  if (type === "highlight") {
+    span.className = "annot-highlight";
+    span.style.setProperty("--annot-highlight-color", highlightColor);
+  } else if (type === "underline") {
+    span.className = "annot-underline";
+    span.style.setProperty("--annot-underline-color", underlineColor);
+  } else if (type === "note") {
+    span.className = "annot-note";
+    span.setAttribute("data-note", noteText);
+    span.title = noteText;
+    span.style.setProperty("--annot-highlight-color", highlightColor);
+    span.style.setProperty("--annot-underline-color", underlineColor);
+  }
+  const frag = range.extractContents();
+  if (!frag.textContent || !frag.textContent.trim()) { range.insertNode(frag); return null; }
+  span.appendChild(frag);
+  range.insertNode(span);
+  return span;
+}
+
+function removeAnnotation(el) {
+  const p = el.parentNode; if (!p) return;
+  while (el.firstChild) p.insertBefore(el.firstChild, el);
+  p.removeChild(el); p.normalize();
+}
+
+function applyNote(el, text) {
+  el.setAttribute("data-note", text);
+  el.setAttribute("data-type", "note");
+  el.title = text;
+  el.className = "annot-note";
+}
+
+function allAnnotations() { return Array.from(document.querySelectorAll('[data-annotation="true"]')); }
+
+/* ── Tooltip ──────────────────────────────────────────── */
+function getEl(id) { return document.getElementById(id); }
+function mkEl(tag, id) {
+  let el = getEl(id);
+  if (el) return el;
+  el = document.createElement(tag);
+  el.id = id;
+  document.body.appendChild(el);
+  return el;
+}
+
+function showTooltip(rect, buttons) {
+  const tip = mkEl("div", "mr-tooltip");
+  tip.innerHTML = "";
+  buttons.forEach(function(b, i) {
+    if (i > 0) { const sep = document.createElement("span"); sep.className = "tt-sep"; tip.appendChild(sep); }
+    const btn = document.createElement("button");
+    btn.textContent = b.label;
+    btn.addEventListener("mousedown", function(e) { e.preventDefault(); e.stopPropagation(); b.action(); });
+    tip.appendChild(btn);
+  });
+  tip.style.display = "flex";
+  const sy = window.scrollY, sx = window.scrollX;
+  tip.style.top = Math.max(0, rect.top + sy - tip.offsetHeight - 8) + "px";
+  tip.style.left = Math.max(4, rect.left + sx + rect.width/2 - tip.offsetWidth/2) + "px";
+}
+
+function hideTooltip() {
+  const tip = getEl("mr-tooltip"); if (tip) tip.style.display = "none";
+  const ni = getEl("mr-note-input"); if (ni) ni.style.display = "none";
+}
+
+/* ── Note input ───────────────────────────────────────── */
+function showNoteInput(rect, existing, onConfirm) {
+  const tip = getEl("mr-tooltip"); if (tip) tip.style.display = "none";
+  const box = mkEl("div", "mr-note-input");
+  box.innerHTML = "";
+
+  const label = document.createElement("div");
+  label.className = "ni-label"; label.textContent = "Enter note:";
+  box.appendChild(label);
+
+  const ta = document.createElement("textarea");
+  ta.value = existing || ""; ta.setAttribute("rows","3");
+  box.appendChild(ta);
+
+  const acts = document.createElement("div");
+  acts.className = "ni-actions";
+
+  const cancelBtn = document.createElement("button");
+  cancelBtn.className = "ni-cancel"; cancelBtn.textContent = "Cancel";
+  cancelBtn.addEventListener("click", function(e) { e.preventDefault(); box.style.display = "none"; });
+  acts.appendChild(cancelBtn);
+
+  const okBtn = document.createElement("button");
+  okBtn.className = "ni-confirm"; okBtn.textContent = "OK";
+  okBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    const val = ta.value.trim();
+    if (!val) { ta.focus(); return; }
+    box.style.display = "none";
+    onConfirm(val);
+  });
+  acts.appendChild(okBtn);
+  box.appendChild(acts);
+
+  ta.addEventListener("keydown", function(e) {
+    if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); okBtn.click(); }
+    if (e.key === "Escape") { e.preventDefault(); cancelBtn.click(); }
+  });
+
+  box.style.display = "flex";
+  const sy = window.scrollY;
+  box.style.top = Math.max(sy + 4, rect.bottom + sy + 8) + "px";
+  box.style.left = Math.max(4, Math.min(rect.left, document.documentElement.clientWidth - 288)) + "px";
+  setTimeout(function() { ta.focus(); }, 30);
+}
+
+/* ── Annotate action ──────────────────────────────────── */
+function doAnnotate(type) {
+  hideTooltip();
+  const sel = window.getSelection();
+  if (!sel || sel.rangeCount === 0 || sel.isCollapsed) return;
+  const range = sel.getRangeAt(0);
+
+  if (type === "note") {
+    const saved = range.cloneRange();
+    const rect = range.getBoundingClientRect();
+    sel.removeAllRanges();
+    showNoteInput(rect, "", function(text) {
+      const ns = window.getSelection();
+      ns.removeAllRanges(); ns.addRange(saved);
+      const fr = ns.getRangeAt(0);
+      wrapRange(fr, "note", text);
+      ns.removeAllRanges();
+      refreshPanel();
+    });
+    return;
+  }
+
+  wrapRange(range, type, "");
+  sel.removeAllRanges();
+  refreshPanel();
+}
+
+/* ── Selection listener ───────────────────────────────── */
+let tooltipLock = false;
+
+function tooltipButtons() {
+  return [
+    { label: "Highlight", action: function() { doAnnotate("highlight"); } },
+    { label: "Underline", action: function() { doAnnotate("underline"); } },
+    { label: "Note", action: function() { doAnnotate("note"); } },
+  ];
+}
+
+document.addEventListener("mouseup", function() {
+  if (tooltipLock) return;
+  setTimeout(function() {
+    const sel = window.getSelection();
+    if (!sel || sel.isCollapsed || sel.rangeCount === 0) return;
+    const range = sel.getRangeAt(0);
+    const rect = range.getBoundingClientRect();
+    if (rect.width === 0 && rect.height === 0) return;
+    if (range.commonAncestorContainer.nodeType === 1 && range.commonAncestorContainer.closest && range.commonAncestorContainer.closest("#mr-panel")) return;
+    if (range.commonAncestorContainer.parentElement && range.commonAncestorContainer.parentElement.closest && range.commonAncestorContainer.parentElement.closest("#mr-panel")) return;
+    showTooltip(rect, tooltipButtons());
+  }, 10);
+});
+
+function handlePointerDown(e) {
+  const t = e.target;
+  if (t.closest && (t.closest("#mr-tooltip") || t.closest("#mr-note-input") || t.closest("#mr-panel"))) return;
+
+  const annot = t.closest && t.closest('[data-annotation="true"]');
+  if (annot) {
+    const sel = window.getSelection();
+    if (sel && sel.isCollapsed) {
+      e.preventDefault();
+      tooltipLock = true;
+      showTooltip(annot.getBoundingClientRect(), [
+        { label: "Note", action: function() {
+          hideTooltip(); tooltipLock = false;
+          var rect = annot.getBoundingClientRect();
+          showNoteInput(rect, annot.getAttribute("data-note") || "", function(text) {
+            applyNote(annot, text); refreshPanel();
+          });
+        }},
+        { label: "Remove", action: function() {
+          hideTooltip(); tooltipLock = false;
+          removeAnnotation(annot); refreshPanel();
+        }},
+      ]);
+      setTimeout(function() { tooltipLock = false; }, 300);
+      return;
+    }
+  }
+  hideTooltip();
+}
+
+document.addEventListener("mousedown", handlePointerDown);
+
+/* ── Touch / mobile support ──────────────────────────── */
+var selectionTimer = null;
+document.addEventListener("selectionchange", function() {
+  clearTimeout(selectionTimer);
+  selectionTimer = setTimeout(function() {
+    if (tooltipLock) return;
+    var sel = window.getSelection();
+    if (!sel || sel.isCollapsed || sel.rangeCount === 0) return;
+    var range = sel.getRangeAt(0);
+    if (range.commonAncestorContainer.nodeType === 1 && range.commonAncestorContainer.closest && range.commonAncestorContainer.closest("#mr-panel")) return;
+    if (range.commonAncestorContainer.parentElement && range.commonAncestorContainer.parentElement.closest && range.commonAncestorContainer.parentElement.closest("#mr-panel")) return;
+    var rect = range.getBoundingClientRect();
+    if (rect.width === 0 && rect.height === 0) return;
+    showTooltip(rect, tooltipButtons());
+  }, 300);
+});
+
+document.addEventListener("touchend", function(e) {
+  setTimeout(function() {
+    var sel = window.getSelection();
+    if (sel && !sel.isCollapsed) return;
+    handlePointerDown(e);
+  }, 50);
+});
+
+/* ── Side panel ───────────────────────────────────────── */
+function buildPanel() {
+  const toggle = document.createElement("button");
+  toggle.id = "mr-toggle-btn";
+  toggle.textContent = "\u270E";
+  toggle.title = "Annotation Tools";
+  document.body.appendChild(toggle);
+
+  const panel = document.createElement("div");
+  panel.id = "mr-panel";
+  var hlPens = [
+    { name: "Yellow", color: "#fff2a8" },
+    { name: "Green", color: "#b8f0c0" },
+    { name: "Blue", color: "#b3deff" },
+    { name: "Pink", color: "#ffc0cb" },
+    { name: "Orange", color: "#ffd9a8" },
+    { name: "Purple", color: "#dcc0f0" },
+  ];
+  var ulPens = [
+    { name: "Red", color: "#cc4f1b" },
+    { name: "Blue", color: "#2a6dd9" },
+    { name: "Green", color: "#2a8a3e" },
+    { name: "Orange", color: "#d98c2a" },
+    { name: "Purple", color: "#7b3ec4" },
+    { name: "Gray", color: "#666666" },
+  ];
+
+  function buildPenRow(pens, activeColor) {
+    return pens.map(function(p) {
+      var cls = p.color === activeColor ? "mr-pen active" : "mr-pen";
+      return '<button class="' + cls + '" data-color="' + p.color + '" style="background:' + p.color + ';" title="' + p.name + '"></button>';
+    }).join("");
+  }
+
+  panel.innerHTML =
+    '<button class="mr-close" id="mr-close-btn">\u2715</button>' +
+    '<h3>Annotations</h3>' +
+    '<div class="mr-section">' +
+      '<div class="mr-pen-group">' +
+        '<div class="mr-pen-label">Highlight</div>' +
+        '<div class="mr-pens" id="mr-hl-pens">' + buildPenRow(hlPens, highlightColor) + '</div>' +
+      '</div>' +
+      '<div class="mr-pen-group" style="margin-top:10px;">' +
+        '<div class="mr-pen-label">Underline</div>' +
+        '<div class="mr-pens" id="mr-ul-pens">' + buildPenRow(ulPens, underlineColor) + '</div>' +
+      '</div>' +
+    '</div>' +
+    '<div class="mr-section" style="flex:1;overflow-y:auto;min-height:0;display:flex;flex-direction:column;">' +
+      '<h3>Annotation List</h3>' +
+      '<ul id="mr-annot-list" class="mr-annot-list" style="flex:1;overflow-y:auto;min-height:0;">' +
+        '<li class="mr-empty">No annotations yet</li>' +
+      '</ul>' +
+    '</div>' +
+    '<button class="mr-save-btn" id="mr-save-btn">Download Annotated HTML</button>' +
+    '<button class="mr-export-md" id="mr-export-md">Export as Markdown</button>';
+  document.body.appendChild(panel);
+
+  toggle.addEventListener("click", function() { panel.classList.toggle("open"); });
+  document.getElementById("mr-close-btn").addEventListener("click", function() { panel.classList.remove("open"); });
+
+  document.getElementById("mr-hl-pens").addEventListener("click", function(e) {
+    var pen = e.target.closest(".mr-pen"); if (!pen) return;
+    highlightColor = pen.getAttribute("data-color");
+    this.querySelectorAll(".mr-pen").forEach(function(p) { p.classList.remove("active"); });
+    pen.classList.add("active");
+  });
+  document.getElementById("mr-ul-pens").addEventListener("click", function(e) {
+    var pen = e.target.closest(".mr-pen"); if (!pen) return;
+    underlineColor = pen.getAttribute("data-color");
+    this.querySelectorAll(".mr-pen").forEach(function(p) { p.classList.remove("active"); });
+    pen.classList.add("active");
+  });
+
+  document.getElementById("mr-save-btn").addEventListener("click", function() {
+    const toHide = ["mr-toggle-btn", "mr-panel", "mr-tooltip", "mr-note-input"];
+    toHide.forEach(function(id) { const el = getEl(id); if (el) el.style.display = "none"; });
+    const dt = document.doctype ? "<!DOCTYPE " + document.doctype.name + ">" : "<!DOCTYPE html>";
+    const blob = new Blob([dt + "\n" + document.documentElement.outerHTML], { type: "text/html;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    var origName = decodeURIComponent(location.pathname.split("/").pop() || "") || (document.title || "document").replace(/[<>:"/\\|?*]/g, "_") + ".html";
+    a.download = origName;
+    document.body.appendChild(a); a.click(); a.remove();
+    URL.revokeObjectURL(url);
+    toHide.forEach(function(id) { const el = getEl(id); if (el) el.style.display = ""; });
+    document.getElementById("mr-toggle-btn").style.display = "block";
+  });
+
+  document.getElementById("mr-export-md").addEventListener("click", exportMarkdown);
+}
+
+function refreshPanel() {
+  const list = getEl("mr-annot-list");
+  if (!list) return;
+  list.innerHTML = "";
+
+  const items = allAnnotations();
+  if (items.length === 0) {
+    list.innerHTML = '<li class="mr-empty">No annotations yet</li>';
+    return;
+  }
+
+  items.forEach(function(el) {
+    const li = document.createElement("li");
+    li.className = "mr-annot-item";
+
+    const type = el.getAttribute("data-type") || "highlight";
+    const text = (el.textContent || "").slice(0, 60);
+    const note = el.getAttribute("data-note");
+
+    const badge = document.createElement("span");
+    badge.className = "mr-annot-type " + type;
+    const typeNames = { highlight: "Highlight", underline: "Underline", note: "Note" };
+    badge.textContent = typeNames[type] || type;
+    li.appendChild(badge);
+
+    const txt = document.createElement("span");
+    txt.textContent = text + (el.textContent.length > 60 ? "\u2026" : "");
+    li.appendChild(txt);
+
+    if (note) {
+      const nt = document.createElement("span");
+      nt.className = "mr-annot-note";
+      nt.textContent = note;
+      li.appendChild(nt);
+    }
+
+    const actions = document.createElement("div");
+    actions.className = "mr-annot-actions";
+
+    if (type !== "note") {
+      const nb = document.createElement("button");
+      nb.className = "mr-btn-note"; nb.textContent = "Add Note";
+      nb.addEventListener("click", function(ev) {
+        ev.stopPropagation();
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+        showNoteInput(el.getBoundingClientRect(), el.getAttribute("data-note") || "", function(t) {
+          applyNote(el, t); refreshPanel();
+        });
+      });
+      actions.appendChild(nb);
+    }
+
+    const db = document.createElement("button");
+    db.className = "mr-btn-del"; db.textContent = "Remove";
+    db.addEventListener("click", function(ev) {
+      ev.stopPropagation();
+      removeAnnotation(el); refreshPanel();
+    });
+    actions.appendChild(db);
+    li.appendChild(actions);
+
+    li.addEventListener("click", function() {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+      el.style.outline = "3px solid #2f8a45";
+      setTimeout(function() { el.style.outline = ""; }, 1200);
+    });
+
+    list.appendChild(li);
+  });
+}
+
+/* ── Export annotations to Markdown ───────────────────── */
+function findHeading(el) {
+  var node = el;
+  while (node && node !== document.body) {
+    var prev = node.previousElementSibling;
+    while (prev) {
+      if (/^H[1-6]$/.test(prev.tagName)) return { level: parseInt(prev.tagName[1]), text: prev.textContent.trim() };
+      prev = prev.previousElementSibling;
+    }
+    node = node.parentElement;
+  }
+  return null;
+}
+
+function exportMarkdown() {
+  var items = allAnnotations();
+  if (items.length === 0) return;
+
+  var typeNames = { highlight: "Highlight", underline: "Underline", note: "Note" };
+  var lines = [];
+  lines.push("# " + (document.title || "Document") + " - Annotations");
+  lines.push("");
+  lines.push("_" + new Date().toLocaleString() + "_");
+  lines.push("");
+  lines.push("---");
+  lines.push("");
+
+  var lastHeading = null;
+
+  items.forEach(function(el) {
+    var type = el.getAttribute("data-type") || "highlight";
+    var text = el.textContent.trim();
+    var note = el.getAttribute("data-note") || "";
+
+    var heading = findHeading(el);
+    if (heading && (!lastHeading || lastHeading.text !== heading.text)) {
+      lines.push("#".repeat(Math.min(heading.level + 1, 4)) + " " + heading.text);
+      lines.push("");
+      lastHeading = heading;
+    }
+
+    lines.push("**[" + typeNames[type] + "]**");
+    lines.push("");
+    lines.push("> " + text.replace(/\n/g, "\n> "));
+    if (note) {
+      lines.push("");
+      lines.push("**Note:** " + note);
+    }
+    lines.push("");
+    lines.push("---");
+    lines.push("");
+  });
+
+  var md = lines.join("\n");
+  var blob = new Blob([md], { type: "text/markdown;charset=utf-8" });
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement("a");
+  a.href = url;
+  a.download = (document.title || "document").replace(/[<>:"/\\|?*]/g, "_") + ".annotations.md";
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+}
+
+/* ── Boot ─────────────────────────────────────────────── */
+function makeTranslatable() {
+  // Unwrap <header id="title-block-header"> entirely — move children to body
+  var header = document.getElementById('title-block-header');
+  if (header) {
+    var parent = header.parentNode;
+    var next = header.nextSibling;
+    while (header.firstChild) {
+      parent.insertBefore(header.firstChild, next);
+    }
+    parent.removeChild(header);
+  }
+  // Convert all headings to <p> with inline style
+  var sizes = { H1: '2em', H2: '1.5em', H3: '1.25em', H4: '1.1em', H5: '1em', H6: '0.9em' };
+  document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(function(h) {
+    var p = document.createElement('p');
+    p.innerHTML = h.innerHTML;
+    if (h.id) p.id = h.id;
+    if (h.className) p.className = h.className;
+    var sz = sizes[h.tagName] || '1.5em';
+    p.style.cssText = 'font-size:' + sz + ';font-weight:bold;margin-top:1.2em;margin-bottom:0.5em;';
+    if (h.classList.contains('title')) {
+      p.style.cssText = 'font-size:2.5em;font-weight:bold;text-align:center;line-height:1.2;margin-bottom:0.5em;';
+    }
+    h.parentNode.replaceChild(p, h);
+  });
+  // Unwrap <div class="abstract"> — flatten to plain <p> tags
+  var abDiv = document.querySelector('.abstract');
+  if (abDiv) {
+    var parent = abDiv.parentNode;
+    var next = abDiv.nextSibling;
+    while (abDiv.firstChild) {
+      parent.insertBefore(abDiv.firstChild, next);
+    }
+    parent.removeChild(abDiv);
+  }
+  // Convert abstract-title div to <p>
+  var abTitle = document.querySelector('.abstract-title');
+  if (abTitle && abTitle.tagName !== 'P') {
+    var p = document.createElement('p');
+    p.innerHTML = abTitle.innerHTML;
+    p.style.cssText = 'font-weight:bold;text-align:center;';
+    abTitle.parentNode.replaceChild(p, abTitle);
+  }
+}
+
+function boot() {
+  makeTranslatable();
+  buildPanel();
+  refreshPanel();
+}
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", boot);
+} else {
+  boot();
+}
+
+})();
+</script>
+</body>
+</html>
